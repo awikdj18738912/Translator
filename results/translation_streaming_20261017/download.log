@@ -1,0 +1,4 @@
+{"event": "download_start", "repo": "facebook/m2m100_418M", "revision": "55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636", "destination": "/home/aim0/data/models/ASR/m2m100_418M"}
+{"event": "download_verified", "repo": "facebook/m2m100_418M", "bytes": 1941935615, "seconds": 306.93}
+{"event": "download_start", "repo": "alirezamsh/small100", "revision": "8ab680e26a596d2e3d2d2d17ae0f68df1037328c", "destination": "/home/aim0/data/models/ASR/small100"}
+{"event": "download_verified", "repo": "alirezamsh/small100", "bytes": 1337134577, "seconds": 192.57}

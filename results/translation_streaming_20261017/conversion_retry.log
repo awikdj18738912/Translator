@@ -1,0 +1,6 @@
+Already converted: /home/aim0/data/models/ASR/m2m100_418M/ct2-int8
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'M2M100Tokenizer'. 
+The class this function is called from is 'CompatibleSmallTokenizer'.
+{"event": "conversion_start", "model": "small100", "runtime_tokenizer": "author SMALL100Tokenizer", "conversion_tokenizer": "M2M100Tokenizer", "verified_lexical_and_language_token_ids": 128104, "source_convention": "prepend target __zh__ to source; no forced Chinese decoder token", "compatibility_fix": "get_vocab excludes dummy ids that otherwise overwrite <unk> id 3 with 128111 in Transformers 4.57"}
+{"event": "conversion_complete", "model": "small100", "seconds": 9.488905480131507}

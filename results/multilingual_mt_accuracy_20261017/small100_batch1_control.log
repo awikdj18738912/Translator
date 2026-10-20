@@ -1,0 +1,68 @@
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'M2M100Tokenizer'. 
+The class this function is called from is 'CompatibleSmallTokenizer'.
+{"event": "offline_progress", "model": "small100", "language": "en", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "en", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "en", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "en", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "en", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "en", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "en", "sentences": 100, "raw": {"BLEU_zh": 27.73248490289281, "chrFpp": 19.818289895572878}, "t2s": {"BLEU_zh": 27.80566839555565, "chrFpp": 19.86448027808363}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 27.81 63.4/38.5/24.7/16.7 (BP = 0.878 ratio = 0.885 hyp_len = 3606 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "en", "elapsed_seconds": 4.883956805802882}
+{"event": "offline_progress", "model": "small100", "language": "fr", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "fr", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "fr", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "fr", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "fr", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "fr", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "fr", "sentences": 100, "raw": {"BLEU_zh": 24.81233406391705, "chrFpp": 18.280693474640376}, "t2s": {"BLEU_zh": 25.00386285651612, "chrFpp": 18.38521895765464}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 25.00 59.7/35.4/21.7/14.1 (BP = 0.882 ratio = 0.889 hyp_len = 3622 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "fr", "elapsed_seconds": 9.587676384020597}
+{"event": "offline_progress", "model": "small100", "language": "de", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "de", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "de", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "de", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "de", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "de", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "de", "sentences": 100, "raw": {"BLEU_zh": 24.644116060853474, "chrFpp": 18.41069886360257}, "t2s": {"BLEU_zh": 24.7911391288047, "chrFpp": 18.494455296393237}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 24.79 60.6/35.2/21.1/13.6 (BP = 0.887 ratio = 0.893 hyp_len = 3639 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "de", "elapsed_seconds": 14.301409163046628}
+{"event": "offline_progress", "model": "small100", "language": "es", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "es", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "es", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "es", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "es", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "es", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "es", "sentences": 100, "raw": {"BLEU_zh": 22.31012301923618, "chrFpp": 17.390993815857787}, "t2s": {"BLEU_zh": 22.31012301923618, "chrFpp": 17.390993815857787}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 22.31 56.5/31.0/17.6/11.1 (BP = 0.921 ratio = 0.924 hyp_len = 3767 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "es", "elapsed_seconds": 19.159787769895047}
+{"event": "offline_progress", "model": "small100", "language": "ru", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ru", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ru", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ru", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ru", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ru", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "ru", "sentences": 100, "raw": {"BLEU_zh": 23.812573212069292, "chrFpp": 17.371410497313303}, "t2s": {"BLEU_zh": 23.812573212069292, "chrFpp": 17.371410497313303}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 23.81 58.8/33.8/20.4/12.5 (BP = 0.892 ratio = 0.897 hyp_len = 3657 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "ru", "elapsed_seconds": 23.856585481669754}
+{"event": "offline_progress", "model": "small100", "language": "ja", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ja", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ja", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ja", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ja", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ja", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "ja", "sentences": 100, "raw": {"BLEU_zh": 23.34097039540683, "chrFpp": 16.746933627620525}, "t2s": {"BLEU_zh": 23.781022541022903, "chrFpp": 16.98656011199001}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 23.78 59.8/34.9/21.2/13.5 (BP = 0.856 ratio = 0.865 hyp_len = 3526 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "ja", "elapsed_seconds": 28.429792444687337}
+{"event": "offline_progress", "model": "small100", "language": "ko", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ko", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ko", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ko", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ko", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ko", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "ko", "sentences": 100, "raw": {"BLEU_zh": 22.67005408614989, "chrFpp": 16.198458987941052}, "t2s": {"BLEU_zh": 22.723682936099625, "chrFpp": 16.23465494161714}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 22.72 57.7/32.7/19.4/12.5 (BP = 0.873 ratio = 0.881 hyp_len = 3590 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "ko", "elapsed_seconds": 33.06559378094971}
+{"event": "offline_progress", "model": "small100", "language": "ar", "completed": 1, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ar", "completed": 20, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ar", "completed": 40, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ar", "completed": 60, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ar", "completed": 80, "total": 100}
+{"event": "offline_progress", "model": "small100", "language": "ar", "completed": 100, "total": 100}
+{"event": "offline_language_complete", "model": "small100", "language": "ar", "sentences": 100, "raw": {"BLEU_zh": 24.040519878415044, "chrFpp": 16.780558040460043}, "t2s": {"BLEU_zh": 24.172857391375356, "chrFpp": 16.847298135934558}, "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1", "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1", "bleu_details_t2s": "BLEU = 24.17 55.9/31.9/19.1/12.6 (BP = 0.945 ratio = 0.947 hyp_len = 3859 ref_len = 4076)"}
+{"event": "language_complete", "model": "small100", "language": "ar", "elapsed_seconds": 37.99501833273098}
+{"event": "evaluation_complete", "model": "small100", "total_seconds": 38.49751119501889, "offline_pairs": 800, "streaming_trajectories": 0}

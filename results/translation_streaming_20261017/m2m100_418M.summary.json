@@ -1,0 +1,199 @@
+{
+  "model": "m2m100_418M",
+  "repo_id": "facebook/m2m100_418M",
+  "revision": "55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636",
+  "created_at": "2026-10-17T04:32:52.716554+00:00",
+  "torch": "2.10.0+cu128",
+  "transformers": "4.57.6",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "gpu_index": 0,
+  "dtype": "int8_float16",
+  "backend": "ctranslate2",
+  "ctranslate2": "4.6.3",
+  "gpu_snapshot_start": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 23729 MiB, 0 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 22763 MiB, 0 %",
+  "initial_free_mib": 1362.0,
+  "memory_fraction": 0.055,
+  "batch_size": 1,
+  "stream_beam_size": 1,
+  "max_new_tokens": 96,
+  "parameter_count": null,
+  "encoder_layers": 12,
+  "decoder_layers": 12,
+  "load_seconds": 0.5718645472079515,
+  "scope": "Synthetic incremental text on a shared GPU, no ASR/audio/Refiner/NLLW, no real audio latency or production accuracy claims",
+  "cases_sha256": "ebc70429380ed60ea2eb384b3462c12ebd4705e0189f72144b08fb2c123d59de",
+  "process_gpu_used_mib_after_warmup": 878.0,
+  "fixed_input_token_stream_probe": {
+    "text": "请在收到存款后发送300个单位。",
+    "first_content_seconds": 0.010665747802704573,
+    "total_seconds": 0.05592860467731953,
+    "events": 15,
+    "note": "One complete source was supplied first; this tests output token callbacks only"
+  },
+  "status": "completed",
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "ru"
+  ],
+  "case_count": 25,
+  "step_count": 152,
+  "step_latency_seconds": {
+    "count": 152,
+    "mean": 0.06894456030261752,
+    "p50": 0.06883287569507957,
+    "p95": 0.11177947465330362,
+    "max": 0.120239632204175
+  },
+  "per_language_latency_seconds": {
+    "ar": {
+      "count": 18,
+      "mean": 0.07932477092577352,
+      "p50": 0.08591336710378528,
+      "p95": 0.120239632204175,
+      "max": 0.120239632204175
+    },
+    "de": {
+      "count": 18,
+      "mean": 0.07027733380285402,
+      "p50": 0.07157915271818638,
+      "p95": 0.11058314796537161,
+      "max": 0.11058314796537161
+    },
+    "en": {
+      "count": 26,
+      "mean": 0.05983297684444831,
+      "p50": 0.06477899244055152,
+      "p95": 0.10618972824886441,
+      "max": 0.10667815618216991
+    },
+    "es": {
+      "count": 18,
+      "mean": 0.0680830358631081,
+      "p50": 0.06746760476380587,
+      "p95": 0.11350843403488398,
+      "max": 0.11350843403488398
+    },
+    "fr": {
+      "count": 18,
+      "mean": 0.0687296061983539,
+      "p50": 0.07501387456431985,
+      "p95": 0.10945084597915411,
+      "max": 0.10945084597915411
+    },
+    "ja": {
+      "count": 18,
+      "mean": 0.06650038873259392,
+      "p50": 0.06554867560043931,
+      "p95": 0.10443431325256824,
+      "max": 0.10443431325256824
+    },
+    "ko": {
+      "count": 18,
+      "mean": 0.06821957499616677,
+      "p50": 0.06883287569507957,
+      "p95": 0.10553169576451182,
+      "max": 0.10553169576451182
+    },
+    "ru": {
+      "count": 18,
+      "mean": 0.07463838770571682,
+      "p50": 0.07612782996147871,
+      "p95": 0.11217663483694196,
+      "max": 0.11217663483694196
+    }
+  },
+  "output_truncations": 0,
+  "empty_translations": 0,
+  "peak_cuda_allocated_mib": null,
+  "peak_cuda_reserved_mib": null,
+  "process_gpu_used_mib_end": 878.0,
+  "normalized_erasure_by_mode": {
+    "retranslate": {
+      "count": 25,
+      "mean": 0.5545520919153687,
+      "p50": 0.4146341463414634,
+      "p95": 1.4473684210526316,
+      "max": 2.0256410256410255
+    },
+    "local_agreement_forced_prefix": {
+      "count": 25,
+      "mean": 0.45727350466362465,
+      "p50": 0.34375,
+      "p95": 1.4473684210526316,
+      "max": 1.9487179487179487
+    }
+  },
+  "virtual_queue_simulations": [
+    {
+      "arrival_interval_seconds": 0.5,
+      "queue_wait": {
+        "count": 152,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "response_delay": {
+        "count": 152,
+        "mean": 0.06894456030261752,
+        "p50": 0.06883287569507957,
+        "p95": 0.11177947465330362,
+        "max": 0.120239632204175
+      }
+    },
+    {
+      "arrival_interval_seconds": 1.0,
+      "queue_wait": {
+        "count": 152,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "response_delay": {
+        "count": 152,
+        "mean": 0.06894456030261752,
+        "p50": 0.06883287569507957,
+        "p95": 0.11177947465330362,
+        "max": 0.120239632204175
+      }
+    },
+    {
+      "arrival_interval_seconds": 2.0,
+      "queue_wait": {
+        "count": 152,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "response_delay": {
+        "count": 152,
+        "mean": 0.06894456030261752,
+        "p50": 0.06883287569507957,
+        "p95": 0.11177947465330362,
+        "max": 0.120239632204175
+      }
+    }
+  ],
+  "stress": {
+    "sentences": 100,
+    "latency": {
+      "count": 100,
+      "mean": 0.07884647813159973,
+      "p50": 0.09547472419217229,
+      "p95": 0.11593281896784902,
+      "max": 0.1200666120275855
+    },
+    "allocated_mib_start": null,
+    "allocated_mib_end": null
+  },
+  "gpu_snapshot_end": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 23647 MiB, 59 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 22763 MiB, 0 %"
+}

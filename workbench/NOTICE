@@ -1,0 +1,9 @@
+This local project contains a snapshot of the locally modified Codex-web
+system sources. The original Apache License 2.0 is included in LICENSE.
+SOURCE_SNAPSHOT.json records the source paths and hashes before changes.
+
+Changes in this project (2026-10-19): independent launch entry points,
+independent terminology database and session output, a new three-column
+translation interface, and browser scripts adapted for this interface.
+Pretrained model weights are external dependencies and are not redistributed
+in this folder. Their original licenses continue to apply.

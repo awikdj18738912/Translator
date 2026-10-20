@@ -1,0 +1,12 @@
+{"event": "conversion_start", "model": "m2m100_418M", "runtime_tokenizer": "M2M100Tokenizer"}
+{"event": "conversion_complete", "model": "m2m100_418M", "seconds": 14.634990043006837}
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'M2M100Tokenizer'. 
+The class this function is called from is 'SMALL100Tokenizer'.
+Traceback (most recent call last):
+  File "/home/aim0/桌面/tan/ASR/Translator/scripts/convert_translation_models.py", line 67, in <module>
+    main()
+  File "/home/aim0/桌面/tan/ASR/Translator/scripts/convert_translation_models.py", line 41, in main
+    assert all(custom.convert_tokens_to_ids(token)==index for token,index in vocabulary.items())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-10-19T02:42:51.532040+00:00",
+  "status": "running",
+  "scope": "Offline text snapshot replay only; no audio, ASR model or browser/audio WebSocket integration",
+  "codexweb_root": "/home/aim0/桌面/tan/ASR/Codex-web",
+  "translation_model": "/home/aim0/data/models/ASR/LMT-60-0.6B",
+  "translation_revision": "dd189845cdc73346cef33c7a94f4b8bd8efdd4eb",
+  "translation_compute_type": "int8_float16",
+  "translation_beam": 3,
+  "gpu": 1,
+  "refiner_model": "/home/aim0/data/models/ASR/AgenticASR-Refiner",
+  "refiner_device": "cuda:1",
+  "refiner_pipeline": "Codex-web create_app.refine_update + fixed_k3_context_v2",
+  "gate": "off (exercise actual refiner on every ready window)",
+  "entity_fuzzy_mode": "off (verified exact rules only)",
+  "entity_db_source": "isolated trade demo",
+  "entity_snapshot": [
+    {
+      "canonical_text": "iPhone",
+      "aliases": [
+        "iphone",
+        "Iphone"
+      ],
+      "entity_type": "PRODUCT",
+      "domain": "trade",
+      "normalization_policy": "normalize"
+    },
+    {
+      "canonical_text": "SUS304",
+      "aliases": [],
+      "entity_type": "MODEL",
+      "domain": "trade",
+      "normalization_policy": "normalize"
+    },
+    {
+      "canonical_text": "AcmeFlow",
+      "aliases": [],
+      "entity_type": "BRAND",
+      "domain": "trade",
+      "normalization_policy": "normalize"
+    },
+    {
+      "canonical_text": "阀门",
+      "aliases": [
+        "阀門"
+      ],
+      "entity_type": "TERM",
+      "domain": "trade",
+      "normalization_policy": "normalize"
+    },
+    {
+      "canonical_text": "不锈钢",
+      "aliases": [
+        "不鏽鋼",
+        "不銹鋼"
+      ],
+      "entity_type": "TERM",
+      "domain": "trade",
+      "normalization_policy": "normalize"
+    }
+  ],
+  "input_interval_seconds": 0.0,
+  "backpressure": "Sequential, wait for each update; no unbounded task queue",
+  "gpu_start": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 22829 MiB, 19 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 15 MiB, 0 %",
+  "codexweb_source_sha256": {
+    "web_app.py": "72705b217a8e67f34c2971403e78a5fa6207f81cfb923a60336db92e76f8756f",
+    "offline_text_refinement.py": "d735794ecc334755763ce86ed57a03ef168a76809134694d6c305b2095d4919d",
+    "window_refinement.py": "5d6e719129b4b1e13249c4867b62a6304eb6b48d4fa8bec8c086e33db3c3fec5",
+    "live_qwen_refiner.py": "de5bdb3f1ad629145ba84f3260701cf283ca93de76c10e3a954e112b76245adf"
+  }
+}

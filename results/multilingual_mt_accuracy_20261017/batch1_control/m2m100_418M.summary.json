@@ -1,0 +1,192 @@
+{
+  "model": "m2m100_418M",
+  "repo_id": "facebook/m2m100_418M",
+  "revision": "55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636",
+  "created_at": "2026-10-17T05:37:48.225161+00:00",
+  "dataset": "FLORES-101 devtest",
+  "data_sha256": "03851dc9582c093d1f5b4e2f7660e9fdf154caee2d73fe569789491112ecebf6",
+  "gpu_index": 0,
+  "gpu_snapshot_start": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 23729 MiB, 0 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 965 MiB, 72 %",
+  "runtime": "CTranslate2",
+  "ctranslate2": "4.6.3",
+  "transformers": "4.57.6",
+  "sacrebleu": "2.5.1",
+  "compute_type": "int8_float16",
+  "beam_size": 3,
+  "offline_batch_size": 1,
+  "stream_batch_size": 1,
+  "offline_subset_only": true,
+  "max_decoding_length": 256,
+  "streaming_description": "4 artificial source prefixes; unrestricted retranslation and 2-hypothesis agreement + one-token holdback with forced committed prefix; full source on final flush",
+  "scope": "Text MT only. Public written corpus, not business speech; no ASR/audio/refiner/real audio timestamps. Scores are not percent correct.",
+  "prefix_policy_sha256": "9be1452ca0fcb20bf82d34015ea023dd1d0ca59ec36923a29270f4f13c5ffa8f",
+  "process_gpu_used_mib_after_warmup": 878.0,
+  "status": "completed",
+  "offline_pairs": 800,
+  "streaming_trajectories": 0,
+  "total_seconds": 109.72013698564842,
+  "gpu_snapshot_end": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 23647 MiB, 65 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 901 MiB, 63 %",
+  "process_gpu_used_mib_end": 878.0,
+  "scores": {
+    "en": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 29.053821210880198,
+          "chrFpp": 20.81842636691549
+        },
+        "t2s": {
+          "BLEU_zh": 29.053821210880198,
+          "chrFpp": 20.81842636691549
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 29.05 62.6/38.2/24.7/17.0 (BP = 0.918 ratio = 0.921 hyp_len = 3753 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 7
+      },
+      "offline_stream_subset": null
+    },
+    "fr": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 25.519315387015894,
+          "chrFpp": 18.770454613101137
+        },
+        "t2s": {
+          "BLEU_zh": 25.557036055556907,
+          "chrFpp": 18.79179446991546
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 25.56 58.2/34.3/21.0/13.6 (BP = 0.930 ratio = 0.932 hyp_len = 3800 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 9
+      },
+      "offline_stream_subset": null
+    },
+    "de": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 25.267671500563658,
+          "chrFpp": 18.409768536179403
+        },
+        "t2s": {
+          "BLEU_zh": 25.67238852913703,
+          "chrFpp": 18.621834899515928
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 25.67 59.2/34.7/21.4/13.5 (BP = 0.924 ratio = 0.927 hyp_len = 3778 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 11
+      },
+      "offline_stream_subset": null
+    },
+    "es": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 21.36918799587353,
+          "chrFpp": 16.756064338209065
+        },
+        "t2s": {
+          "BLEU_zh": 21.496658802151813,
+          "chrFpp": 16.825969736616113
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 21.50 53.3/28.7/16.0/9.9 (BP = 0.969 ratio = 0.970 hyp_len = 3952 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 7
+      },
+      "offline_stream_subset": null
+    },
+    "ru": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 23.82632326972954,
+          "chrFpp": 17.56900308978709
+        },
+        "t2s": {
+          "BLEU_zh": 23.936608871798153,
+          "chrFpp": 17.62755581355995
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 23.94 56.9/32.6/19.4/12.0 (BP = 0.933 ratio = 0.935 hyp_len = 3811 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 5
+      },
+      "offline_stream_subset": null
+    },
+    "ja": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 24.62642269044762,
+          "chrFpp": 17.30756598226144
+        },
+        "t2s": {
+          "BLEU_zh": 24.77570170066766,
+          "chrFpp": 17.393008121186508
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 24.78 59.0/34.7/21.3/13.6 (BP = 0.892 ratio = 0.897 hyp_len = 3657 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 7
+      },
+      "offline_stream_subset": null
+    },
+    "ko": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 23.466536879503497,
+          "chrFpp": 17.42187483567318
+        },
+        "t2s": {
+          "BLEU_zh": 23.91617514565878,
+          "chrFpp": 17.68359103224962
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 23.92 57.0/32.8/19.8/13.0 (BP = 0.908 ratio = 0.912 hyp_len = 3718 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 9
+      },
+      "offline_stream_subset": null
+    },
+    "ar": {
+      "offline_full": {
+        "sentences": 100,
+        "raw": {
+          "BLEU_zh": 24.119211624745375,
+          "chrFpp": 16.35630528836932
+        },
+        "t2s": {
+          "BLEU_zh": 24.126947429680637,
+          "chrFpp": 16.36224269882908
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 24.13 56.3/32.1/19.0/12.1 (BP = 0.950 ratio = 0.951 hyp_len = 3876 ref_len = 4076)",
+        "non_eos_outputs": 0,
+        "empty_outputs": 0,
+        "unknown_token_outputs": 7
+      },
+      "offline_stream_subset": null
+    }
+  }
+}

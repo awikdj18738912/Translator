@@ -1,0 +1,43 @@
+{
+  "checkpoint_tensor_parameters": 751632384,
+  "embedding_and_lm_head_equal": true,
+  "tied_embedding_parameters": 155582464,
+  "unique_parameter_count_if_tied": 596049920,
+  "term_roundtrips": {
+    "阀门": {
+      "ids": [
+        114259
+      ],
+      "decoded": "阀门"
+    },
+    "不锈钢": {
+      "ids": [
+        106223
+      ],
+      "decoded": "不锈钢"
+    },
+    "单价12.50美元": {
+      "ids": [
+        114600,
+        16,
+        17,
+        13,
+        20,
+        15,
+        101237
+      ],
+      "decoded": "单价12.50美元"
+    },
+    "收到定金后才能发货": {
+      "ids": [
+        104381,
+        22382,
+        34230,
+        33447,
+        101901,
+        109645
+      ],
+      "decoded": "收到定金后才能发货"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "captured_at": "2026-10-19T14:00:27.683209+08:00",
+  "health": {
+    "ready": false,
+    "model": "LMT-60-0.6B",
+    "target_language": "zh",
+    "languages": [
+      {
+        "code": "en",
+        "name": "英语"
+      },
+      {
+        "code": "fr",
+        "name": "法语"
+      },
+      {
+        "code": "de",
+        "name": "德语"
+      },
+      {
+        "code": "es",
+        "name": "西班牙语"
+      },
+      {
+        "code": "ru",
+        "name": "俄语"
+      },
+      {
+        "code": "ja",
+        "name": "日语"
+      },
+      {
+        "code": "ko",
+        "name": "韩语"
+      },
+      {
+        "code": "ar",
+        "name": "阿拉伯语"
+      }
+    ],
+    "audio_ready": true,
+    "busy": false,
+    "pipeline": "ASR → LMT → Codex-web fixed_k3_context_v2 Refiner",
+    "scheduling": "latest_snapshot_v2",
+    "pending_per_stage": 1,
+    "max_audio_seconds": 300,
+    "max_file_bytes": 52428800
+  },
+  "browser_text_test": "passed",
+  "browser_audio_test": "passed",
+  "browser_console_errors": [],
+  "focused_tests_passed": 55,
+  "audio_events": 11,
+  "audio_test_final": {
+    "translation-status": "翻译与中文精修完成。",
+    "translation-source": "We need 300 steel valves. The price is 12 dollars each. Please deliver them by Friday.",
+    "translation-original": "我们需要 300 个钢阀门。每个的价格是 12 美元。请在周五前交货。",
+    "translation-clean": "我们需要 300 个钢阀门。每个的价格是 12 美元。请在周五前交货。",
+    "translation-calls": "1 / 1",
+    "translation-guard": "精修完成 · 已接受",
+    "page_errors": []
+  },
+  "web_pid": 31000,
+  "asr_pid": 31001,
+  "models": {
+    "asr": "Qwen3-ASR-0.6B GPU1 BF16 vLLM memory_utilization=0.30",
+    "translation": "LMT-60-0.6B GPU1 int8_float16 CTranslate2 4.8.3",
+    "refiner": "AgenticASR-Refiner GPU1 original FP32"
+  },
+  "audio_fixture": "english_probe.wav; synthesized locally with FFmpeg flite; not real business speech benchmark",
+  "service_status": "web_stopped_asr_running",
+  "latest_smoke_artifacts": "../translation_optimized_live_20261019",
+  "web_stopped_at": "2026-10-19T14:11:55.941812+08:00",
+  "migrated_to": "http://127.0.0.1:8083/"
+}

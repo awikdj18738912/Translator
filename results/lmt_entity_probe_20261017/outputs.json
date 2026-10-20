@@ -1,0 +1,88 @@
+{
+  "model": "NiuTrans/LMT-60-0.6B",
+  "revision": "dd189845cdc73346cef33c7a94f4b8bd8efdd4eb",
+  "runtime": "CTranslate2 4.8.3",
+  "compute_type": "int8_float16",
+  "beam_size": 3,
+  "prompt": "Author default translation instruction and checkpoint chat template; no entity glossary",
+  "cases": [
+    {
+      "source": "I bought an iPhone yesterday.",
+      "translation": "昨天我买了一部 iPhone。",
+      "eos": true,
+      "seconds": 0.3226985880173743
+    },
+    {
+      "source": "Please quote 100 iPhone 15 Pro Max units, 256GB, in Natural Titanium.",
+      "translation": "请报价 100 台 iPhone 15 Pro Max，256GB，采用天然钛。",
+      "eos": true,
+      "seconds": 0.19761581905186176
+    },
+    {
+      "source": "We need 50 iphone chargers.",
+      "translation": "我们需要 50 台 iPhone 充电器。",
+      "eos": true,
+      "seconds": 0.09759540297091007
+    },
+    {
+      "source": "Apple will ship the iPhone order on Friday.",
+      "translation": "苹果将于周五发货 iPhone 订单。",
+      "eos": true,
+      "seconds": 0.09053681418299675
+    },
+    {
+      "source": "Please send 20 Apple Watch Series 9 units.",
+      "translation": "请发送 20 台 Apple Watch Series 9。",
+      "eos": true,
+      "seconds": 0.12026172177866101
+    },
+    {
+      "source": "We distribute Huawei Mate 60 Pro and Samsung Galaxy S24.",
+      "translation": "我们提供华为 Mate 60 Pro 和三星 Galaxy S24。",
+      "eos": true,
+      "seconds": 0.13494954211637378
+    },
+    {
+      "source": "Microsoft Teams is used for our meetings.",
+      "translation": "Microsoft Teams 用于我们的会议。",
+      "eos": true,
+      "seconds": 0.06725620897486806
+    },
+    {
+      "source": "Please keep the brand name AcmeFlow and model ZX-204 unchanged.",
+      "translation": "请保持品牌名称 AcmeFlow 和型号 ZX-204 不变。",
+      "eos": true,
+      "seconds": 0.16447593783959746
+    },
+    {
+      "source": "We need 500 SUS304 valves from AcmeFlow.",
+      "translation": "我们需要 AcmeFlow 的 500 个 SUS304 阀门。",
+      "eos": true,
+      "seconds": 0.17151476675644517
+    },
+    {
+      "source": "Please send the invoice to John Smith at Apple.",
+      "translation": "请将发票发送给苹果公司的约翰·史密斯。",
+      "eos": true,
+      "seconds": 0.11197314225137234
+    },
+    {
+      "source": "Apple sells iPhones, but this box contains apples.",
+      "translation": "苹果卖 iPhone，但这个盒子里装的是苹果。",
+      "eos": true,
+      "seconds": 0.11424830416217446
+    },
+    {
+      "source": "iPhone",
+      "translation": "iPhone",
+      "eos": true,
+      "seconds": 0.03336194809526205
+    },
+    {
+      "source": "iphone",
+      "translation": "iphone",
+      "eos": true,
+      "seconds": 0.032376471906900406
+    }
+  ]
+}

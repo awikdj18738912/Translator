@@ -1,0 +1,613 @@
+{
+  "status": "passed",
+  "data_sha256": "03851dc9582c093d1f5b4e2f7660e9fdf154caee2d73fe569789491112ecebf6",
+  "offline_rows_each_model": 8096,
+  "stream_trajectories_each_model": 1600,
+  "nllb_batch1_control_rows": 800,
+  "official_stream_subset_ids_match_all_models_and_control": true,
+  "all_source_prefix_schedules_match_older_runs": true,
+  "all_stream_final_steps_use_full_source": true,
+  "source_reference_and_subset_match_flores": true,
+  "independent_full_and_stream_metric_recalculation_matches_summaries": true,
+  "full_metrics": {
+    "nllb200_600M": {
+      "en": {
+        "BLEU_zh": 24.844516085166262,
+        "chrFpp": 18.477266468321464,
+        "output_counts": {
+          "non_eos": 0,
+          "empty": 0,
+          "unknown_token_outputs": 194,
+          "unknown_token_ids": 276
+        }
+      },
+      "fr": {
+        "BLEU_zh": 21.50572373645761,
+        "chrFpp": 16.426742796807993,
+        "output_counts": {
+          "non_eos": 0,
+          "empty": 0,
+          "unknown_token_outputs": 226,
+          "unknown_token_ids": 394
+        }
+      },
+      "de": {
+        "BLEU_zh": 22.24636539822314,
+        "chrFpp": 16.315452587016264,
+        "output_counts": {
+          "non_eos": 1,
+          "empty": 0,
+          "unknown_token_outputs": 241,
+          "unknown_token_ids": 378
+        }
+      },
+      "es": {
+        "BLEU_zh": 18.200719996695334,
+        "chrFpp": 14.526785727787491,
+        "output_counts": {
+          "non_eos": 0,
+          "empty": 0,
+          "unknown_token_outputs": 206,
+          "unknown_token_ids": 301
+        }
+      },
+      "ru": {
+        "BLEU_zh": 21.301986974815755,
+        "chrFpp": 15.468241568122764,
+        "output_counts": {
+          "non_eos": 0,
+          "empty": 0,
+          "unknown_token_outputs": 215,
+          "unknown_token_ids": 445
+        }
+      },
+      "ja": {
+        "BLEU_zh": 21.218272492103576,
+        "chrFpp": 15.193913385145203,
+        "output_counts": {
+          "non_eos": 0,
+          "empty": 0,
+          "unknown_token_outputs": 220,
+          "unknown_token_ids": 358
+        }
+      },
+      "ko": {
+        "BLEU_zh": 22.467492382823515,
+        "chrFpp": 16.531491945616466,
+        "output_counts": {
+          "non_eos": 0,
+          "empty": 0,
+          "unknown_token_outputs": 244,
+          "unknown_token_ids": 385
+        }
+      },
+      "ar": {
+        "BLEU_zh": 21.843576477294935,
+        "chrFpp": 15.531883751443898,
+        "output_counts": {
+          "non_eos": 0,
+          "empty": 0,
+          "unknown_token_outputs": 203,
+          "unknown_token_ids": 293
+        }
+      }
+    },
+    "m2m100_418M": {
+      "en": {
+        "BLEU_zh": 28.320036827850828,
+        "chrFpp": 20.568179356899005
+      },
+      "fr": {
+        "BLEU_zh": 25.448865119934997,
+        "chrFpp": 18.514411357117897
+      },
+      "de": {
+        "BLEU_zh": 25.3433247785089,
+        "chrFpp": 18.35428359435994
+      },
+      "es": {
+        "BLEU_zh": 21.842203505825193,
+        "chrFpp": 16.693216888575442
+      },
+      "ru": {
+        "BLEU_zh": 24.453383516899827,
+        "chrFpp": 17.295300781071347
+      },
+      "ja": {
+        "BLEU_zh": 23.73395926844796,
+        "chrFpp": 16.31256663923332
+      },
+      "ko": {
+        "BLEU_zh": 24.06895900435555,
+        "chrFpp": 17.31087804077627
+      },
+      "ar": {
+        "BLEU_zh": 24.706281189562592,
+        "chrFpp": 16.854755016763523
+      }
+    },
+    "small100": {
+      "en": {
+        "BLEU_zh": 28.131909458103685,
+        "chrFpp": 19.89380217241027
+      },
+      "fr": {
+        "BLEU_zh": 25.003669127297684,
+        "chrFpp": 17.754779800907958
+      },
+      "de": {
+        "BLEU_zh": 25.01008271104684,
+        "chrFpp": 17.892119365838802
+      },
+      "es": {
+        "BLEU_zh": 22.545698226416718,
+        "chrFpp": 16.398102065048796
+      },
+      "ru": {
+        "BLEU_zh": 24.167793293891453,
+        "chrFpp": 16.853347061610084
+      },
+      "ja": {
+        "BLEU_zh": 22.79498453474629,
+        "chrFpp": 16.071871864973634
+      },
+      "ko": {
+        "BLEU_zh": 22.701820692280485,
+        "chrFpp": 16.46360434100024
+      },
+      "ar": {
+        "BLEU_zh": 23.79234367580241,
+        "chrFpp": 16.258167099232608
+      }
+    }
+  },
+  "stream_metrics": {
+    "nllb200_600M": {
+      "en": {
+        "retranslate": {
+          "BLEU_zh": 24.457273446167413,
+          "chrFpp": 18.939110266849386
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.37091742494888,
+          "chrFpp": 18.51601945585993
+        }
+      },
+      "fr": {
+        "retranslate": {
+          "BLEU_zh": 20.61745767302067,
+          "chrFpp": 16.440626131169545
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 20.257858139595367,
+          "chrFpp": 15.864395974915613
+        }
+      },
+      "de": {
+        "retranslate": {
+          "BLEU_zh": 23.913438073334678,
+          "chrFpp": 16.782701275617505
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 20.953521032695168,
+          "chrFpp": 16.390219845943317
+        }
+      },
+      "es": {
+        "retranslate": {
+          "BLEU_zh": 18.846613441126387,
+          "chrFpp": 15.200685448402208
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 17.243907846048373,
+          "chrFpp": 14.417947580680604
+        }
+      },
+      "ru": {
+        "retranslate": {
+          "BLEU_zh": 22.080372824354225,
+          "chrFpp": 17.1889719151419
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 20.698224265297206,
+          "chrFpp": 16.291024030871814
+        }
+      },
+      "ja": {
+        "retranslate": {
+          "BLEU_zh": 20.86492824271431,
+          "chrFpp": 16.076117739543168
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 19.45483871145111,
+          "chrFpp": 14.978042059167901
+        }
+      },
+      "ko": {
+        "retranslate": {
+          "BLEU_zh": 23.266821088756764,
+          "chrFpp": 17.06898039533682
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 22.86359987357563,
+          "chrFpp": 16.812141630288625
+        }
+      },
+      "ar": {
+        "retranslate": {
+          "BLEU_zh": 21.71467008858059,
+          "chrFpp": 15.842163760522087
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 21.041165743498883,
+          "chrFpp": 15.46675270670633
+        }
+      }
+    },
+    "m2m100_418M": {
+      "en": {
+        "retranslate": {
+          "BLEU_zh": 29.053821210880198,
+          "chrFpp": 20.81842636691549
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 28.63932314630676,
+          "chrFpp": 19.932254368081022
+        }
+      },
+      "fr": {
+        "retranslate": {
+          "BLEU_zh": 25.557036055556907,
+          "chrFpp": 18.79179446991546
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 25.624226206368544,
+          "chrFpp": 18.843432312921166
+        }
+      },
+      "de": {
+        "retranslate": {
+          "BLEU_zh": 25.67238852913703,
+          "chrFpp": 18.621834899515928
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 25.188991621199058,
+          "chrFpp": 18.563819847329523
+        }
+      },
+      "es": {
+        "retranslate": {
+          "BLEU_zh": 21.496658802151813,
+          "chrFpp": 16.825969736616113
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 21.398140207174066,
+          "chrFpp": 15.545396549577491
+        }
+      },
+      "ru": {
+        "retranslate": {
+          "BLEU_zh": 23.936608871798153,
+          "chrFpp": 17.62755581355995
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.459518138783128,
+          "chrFpp": 17.951657253982372
+        }
+      },
+      "ja": {
+        "retranslate": {
+          "BLEU_zh": 24.77570170066766,
+          "chrFpp": 17.393008121186508
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.05928083809533,
+          "chrFpp": 17.018506903942185
+        }
+      },
+      "ko": {
+        "retranslate": {
+          "BLEU_zh": 23.91617514565878,
+          "chrFpp": 17.68359103224962
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.85687422416582,
+          "chrFpp": 17.266192469313175
+        }
+      },
+      "ar": {
+        "retranslate": {
+          "BLEU_zh": 24.126947429680637,
+          "chrFpp": 16.36224269882908
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.062606909192937,
+          "chrFpp": 17.149289067020533
+        }
+      }
+    },
+    "small100": {
+      "en": {
+        "retranslate": {
+          "BLEU_zh": 27.80566839555565,
+          "chrFpp": 19.86448027808363
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 28.607145290441135,
+          "chrFpp": 20.577508509004815
+        }
+      },
+      "fr": {
+        "retranslate": {
+          "BLEU_zh": 25.00386285651612,
+          "chrFpp": 18.38521895765464
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.722713225623227,
+          "chrFpp": 18.20218440176122
+        }
+      },
+      "de": {
+        "retranslate": {
+          "BLEU_zh": 24.7911391288047,
+          "chrFpp": 18.494455296393237
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 25.000408136483276,
+          "chrFpp": 18.165681777362895
+        }
+      },
+      "es": {
+        "retranslate": {
+          "BLEU_zh": 22.31012301923618,
+          "chrFpp": 17.390993815857787
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 22.439608682376782,
+          "chrFpp": 17.335662887487402
+        }
+      },
+      "ru": {
+        "retranslate": {
+          "BLEU_zh": 23.812573212069292,
+          "chrFpp": 17.371410497313303
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.400723483229346,
+          "chrFpp": 17.116962766816943
+        }
+      },
+      "ja": {
+        "retranslate": {
+          "BLEU_zh": 23.781022541022903,
+          "chrFpp": 16.98656011199001
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.85121403875662,
+          "chrFpp": 17.252623184801035
+        }
+      },
+      "ko": {
+        "retranslate": {
+          "BLEU_zh": 22.723682936099625,
+          "chrFpp": 16.23465494161714
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 22.0565932414459,
+          "chrFpp": 15.827227966588431
+        }
+      },
+      "ar": {
+        "retranslate": {
+          "BLEU_zh": 24.172857391375356,
+          "chrFpp": 16.847298135934558
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.493904672206945,
+          "chrFpp": 16.109530257851194
+        }
+      }
+    }
+  },
+  "macro_full_metrics": {
+    "nllb200_600M": {
+      "BLEU_zh": 21.703581692947516,
+      "chrFpp": 16.058972278782694
+    },
+    "m2m100_418M": {
+      "BLEU_zh": 24.73962665142323,
+      "chrFpp": 17.737948959349595
+    },
+    "small100": {
+      "BLEU_zh": 24.268537714948195,
+      "chrFpp": 17.1982242213778
+    }
+  },
+  "nllb_full_output_counts_by_language": {
+    "en": {
+      "non_eos": 0,
+      "empty": 0,
+      "unknown_token_outputs": 194,
+      "unknown_token_ids": 276
+    },
+    "fr": {
+      "non_eos": 0,
+      "empty": 0,
+      "unknown_token_outputs": 226,
+      "unknown_token_ids": 394
+    },
+    "de": {
+      "non_eos": 1,
+      "empty": 0,
+      "unknown_token_outputs": 241,
+      "unknown_token_ids": 378
+    },
+    "es": {
+      "non_eos": 0,
+      "empty": 0,
+      "unknown_token_outputs": 206,
+      "unknown_token_ids": 301
+    },
+    "ru": {
+      "non_eos": 0,
+      "empty": 0,
+      "unknown_token_outputs": 215,
+      "unknown_token_ids": 445
+    },
+    "ja": {
+      "non_eos": 0,
+      "empty": 0,
+      "unknown_token_outputs": 220,
+      "unknown_token_ids": 358
+    },
+    "ko": {
+      "non_eos": 0,
+      "empty": 0,
+      "unknown_token_outputs": 244,
+      "unknown_token_ids": 385
+    },
+    "ar": {
+      "non_eos": 0,
+      "empty": 0,
+      "unknown_token_outputs": 203,
+      "unknown_token_ids": 293
+    }
+  },
+  "nllb_streaming_stats_by_mode": {
+    "retranslate": {
+      "updates": 3200,
+      "latency_seconds": {
+        "count": 3200,
+        "mean": 0.09007344681725954,
+        "p50": 0.08185573993250728,
+        "p95": 0.16583466483280063,
+        "max": 1.1315729632042348
+      },
+      "normalized_erasure_characters_mean": 0.9716788062595159,
+      "non_eos_updates": 1,
+      "empty_updates": 0
+    },
+    "agreement_forced_prefix": {
+      "updates": 3200,
+      "latency_seconds": {
+        "count": 3200,
+        "mean": 0.08994621709294734,
+        "p50": 0.08420814108103514,
+        "p95": 0.16586646297946572,
+        "max": 0.2724018129520118
+      },
+      "normalized_erasure_characters_mean": 0.8491296332346981,
+      "non_eos_updates": 0,
+      "empty_updates": 0
+    }
+  },
+  "nllb_batch1_vs_retranslation_final": {
+    "pairs": 800,
+    "mismatches": 0
+  },
+  "paired_stream_subset_metrics": {
+    "batch1_control": {
+      "en": {
+        "BLEU_zh": 24.457273446167413,
+        "chrFpp": 18.939110266849386
+      },
+      "fr": {
+        "BLEU_zh": 20.61745767302067,
+        "chrFpp": 16.440626131169545
+      },
+      "de": {
+        "BLEU_zh": 23.913438073334678,
+        "chrFpp": 16.782701275617505
+      },
+      "es": {
+        "BLEU_zh": 18.846613441126387,
+        "chrFpp": 15.200685448402208
+      },
+      "ru": {
+        "BLEU_zh": 22.080372824354225,
+        "chrFpp": 17.1889719151419
+      },
+      "ja": {
+        "BLEU_zh": 20.86492824271431,
+        "chrFpp": 16.076117739543168
+      },
+      "ko": {
+        "BLEU_zh": 23.266821088756764,
+        "chrFpp": 17.06898039533682
+      },
+      "ar": {
+        "BLEU_zh": 21.71467008858059,
+        "chrFpp": 15.842163760522087
+      }
+    },
+    "retranslate": {
+      "en": {
+        "BLEU_zh": 24.457273446167413,
+        "chrFpp": 18.939110266849386
+      },
+      "fr": {
+        "BLEU_zh": 20.61745767302067,
+        "chrFpp": 16.440626131169545
+      },
+      "de": {
+        "BLEU_zh": 23.913438073334678,
+        "chrFpp": 16.782701275617505
+      },
+      "es": {
+        "BLEU_zh": 18.846613441126387,
+        "chrFpp": 15.200685448402208
+      },
+      "ru": {
+        "BLEU_zh": 22.080372824354225,
+        "chrFpp": 17.1889719151419
+      },
+      "ja": {
+        "BLEU_zh": 20.86492824271431,
+        "chrFpp": 16.076117739543168
+      },
+      "ko": {
+        "BLEU_zh": 23.266821088756764,
+        "chrFpp": 17.06898039533682
+      },
+      "ar": {
+        "BLEU_zh": 21.71467008858059,
+        "chrFpp": 15.842163760522087
+      }
+    },
+    "agreement_forced_prefix": {
+      "en": {
+        "BLEU_zh": 23.37091742494888,
+        "chrFpp": 18.51601945585993
+      },
+      "fr": {
+        "BLEU_zh": 20.257858139595367,
+        "chrFpp": 15.864395974915613
+      },
+      "de": {
+        "BLEU_zh": 20.953521032695168,
+        "chrFpp": 16.390219845943317
+      },
+      "es": {
+        "BLEU_zh": 17.243907846048373,
+        "chrFpp": 14.417947580680604
+      },
+      "ru": {
+        "BLEU_zh": 20.698224265297206,
+        "chrFpp": 16.291024030871814
+      },
+      "ja": {
+        "BLEU_zh": 19.45483871145111,
+        "chrFpp": 14.978042059167901
+      },
+      "ko": {
+        "BLEU_zh": 22.86359987357563,
+        "chrFpp": 16.812141630288625
+      },
+      "ar": {
+        "BLEU_zh": 21.041165743498883,
+        "chrFpp": 15.46675270670633
+      }
+    }
+  },
+  "business_report_included": true
+}

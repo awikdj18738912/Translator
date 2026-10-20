@@ -1,0 +1,287 @@
+[
+  {
+    "event": "ready",
+    "run_id": "3bebeb881fd34d4d9aed64ca6ae67f25",
+    "language": "en",
+    "target_language": "zh"
+  },
+  {
+    "event": "source",
+    "revision": 1,
+    "source_text": "We need three hundred ste"
+  },
+  {
+    "event": "translation",
+    "revision": 1,
+    "source_text": "We need three hundred ste",
+    "translation": "我们需要三百块钢",
+    "translation_ms": 81.44799000001512,
+    "translation_stats": {
+      "model_calls": 1,
+      "source_characters": 25,
+      "cache_hits": 0,
+      "windows": 1,
+      "stable_windows": 0,
+      "total_model_calls": 1,
+      "total_source_characters": 25
+    }
+  },
+  {
+    "display_revision": 0,
+    "committed_clean_text": "",
+    "active_clean_text": "",
+    "display_refined_text": "",
+    "pending_raw_text": "我们需要三百块钢",
+    "display_text": "我们需要三百块钢",
+    "has_pending_refinement": true,
+    "raw_text": "我们需要三百块钢",
+    "clean_text": "我们需要三百块钢",
+    "refiner_executed": false,
+    "refiner_accepted": null,
+    "refiner_reject_reasons": [],
+    "refinement_state": "waiting_for_group",
+    "event": "update",
+    "revision": 1,
+    "source_text": "We need three hundred ste",
+    "translation": "我们需要三百块钢",
+    "model_calls": 0,
+    "total_model_calls": 0,
+    "translation_ms": 81.44799000001512,
+    "translation_stats": {
+      "model_calls": 1,
+      "source_characters": 25,
+      "cache_hits": 0,
+      "windows": 1,
+      "stable_windows": 0,
+      "total_model_calls": 1,
+      "total_source_characters": 25
+    },
+    "refinement_ms": 0.2656060000845173
+  },
+  {
+    "event": "source",
+    "revision": 2,
+    "source_text": "We need three hundred steel valves. Please deliver"
+  },
+  {
+    "event": "translation",
+    "revision": 2,
+    "source_text": "We need three hundred steel valves. Please deliver",
+    "translation": "我们需要三百个钢阀门。请交货",
+    "translation_ms": 81.75087600011466,
+    "translation_stats": {
+      "model_calls": 1,
+      "source_characters": 50,
+      "cache_hits": 0,
+      "windows": 1,
+      "stable_windows": 0,
+      "total_model_calls": 2,
+      "total_source_characters": 75
+    }
+  },
+  {
+    "display_revision": 0,
+    "committed_clean_text": "",
+    "active_clean_text": "",
+    "display_refined_text": "",
+    "pending_raw_text": "我们需要三百个钢阀门。请交货",
+    "display_text": "我们需要三百个钢阀门。请交货",
+    "has_pending_refinement": true,
+    "raw_text": "我们需要三百个钢阀门。请交货",
+    "clean_text": "我们需要三百个钢阀门。请交货",
+    "refiner_executed": false,
+    "refiner_accepted": null,
+    "refiner_reject_reasons": [],
+    "refinement_state": "waiting_for_group",
+    "event": "update",
+    "revision": 2,
+    "source_text": "We need three hundred steel valves. Please deliver",
+    "translation": "我们需要三百个钢阀门。请交货",
+    "model_calls": 0,
+    "total_model_calls": 0,
+    "translation_ms": 81.75087600011466,
+    "translation_stats": {
+      "model_calls": 1,
+      "source_characters": 50,
+      "cache_hits": 0,
+      "windows": 1,
+      "stable_windows": 0,
+      "total_model_calls": 2,
+      "total_source_characters": 75
+    },
+    "refinement_ms": 0.14263799994296278
+  },
+  {
+    "event": "source",
+    "revision": 3,
+    "source_text": "We need three hundred steel valves. Please deliver them by Friday."
+  },
+  {
+    "event": "translation",
+    "revision": 3,
+    "source_text": "We need three hundred steel valves. Please deliver them by Friday.",
+    "translation": "我们需要三百个钢阀门。请在周五之前交货。",
+    "translation_ms": 111.66920100004063,
+    "translation_stats": {
+      "model_calls": 1,
+      "source_characters": 66,
+      "cache_hits": 0,
+      "windows": 1,
+      "stable_windows": 0,
+      "total_model_calls": 3,
+      "total_source_characters": 141
+    }
+  },
+  {
+    "event": "final",
+    "raw_text": "我们需要三百个钢阀门。请在周五之前交货。",
+    "clean_text": "我们需要300个钢阀门。请在周五之前交货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 2465,
+    "numeric_rule_latency_ms": 0.0,
+    "refiner_executed": true,
+    "refiner_accepted": true,
+    "refiner_reject_reasons": [],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [
+      "我们需要300个钢__ENTITY_000__。请在周五之前交货。<KEY>[__ENTITY_000__]"
+    ],
+    "structured_patch_audits": [
+      {
+        "format": "legacy_text",
+        "accepted": true,
+        "issue": null,
+        "window_edit_policy": "compat"
+      }
+    ],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "off",
+    "refinement_gate_config": {
+      "mode": "off",
+      "high_confidence": 0.92,
+      "refine_on_unverified_confidence": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "off",
+        "action": "refine",
+        "state": "REFINE",
+        "reasons": [
+          "gate_disabled"
+        ],
+        "visible_chars": 18,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": [
+          "numeric_normalization"
+        ]
+      }
+    ],
+    "refinement_gate_skipped_segments": 0,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [
+      {
+        "placeholder": "__ENTITY_000__",
+        "original": "阀门",
+        "replacement": "阀门",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 4,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1.0,
+        "decision": "EXACT"
+      }
+    ],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0.0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": false,
+    "numeric_backend": "python",
+    "zh_itn_enabled": false,
+    "numeric_rule_protocol_version": null,
+    "refinement_window_context": {
+      "left_context": "",
+      "right_context": ""
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 2,
+    "pending_refinement_chunks": 0,
+    "refinement_batch_size": 3,
+    "refinement_state": "window_refined",
+    "refinement_source_spans": [
+      {
+        "source_text": "我们需要三百个钢阀门。请在周五之前交货。",
+        "clean_text": "我们需要300个钢阀门。请在周五之前交货。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_cache_reused_group_count": 0,
+    "window_cache_reused_gate_skip_group_count": 0,
+    "window_cache_reprocessed_group_count": 1,
+    "window_cache_reprocess_reasons": {
+      "no_exact_source_group_match": 1
+    },
+    "display_revision": 3,
+    "committed_clean_text": "我们需要300个钢阀门。请在周五之前交货。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个钢阀门。请在周五之前交货。",
+    "pending_raw_text": "",
+    "display_text": "我们需要300个钢阀门。请在周五之前交货。",
+    "has_pending_refinement": false,
+    "translation_revision": 3,
+    "final": true,
+    "input_kind": "translated_text_snapshot",
+    "revision": 3,
+    "source_text": "We need three hundred steel valves. Please deliver them by Friday.",
+    "translation": "我们需要三百个钢阀门。请在周五之前交货。",
+    "model_calls": 1,
+    "total_model_calls": 1,
+    "translation_ms": 111.66920100004063,
+    "translation_stats": {
+      "model_calls": 1,
+      "source_characters": 66,
+      "cache_hits": 0,
+      "windows": 1,
+      "stable_windows": 0,
+      "total_model_calls": 3,
+      "total_source_characters": 141
+    },
+    "refinement_ms": 2504.6931939996284,
+    "pipeline_stats": {
+      "source_updates": 3,
+      "translation_updates": 3,
+      "refinement_updates": 3,
+      "discarded_translation_results": 0,
+      "discarded_refinement_results": 0,
+      "merged_source_snapshots": 0,
+      "merged_translation_snapshots": 0,
+      "max_pending_per_stage": 1
+    }
+  }
+]

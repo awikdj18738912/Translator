@@ -1,0 +1,87 @@
+[
+  {
+    "segment_index": 1,
+    "source": "我们需要 100 台 iPhone。价格是1",
+    "baseline": "我们需要 100 台 iPhone。价格是1",
+    "masked_input": "我们需要 100 台 __ENTITY_000__。价格是1",
+    "gate": {
+      "mode": "off",
+      "action": "defer",
+      "state": "DEFER",
+      "reasons": [
+        "incomplete_fixed_group"
+      ],
+      "visible_chars": 18,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [],
+    "window_context": null,
+    "outcome": "deferred",
+    "output": "我们需要 100 台 iPhone。价格是1"
+  },
+  {
+    "segment_index": 1,
+    "source": "我们需要 100 台 iPhone。每个的价格是12.50美元。请于周五送达",
+    "baseline": "我们需要 100 台 iPhone。每个的价格是12.50美元。请于周五送达",
+    "masked_input": "我们需要 100 台 __ENTITY_000__。每个的价格是12.50美元。请于周五送达",
+    "gate": {
+      "mode": "off",
+      "action": "defer",
+      "state": "DEFER",
+      "reasons": [
+        "incomplete_fixed_group"
+      ],
+      "visible_chars": 32,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [],
+    "window_context": null,
+    "outcome": "deferred",
+    "output": "我们需要 100 台 iPhone。每个的价格是12.50美元。请于周五送达"
+  },
+  {
+    "segment_index": 1,
+    "source": "我们需要 100 台 iPhone。每个的价格是12.50美元。请在周五之前交货。",
+    "baseline": "我们需要 100 台 iPhone。每个的价格是12.50美元。请在周五之前交货。",
+    "masked_input": "我们需要 100 台 __ENTITY_000__。每个的价格是12.50美元。请在周五之前交货。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 34,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "我们需要 100 台 __ENTITY_000__。每个的价格是12.50美元。请在周五之前交货。",
+        "output": "我们需要 100 台 __ENTITY_000__。每个的价格是12.50美元。请在周五之前交货。<KEY>[__ENTITY_000__]",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "",
+      "right_context": ""
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "我们需要 100 台 iPhone。每个的价格是12.50美元。请在周五之前交货。"
+  }
+]

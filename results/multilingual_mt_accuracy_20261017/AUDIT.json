@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "offline_rows_each_model": 8096,
+  "stream_trajectories_each_model": 1600,
+  "same_ids_and_prefixes": true,
+  "independently_recomputed_metrics_match": true,
+  "source_and_reference_match_official_extracted_data": true,
+  "data_sha256": "03851dc9582c093d1f5b4e2f7660e9fdf154caee2d73fe569789491112ecebf6",
+  "macro_offline_t2s": {
+    "m2m100_418M": {
+      "BLEU_zh": 24.73962665142323,
+      "chrFpp": 17.737948959349595
+    },
+    "small100": {
+      "BLEU_zh": 24.268537714948195,
+      "chrFpp": 17.1982242213778
+    }
+  },
+  "batch1_control": {
+    "m2m100_418M": {
+      "full_input_batch1_vs_retranslation_final_mismatches": 0,
+      "pairs": 800,
+      "en": {
+        "BLEU_zh": 29.053821210880198,
+        "chrFpp": 20.81842636691549
+      },
+      "fr": {
+        "BLEU_zh": 25.557036055556907,
+        "chrFpp": 18.79179446991546
+      },
+      "de": {
+        "BLEU_zh": 25.67238852913703,
+        "chrFpp": 18.621834899515928
+      },
+      "es": {
+        "BLEU_zh": 21.496658802151813,
+        "chrFpp": 16.825969736616113
+      },
+      "ru": {
+        "BLEU_zh": 23.936608871798153,
+        "chrFpp": 17.62755581355995
+      },
+      "ja": {
+        "BLEU_zh": 24.77570170066766,
+        "chrFpp": 17.393008121186508
+      },
+      "ko": {
+        "BLEU_zh": 23.91617514565878,
+        "chrFpp": 17.68359103224962
+      },
+      "ar": {
+        "BLEU_zh": 24.126947429680637,
+        "chrFpp": 16.36224269882908
+      }
+    },
+    "small100": {
+      "full_input_batch1_vs_retranslation_final_mismatches": 0,
+      "pairs": 800,
+      "en": {
+        "BLEU_zh": 27.80566839555565,
+        "chrFpp": 19.86448027808363
+      },
+      "fr": {
+        "BLEU_zh": 25.00386285651612,
+        "chrFpp": 18.38521895765464
+      },
+      "de": {
+        "BLEU_zh": 24.7911391288047,
+        "chrFpp": 18.494455296393237
+      },
+      "es": {
+        "BLEU_zh": 22.31012301923618,
+        "chrFpp": 17.390993815857787
+      },
+      "ru": {
+        "BLEU_zh": 23.812573212069292,
+        "chrFpp": 17.371410497313303
+      },
+      "ja": {
+        "BLEU_zh": 23.781022541022903,
+        "chrFpp": 16.98656011199001
+      },
+      "ko": {
+        "BLEU_zh": 22.723682936099625,
+        "chrFpp": 16.23465494161714
+      },
+      "ar": {
+        "BLEU_zh": 24.172857391375356,
+        "chrFpp": 16.847298135934558
+      }
+    }
+  }
+}

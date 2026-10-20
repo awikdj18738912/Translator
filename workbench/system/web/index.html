@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>多语翻译工作台</title>
+  <link rel="stylesheet" href="/static/style.css?v=metrics_single_row_20261020">
+  <script src="/static/entities.js" defer></script>
+  <script src="/static/translation.js?v=duration10" defer></script>
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <div><div class="eyebrow">LOCAL · STREAMING TRANSLATION <span class="brand">AgenticASR</span></div><h1>多语翻译工作台</h1><p class="subhead">持续查看外语原文、中文译文与精修结果</p></div>
+      <div class="header-tools"><span id="translation-status" class="status" role="status">正在检查翻译服务。</span><button id="manage-entities" class="button quiet" type="button">术语库管理</button></div>
+    </header>
+
+    <section class="setup card" aria-label="翻译输入设置">
+      <div class="tabs" role="tablist" aria-label="输入类型">
+        <button id="translation-audio-tab" class="tab" type="button" role="tab" aria-selected="true" aria-controls="translation-audio-view">音频文件</button>
+        <button id="translation-text-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="translation-text-view">文本回放</button>
+      </div>
+      <div id="translation-audio-view" class="input-view" role="tabpanel" aria-labelledby="translation-audio-tab">
+        <div class="control-row">
+          <label>源语言<select id="translation-audio-language"><option value="en">英语</option><option value="fr">法语</option><option value="de">德语</option><option value="es">西班牙语</option><option value="ru">俄语</option><option value="ja">日语</option><option value="ko">韩语</option><option value="ar">阿拉伯语</option></select></label>
+          <label>领域<select id="translation-audio-domain"><option value="trade">外贸</option></select></label>
+          <label class="file-picker">音频文件<input id="translation-audio-file" type="file" accept="audio/*,.wav,.mp3,.m4a,.flac,.ogg,.opus,.webm,.aac"><span class="file-name">选择本地音频…</span></label>
+          <p id="translation-audio-help" class="helper">语音服务状态检查中。</p>
+        </div>
+      </div>
+      <div id="translation-text-view" class="input-view" role="tabpanel" aria-labelledby="translation-text-tab" hidden>
+        <div class="control-row">
+          <label>源语言<select id="translation-language"><option value="en">英语</option><option value="fr">法语</option><option value="de">德语</option><option value="es">西班牙语</option><option value="ru">俄语</option><option value="ja">日语</option><option value="ko">韩语</option><option value="ar">阿拉伯语</option></select></label>
+          <label>领域<select id="translation-domain"><option value="trade">外贸</option></select></label>
+        </div>
+        <textarea id="translation-input" aria-label="待翻译文本" placeholder="输入或粘贴外语内容">Could you send us your best quotation for 500 units? Please include the lead time, payment terms, and shipping cost to Shanghai.</textarea>
+      </div>
+      <div class="actions"><button id="translation-start" class="button primary" type="button" disabled>开始音频翻译</button><button id="translation-stop" class="button quiet" type="button" disabled>取消</button><span class="helper">音频采用离线流式分块；灰色译文等待后台精修。</span></div>
+    </section>
+
+    <section class="metrics session-summary" aria-label="本次任务统计"><div class="headline-metric"><span>整体用时</span><strong id="translation-total-time">0.0 s</strong><small>点击开始至结束，含音频上传</small></div><div class="headline-metric"><span>转录用时</span><strong id="translation-asr-time">—</strong><small>ASR 请求累计耗时</small></div><div class="headline-metric"><span>音频时长</span><strong id="translation-audio-duration">—</strong><small>实际音频长度</small></div><div class="headline-metric"><span>精修模型调用次数</span><strong id="translation-calls">0</strong><small>本次累计，含重试与局部审核</small></div><div class="headline-metric"><span>门控跳过次数</span><strong id="translation-gate-skips">0</strong><small>实际跳过次数，缓存不重复计入</small></div></section>
+
+    <section class="results" aria-label="翻译结果">
+      <article class="result-card source-card"><div class="result-heading"><span class="step">01</span><h2>外语转录</h2><span class="language-tag" id="source-language-label">源语言</span></div><p id="translation-source" dir="auto" class="result-text" aria-live="polite"></p></article>
+      <article class="result-card"><div class="result-heading"><span class="step">02</span><h2>中文翻译</h2><span id="translation-phase-label" class="translation-phase">等待翻译</span></div><p id="translation-original" class="result-text" aria-live="polite"></p></article>
+      <article class="result-card refined-card"><div class="result-heading"><span class="step">03</span><h2>中文精修</h2><span id="quality-tag" class="quality-tag">等待精修</span></div><p id="translation-clean" class="result-text" aria-live="polite"></p></article>
+    </section>
+
+    <section class="run-info card" aria-label="本次运行状态">
+      <div class="run-title"><div><span class="eyebrow">LIVE SESSION</span><h2>运行状态</h2></div><button id="translation-download" class="button quiet compact" type="button" disabled>下载完整日志</button></div>
+      <div class="metrics"><div><span>守卫状态</span><strong id="translation-guard">等待运行</strong><small id="translation-gate-info">正在读取门控配置</small></div><div><span>翻译耗时</span><strong id="translation-time">—</strong><small>毫秒</small></div><div><span>精修耗时</span><strong id="refinement-time">—</strong><small>毫秒</small></div></div>
+      <details class="log-details"><summary>运行日志 <span>界面显示最近 60 条，下载包含全部记录</span></summary><pre id="translation-log" class="translation-log">暂无运行记录。</pre></details>
+    </section>
+
+    <section id="entity-panel" class="entity-panel card" hidden>
+      <div class="panel-header"><div><span class="eyebrow">TERMINOLOGY</span><h2>术语库管理</h2><p class="helper">更改会用于后续翻译任务。</p></div><button id="close-entities" class="button quiet" type="button">关闭</button></div>
+      <div class="entity-toolbar"><input id="entity-search" type="search" placeholder="搜索标准名或别名"><select id="entity-type-filter"><option value="">全部类型</option><option value="TERM">术语</option><option value="PRODUCT">产品</option><option value="PROJECT">项目</option><option value="MODEL">模型</option><option value="PERSON">人名</option><option value="ORG">机构</option></select><select id="entity-status-filter"><option value="all">全部状态</option><option value="enabled">仅启用</option><option value="disabled">仅停用</option></select><button id="refresh-entities" class="button quiet" type="button">刷新</button><button id="add-entity" class="button primary" type="button">＋ 新增术语</button></div>
+      <p id="entity-notice" class="entity-notice" role="status"></p>
+      <div class="table-wrap"><table><thead><tr><th>状态</th><th>标准名称</th><th>别名</th><th>类型 / 领域</th><th>策略</th><th>优先级</th><th>操作</th></tr></thead><tbody id="entity-rows"><tr><td colspan="7">点击“刷新”加载本地术语库。</td></tr></tbody></table></div>
+    </section>
+  </main>
+  <dialog id="entity-dialog"><form id="entity-form" class="entity-form"><h2 id="entity-dialog-title">新增实体</h2><div class="form-grid">
+    <label class="form-field full">标准名称<input id="entity-canonical" required maxlength="160"></label>
+    <label class="form-field">类型<select id="entity-type"><option value="TERM">术语</option><option value="PRODUCT">产品</option><option value="PROJECT">项目</option><option value="MODEL">模型</option><option value="PERSON">人名</option><option value="ORG">机构</option></select></label>
+    <label class="form-field">领域<select id="entity-domain"><option value="general">通用</option><option value="medical">医疗</option><option value="legal">法律</option><option value="education">教育</option><option value="finance">金融</option><option value="technology">科技</option><option value="trade">外贸</option></select></label>
+    <label class="form-field">处理策略<select id="entity-policy"><option value="preserve">保留原写法</option><option value="normalize">统一为标准名称</option></select></label>
+    <label class="form-field">优先级<input id="entity-priority" type="number" value="0" step="1"></label>
+    <label class="form-field full">别名（每行一个）<textarea id="entity-aliases" maxlength="2000"></textarea></label>
+    <label class="checkbox-field full"><input id="entity-enabled" type="checkbox" checked> 启用此术语</label>
+  </div><p id="entity-form-error" class="entity-notice error" role="alert"></p><div class="dialog-actions"><button id="cancel-entity" class="button quiet" type="button">取消</button><button class="button primary" type="submit">保存</button></div></form></dialog>
+</body>
+</html>

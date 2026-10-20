@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>语桥 · 外贸语音译站</title>
+  <link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/"><span class="brand-mark">语</span><span>语桥<small>LOCAL TRADE TRANSLATOR</small></span></a>
+    <div class="nav-label">工作空间</div>
+    <nav aria-label="主导航">
+      <button class="nav-item active" data-view="workspace"><span>◎</span>语音翻译</button>
+      <button class="nav-item" data-view="glossary"><span>▤</span>领域实体库</button>
+      <button class="nav-item" data-view="history"><span>◷</span>处理记录</button>
+    </nav>
+    <div class="local-note"><span class="status-dot"></span> 本地工作空间<p>录音与文本保存在本机。<br>默认模型接口仅允许本地地址。</p></div>
+    <div class="sidebar-foot">语桥 / 初版 0.1</div>
+  </aside>
+  <main>
+    <header class="topbar"><span>外贸沟通 / 多语种 → 简体中文</span><button id="check-models" class="subtle">检查本地模型 ↗</button></header>
+    <div class="content">
+      <div id="notice" class="notice hidden" role="status" aria-live="polite"></div>
+      <section id="workspace" class="view">
+        <div class="page-heading"><div class="eyebrow">LET EVERY WORD CONNECT</div><h1>听懂每一次交流。</h1><p>从外语语音到清晰中文，让专业术语在沟通中准确抵达。</p></div>
+        <div id="model-status" class="model-status">正在检查本地推理服务…</div>
+        <div class="pipeline"><span><i>01</i> 多语转录</span><b>→</b><span><i>02</i> 中文翻译</span><b>→</b><span><i>03</i> 实体校正与精修</span><em>在本地顺序处理</em></div>
+        <section class="card input-card" aria-label="输入">
+          <div class="card-heading"><h2>开始一次翻译</h2><span class="caption">支持音频、麦克风和已有转录</span></div>
+          <div class="input-tabs" role="tablist" aria-label="输入类型"><button id="audio-tab" class="selected" role="tab" aria-selected="true">音频 / 录音</button><button id="text-tab" role="tab" aria-selected="false">已有外语文本</button></div>
+          <div id="audio-input">
+            <label class="drop-zone" id="drop-zone" for="audio-file"><span class="upload-icon">↥</span><strong id="file-label">点击选择或拖放一段录音</strong><span id="file-hint">WAV、MP3、M4A、WEBM 等 · 最长 10 分钟 · 最大 50 MB</span><input type="file" id="audio-file" accept="audio/*,video/webm,video/mp4"></label>
+            <div class="record-row"><span>也可以直接录制客户的话语</span><button id="record" class="outline">● 开始录音</button><span id="record-time" class="caption"></span></div>
+          </div>
+          <div id="text-input" class="hidden"><label class="sr-only" for="source-text">外语原文</label><textarea id="source-text" rows="6" maxlength="30000" placeholder="粘贴外语原文，单独验证翻译、实体库与中文精修…"></textarea></div>
+          <div class="input-footer"><label>原文语言<select id="language"><option value="auto">自动识别</option></select></label><label>业务领域<input id="domain" value="general" maxlength="80" placeholder="如 general / machinery"></label><button id="submit" class="primary">开始翻译 <span>→</span></button></div>
+        </section>
+        <section class="results-section">
+          <div class="section-heading"><h2>对照结果 <span id="job-status" class="tag">等待输入</span></h2><div id="exports" class="hidden"><a id="export-txt" class="text-link">导出文本 ↓</a><a id="export-json" class="text-link">完整记录 ↓</a></div></div>
+          <div id="progress" class="progress hidden" role="status" aria-live="polite"></div>
+          <div class="results-grid"><article class="card result-card"><div class="result-label"><span>01 / SOURCE</span><h3>外语原文</h3></div><div id="source-result" class="result-text muted">转录结果会显示在这里。</div></article><article class="card result-card"><div class="result-label"><span>02 / TRANSLATION</span><h3>中文译文</h3></div><div id="translation-result" class="result-text muted">保留原始翻译，方便逐句核对。</div></article><article class="card result-card final-card"><div class="result-label"><span>03 / REFINED</span><h3>中文精修</h3></div><div id="refined-result" class="result-text muted">领域实体校正后的精修结果。</div></article></div>
+          <div id="warnings" class="warning-box hidden"></div>
+          <details id="audit" class="audit hidden"><summary>查看分段与修改记录</summary><pre id="audit-content"></pre></details>
+          <p class="footnote">首版在停止录音或上传后处理。CPU 耗时取决于电脑和输入长度；报价、交期及否定条件请结合原文核对。</p>
+        </section>
+      </section>
+      <section id="glossary" class="view hidden">
+        <div class="page-heading"><div class="eyebrow">YOUR DOMAIN, YOUR WORDS</div><h1>让术语有据可循。</h1><p>登记外语别名、中文标准译名与已知误译。只依据明确登记的别名进行校正。</p></div>
+        <div class="glossary-grid"><form id="entity-form" class="card entity-form"><h2>添加 / 更新实体</h2><label>中文标准译名<input name="canonical_zh" required maxlength="150" placeholder="例如：最低起订量"></label><label>外语别名<textarea name="source_aliases" rows="2" placeholder="minimum order quantity, MOQ"></textarea></label><label>中文别名 / 已确认的误译<textarea name="zh_aliases" rows="2" placeholder="最小订单量，最小起订数量"></textarea></label><div class="two-cols"><label>领域<input name="domain" value="general" required maxlength="80"></label><label>源语言<select id="entity-language" name="language"><option value="*">所有语言</option></select></label></div><label>处理策略<select name="policy"><option value="normalize">统一为中文标准译名</option><option value="preserve">保留原有拼写（品牌 / 型号）</option></select></label><button class="primary" type="submit">保存实体</button><p class="caption">同一标准译名、领域和语言再次保存会更新原记录。别名用逗号或换行分隔。</p></form>
+          <div class="card entity-list-card"><div class="card-heading"><h2>我的实体库</h2><label class="text-link import-label" for="import-entities">导入 JSON ↑<input id="import-entities" type="file" accept=".json,application/json"></label></div><div id="entity-list" class="entity-list"></div></div></div>
+      </section>
+      <section id="history" class="view hidden"><div class="page-heading"><div class="eyebrow">EVERY CONVERSATION, TRACEABLE</div><h1>留住沟通的来路。</h1><p>最近 50 个任务。点击记录查看原文、译文、精修结果与校验信息。</p></div><div id="history-list" class="card history-list"></div></section>
+    </div>
+  </main>
+</body>
+</html>

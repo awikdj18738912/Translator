@@ -1,0 +1,2 @@
+"""Local speech translation service."""
+

@@ -1,0 +1,30 @@
+{
+  "scope": "CPU source partition replay, deterministic fake translator, every recorded update processed; not an inference speed or translation quality benchmark",
+  "services_started": false,
+  "models_loaded": false,
+  "source_trace": "/home/aim0/桌面/tan/ASR/Translator/results/codexweb_translation_frontend_20261019/sessions/041624a68768442e8a34f9d1746d77c0.jsonl",
+  "final_source_characters": 1366,
+  "recorded_baseline": {
+    "audio_seconds": 122.415625,
+    "updates": 48,
+    "asr_ms": 5757.000993005931,
+    "translation_ms": 30311.439719982445,
+    "refinement_ms": 71522.62946683913,
+    "refiner_model_calls": 151
+  },
+  "legacy_partition": {
+    "translation_calls": 47,
+    "translated_source_characters": 16088
+  },
+  "fixed_three_sentence_groups": {
+    "translation_calls": 57,
+    "translated_source_characters": 5550
+  },
+  "source_character_reduction_fraction": 0.655022376926902,
+  "source_trace_sha256": "a68051d184a8c9245d2926830e9f9b22a29f5448e8cc27560f039e139e38c1b9",
+  "limitations": [
+    "Finer groups increased independent translation calls in this all-updates replay; fixed per-call cost may offset input-length savings.",
+    "Latest-slot coalescing reduces processed intermediate revisions under load; actual counts depend on measured ASR/model arrival and compute times.",
+    "Changed context segmentation may change translation quality; must revalidate with real models before deployment speed/quality claims."
+  ]
+}

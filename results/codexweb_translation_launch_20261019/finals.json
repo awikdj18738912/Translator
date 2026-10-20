@@ -1,0 +1,1903 @@
+[
+  {
+    "case_id": "en_order",
+    "language": "en",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "We need 500 SUS304 valves, at 12.50 US dollars each, with delivery by November 15.",
+    "translation": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+    "clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+    "translation_seconds": 0.33273062389343977,
+    "refinement_update_seconds": 1.4649351448751986,
+    "update_seconds": 1.797828481066972,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+      "clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 1426,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 __ENTITY_000__ __ENTITY_001__，每个 12.50 美元，11 月 15 日交货。<KEY>[__ENTITY_000__、__ENTITY_001__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 32,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 3,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+          "clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门，单价12.50美元，须于11月15日前交货。"
+  },
+  {
+    "case_id": "en_correction",
+    "language": "en",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "Do not ship 500 units. Sorry, make that 300 units, and ship only after the deposit arrives.",
+    "translation": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+    "clean_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+    "translation_seconds": 0.2658136170357466,
+    "refinement_update_seconds": 0.9977425253018737,
+    "update_seconds": 1.2636908730491996,
+    "actual_call_traces": 2,
+    "new_refiner_model_calls": 3,
+    "refinement": {
+      "event": "final",
+      "raw_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+      "clean_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 976,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": false,
+      "refiner_reject_reasons": [
+        "segment_1:numeric_value_mismatch"
+      ],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 1,
+      "refiner_retry_reasons": [
+        "segment_1:numeric_value_mismatch"
+      ],
+      "refiner_masked_outputs": [
+        "请勿发货500件。抱歉，将数量减少到300件。",
+        "请勿发货500件。抱歉，将数量减少到300件。",
+        "付款后才发货。"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        },
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        },
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 20,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        },
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 6,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "将数量减少到 300 件，",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 4,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，",
+          "clean_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": "付款后才发货。"
+          }
+        },
+        {
+          "source_text": "付款后才发货。",
+          "clean_text": "付款后才发货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "将数量减少到 300 件，",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 2,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 2
+      },
+      "display_revision": 4,
+      "committed_clean_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+      "active_clean_text": "",
+      "display_refined_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+      "pending_raw_text": "",
+      "display_text": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "不要发500件。抱歉，改成300件，而且必须收到定金后才能发货。"
+  },
+  {
+    "case_id": "fr_order",
+    "language": "fr",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "Nous avons besoin de 500 vannes SUS304, à 12,50 dollars américains l'unité, avec une livraison au plus tard le 15 novembre.",
+    "translation": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+    "clean_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+    "translation_seconds": 0.3587038326077163,
+    "refinement_update_seconds": 0.9872623751871288,
+    "update_seconds": 1.3461535391397774,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+      "clean_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 982,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 __ENTITY_000__ 泵，每个 12.50 美元，最迟于 11 月 15 日交货。<KEY>[__ENTITY_000__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 34,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 3,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+          "clean_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。"
+  },
+  {
+    "case_id": "de_order",
+    "language": "de",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "Wir benötigen 500 SUS304-Ventile, zu einem Stückpreis von 12,50 US-Dollar, mit Lieferung spätestens am 15. November.",
+    "translation": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+    "clean_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+    "translation_seconds": 0.3644159701652825,
+    "refinement_update_seconds": 1.2919654878787696,
+    "update_seconds": 1.6565667795948684,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+      "clean_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 1287,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 __ENTITY_000__ __ENTITY_001__，单价为 12.50 美元，最迟将于 11 月 15 日发货。<KEY>[__ENTITY_000__、__ENTITY_001__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 37,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 3,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+          "clean_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。"
+  },
+  {
+    "case_id": "es_order",
+    "language": "es",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "Necesitamos 500 válvulas SUS304, a 12,50 dólares estadounidenses por unidad, con entrega a más tardar el 15 de noviembre.",
+    "translation": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+    "clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+    "translation_seconds": 0.37841552402824163,
+    "refinement_update_seconds": 1.2458167509175837,
+    "update_seconds": 1.6243891259655356,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+      "clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 1241,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 __ENTITY_000__ __ENTITY_001__，每个 12.50 美元，最迟将于 11 月 15 日交货。<KEY>[__ENTITY_000__、__ENTITY_001__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 36,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 3,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+          "clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。"
+  },
+  {
+    "case_id": "ru_order",
+    "language": "ru",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "Нам нужно 500 клапанов SUS304, по цене 12,50 долларов США за штуку, с доставкой не позднее 15 ноября.",
+    "translation": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+    "clean_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+    "translation_seconds": 0.3783083870075643,
+    "refinement_update_seconds": 1.3168567456305027,
+    "update_seconds": 1.695254473015666,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+      "clean_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 1312,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 __ENTITY_000__ __ENTITY_001__，每个价格为 12.50 美元，最迟于 11 月 15 日发货。<KEY>[__ENTITY_000__、__ENTITY_001__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 38,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 3,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+          "clean_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。"
+  },
+  {
+    "case_id": "ja_order",
+    "language": "ja",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "SUS304製のバルブを500個単価12.50米ドルで納期は11月15日まででお願いします。",
+    "translation": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+    "clean_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+    "translation_seconds": 0.34611904015764594,
+    "refinement_update_seconds": 0.9852236928418279,
+    "update_seconds": 1.3314891350455582,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+      "clean_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 981,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "请提供 500 个 __ENTITY_000__ 阀的价格为 12.50 美元，交货期为 11 月 15 日。<KEY>[__ENTITY_000__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 34,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 2,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+          "clean_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+      "active_clean_text": "",
+      "display_refined_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+      "pending_raw_text": "",
+      "display_text": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "请提供500个SUS304阀门，单价12.50美元，交期为11月15日前。"
+  },
+  {
+    "case_id": "ko_order",
+    "language": "ko",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "SUS304 밸브 500개가 필요합니다. 개당 가격은 12.50달러이고, 납기는 11월 15일까지입니다.",
+    "translation": "我们需要 500 个 SUS304 阀门。每个阀门的价格为 12.50 美元，交货时间为 11 月 15 日。",
+    "clean_text": "我们需要 500 个 SUS304 阀门。每个 阀门 的价格为 12.50 美元，交货时间为 11 月 15 日。",
+    "translation_seconds": 0.3707120921462774,
+    "refinement_update_seconds": 1.5841026441194117,
+    "update_seconds": 1.9550032271072268,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 SUS304 阀门。每个阀门的价格为 12.50 美元，交货时间为 11 月 15 日。",
+      "clean_text": "我们需要 500 个 SUS304 阀门。每个 阀门 的价格为 12.50 美元，交货时间为 11 月 15 日。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 1578,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 __ENTITY_000__ __ENTITY_001__。每个 __ENTITY_002__ 的价格为 12.50 美元，交货时间为 11 月 15 日。<KEY>[__ENTITY_000__、__ENTITY_001__、__ENTITY_002__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 41,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_002__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 3,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 SUS304 阀门。每个阀门的价格为 12.50 美元，交货时间为 11 月 15 日。",
+          "clean_text": "我们需要 500 个 SUS304 阀门。每个 阀门 的价格为 12.50 美元，交货时间为 11 月 15 日。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 500 个 SUS304 阀门。每个 阀门 的价格为 12.50 美元，交货时间为 11 月 15 日。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 SUS304 阀门。每个 阀门 的价格为 12.50 美元，交货时间为 11 月 15 日。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 SUS304 阀门。每个 阀门 的价格为 12.50 美元，交货时间为 11 月 15 日。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门，单价12.50美元，交期为11月15日前。"
+  },
+  {
+    "case_id": "ar_order",
+    "language": "ar",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "نحتاج إلى 500 صمام من نوع SUS304 بسعر 12.50 دولار أمريكي للقطعة على أن يتم التسليم في موعد أقصاه 15 نوفمبر.",
+    "translation": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+    "clean_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+    "translation_seconds": 0.3744381722062826,
+    "refinement_update_seconds": 1.26833221828565,
+    "update_seconds": 1.6429208698682487,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+      "clean_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 1264,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 12.50 美元/件的 __ENTITY_000__ __ENTITY_001__，最迟于 11 月 15 日交货。<KEY>[__ENTITY_000__、__ENTITY_001__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 35,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 2,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+          "clean_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。"
+  },
+  {
+    "case_id": "en_asr_revision",
+    "language": "en",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "We need 300 valves by Friday, only after receiving the deposit.",
+    "translation": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+    "clean_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+    "translation_seconds": 0.16837275912985206,
+    "refinement_update_seconds": 0.732796773314476,
+    "update_seconds": 0.9012700826860964,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+      "clean_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 729,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要在收到押金后于周五之前安装 300 个__ENTITY_000__。<KEY>[__ENTITY_000__]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 23,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 1,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+          "clean_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+      "pending_raw_text": "",
+      "display_text": "我们需要在收到押金后于周五之前安装 300 个阀门。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要周五前收到300个阀门，且只有收到定金后才能发货。"
+  },
+  {
+    "case_id": "en_entity",
+    "language": "en",
+    "step": 3,
+    "revision": 4,
+    "final": true,
+    "source": "We need 100 iphone 15 Pro Max units, 256GB each, from AcmeFlow, with delivery by Friday.",
+    "translation": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+    "clean_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+    "translation_seconds": 0.28462439496070147,
+    "refinement_update_seconds": 1.3414674932137132,
+    "update_seconds": 1.6262154802680016,
+    "actual_call_traces": 1,
+    "new_refiner_model_calls": 1,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+      "clean_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 1337,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 __ENTITY_000__ 提供 100 台 __ENTITY_001__ 15 Pro Max，每台容量为 256GB，周五发货。<KEY>[__ENTITY_000__、__ENTITY_001__、15 Pro Max]"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 46,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "AcmeFlow",
+          "replacement": "AcmeFlow",
+          "entity_type": "BRAND",
+          "source": "database:trade",
+          "entity_id": 3,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "iPhone",
+          "replacement": "iPhone",
+          "entity_type": "PRODUCT",
+          "source": "database:trade",
+          "entity_id": 1,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 3,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+          "clean_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 1,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 1
+      },
+      "display_revision": 4,
+      "committed_clean_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 AcmeFlow 提供 100 台 iPhone 15 Pro Max，每台容量为 256GB，周五发货。",
+      "has_pending_refinement": false,
+      "translation_revision": 4,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要100台iPhone 15 Pro Max，每台256GB，来自AcmeFlow，周五前交货。"
+  },
+  {
+    "case_id": "en_long_window",
+    "language": "en",
+    "step": 2,
+    "revision": 3,
+    "final": true,
+    "source": "We need 500 SUS304 valves. The unit price is 12.50 US dollars. Delivery is due by November 15. Please confirm the order. The valves are made of stainless steel. Please send the invoice to AcmeFlow. Do not ship before receiving the deposit.",
+    "translation": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。在收到定金之前，请勿发货。",
+    "clean_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。在收到定金之前，请勿发货。",
+    "translation_seconds": 0.5927434931509197,
+    "refinement_update_seconds": 2.4344350383616984,
+    "update_seconds": 3.0273936418816447,
+    "actual_call_traces": 3,
+    "new_refiner_model_calls": 3,
+    "refinement": {
+      "event": "final",
+      "raw_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。在收到定金之前，请勿发货。",
+      "clean_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。在收到定金之前，请勿发货。",
+      "asr_language": "Chinese",
+      "asr_confidence": null,
+      "asr_confidence_metadata": {},
+      "refiner_latency_ms": 2424,
+      "numeric_rule_latency_ms": 0.0,
+      "refiner_executed": true,
+      "refiner_accepted": true,
+      "refiner_reject_reasons": [],
+      "placeholder_retry_count": 0,
+      "refiner_retry_count": 0,
+      "refiner_retry_reasons": [],
+      "refiner_masked_outputs": [
+        "我们需要 500 个 __ENTITY_000__ __ENTITY_001__。单价为 12.50 美元。交货日期为 11 月 15 日。<KEY>[__ENTITY_000__、__ENTITY_001__]",
+        "请确认订单。这些__ENTITY_000__由__ENTITY_001__制成。请将发票发送给 __ENTITY_002__。<KEY>[ENTITY]",
+        "在收到定金之前，请勿发货。"
+      ],
+      "structured_patch_audits": [
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        },
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        },
+        {
+          "format": "legacy_text",
+          "accepted": true,
+          "issue": null,
+          "window_edit_policy": "compat"
+        }
+      ],
+      "window_edit_policy": "compat",
+      "strict_local_protocol_version": null,
+      "boundary_anomalies": [],
+      "boundary_reviews": [],
+      "refinement_gate_mode": "off",
+      "refinement_gate_config": {
+        "mode": "off",
+        "high_confidence": 0.92,
+        "refine_on_unverified_confidence": true
+      },
+      "refinement_gate_decisions": [
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 36,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        },
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 30,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        },
+        {
+          "segment_index": 1,
+          "mode": "off",
+          "action": "refine",
+          "state": "REFINE",
+          "reasons": [
+            "gate_disabled"
+          ],
+          "visible_chars": 11,
+          "asr_confidence": null,
+          "calibrated": false,
+          "covers_segment": false,
+          "cleanup_signals": []
+        }
+      ],
+      "refinement_gate_skipped_segments": 0,
+      "entity_audit_issues": [],
+      "entity_refinement_hints": [],
+      "entity_normalizations": [],
+      "numeric_normalizations": [],
+      "numeric_rule_repairs": [],
+      "numeric_fallbacks": [],
+      "safe_numeric_repairs": [],
+      "safe_repetition_repairs": [],
+      "local_deletion_reviews": [],
+      "repetition_reviews": [],
+      "boundary_echo_repairs": [],
+      "protected_entities": [
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "SUS304",
+          "replacement": "SUS304",
+          "entity_type": "MODEL",
+          "source": "database:trade",
+          "entity_id": 2,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_000__",
+          "original": "阀门",
+          "replacement": "阀门",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 4,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_001__",
+          "original": "不锈钢",
+          "replacement": "不锈钢",
+          "entity_type": "TERM",
+          "source": "database:trade",
+          "entity_id": 5,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        },
+        {
+          "placeholder": "__ENTITY_002__",
+          "original": "AcmeFlow",
+          "replacement": "AcmeFlow",
+          "entity_type": "BRAND",
+          "source": "database:trade",
+          "entity_id": 3,
+          "match_type": "EXACT_CANONICAL",
+          "match_score": 1.0,
+          "decision": "EXACT"
+        }
+      ],
+      "entity_candidates": [],
+      "entity_matcher_latency_ms": 0.0,
+      "entity_fuzzy_mode": "off",
+      "entity_matching_config_version": null,
+      "rule_protection_enabled": true,
+      "numeric_normalization_enabled": false,
+      "numeric_backend": "python",
+      "zh_itn_enabled": false,
+      "numeric_rule_protocol_version": null,
+      "refinement_window_context": {
+        "left_context": "请将发票发送给 AcmeFlow。",
+        "right_context": ""
+      },
+      "window_size": 3,
+      "window_max_chars": 80,
+      "committed_chunks": 8,
+      "pending_refinement_chunks": 0,
+      "refinement_batch_size": 3,
+      "refinement_state": "window_refined",
+      "refinement_source_spans": [
+        {
+          "source_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。",
+          "clean_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "",
+            "right_context": "请确认订单。"
+          }
+        },
+        {
+          "source_text": "请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。",
+          "clean_text": "请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "交货日期为 11 月 15 日。",
+            "right_context": "在收到定金之前，"
+          }
+        },
+        {
+          "source_text": "在收到定金之前，请勿发货。",
+          "clean_text": "在收到定金之前，请勿发货。",
+          "state": "committed",
+          "window_context": {
+            "left_context": "请将发票发送给 AcmeFlow。",
+            "right_context": ""
+          }
+        }
+      ],
+      "window_cache_reused_group_count": 0,
+      "window_cache_reused_gate_skip_group_count": 0,
+      "window_cache_reprocessed_group_count": 3,
+      "window_cache_reprocess_reasons": {
+        "no_exact_source_group_match": 3
+      },
+      "display_revision": 3,
+      "committed_clean_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。在收到定金之前，请勿发货。",
+      "active_clean_text": "",
+      "display_refined_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。在收到定金之前，请勿发货。",
+      "pending_raw_text": "",
+      "display_text": "我们需要 500 个 SUS304 阀门。单价为 12.50 美元。交货日期为 11 月 15 日。请确认订单。这些阀门由不锈钢制成。请将发票发送给 AcmeFlow。在收到定金之前，请勿发货。",
+      "has_pending_refinement": false,
+      "translation_revision": 3,
+      "final": true,
+      "input_kind": "translated_text_snapshot"
+    },
+    "reference": "我们需要500个SUS304阀门。单价12.50美元。11月15日前交货。请确认订单。阀门由不锈钢制成。请将发票发送给AcmeFlow。收到定金前不要发货。"
+  }
+]

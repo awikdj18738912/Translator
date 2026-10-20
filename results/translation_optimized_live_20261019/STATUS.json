@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-10-19T14:00:27.683209+08:00",
+  "service_status": "running",
+  "health": {
+    "ready": true,
+    "model": "LMT-60-0.6B",
+    "target_language": "zh",
+    "languages": [
+      {
+        "code": "en",
+        "name": "英语"
+      },
+      {
+        "code": "fr",
+        "name": "法语"
+      },
+      {
+        "code": "de",
+        "name": "德语"
+      },
+      {
+        "code": "es",
+        "name": "西班牙语"
+      },
+      {
+        "code": "ru",
+        "name": "俄语"
+      },
+      {
+        "code": "ja",
+        "name": "日语"
+      },
+      {
+        "code": "ko",
+        "name": "韩语"
+      },
+      {
+        "code": "ar",
+        "name": "阿拉伯语"
+      }
+    ],
+    "audio_ready": true,
+    "busy": false,
+    "pipeline": "ASR → LMT → Codex-web fixed_k3_context_v2 Refiner",
+    "scheduling": "latest_snapshot_v2",
+    "pending_per_stage": 1,
+    "max_audio_seconds": 300,
+    "max_file_bytes": 52428800
+  },
+  "web_pid": 31000,
+  "asr_pid": 31001,
+  "text_smoke_test": "passed",
+  "audio_smoke_test": "passed",
+  "audio_fixture": "5.97 seconds synthesized English; startup smoke test only"
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "segment_index": 1,
+    "source": "我们需要三百个钢阀门。请在周五之前交货。",
+    "baseline": "我们需要三百个钢阀门。请在周五之前交货。",
+    "masked_input": "我们需要三百个钢__ENTITY_000__。请在周五之前交货。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 18,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "numeric_normalization"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "我们需要三百个钢__ENTITY_000__。请在周五之前交货。",
+        "output": "我们需要300个钢__ENTITY_000__。请在周五之前交货。<KEY>[__ENTITY_000__]",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "",
+      "right_context": ""
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "我们需要300个钢阀门。请在周五之前交货。"
+  }
+]

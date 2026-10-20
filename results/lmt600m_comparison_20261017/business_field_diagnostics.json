@@ -1,0 +1,767 @@
+{
+  "cases_sha256": "ebc70429380ed60ea2eb384b3462c12ebd4705e0189f72144b08fb2c123d59de",
+  "models": {
+    "m2m100_418M": {
+      "orders": [
+        {
+          "case_id": "en_order",
+          "translation_t2s": "我们需要500个SUS304阀门,每台1250美元,到11月15日发货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "1250",
+                "currency_surface": "美元",
+                "normalized_amount": "1250",
+                "span": [
+                  19,
+                  25
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": false,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "fr_order",
+          "translation_t2s": "我们需要500 SUS304 阀门,每单位 12.50 美元,最迟于 11 月 15 日交货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  22,
+                  30
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "de_order",
+          "translation_t2s": "我们需要500个SUS304阀门,价格为12.50美元,最迟于11月15日发货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  20,
+                  27
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "es_order",
+          "translation_t2s": "我们需要500个SUS304阀,每台1250美元,最迟于11月15日发货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "1250",
+                "currency_surface": "美元",
+                "normalized_amount": "1250",
+                "span": [
+                  18,
+                  24
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": false,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ru_order",
+          "translation_t2s": "我们需要500个SUS304阀门,价格为每件1250美元,最迟于11月15日交货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "1250",
+                "currency_surface": "美元",
+                "normalized_amount": "1250",
+                "span": [
+                  22,
+                  28
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": false,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ja_order",
+          "translation_t2s": "SUS304 的 500 个单价 12.50 米的阀门,请在 11 月 15 日之前交付。",
+          "amount": {
+            "status": "no_explicit_amount_and_currency",
+            "matches": []
+          },
+          "amount_currency_preserved": false,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ko_order",
+          "translation_t2s": "需要 500 个 SUS304 阀门,每人价格为 12.50 美元,发货时间为 11 月 15 日。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  25,
+                  33
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ar_order",
+          "translation_t2s": "我们需要500个SUS304型电缆,每件零件价格为1250美元,最迟于11月15日发货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "1250",
+                "currency_surface": "美元",
+                "normalized_amount": "1250",
+                "span": [
+                  25,
+                  31
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": false,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        }
+      ],
+      "amount_currency_preserved": 3,
+      "valve_term_hit": 7,
+      "model_literal_hit": 8,
+      "quantity_literal_hit": 8,
+      "uncertain_amount_count": 0
+    },
+    "small100": {
+      "orders": [
+        {
+          "case_id": "en_order",
+          "translation_t2s": "我们需要500SUS304风扇,每个1250美元,并在11月15日发送。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "1250",
+                "currency_surface": "美元",
+                "normalized_amount": "1250",
+                "span": [
+                  18,
+                  24
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": false,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "fr_order",
+          "translation_t2s": "我们需要500个SUS304风扇,每单位12.50美元,并在11月15日之前交付。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  20,
+                  27
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "de_order",
+          "translation_t2s": "我们需要500个SUS304的 Ventil,价格为12.50美元,并在11月15日晚些时候交付。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  26,
+                  33
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "es_order",
+          "translation_t2s": "我们需要500个SUS304风扇,每个单元为12.50美元,并在11月15日之前交付。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  22,
+                  29
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ru_order",
+          "translation_t2s": "我们需要500个SUS304的风扇,每件价格为12.50美元,并在11月15日之前发送。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  23,
+                  30
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ja_order",
+          "translation_t2s": "请在11月15日之前发送500个单价为12.50美元的SUS304风扇。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  19,
+                  26
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ko_order",
+          "translation_t2s": "需要 500 个 SUS304  Ventil,每人价格为 12.50 美元,发送时间为 11 月 15 日。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  30,
+                  38
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ar_order",
+          "translation_t2s": "我们需要500个SUS304类的门口,价格为12.50美元,以便在11月15日之前交付。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  22,
+                  29
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        }
+      ],
+      "amount_currency_preserved": 7,
+      "valve_term_hit": 0,
+      "model_literal_hit": 8,
+      "quantity_literal_hit": 8,
+      "uncertain_amount_count": 0
+    },
+    "nllb200_600M": {
+      "orders": [
+        {
+          "case_id": "en_order",
+          "translation_t2s": "我们需要500个SUS304门,每个价格为12.50美元,",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  21,
+                  28
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "fr_order",
+          "translation_t2s": "我们需要500个SUS304门,每个门价格为12.50美元.",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  22,
+                  29
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "de_order",
+          "translation_t2s": "我们需要500个SUS304门,每块价格为12.50美元,",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  21,
+                  28
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "es_order",
+          "translation_t2s": "我们需要500个SUS304,每台12.50美元,",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  17,
+                  24
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ru_order",
+          "translation_t2s": "我们需要500个SUS304门,每12.50美元.",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  17,
+                  24
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ja_order",
+          "translation_t2s": "我希望我能在11月15日之前交付一个SUS304门,价格为500美元.",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "500",
+                "currency_surface": "美元",
+                "normalized_amount": "500",
+                "span": [
+                  29,
+                  34
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": false,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ko_order",
+          "translation_t2s": "我们需要500个SUS304,每价格为12.50美元,将到11月15日.",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  19,
+                  26
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ar_order",
+          "translation_t2s": "我们需要500个SUS304,每件价格为12.50美元.",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  20,
+                  27
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        }
+      ],
+      "amount_currency_preserved": 7,
+      "valve_term_hit": 0,
+      "model_literal_hit": 8,
+      "quantity_literal_hit": 8,
+      "uncertain_amount_count": 0
+    },
+    "LMT-60-0.6B": {
+      "orders": [
+        {
+          "case_id": "en_order",
+          "translation_t2s": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，11 月 15 日交货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  24,
+                  32
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "fr_order",
+          "translation_t2s": "我们需要 500 个 SUS304 泵，每个 12.50 美元，最迟于 11 月 15 日交货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  23,
+                  31
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": false,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "de_order",
+          "translation_t2s": "我们需要 500 个 SUS304 阀门，单价为 12.50 美元，最迟将于 11 月 15 日发货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  25,
+                  33
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "es_order",
+          "translation_t2s": "我们需要 500 个 SUS304 阀门，每个 12.50 美元，最迟将于 11 月 15 日交货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  24,
+                  32
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ru_order",
+          "translation_t2s": "我们需要 500 个 SUS304 阀门，每个价格为 12.50 美元，最迟于 11 月 15 日发货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  27,
+                  35
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ja_order",
+          "translation_t2s": "请提供 500 个 SUS304 阀的价格为 12.50 美元，交货期为 11 月 15 日。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  23,
+                  31
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ko_order",
+          "translation_t2s": "我们需要 500 个 SUS304 阀门。每个阀门的价格为 12.50 美元，交货时间为 11 月 15 日。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  30,
+                  38
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        },
+        {
+          "case_id": "ar_order",
+          "translation_t2s": "我们需要 500 个 12.50 美元/件的 SUS304 阀门，最迟于 11 月 15 日交货。",
+          "amount": {
+            "status": "explicit_arabic_amount_and_currency",
+            "matches": [
+              {
+                "surface_amount": "12.50",
+                "currency_surface": "美元",
+                "normalized_amount": "12.5",
+                "span": [
+                  11,
+                  19
+                ],
+                "issue": null
+              }
+            ]
+          },
+          "amount_currency_preserved": true,
+          "valve_term_hit": true,
+          "model_literal_hit": true,
+          "quantity_literal_hit": true
+        }
+      ],
+      "amount_currency_preserved": 8,
+      "valve_term_hit": 7,
+      "model_literal_hit": 8,
+      "quantity_literal_hit": 8,
+      "uncertain_amount_count": 0
+    }
+  },
+  "scope": "field diagnostics, not sentence accuracy"
+}

@@ -1,0 +1,231 @@
+{
+  "model": "m2m100_418M",
+  "repo_id": "facebook/m2m100_418M",
+  "revision": "55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636",
+  "created_at": "2026-10-17T05:25:26.663037+00:00",
+  "dataset": "FLORES-101 devtest",
+  "data_sha256": "03851dc9582c093d1f5b4e2f7660e9fdf154caee2d73fe569789491112ecebf6",
+  "gpu_index": 1,
+  "gpu_snapshot_start": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 23029 MiB, 96 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 23729 MiB, 25 %",
+  "runtime": "CTranslate2",
+  "ctranslate2": "4.6.3",
+  "transformers": "4.57.6",
+  "sacrebleu": "2.5.1",
+  "compute_type": "int8_float16",
+  "beam_size": 3,
+  "offline_batch_size": 16,
+  "stream_batch_size": 1,
+  "max_decoding_length": 256,
+  "streaming_description": "4 artificial source prefixes; unrestricted retranslation and 2-hypothesis agreement + one-token holdback with forced committed prefix; full source on final flush",
+  "scope": "Text MT only. Public written corpus, not business speech; no ASR/audio/refiner/real audio timestamps. Scores are not percent correct.",
+  "prefix_policy_sha256": "9be1452ca0fcb20bf82d34015ea023dd1d0ca59ec36923a29270f4f13c5ffa8f",
+  "process_gpu_used_mib_after_warmup": 878.0,
+  "status": "completed",
+  "offline_pairs": 32,
+  "streaming_trajectories": 8,
+  "total_seconds": 6.844663572032005,
+  "gpu_snapshot_end": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 22763 MiB, 24 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 23647 MiB, 98 %",
+  "process_gpu_used_mib_end": 878.0,
+  "scores": {
+    "en": {
+      "offline_full": {
+        "sentences": 16,
+        "raw": {
+          "BLEU_zh": 22.61287385297058,
+          "chrFpp": 16.177492568683416
+        },
+        "t2s": {
+          "BLEU_zh": 22.61287385297058,
+          "chrFpp": 16.177492568683416
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 22.61 47.2/27.5/17.3/11.7 (BP = 1.000 ratio = 1.063 hyp_len = 878 ref_len = 826)"
+      },
+      "offline_stream_subset": {
+        "sentences": 2,
+        "raw": {
+          "BLEU_zh": 12.242436861974042,
+          "chrFpp": 10.12239997586295
+        },
+        "t2s": {
+          "BLEU_zh": 12.242436861974042,
+          "chrFpp": 10.12239997586295
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 12.24 48.1/20.2/7.8/5.0 (BP = 0.876 ratio = 0.883 hyp_len = 106 ref_len = 120)"
+      },
+      "retranslate": {
+        "sentences": 2,
+        "raw": {
+          "BLEU_zh": 14.752060733682388,
+          "chrFpp": 10.959441214287269
+        },
+        "t2s": {
+          "BLEU_zh": 14.752060733682388,
+          "chrFpp": 10.959441214287269
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 14.75 48.1/22.1/10.8/7.0 (BP = 0.876 ratio = 0.883 hyp_len = 106 ref_len = 120)",
+        "step_latency_seconds": {
+          "count": 8,
+          "mean": 0.14032230956945568,
+          "p50": 0.11289512505754828,
+          "p95": 0.21265621669590473,
+          "max": 0.21265621669590473
+        },
+        "normalized_erasure_characters": {
+          "count": 2,
+          "mean": 0.1928024083196497,
+          "p50": 0.12698412698412698,
+          "p95": 0.25862068965517243,
+          "max": 0.25862068965517243
+        },
+        "cases_different_from_full_input": 1,
+        "non_eos_updates": 0,
+        "empty_updates": 0,
+        "stable_first_step": {}
+      },
+      "agreement_forced_prefix": {
+        "sentences": 2,
+        "raw": {
+          "BLEU_zh": 14.752060733682388,
+          "chrFpp": 10.959441214287269
+        },
+        "t2s": {
+          "BLEU_zh": 14.752060733682388,
+          "chrFpp": 10.959441214287269
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 14.75 48.1/22.1/10.8/7.0 (BP = 0.876 ratio = 0.883 hyp_len = 106 ref_len = 120)",
+        "step_latency_seconds": {
+          "count": 8,
+          "mean": 0.13972062669927254,
+          "p50": 0.11270369216799736,
+          "p95": 0.22040796419605613,
+          "max": 0.22040796419605613
+        },
+        "normalized_erasure_characters": {
+          "count": 2,
+          "mean": 0.1451833607006021,
+          "p50": 0.031746031746031744,
+          "p95": 0.25862068965517243,
+          "max": 0.25862068965517243
+        },
+        "cases_different_from_full_input": 1,
+        "non_eos_updates": 0,
+        "empty_updates": 0,
+        "stable_first_step": {
+          "count": 2,
+          "mean": 1.0,
+          "p50": 1,
+          "p95": 1,
+          "max": 1
+        }
+      }
+    },
+    "ja": {
+      "offline_full": {
+        "sentences": 16,
+        "raw": {
+          "BLEU_zh": 22.149919799512414,
+          "chrFpp": 15.868129934365028
+        },
+        "t2s": {
+          "BLEU_zh": 22.149919799512414,
+          "chrFpp": 15.868129934365028
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 22.15 60.8/34.3/19.3/11.1 (BP = 0.856 ratio = 0.866 hyp_len = 715 ref_len = 826)"
+      },
+      "offline_stream_subset": {
+        "sentences": 2,
+        "raw": {
+          "BLEU_zh": 10.775625566538228,
+          "chrFpp": 8.970147659545846
+        },
+        "t2s": {
+          "BLEU_zh": 10.775625566538228,
+          "chrFpp": 8.970147659545846
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 10.78 44.4/17.9/6.7/3.9 (BP = 0.895 ratio = 0.900 hyp_len = 108 ref_len = 120)"
+      },
+      "retranslate": {
+        "sentences": 2,
+        "raw": {
+          "BLEU_zh": 10.775625566538228,
+          "chrFpp": 8.970147659545846
+        },
+        "t2s": {
+          "BLEU_zh": 10.775625566538228,
+          "chrFpp": 8.970147659545846
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 10.78 44.4/17.9/6.7/3.9 (BP = 0.895 ratio = 0.900 hyp_len = 108 ref_len = 120)",
+        "step_latency_seconds": {
+          "count": 8,
+          "mean": 0.15176035807235166,
+          "p50": 0.14541382109746337,
+          "p95": 0.24200621666386724,
+          "max": 0.24200621666386724
+        },
+        "normalized_erasure_characters": {
+          "count": 2,
+          "mean": 1.0530427631578947,
+          "p50": 0.421875,
+          "p95": 1.6842105263157894,
+          "max": 1.6842105263157894
+        },
+        "cases_different_from_full_input": 0,
+        "non_eos_updates": 0,
+        "empty_updates": 0,
+        "stable_first_step": {}
+      },
+      "agreement_forced_prefix": {
+        "sentences": 2,
+        "raw": {
+          "BLEU_zh": 12.688184367240032,
+          "chrFpp": 10.043506281106493
+        },
+        "t2s": {
+          "BLEU_zh": 12.688184367240032,
+          "chrFpp": 10.043506281106493
+        },
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:zh|smooth:exp|version:2.5.1",
+        "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu_details_t2s": "BLEU = 12.69 53.3/22.9/8.7/4.0 (BP = 0.886 ratio = 0.892 hyp_len = 107 ref_len = 120)",
+        "step_latency_seconds": {
+          "count": 8,
+          "mean": 0.15470616187667474,
+          "p50": 0.14343926729634404,
+          "p95": 0.2358608776703477,
+          "max": 0.2358608776703477
+        },
+        "normalized_erasure_characters": {
+          "count": 2,
+          "mean": 1.041126179245283,
+          "p50": 0.421875,
+          "p95": 1.6603773584905661,
+          "max": 1.6603773584905661
+        },
+        "cases_different_from_full_input": 1,
+        "non_eos_updates": 0,
+        "empty_updates": 0,
+        "stable_first_step": {
+          "count": 2,
+          "mean": 1.5,
+          "p50": 1,
+          "p95": 2,
+          "max": 2
+        }
+      }
+    }
+  }
+}

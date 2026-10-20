@@ -1,0 +1,10 @@
+{
+  "entities": [
+    {"canonical_zh":"最低起订量","source_aliases":["minimum order quantity","MOQ"],"zh_aliases":["最小订单量","最小起订数量"],"language":"en","domain":"general","policy":"normalize"},
+    {"canonical_zh":"交货周期","source_aliases":["lead time"],"zh_aliases":["前置时间"],"language":"en","domain":"general","policy":"normalize"},
+    {"canonical_zh":"离岸价","source_aliases":["FOB"],"zh_aliases":[],"language":"en","domain":"general","policy":"normalize"},
+    {"canonical_zh":"不锈钢","source_aliases":["stainless steel","ステンレス鋼","Edelstahl"],"zh_aliases":[],"language":"*","domain":"machinery","policy":"normalize"},
+    {"canonical_zh":"SUS304","source_aliases":["SUS304"],"zh_aliases":[],"language":"*","domain":"machinery","policy":"preserve"}
+  ]
+}
+

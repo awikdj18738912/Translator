@@ -1,0 +1,2 @@
+{"sentence": 0, "case_id": "en_order", "language": "en", "text": "我们需要500个SUS304阀,每台1250美元,到11月15日发货。", "input_tokens": 24, "output_tokens": 24, "generation_seconds": 0.08772223396226764, "seconds": 0.09001682884991169, "ended_with_eos": true, "cuda_allocated_mib": null}
+{"sentence": 1, "case_id": "en_correction", "language": "en", "text": "不要发送500个单位,请原谅,做300个单位,并在存款到达后发送。", "input_tokens": 26, "output_tokens": 27, "generation_seconds": 0.09839666029438376, "seconds": 0.10129825305193663, "ended_with_eos": true, "cuda_allocated_mib": null}

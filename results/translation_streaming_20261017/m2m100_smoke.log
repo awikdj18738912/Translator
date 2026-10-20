@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/aim0/桌面/tan/ASR/Translator/scripts/benchmark_streaming_mt.py", line 267, in <module>
+    
+  File "/home/aim0/桌面/tan/ASR/Translator/scripts/benchmark_streaming_mt.py", line 79, in main
+    raise RuntimeError(f"Only {free/1024**2:.0f} MiB free on GPU {args.gpu}; existing tasks left untouched")
+RuntimeError: Only 1100 MiB free on GPU 0; existing tasks left untouched

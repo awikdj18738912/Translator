@@ -1,0 +1,87 @@
+[
+  {
+    "segment_index": 1,
+    "source": "我们需要 300 个钢制阀门。",
+    "baseline": "我们需要 300 个钢制阀门。",
+    "masked_input": "我们需要 300 个钢制__ENTITY_000__。",
+    "gate": {
+      "mode": "off",
+      "action": "defer",
+      "state": "DEFER",
+      "reasons": [
+        "incomplete_fixed_group"
+      ],
+      "visible_chars": 12,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [],
+    "window_context": null,
+    "outcome": "deferred",
+    "output": "我们需要 300 个钢制阀门。"
+  },
+  {
+    "segment_index": 1,
+    "source": "我们需要 300 个钢阀门。每个的价格是 12 美元。",
+    "baseline": "我们需要 300 个钢阀门。每个的价格是 12 美元。",
+    "masked_input": "我们需要 300 个钢__ENTITY_000__。每个的价格是 12 美元。",
+    "gate": {
+      "mode": "off",
+      "action": "defer",
+      "state": "DEFER",
+      "reasons": [
+        "incomplete_fixed_group"
+      ],
+      "visible_chars": 21,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [],
+    "window_context": null,
+    "outcome": "deferred",
+    "output": "我们需要 300 个钢阀门。每个的价格是 12 美元。"
+  },
+  {
+    "segment_index": 1,
+    "source": "我们需要 300 个钢阀门。每个的价格是 12 美元。请在周五前交货。",
+    "baseline": "我们需要 300 个钢阀门。每个的价格是 12 美元。请在周五前交货。",
+    "masked_input": "我们需要 300 个钢__ENTITY_000__。每个的价格是 12 美元。请在周五前交货。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 28,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "我们需要 300 个钢__ENTITY_000__。每个的价格是 12 美元。请在周五前交货。",
+        "output": "我们需要 300 个钢__ENTITY_000__。每个的价格是 12 美元。请在周五前交货。<KEY>[__ENTITY_000__]",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "",
+      "right_context": ""
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "我们需要 300 个钢阀门。每个的价格是 12 美元。请在周五前交货。"
+  }
+]

@@ -1,0 +1,143 @@
+{
+  "model": "m2m100_418M",
+  "repo_id": "facebook/m2m100_418M",
+  "revision": "55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636",
+  "created_at": "2026-10-17T04:31:16.165722+00:00",
+  "torch": "2.10.0+cu128",
+  "transformers": "4.57.6",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "gpu_index": 0,
+  "dtype": "int8_float16",
+  "backend": "ctranslate2",
+  "ctranslate2": "4.6.3",
+  "gpu_snapshot_start": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 23729 MiB, 0 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 22763 MiB, 0 %",
+  "initial_free_mib": 1362.0,
+  "memory_fraction": 0.055,
+  "batch_size": 1,
+  "stream_beam_size": 1,
+  "max_new_tokens": 96,
+  "parameter_count": null,
+  "encoder_layers": 12,
+  "decoder_layers": 12,
+  "load_seconds": 0.5824779300019145,
+  "scope": "Synthetic incremental text on a shared GPU, no ASR/audio/Refiner/NLLW, no real audio latency or production accuracy claims",
+  "cases_sha256": "ebc70429380ed60ea2eb384b3462c12ebd4705e0189f72144b08fb2c123d59de",
+  "process_gpu_used_mib_after_warmup": 878.0,
+  "fixed_input_token_stream_probe": {
+    "text": "请在收到存款后发送300个单位。",
+    "first_content_seconds": 0.010983476880937815,
+    "total_seconds": 0.055631726048886776,
+    "events": 15,
+    "note": "One complete source was supplied first; this tests output token callbacks only"
+  },
+  "status": "completed",
+  "languages": [
+    "en"
+  ],
+  "case_count": 3,
+  "step_count": 18,
+  "step_latency_seconds": {
+    "count": 18,
+    "mean": 0.06396216456778347,
+    "p50": 0.06278216792270541,
+    "p95": 0.1014907187782228,
+    "max": 0.1014907187782228
+  },
+  "per_language_latency_seconds": {
+    "en": {
+      "count": 18,
+      "mean": 0.06396216456778347,
+      "p50": 0.06278216792270541,
+      "p95": 0.1014907187782228,
+      "max": 0.1014907187782228
+    }
+  },
+  "output_truncations": 0,
+  "empty_translations": 0,
+  "peak_cuda_allocated_mib": null,
+  "peak_cuda_reserved_mib": null,
+  "process_gpu_used_mib_end": 878.0,
+  "normalized_erasure_by_mode": {
+    "retranslate": {
+      "count": 3,
+      "mean": 0.2825396825396825,
+      "p50": 0.3333333333333333,
+      "p95": 0.5142857142857142,
+      "max": 0.5142857142857142
+    },
+    "local_agreement_forced_prefix": {
+      "count": 3,
+      "mean": 0.2825396825396825,
+      "p50": 0.3333333333333333,
+      "p95": 0.5142857142857142,
+      "max": 0.5142857142857142
+    }
+  },
+  "virtual_queue_simulations": [
+    {
+      "arrival_interval_seconds": 0.5,
+      "queue_wait": {
+        "count": 18,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "response_delay": {
+        "count": 18,
+        "mean": 0.06396216456778347,
+        "p50": 0.06278216792270541,
+        "p95": 0.1014907187782228,
+        "max": 0.1014907187782228
+      }
+    },
+    {
+      "arrival_interval_seconds": 1.0,
+      "queue_wait": {
+        "count": 18,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "response_delay": {
+        "count": 18,
+        "mean": 0.06396216456778347,
+        "p50": 0.06278216792270541,
+        "p95": 0.1014907187782228,
+        "max": 0.1014907187782228
+      }
+    },
+    {
+      "arrival_interval_seconds": 2.0,
+      "queue_wait": {
+        "count": 18,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "response_delay": {
+        "count": 18,
+        "mean": 0.06396216456778347,
+        "p50": 0.06278216792270541,
+        "p95": 0.1014907187782228,
+        "max": 0.1014907187782228
+      }
+    }
+  ],
+  "stress": {
+    "sentences": 2,
+    "latency": {
+      "count": 2,
+      "mean": 0.09565754095092416,
+      "p50": 0.09001682884991169,
+      "p95": 0.10129825305193663,
+      "max": 0.10129825305193663
+    },
+    "allocated_mib_start": null,
+    "allocated_mib_end": null
+  },
+  "gpu_snapshot_end": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 23647 MiB, 60 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 22763 MiB, 0 %"
+}

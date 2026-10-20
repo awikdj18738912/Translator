@@ -1,0 +1,30 @@
+{
+  "description": "人工构造的外贸文本增量输入。时间间隔是模拟值，不是音频时间戳；参考中文仅供人工语义核对，不是严格唯一译文。",
+  "cases": [
+    {"id":"en_order","language":"en","chunks":["We need 500 SUS304 valves",", at 12.50 US dollars each",", with delivery", " by November 15."],"reference":"我们需要500个SUS304阀门，单价12.50美元，须于11月15日前交货。","critical_literals":["500","SUS304","12.50","15"]},
+    {"id":"en_correction","language":"en","chunks":["Do not ship 500 units."," Sorry, make that 300 units",", and ship only", " after the deposit arrives."],"reference":"不要发500件。抱歉，改成300件，而且必须收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"en_short","language":"en","chunks":["No, not yet."],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"fr_order","language":"fr","chunks":["Nous avons besoin de 500 vannes SUS304",", à 12,50 dollars américains l'unité",", avec une livraison", " au plus tard le 15 novembre."],"reference":"我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。","critical_literals":["500","SUS304","15"]},
+    {"id":"fr_correction","language":"fr","chunks":["N'expédiez pas 500 pièces."," Pardon, faites-en 300",", et expédiez-les uniquement", " après réception de l'acompte."],"reference":"不要发500件。抱歉，改成300件，而且只有收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"fr_short","language":"fr","chunks":["Non, pas encore."],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"de_order","language":"de","chunks":["Wir benötigen 500 SUS304-Ventile",", zu einem Stückpreis von 12,50 US-Dollar",", mit Lieferung", " spätestens am 15. November."],"reference":"我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。","critical_literals":["500","SUS304","15"]},
+    {"id":"de_correction","language":"de","chunks":["Versenden Sie nicht 500 Stück."," Entschuldigung, ändern Sie das auf 300 Stück",", und versenden Sie nur", " nach Eingang der Anzahlung."],"reference":"不要发500件。抱歉，改成300件，而且只有收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"de_short","language":"de","chunks":["Nein, noch nicht."],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"es_order","language":"es","chunks":["Necesitamos 500 válvulas SUS304",", a 12,50 dólares estadounidenses por unidad",", con entrega", " a más tardar el 15 de noviembre."],"reference":"我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。","critical_literals":["500","SUS304","15"]},
+    {"id":"es_correction","language":"es","chunks":["No envíen 500 unidades."," Perdón, cámbienlo a 300 unidades",", y envíenlas solo", " después de recibir el anticipo."],"reference":"不要发500件。抱歉，改成300件，而且只有收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"es_short","language":"es","chunks":["No, todavía no."],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"ru_order","language":"ru","chunks":["Нам нужно 500 клапанов SUS304",", по цене 12,50 долларов США за штуку",", с доставкой", " не позднее 15 ноября."],"reference":"我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。","critical_literals":["500","SUS304","15"]},
+    {"id":"ru_correction","language":"ru","chunks":["Не отправляйте 500 штук."," Извините, измените количество на 300 штук",", и отправляйте только", " после получения предоплаты."],"reference":"不要发500件。抱歉，改成300件，而且只有收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"ru_short","language":"ru","chunks":["Нет, пока нет."],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"ja_order","language":"ja","chunks":["SUS304製のバルブを500個", "単価12.50米ドルで", "納期は", "11月15日まででお願いします。"],"reference":"请提供500个SUS304阀门，单价12.50美元，交期为11月15日前。","critical_literals":["500","SUS304","12.50","15"]},
+    {"id":"ja_correction","language":"ja","chunks":["500個は出荷しないでください。", "すみません、300個に変更してください。", "出荷は必ず", "手付金の入金後にしてください。"],"reference":"请不要发500件。抱歉，请改成300件，而且一定要收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"ja_short","language":"ja","chunks":["いいえ、まだです。"],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"ko_order","language":"ko","chunks":["SUS304 밸브 500개가 필요합니다", ". 개당 가격은 12.50달러이고", ", 납기는", " 11월 15일까지입니다."],"reference":"我们需要500个SUS304阀门，单价12.50美元，交期为11月15日前。","critical_literals":["500","SUS304","12.50","15"]},
+    {"id":"ko_correction","language":"ko","chunks":["500개를 출하하지 마세요.", "죄송합니다, 300개로 변경해 주세요.", "출하는 반드시", " 계약금을 받은 후에 해 주세요."],"reference":"请不要发500件。抱歉，请改成300件，而且一定要收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"ko_short","language":"ko","chunks":["아니요, 아직 아닙니다."],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"ar_order","language":"ar","chunks":["نحتاج إلى 500 صمام من نوع SUS304", " بسعر 12.50 دولار أمريكي للقطعة", " على أن يتم التسليم", " في موعد أقصاه 15 نوفمبر."],"reference":"我们需要500个SUS304阀门，单价12.50美元，最迟11月15日交货。","critical_literals":["500","SUS304","12.50","15"]},
+    {"id":"ar_correction","language":"ar","chunks":["لا تشحنوا 500 قطعة.", " عفوا، غيروا الكمية إلى 300 قطعة", "، ولا تشحنوا إلا", " بعد استلام الدفعة المقدمة."],"reference":"不要发500件。抱歉，改成300件，而且只有收到定金后才能发货。","critical_literals":["500","300"]},
+    {"id":"ar_short","language":"ar","chunks":["لا، ليس بعد."],"reference":"不，还没有。","critical_literals":[]},
+    {"id":"en_asr_revision","language":"en","prefixes":["We need 500 valves", "We need 500 valves by Friday", "We need 300 valves by Friday", "We need 300 valves by Friday, only after receiving the deposit."],"reference":"我们需要周五前收到300个阀门，且只有收到定金后才能发货。","critical_literals":["300"]}
+  ]
+}

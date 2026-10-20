@@ -1,0 +1,756 @@
+[
+  {
+    "segment_index": 1,
+    "source": "打扰一下，先生。我想举报一件被盗的钱包。",
+    "baseline": "打扰一下，先生。我想举报一件被盗的钱包。",
+    "masked_input": "打扰一下，先生。我想举报一件被盗的钱包。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 17,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "numeric_normalization"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "打扰一下，先生。我想举报一件被盗的钱包。",
+        "output": "打扰一下，先生。我想举报一件被盗的钱包。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "",
+          "right_context": "好的，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "",
+      "right_context": "好的，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "打扰一下，先生。我想举报一件被盗的钱包。"
+  },
+  {
+    "segment_index": 1,
+    "source": "好的，请坐。",
+    "baseline": "好的，请坐。",
+    "masked_input": "好的，请坐。",
+    "gate": {
+      "mode": "off",
+      "action": "defer",
+      "state": "DEFER",
+      "reasons": [
+        "incomplete_fixed_group"
+      ],
+      "visible_chars": 4,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [],
+    "window_context": null,
+    "outcome": "deferred",
+    "output": "好的，请坐。"
+  },
+  {
+    "segment_index": 1,
+    "source": "对不起，先生。我想举报一个被盗的钱包。",
+    "baseline": "对不起，先生。我想举报一个被盗的钱包。",
+    "masked_input": "对不起，先生。我想举报一个被盗的钱包。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 16,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "numeric_normalization"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "对不起，先生。我想举报一个被盗的钱包。",
+        "output": "对不起，先生。我想举报一个被盗的钱包。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "",
+          "right_context": "好的，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "",
+      "right_context": "好的，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "对不起，先生。我想举报一个被盗的钱包。"
+  },
+  {
+    "segment_index": 1,
+    "source": "好的，请坐。你能告诉我你的名字、地址和电话号码吗？",
+    "baseline": "好的，请坐。你能告诉我你的名字、地址和电话号码吗？",
+    "masked_input": "好的，请坐。你能告诉我你的名字、地址和电话号码吗？",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 21,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "好的，请坐。你能告诉我你的名字、地址和电话号码吗？",
+        "output": "好的，请坐。你能告诉我你的名字、地址和电话号码吗？",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "我想举报一个被盗的钱包。",
+          "right_context": "是的，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "我想举报一个被盗的钱包。",
+      "right_context": "是的，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "好的，请坐。你能告诉我你的名字、地址和电话号码吗？"
+  },
+  {
+    "segment_index": 1,
+    "source": "是的，我的名字是塔莎·斯塔斯基。S T A R S K I。",
+    "baseline": "是的，我的名字是塔莎·斯塔斯基。S T A R S K I。",
+    "masked_input": "是的，我的名字是塔莎·斯塔斯基。S T A R S K I。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 20,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "是的，我的名字是塔莎·斯塔斯基。S T A R S K I。",
+        "output": "我的名字是塔莎·斯塔斯基。<KEY>[塔莎·斯塔斯基]",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "你能告诉我你的名字、地址和电话号码吗？",
+          "right_context": "我住在太阳酒店，"
+        }
+      },
+      {
+        "input": "是的，我的名字是塔莎·斯塔斯基。S T A R S K I。",
+        "output": "我的名字是塔莎·斯塔斯基。<KEY>[塔莎·斯塔斯基]",
+        "strict_placeholders": true,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "你能告诉我你的名字、地址和电话号码吗？",
+          "right_context": "我住在太阳酒店，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "你能告诉我你的名字、地址和电话号码吗？",
+      "right_context": "我住在太阳酒店，"
+    },
+    "local_deletion_reviews": [
+      {
+        "index": 0,
+        "start": 0,
+        "end": 3,
+        "source": "是的，",
+        "target": "",
+        "kind": "model_proposed_deletion",
+        "context": "是的，我的名字是塔莎·斯塔斯基。S T A R S K I。",
+        "segment_index": 1,
+        "decision": "unresolved",
+        "reason": "invalid_or_uncertain_response",
+        "applied": false,
+        "model_response": "UNRESOLVED",
+        "model_completed": true,
+        "candidate_score_margin": 0.2162
+      }
+    ],
+    "outcome": "rejected",
+    "reject_reasons": [
+      "severe_content_loss"
+    ],
+    "output": "是的，我的名字是塔莎·斯塔斯基。S T A R S K I。"
+  },
+  {
+    "segment_index": 1,
+    "source": "我住在太阳酒店，我的电话号码是 8015559864。好的，",
+    "baseline": "我住在太阳酒店，我的电话号码是 8015559864。好的，",
+    "masked_input": "我住在太阳酒店，我的电话号码是 8015559864。好的，",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 26,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "我住在太阳酒店，我的电话号码是 8015559864。好的，",
+        "output": "我住在太阳酒店，我的电话号码是 8015559864。好的。<KEY>[太阳酒店]",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "S T A R S K I。",
+          "right_context": "你能告诉我到底发生了什么吗？"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "S T A R S K I。",
+      "right_context": "你能告诉我到底发生了什么吗？"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "我住在太阳酒店，我的电话号码是 8015559864。好的。"
+  },
+  {
+    "segment_index": 1,
+    "source": "你能告诉我到底发生了什么吗？我走在街上时，这个男人把我绊倒了，",
+    "baseline": "你能告诉我到底发生了什么吗？我走在街上时，这个男人把我绊倒了，",
+    "masked_input": "你能告诉我到底发生了什么吗？我走在街上时，这个男人把我绊倒了，",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 28,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "你能告诉我到底发生了什么吗？我走在街上时，这个男人把我绊倒了，",
+        "output": "你能告诉我到底发生了什么吗？我走在街上时，这个男人把我绊倒了。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "好的，",
+          "right_context": "抓住了我的包，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "好的，",
+      "right_context": "抓住了我的包，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "你能告诉我到底发生了什么吗？我走在街上时，这个男人把我绊倒了。"
+  },
+  {
+    "segment_index": 1,
+    "source": "抓住了我的包，然后带着它逃走了。这起事件到底发生在何处？",
+    "baseline": "抓住了我的包，然后带着它逃走了。这起事件到底发生在何处？",
+    "masked_input": "抓住了我的包，然后带着它逃走了。这起事件到底发生在何处？",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 25,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "抓住了我的包，然后带着它逃走了。这起事件到底发生在何处？",
+        "output": "抓住了我的包，然后带着它逃走了。这起事件到底发生在何处？",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "这个男人把我绊倒了，",
+          "right_context": "事件发生在塞勒姆大街的面包店附近。"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "这个男人把我绊倒了，",
+      "right_context": "事件发生在塞勒姆大街的面包店附近。"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "抓住了我的包，然后带着它逃走了。这起事件到底发生在何处？"
+  },
+  {
+    "segment_index": 1,
+    "source": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？",
+    "baseline": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？",
+    "masked_input": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？",
+    "gate": {
+      "mode": "off",
+      "action": "defer",
+      "state": "DEFER",
+      "reasons": [
+        "incomplete_fixed_group"
+      ],
+      "visible_chars": 25,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [],
+    "window_context": null,
+    "outcome": "deferred",
+    "output": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？"
+  },
+  {
+    "segment_index": 1,
+    "source": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？是的，",
+    "baseline": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？是的，",
+    "masked_input": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？是的，",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 27,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？是的，",
+        "output": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？是的。<KEY>[塞勒姆大街]",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "这起事件到底发生在何处？",
+          "right_context": "有一个钱包，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "这起事件到底发生在何处？",
+      "right_context": "有一个钱包，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "事件发生在塞勒姆大街的面包店附近。钱包里有贵重物品吗？是的。"
+  },
+  {
+    "segment_index": 1,
+    "source": "有一个钱包，里面有两张信用卡、三百美元现金和我的护照。你能给我描述一下那个人吗？",
+    "baseline": "有一个钱包，里面有两张信用卡、三百美元现金和我的护照。你能给我描述一下那个人吗？",
+    "masked_input": "有一个钱包，里面有两张信用卡、三百美元现金和我的护照。你能给我描述一下那个人吗？",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 36,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "numeric_normalization"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "有一个钱包，里面有两张信用卡、三百美元现金和我的护照。你能给我描述一下那个人吗？",
+        "output": "有一个钱包，里面有2张信用卡、300美元现金和我的护照。你能给我描述一下那个人吗？",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "是的，",
+          "right_context": "他身高中等，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "是的，",
+      "right_context": "他身高中等，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "有一个钱包，里面有2张信用卡、300美元现金和我的护照。你能给我描述一下那个人吗？"
+  },
+  {
+    "segment_index": 1,
+    "source": "他身高中等，身材苗条，留着短发，",
+    "baseline": "他身高中等，身材苗条，留着短发，",
+    "masked_input": "他身高中等，身材苗条，留着短发，",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 13,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "他身高中等，身材苗条，留着短发，",
+        "output": "他身高中等，身材苗条，留着短发。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "你能给我描述一下那个人吗？",
+          "right_context": "头发是深棕色的。"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "你能给我描述一下那个人吗？",
+      "right_context": "头发是深棕色的。"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "他身高中等，身材苗条，留着短发。"
+  },
+  {
+    "segment_index": 1,
+    "source": "头发是深棕色的。我想他三十多岁。你看到这个男人多久了？",
+    "baseline": "头发是深棕色的。我想他三十多岁。你看到这个男人多久了？",
+    "masked_input": "头发是深棕色的。我想他三十多岁。你看到这个男人多久了？",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 24,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "numeric_normalization"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "头发是深棕色的。我想他三十多岁。你看到这个男人多久了？",
+        "output": "头发是深棕色的。我想他30多岁。你看到这个男人多久了？",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "留着短发，",
+          "right_context": "好几秒钟。"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "留着短发，",
+      "right_context": "好几秒钟。"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "头发是深棕色的。我想他30多岁。你看到这个男人多久了？"
+  },
+  {
+    "segment_index": 1,
+    "source": "好几秒钟。你清楚地看到了那个人的脸吗？你能描述一下他的特征吗？",
+    "baseline": "好几秒钟。你清楚地看到了那个人的脸吗？你能描述一下他的特征吗？",
+    "masked_input": "好几秒钟。你清楚地看到了那个人的脸吗？你能描述一下他的特征吗？",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 28,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "好几秒钟。你清楚地看到了那个人的脸吗？你能描述一下他的特征吗？",
+        "output": "好几秒钟。你清楚地看到了那个人的脸吗？你能描述一下他的特征吗？",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "你看到这个男人多久了？",
+          "right_context": "嗯，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "你看到这个男人多久了？",
+      "right_context": "嗯，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "好几秒钟。你清楚地看到了那个人的脸吗？你能描述一下他的特征吗？"
+  },
+  {
+    "segment_index": 1,
+    "source": "嗯，他有小眼睛和大嘴巴。你看到的那个人有留胡子或胡须之类的面部毛发吗？",
+    "baseline": "嗯，他有小眼睛和大嘴巴。你看到的那个人有留胡子或胡须之类的面部毛发吗？",
+    "masked_input": "嗯，他有小眼睛和大嘴巴。你看到的那个人有留胡子或胡须之类的面部毛发吗？",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 32,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "disfluency",
+        "embedded_disfluency",
+        "isolated_single_character_clause"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "嗯，他有小眼睛和大嘴巴。你看到的那个人有留胡子或胡须之类的面部毛发吗？",
+        "output": "他有小眼睛和大嘴巴。你看到的那个人有留胡须或胡须一样的面部毛发吗？",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "你能描述一下他的特征吗？",
+          "right_context": "我不记得了。"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "你能描述一下他的特征吗？",
+      "right_context": "我不记得了。"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "他有小眼睛和大嘴巴。你看到的那个人有留胡须或胡须一样的面部毛发吗？"
+  },
+  {
+    "segment_index": 1,
+    "source": "我不记得了。他还穿什么衣服？他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。",
+    "baseline": "我不记得了。他还穿什么衣服？他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。",
+    "masked_input": "我不记得了。他还穿什么衣服？他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 32,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "numeric_normalization"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "我不记得了。他还穿什么衣服？他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。",
+        "output": "我不记得了。他还穿什么衣服？他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "你看到的那个人有留胡子或胡须之类的面部毛发吗？",
+          "right_context": "你能从名单中挑出他吗？"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "你看到的那个人有留胡子或胡须之类的面部毛发吗？",
+      "right_context": "你能从名单中挑出他吗？"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "我不记得了。他还穿什么衣服？他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。"
+  },
+  {
+    "segment_index": 1,
+    "source": "你能从名单中挑出他吗？当然可以。这不应该是个问题。",
+    "baseline": "你能从名单中挑出他吗？当然可以。这不应该是个问题。",
+    "masked_input": "你能从名单中挑出他吗？当然可以。这不应该是个问题。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 22,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": [
+        "self_correction"
+      ]
+    },
+    "model_calls": [
+      {
+        "input": "你能从名单中挑出他吗？当然可以。这不应该是个问题。",
+        "output": "你能从名单中挑出他吗？当然可以。这不应该是个问题。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。",
+          "right_context": "好的，"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "他穿着一件蓝色的牛仔衬衫和一条黑色的裤子。",
+      "right_context": "好的，"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "你能从名单中挑出他吗？当然可以。这不应该是个问题。"
+  },
+  {
+    "segment_index": 1,
+    "source": "好的，别担心。我们会尽最大努力尽快抓住小偷。",
+    "baseline": "好的，别担心。我们会尽最大努力尽快抓住小偷。",
+    "masked_input": "好的，别担心。我们会尽最大努力尽快抓住小偷。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 19,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "好的，别担心。我们会尽最大努力尽快抓住小偷。",
+        "output": "好的，别担心。我们会尽最大努力尽快抓住小偷。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "这不应该是个问题。",
+          "right_context": "我们一找到东西就会通知您。"
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "这不应该是个问题。",
+      "right_context": "我们一找到东西就会通知您。"
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "好的，别担心。我们会尽最大努力尽快抓住小偷。"
+  },
+  {
+    "segment_index": 1,
+    "source": "我们一找到东西就会通知您。好的。非常感谢。",
+    "baseline": "我们一找到东西就会通知您。好的。非常感谢。",
+    "masked_input": "我们一找到东西就会通知您。好的。非常感谢。",
+    "gate": {
+      "mode": "off",
+      "action": "refine",
+      "state": "REFINE",
+      "reasons": [
+        "gate_disabled"
+      ],
+      "visible_chars": 18,
+      "asr_confidence": null,
+      "calibrated": false,
+      "covers_segment": false,
+      "cleanup_signals": []
+    },
+    "model_calls": [
+      {
+        "input": "我们一找到东西就会通知您。好的。非常感谢。",
+        "output": "我们一找到东西就会通知您。非常感谢。",
+        "strict_placeholders": false,
+        "numeric_policy": "model-driven",
+        "window_context": {
+          "left_context": "我们会尽最大努力尽快抓住小偷。",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_context": {
+      "left_context": "我们会尽最大努力尽快抓住小偷。",
+      "right_context": ""
+    },
+    "local_deletion_reviews": [],
+    "outcome": "accepted",
+    "reject_reasons": [],
+    "output": "我们一找到东西就会通知您。非常感谢。"
+  }
+]

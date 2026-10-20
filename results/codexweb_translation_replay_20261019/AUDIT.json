@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "cases": 12,
+  "updates": 47,
+  "actual_model_calls": 18,
+  "latest_translation_snapshot_ownership": true,
+  "revisions_monotonic": true,
+  "single_final_flush_each_case": true,
+  "nonfinal_model_call_observed": true,
+  "entity_probe_literals_preserved": true,
+  "source_quantity_revision_500_to_300_propagated": true,
+  "placeholder_leaks": 0,
+  "scope": "Integration invariants only; not business accuracy, audio/ASR or browser end-to-end validation"
+}

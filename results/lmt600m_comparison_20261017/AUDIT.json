@@ -1,0 +1,721 @@
+{
+  "status": "passed",
+  "data_sha256": "03851dc9582c093d1f5b4e2f7660e9fdf154caee2d73fe569789491112ecebf6",
+  "offline_rows_each_model": 8096,
+  "stream_trajectories_each_model": 1600,
+  "lmt_batch1_control_available": true,
+  "lmt_batch1_control_source": "复用全量输出：metadata 记录 offline_batch_size=1；未另跑控制任务",
+  "lmt_batch1_control_ids_aligned_to_fixed_seed_800": true,
+  "lmt_batch1_vs_retranslation_final": {
+    "pairs": 800,
+    "mismatches": 0
+  },
+  "all_source_prefix_schedules_match_older_runs": true,
+  "all_stream_final_steps_use_full_source": true,
+  "source_reference_and_subset_match_flores": true,
+  "independent_full_and_stream_metric_recalculation_matches_summaries": true,
+  "full_metrics": {
+    "LMT-60-0.6B": {
+      "en": {
+        "BLEU_zh": 44.43376455029819,
+        "chrFpp": 33.8221543577583
+      },
+      "fr": {
+        "BLEU_zh": 38.4045456482375,
+        "chrFpp": 29.553901236994466
+      },
+      "de": {
+        "BLEU_zh": 37.01574423613121,
+        "chrFpp": 28.387265399517315
+      },
+      "es": {
+        "BLEU_zh": 34.03526906963409,
+        "chrFpp": 26.422595558405998
+      },
+      "ru": {
+        "BLEU_zh": 35.07099355142159,
+        "chrFpp": 26.372945962212928
+      },
+      "ja": {
+        "BLEU_zh": 32.80427666775895,
+        "chrFpp": 24.659912736102495
+      },
+      "ko": {
+        "BLEU_zh": 32.92560887026532,
+        "chrFpp": 25.27341426973471
+      },
+      "ar": {
+        "BLEU_zh": 32.520310183798344,
+        "chrFpp": 24.624060664982412
+      }
+    },
+    "m2m100_418M": {
+      "en": {
+        "BLEU_zh": 28.320036827850828,
+        "chrFpp": 20.568179356899005
+      },
+      "fr": {
+        "BLEU_zh": 25.448865119934997,
+        "chrFpp": 18.514411357117897
+      },
+      "de": {
+        "BLEU_zh": 25.3433247785089,
+        "chrFpp": 18.35428359435994
+      },
+      "es": {
+        "BLEU_zh": 21.842203505825193,
+        "chrFpp": 16.693216888575442
+      },
+      "ru": {
+        "BLEU_zh": 24.453383516899827,
+        "chrFpp": 17.295300781071347
+      },
+      "ja": {
+        "BLEU_zh": 23.73395926844796,
+        "chrFpp": 16.31256663923332
+      },
+      "ko": {
+        "BLEU_zh": 24.06895900435555,
+        "chrFpp": 17.31087804077627
+      },
+      "ar": {
+        "BLEU_zh": 24.706281189562592,
+        "chrFpp": 16.854755016763523
+      }
+    },
+    "small100": {
+      "en": {
+        "BLEU_zh": 28.131909458103685,
+        "chrFpp": 19.89380217241027
+      },
+      "fr": {
+        "BLEU_zh": 25.003669127297684,
+        "chrFpp": 17.754779800907958
+      },
+      "de": {
+        "BLEU_zh": 25.01008271104684,
+        "chrFpp": 17.892119365838802
+      },
+      "es": {
+        "BLEU_zh": 22.545698226416718,
+        "chrFpp": 16.398102065048796
+      },
+      "ru": {
+        "BLEU_zh": 24.167793293891453,
+        "chrFpp": 16.853347061610084
+      },
+      "ja": {
+        "BLEU_zh": 22.79498453474629,
+        "chrFpp": 16.071871864973634
+      },
+      "ko": {
+        "BLEU_zh": 22.701820692280485,
+        "chrFpp": 16.46360434100024
+      },
+      "ar": {
+        "BLEU_zh": 23.79234367580241,
+        "chrFpp": 16.258167099232608
+      }
+    },
+    "nllb200_600M": {
+      "en": {
+        "BLEU_zh": 24.844516085166262,
+        "chrFpp": 18.477266468321464
+      },
+      "fr": {
+        "BLEU_zh": 21.50572373645761,
+        "chrFpp": 16.426742796807993
+      },
+      "de": {
+        "BLEU_zh": 22.24636539822314,
+        "chrFpp": 16.315452587016264
+      },
+      "es": {
+        "BLEU_zh": 18.200719996695334,
+        "chrFpp": 14.526785727787491
+      },
+      "ru": {
+        "BLEU_zh": 21.301986974815755,
+        "chrFpp": 15.468241568122764
+      },
+      "ja": {
+        "BLEU_zh": 21.218272492103576,
+        "chrFpp": 15.193913385145203
+      },
+      "ko": {
+        "BLEU_zh": 22.467492382823515,
+        "chrFpp": 16.531491945616466
+      },
+      "ar": {
+        "BLEU_zh": 21.843576477294935,
+        "chrFpp": 15.531883751443898
+      }
+    }
+  },
+  "stream_metrics": {
+    "LMT-60-0.6B": {
+      "en": {
+        "retranslate": {
+          "BLEU_zh": 44.99788264910398,
+          "chrFpp": 35.062331339031985
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 45.07113788280215,
+          "chrFpp": 35.49033059973376
+        }
+      },
+      "fr": {
+        "retranslate": {
+          "BLEU_zh": 39.187382728170846,
+          "chrFpp": 31.716133815187924
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 38.36280653874339,
+          "chrFpp": 30.81465682909805
+        }
+      },
+      "de": {
+        "retranslate": {
+          "BLEU_zh": 36.649305910776235,
+          "chrFpp": 29.33201992625845
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 34.89691266125044,
+          "chrFpp": 27.448546605862546
+        }
+      },
+      "es": {
+        "retranslate": {
+          "BLEU_zh": 33.82974165443902,
+          "chrFpp": 26.920363550516296
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 33.7144754113403,
+          "chrFpp": 27.9407139368334
+        }
+      },
+      "ru": {
+        "retranslate": {
+          "BLEU_zh": 34.57247760910747,
+          "chrFpp": 26.71423485315556
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 34.42014249178216,
+          "chrFpp": 27.38906179899413
+        }
+      },
+      "ja": {
+        "retranslate": {
+          "BLEU_zh": 32.157417686556215,
+          "chrFpp": 24.883850452972816
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 31.70477597294177,
+          "chrFpp": 24.501018818568163
+        }
+      },
+      "ko": {
+        "retranslate": {
+          "BLEU_zh": 33.47728954593827,
+          "chrFpp": 26.686241578779228
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 33.03642615711139,
+          "chrFpp": 25.716489568133266
+        }
+      },
+      "ar": {
+        "retranslate": {
+          "BLEU_zh": 31.9022974508329,
+          "chrFpp": 25.538606192905267
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 31.764837072826115,
+          "chrFpp": 24.865123609849284
+        }
+      }
+    },
+    "m2m100_418M": {
+      "en": {
+        "retranslate": {
+          "BLEU_zh": 29.053821210880198,
+          "chrFpp": 20.81842636691549
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 28.63932314630676,
+          "chrFpp": 19.932254368081022
+        }
+      },
+      "fr": {
+        "retranslate": {
+          "BLEU_zh": 25.557036055556907,
+          "chrFpp": 18.79179446991546
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 25.624226206368544,
+          "chrFpp": 18.843432312921166
+        }
+      },
+      "de": {
+        "retranslate": {
+          "BLEU_zh": 25.67238852913703,
+          "chrFpp": 18.621834899515928
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 25.188991621199058,
+          "chrFpp": 18.563819847329523
+        }
+      },
+      "es": {
+        "retranslate": {
+          "BLEU_zh": 21.496658802151813,
+          "chrFpp": 16.825969736616113
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 21.398140207174066,
+          "chrFpp": 15.545396549577491
+        }
+      },
+      "ru": {
+        "retranslate": {
+          "BLEU_zh": 23.936608871798153,
+          "chrFpp": 17.62755581355995
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.459518138783128,
+          "chrFpp": 17.951657253982372
+        }
+      },
+      "ja": {
+        "retranslate": {
+          "BLEU_zh": 24.77570170066766,
+          "chrFpp": 17.393008121186508
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.05928083809533,
+          "chrFpp": 17.018506903942185
+        }
+      },
+      "ko": {
+        "retranslate": {
+          "BLEU_zh": 23.91617514565878,
+          "chrFpp": 17.68359103224962
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.85687422416582,
+          "chrFpp": 17.266192469313175
+        }
+      },
+      "ar": {
+        "retranslate": {
+          "BLEU_zh": 24.126947429680637,
+          "chrFpp": 16.36224269882908
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.062606909192937,
+          "chrFpp": 17.149289067020533
+        }
+      }
+    },
+    "small100": {
+      "en": {
+        "retranslate": {
+          "BLEU_zh": 27.80566839555565,
+          "chrFpp": 19.86448027808363
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 28.607145290441135,
+          "chrFpp": 20.577508509004815
+        }
+      },
+      "fr": {
+        "retranslate": {
+          "BLEU_zh": 25.00386285651612,
+          "chrFpp": 18.38521895765464
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 24.722713225623227,
+          "chrFpp": 18.20218440176122
+        }
+      },
+      "de": {
+        "retranslate": {
+          "BLEU_zh": 24.7911391288047,
+          "chrFpp": 18.494455296393237
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 25.000408136483276,
+          "chrFpp": 18.165681777362895
+        }
+      },
+      "es": {
+        "retranslate": {
+          "BLEU_zh": 22.31012301923618,
+          "chrFpp": 17.390993815857787
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 22.439608682376782,
+          "chrFpp": 17.335662887487402
+        }
+      },
+      "ru": {
+        "retranslate": {
+          "BLEU_zh": 23.812573212069292,
+          "chrFpp": 17.371410497313303
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.400723483229346,
+          "chrFpp": 17.116962766816943
+        }
+      },
+      "ja": {
+        "retranslate": {
+          "BLEU_zh": 23.781022541022903,
+          "chrFpp": 16.98656011199001
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.85121403875662,
+          "chrFpp": 17.252623184801035
+        }
+      },
+      "ko": {
+        "retranslate": {
+          "BLEU_zh": 22.723682936099625,
+          "chrFpp": 16.23465494161714
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 22.0565932414459,
+          "chrFpp": 15.827227966588431
+        }
+      },
+      "ar": {
+        "retranslate": {
+          "BLEU_zh": 24.172857391375356,
+          "chrFpp": 16.847298135934558
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.493904672206945,
+          "chrFpp": 16.109530257851194
+        }
+      }
+    },
+    "nllb200_600M": {
+      "en": {
+        "retranslate": {
+          "BLEU_zh": 24.457273446167413,
+          "chrFpp": 18.939110266849386
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 23.37091742494888,
+          "chrFpp": 18.51601945585993
+        }
+      },
+      "fr": {
+        "retranslate": {
+          "BLEU_zh": 20.61745767302067,
+          "chrFpp": 16.440626131169545
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 20.257858139595367,
+          "chrFpp": 15.864395974915613
+        }
+      },
+      "de": {
+        "retranslate": {
+          "BLEU_zh": 23.913438073334678,
+          "chrFpp": 16.782701275617505
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 20.953521032695168,
+          "chrFpp": 16.390219845943317
+        }
+      },
+      "es": {
+        "retranslate": {
+          "BLEU_zh": 18.846613441126387,
+          "chrFpp": 15.200685448402208
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 17.243907846048373,
+          "chrFpp": 14.417947580680604
+        }
+      },
+      "ru": {
+        "retranslate": {
+          "BLEU_zh": 22.080372824354225,
+          "chrFpp": 17.1889719151419
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 20.698224265297206,
+          "chrFpp": 16.291024030871814
+        }
+      },
+      "ja": {
+        "retranslate": {
+          "BLEU_zh": 20.86492824271431,
+          "chrFpp": 16.076117739543168
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 19.45483871145111,
+          "chrFpp": 14.978042059167901
+        }
+      },
+      "ko": {
+        "retranslate": {
+          "BLEU_zh": 23.266821088756764,
+          "chrFpp": 17.06898039533682
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 22.86359987357563,
+          "chrFpp": 16.812141630288625
+        }
+      },
+      "ar": {
+        "retranslate": {
+          "BLEU_zh": 21.71467008858059,
+          "chrFpp": 15.842163760522087
+        },
+        "agreement_forced_prefix": {
+          "BLEU_zh": 21.041165743498883,
+          "chrFpp": 15.46675270670633
+        }
+      }
+    }
+  },
+  "macro_full_metrics": {
+    "LMT-60-0.6B": {
+      "BLEU_zh": 35.90131409719315,
+      "chrFpp": 27.389531273213578
+    },
+    "m2m100_418M": {
+      "BLEU_zh": 24.73962665142323,
+      "chrFpp": 17.737948959349595
+    },
+    "small100": {
+      "BLEU_zh": 24.268537714948195,
+      "chrFpp": 17.1982242213778
+    },
+    "nllb200_600M": {
+      "BLEU_zh": 21.703581692947516,
+      "chrFpp": 16.058972278782694
+    }
+  },
+  "lmt_full_output_counts_by_language_raw": {
+    "en": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    },
+    "fr": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    },
+    "de": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    },
+    "es": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    },
+    "ru": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    },
+    "ja": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    },
+    "ko": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    },
+    "ar": {
+      "non_eos": 0,
+      "empty": 0,
+      "replacement_characters": 0
+    }
+  },
+  "lmt_streaming_stats_by_mode": {
+    "retranslate": {
+      "updates": 3200,
+      "latency_seconds": {
+        "count": 3200,
+        "mean": 0.16235172753265942,
+        "p50": 0.14886279869824648,
+        "p95": 0.32218604907393456,
+        "max": 0.6303477473556995
+      },
+      "normalized_erasure_characters_mean": 1.0738798721306557,
+      "non_eos_updates": 0,
+      "empty_updates": 0
+    },
+    "agreement_forced_prefix": {
+      "updates": 3200,
+      "latency_seconds": {
+        "count": 3200,
+        "mean": 0.1472541218981496,
+        "p50": 0.1340861269272864,
+        "p95": 0.28768178215250373,
+        "max": 0.5228320299647748
+      },
+      "normalized_erasure_characters_mean": 0.9259432022116727,
+      "non_eos_updates": 0,
+      "empty_updates": 0
+    }
+  },
+  "paired_stream_subset_metrics": {
+    "batch1_control": {
+      "en": {
+        "BLEU_zh": 44.99788264910398,
+        "chrFpp": 35.062331339031985
+      },
+      "fr": {
+        "BLEU_zh": 39.187382728170846,
+        "chrFpp": 31.716133815187924
+      },
+      "de": {
+        "BLEU_zh": 36.649305910776235,
+        "chrFpp": 29.33201992625845
+      },
+      "es": {
+        "BLEU_zh": 33.82974165443902,
+        "chrFpp": 26.920363550516296
+      },
+      "ru": {
+        "BLEU_zh": 34.57247760910747,
+        "chrFpp": 26.71423485315556
+      },
+      "ja": {
+        "BLEU_zh": 32.157417686556215,
+        "chrFpp": 24.883850452972816
+      },
+      "ko": {
+        "BLEU_zh": 33.47728954593827,
+        "chrFpp": 26.686241578779228
+      },
+      "ar": {
+        "BLEU_zh": 31.9022974508329,
+        "chrFpp": 25.538606192905267
+      }
+    },
+    "retranslate": {
+      "en": {
+        "BLEU_zh": 44.99788264910398,
+        "chrFpp": 35.062331339031985
+      },
+      "fr": {
+        "BLEU_zh": 39.187382728170846,
+        "chrFpp": 31.716133815187924
+      },
+      "de": {
+        "BLEU_zh": 36.649305910776235,
+        "chrFpp": 29.33201992625845
+      },
+      "es": {
+        "BLEU_zh": 33.82974165443902,
+        "chrFpp": 26.920363550516296
+      },
+      "ru": {
+        "BLEU_zh": 34.57247760910747,
+        "chrFpp": 26.71423485315556
+      },
+      "ja": {
+        "BLEU_zh": 32.157417686556215,
+        "chrFpp": 24.883850452972816
+      },
+      "ko": {
+        "BLEU_zh": 33.47728954593827,
+        "chrFpp": 26.686241578779228
+      },
+      "ar": {
+        "BLEU_zh": 31.9022974508329,
+        "chrFpp": 25.538606192905267
+      }
+    },
+    "agreement_forced_prefix": {
+      "en": {
+        "BLEU_zh": 45.07113788280215,
+        "chrFpp": 35.49033059973376
+      },
+      "fr": {
+        "BLEU_zh": 38.36280653874339,
+        "chrFpp": 30.81465682909805
+      },
+      "de": {
+        "BLEU_zh": 34.89691266125044,
+        "chrFpp": 27.448546605862546
+      },
+      "es": {
+        "BLEU_zh": 33.7144754113403,
+        "chrFpp": 27.9407139368334
+      },
+      "ru": {
+        "BLEU_zh": 34.42014249178216,
+        "chrFpp": 27.38906179899413
+      },
+      "ja": {
+        "BLEU_zh": 31.70477597294177,
+        "chrFpp": 24.501018818568163
+      },
+      "ko": {
+        "BLEU_zh": 33.03642615711139,
+        "chrFpp": 25.716489568133266
+      },
+      "ar": {
+        "BLEU_zh": 31.764837072826115,
+        "chrFpp": 24.865123609849284
+      }
+    }
+  },
+  "tokenizer_and_parameter_audit": {
+    "checkpoint_tensor_parameters": 751632384,
+    "embedding_and_lm_head_equal": true,
+    "tied_embedding_parameters": 155582464,
+    "unique_parameter_count_if_tied": 596049920,
+    "term_roundtrips": {
+      "阀门": {
+        "ids": [
+          114259
+        ],
+        "decoded": "阀门"
+      },
+      "不锈钢": {
+        "ids": [
+          106223
+        ],
+        "decoded": "不锈钢"
+      },
+      "单价12.50美元": {
+        "ids": [
+          114600,
+          16,
+          17,
+          13,
+          20,
+          15,
+          101237
+        ],
+        "decoded": "单价12.50美元"
+      },
+      "收到定金后才能发货": {
+        "ids": [
+          104381,
+          22382,
+          34230,
+          33447,
+          101901,
+          109645
+        ],
+        "decoded": "收到定金后才能发货"
+      }
+    }
+  },
+  "business_report_included": true
+}

@@ -1,0 +1,324 @@
+{
+  "nllb200_600M": {
+    "阀": {
+      "tokens": [
+        "zho_Hans",
+        "▁",
+        "<unk>",
+        "</s>"
+      ],
+      "decoded": "",
+      "unknown_tokens": 1
+    },
+    "阀门": {
+      "tokens": [
+        "zho_Hans",
+        "▁",
+        "<unk>",
+        "门",
+        "</s>"
+      ],
+      "decoded": "门",
+      "unknown_tokens": 1
+    },
+    "不锈钢": {
+      "tokens": [
+        "zho_Hans",
+        "▁不",
+        "<unk>",
+        "钢",
+        "</s>"
+      ],
+      "decoded": "不钢",
+      "unknown_tokens": 1
+    },
+    "单价12.50美元": {
+      "tokens": [
+        "zho_Hans",
+        "▁",
+        "单",
+        "价",
+        "12.",
+        "50",
+        "美元",
+        "</s>"
+      ],
+      "decoded": "单价12.50美元",
+      "unknown_tokens": 0
+    },
+    "收到定金后才能发货": {
+      "tokens": [
+        "zho_Hans",
+        "▁",
+        "收",
+        "到",
+        "定",
+        "金",
+        "后",
+        "才能",
+        "发",
+        "货",
+        "</s>"
+      ],
+      "decoded": "收到定金后才能发货",
+      "unknown_tokens": 0
+    },
+    "我们需要500个SUS304阀门。": {
+      "tokens": [
+        "zho_Hans",
+        "▁我们",
+        "需要",
+        "500",
+        "个",
+        "S",
+        "US",
+        "30",
+        "4",
+        "<unk>",
+        "门",
+        "。",
+        "</s>"
+      ],
+      "decoded": "我们需要500个SUS304门。",
+      "unknown_tokens": 1
+    },
+    "交期": {
+      "tokens": [
+        "zho_Hans",
+        "▁",
+        "交",
+        "期",
+        "</s>"
+      ],
+      "decoded": "交期",
+      "unknown_tokens": 0
+    },
+    "USD": {
+      "tokens": [
+        "zho_Hans",
+        "▁USD",
+        "</s>"
+      ],
+      "decoded": "USD",
+      "unknown_tokens": 0
+    }
+  },
+  "m2m100_418M": {
+    "阀": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "阀",
+        "</s>"
+      ],
+      "decoded": "阀",
+      "unknown_tokens": 0
+    },
+    "阀门": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "阀",
+        "门",
+        "</s>"
+      ],
+      "decoded": "阀门",
+      "unknown_tokens": 0
+    },
+    "不锈钢": {
+      "tokens": [
+        "__zh__",
+        "▁不",
+        "锈",
+        "钢",
+        "</s>"
+      ],
+      "decoded": "不锈钢",
+      "unknown_tokens": 0
+    },
+    "单价12.50美元": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "单",
+        "价",
+        "12.",
+        "50",
+        "美元",
+        "</s>"
+      ],
+      "decoded": "单价12.50美元",
+      "unknown_tokens": 0
+    },
+    "收到定金后才能发货": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "收到",
+        "定",
+        "金",
+        "后",
+        "才能",
+        "发",
+        "货",
+        "</s>"
+      ],
+      "decoded": "收到定金后才能发货",
+      "unknown_tokens": 0
+    },
+    "我们需要500个SUS304阀门。": {
+      "tokens": [
+        "__zh__",
+        "▁我们",
+        "需要",
+        "500",
+        "个",
+        "S",
+        "US",
+        "30",
+        "4",
+        "阀",
+        "门",
+        "。",
+        "</s>"
+      ],
+      "decoded": "我们需要500个SUS304阀门。",
+      "unknown_tokens": 0
+    },
+    "交期": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "交",
+        "期",
+        "</s>"
+      ],
+      "decoded": "交期",
+      "unknown_tokens": 0
+    },
+    "USD": {
+      "tokens": [
+        "__zh__",
+        "▁USD",
+        "</s>"
+      ],
+      "decoded": "USD",
+      "unknown_tokens": 0
+    }
+  },
+  "small100": {
+    "阀": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "阀",
+        "</s>"
+      ],
+      "decoded": "阀",
+      "unknown_tokens": 0
+    },
+    "阀门": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "阀",
+        "门",
+        "</s>"
+      ],
+      "decoded": "阀门",
+      "unknown_tokens": 0
+    },
+    "不锈钢": {
+      "tokens": [
+        "__zh__",
+        "▁不",
+        "锈",
+        "钢",
+        "</s>"
+      ],
+      "decoded": "不锈钢",
+      "unknown_tokens": 0
+    },
+    "单价12.50美元": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "单",
+        "价",
+        "12.",
+        "50",
+        "美元",
+        "</s>"
+      ],
+      "decoded": "单价12.50美元",
+      "unknown_tokens": 0
+    },
+    "收到定金后才能发货": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "收到",
+        "定",
+        "金",
+        "后",
+        "才能",
+        "发",
+        "货",
+        "</s>"
+      ],
+      "decoded": "收到定金后才能发货",
+      "unknown_tokens": 0
+    },
+    "我们需要500个SUS304阀门。": {
+      "tokens": [
+        "__zh__",
+        "▁我们",
+        "需要",
+        "500",
+        "个",
+        "S",
+        "US",
+        "30",
+        "4",
+        "阀",
+        "门",
+        "。",
+        "</s>"
+      ],
+      "decoded": "我们需要500个SUS304阀门。",
+      "unknown_tokens": 0
+    },
+    "交期": {
+      "tokens": [
+        "__zh__",
+        "▁",
+        "交",
+        "期",
+        "</s>"
+      ],
+      "decoded": "交期",
+      "unknown_tokens": 0
+    },
+    "USD": {
+      "tokens": [
+        "__zh__",
+        "▁USD",
+        "</s>"
+      ],
+      "decoded": "USD",
+      "unknown_tokens": 0
+    }
+  },
+  "nllb_full_vocabulary_character_search": {
+    "阀": [],
+    "閥": [
+      {
+        "token": "閥",
+        "id": 255790
+      }
+    ],
+    "锈": [],
+    "銹": [],
+    "鏽": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model_path": "/home/aim0/data/models/ASR/AgenticASR-Refiner",
+  "device": "cuda:1",
+  "scope": "Direct whole-sentence Refiner; original Codex-web prompt, no windows, no entity hints, no guards, no retries",
+  "max_new_tokens": 256,
+  "results": [
+    {
+      "variant": "original",
+      "input": "请勿发货 500 件。抱歉，将数量减少到 300 件，付款后才发货。",
+      "raw_model_output": "请勿发货500件。抱歉，将数量减少到300件，付款后才发货。",
+      "parsed_candidate": "请勿发货500件。抱歉，将数量减少到300件，付款后才发货。",
+      "patch": null,
+      "parse_issue": null,
+      "model_latency_ms": 843.6090690083802,
+      "elapsed_seconds": 0.8785271891392767
+    },
+    {
+      "variant": "without_number_spaces",
+      "input": "请勿发货500件。抱歉，将数量减少到300件，付款后才发货。",
+      "raw_model_output": "请勿发货500件。抱歉，将数量减少到300件，付款后才发货。",
+      "parsed_candidate": "请勿发货500件。抱歉，将数量减少到300件，付款后才发货。",
+      "patch": null,
+      "parse_issue": null,
+      "model_latency_ms": 493.6941550113261,
+      "elapsed_seconds": 0.4952427502721548
+    }
+  ]
+}
