@@ -1,0 +1,51 @@
+{
+  "status": "running",
+  "target": "full-run Q8_0 measured whole-GPU peak",
+  "models": [
+    {
+      "model": "bf16_vllm",
+      "status": "complete",
+      "sentences_per_second": 59.85099943445116,
+      "generated_tokens_per_second": 2165.3405556260477,
+      "rows_written": 8096,
+      "truncated": 0,
+      "gpu_memory_utilization": 0.2724202473958333,
+      "exact_hypotheses_vs_high_vram_run": 7010,
+      "exact_hypothesis_fraction": 0.8658596837944664,
+      "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44"
+    },
+    {
+      "model": "fp8_vllm",
+      "status": "complete",
+      "sentences_per_second": 80.8806644029919,
+      "generated_tokens_per_second": 2925.1107677701607,
+      "rows_written": 8096,
+      "truncated": 0,
+      "gpu_memory_utilization": 0.2724202473958333,
+      "exact_hypotheses_vs_high_vram_run": 7068,
+      "exact_hypothesis_fraction": 0.8730237154150198,
+      "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44"
+    },
+    {
+      "model": "nvfp4_vllm",
+      "status": "complete",
+      "sentences_per_second": 78.42345057277602,
+      "generated_tokens_per_second": 2840.7577580008133,
+      "rows_written": 8096,
+      "truncated": 0,
+      "gpu_memory_utilization": 0.2724202473958333,
+      "exact_hypotheses_vs_high_vram_run": 6989,
+      "exact_hypothesis_fraction": 0.8632658102766798,
+      "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44"
+    }
+  ],
+  "q8_baseline": {
+    "q8_observed_peak_mib": 6695,
+    "q8_observed_peak_gib": 6.5380859375,
+    "q8_median_mib": 6695,
+    "q8_telemetry_samples": 379,
+    "q8_sentences_per_second": 20.621364393105033,
+    "q8_generated_tokens_per_second": 744.57236422392,
+    "vllm_gpu_memory_utilization": 0.2724202473958333
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "status": "complete",
+  "model_key": "nvfp4_transformers",
+  "model_path": "/home/aim0/data/models/ASR/Index-Translate-2B-FP4",
+  "model_bytes": 3119307152,
+  "runtime": "Transformers",
+  "physical_gpu": 1,
+  "batch_size": 128,
+  "total_cases": 8096,
+  "sentences_per_language": 1012,
+  "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+  "decode": {
+    "do_sample": false,
+    "num_beams": 1,
+    "repetition_penalty": 1.0,
+    "max_tokens": 512,
+    "eos_token_ids": [
+      248044,
+      248046
+    ],
+    "enable_thinking": false
+  },
+  "started_utc": "2026-10-21T12:17:57.844918+00:00",
+  "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 19065 MiB, 24576 MiB, 82 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 0 %",
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.14.1",
+    "compressed-tensors": "0.17.0"
+  },
+  "configured_batch_size": 128,
+  "actual_batch_size_max": 128,
+  "oom_retries": 0,
+  "load_seconds": 6.431775928998832,
+  "unused_vision_tower_resident_on_gpu": true,
+  "warmup_seconds": 7.989633804012556,
+  "warmup_requests": 128,
+  "quantized_layers": [
+    {
+      "name": "model.language_model.layers.0.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.q_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.k_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.v_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.o_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.q_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.k_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.v_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.o_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.q_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.k_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.v_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.o_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.q_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.k_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.v_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.o_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.q_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.k_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.v_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.o_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.q_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.k_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.v_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.o_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.gate_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.up_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.down_proj",
+      "status": "QuantizationStatus.DECOMPRESSED",
+      "weight_bits": 4,
+      "activation_bits": 4
+    }
+  ],
+  "execution_mode": "decompressed weights and compressed-tensors software QDQ",
+  "fast_linear_attention_available": false,
+  "rows_written": 8096,
+  "completed_utc": "2026-10-21T12:33:20.224119+00:00",
+  "wall_seconds": 907.5671268759761,
+  "sentences_per_second": 8.92055227679744,
+  "generated_tokens": 293556,
+  "generated_tokens_per_second": 323.4537603961894,
+  "language_results": {
+    "en": {
+      "count": 1012,
+      "wall_seconds": 92.27944374695653,
+      "sentences_per_second": 10.966689426250218,
+      "generated_tokens": 29456,
+      "generation_tokens_per_second": 319.20435152137,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "fr": {
+      "count": 1012,
+      "wall_seconds": 121.38480878103292,
+      "sentences_per_second": 8.337122331555964,
+      "generated_tokens": 39909,
+      "generation_tokens_per_second": 328.78084499018473,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "de": {
+      "count": 1012,
+      "wall_seconds": 120.3086949629942,
+      "sentences_per_second": 8.411694602050845,
+      "generated_tokens": 38079,
+      "generation_tokens_per_second": 316.51078928013254,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "es": {
+      "count": 1012,
+      "wall_seconds": 114.83719667300466,
+      "sentences_per_second": 8.812475655267331,
+      "generated_tokens": 37190,
+      "generation_tokens_per_second": 323.8497723511779,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ru": {
+      "count": 1012,
+      "wall_seconds": 120.11525116304983,
+      "sentences_per_second": 8.42524150930897,
+      "generated_tokens": 39276,
+      "generation_tokens_per_second": 326.9859540707699,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ja": {
+      "count": 1012,
+      "wall_seconds": 108.3950547449931,
+      "sentences_per_second": 9.336219280305732,
+      "generated_tokens": 34914,
+      "generation_tokens_per_second": 322.09956517054775,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ko": {
+      "count": 1012,
+      "wall_seconds": 110.77831677498762,
+      "sentences_per_second": 9.135361769899154,
+      "generated_tokens": 36047,
+      "generation_tokens_per_second": 325.3976143473862,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ar": {
+      "count": 1012,
+      "wall_seconds": 119.46836002895725,
+      "sentences_per_second": 8.470862073897282,
+      "generated_tokens": 38685,
+      "generation_tokens_per_second": 323.8095843169134,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    }
+  },
+  "peak_allocated_bytes": 9432349184,
+  "peak_reserved_bytes": 18490589184,
+  "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 19065 MiB, 24576 MiB, 88 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 17973 MiB, 24576 MiB, 46 %",
+  "predictions_sha256": "1756b13ec2240f02075f214e53841ce60aea496e16e49480ffbc3700e8866407",
+  "final_adaptive_batch_size": 128
+}

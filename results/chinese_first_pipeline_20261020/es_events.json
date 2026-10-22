@@ -1,0 +1,520 @@
+[
+  {
+    "event": "ready",
+    "run_id": "1efaec500439434eaa8cfe1f1dae7508",
+    "language": "es",
+    "source_language": "zh",
+    "target_language": "es",
+    "pipeline_direction": "zh_to_foreign",
+    "server_time": 1792487198.8448453,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 0,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 13.581
+  },
+  {
+    "event": "source",
+    "revision": 1,
+    "source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "server_time": 1792487198.8453135,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 0,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 14.039
+  },
+  {
+    "event": "refining",
+    "revision": 1,
+    "refinement_revision": 1,
+    "server_time": 1792487198.8454807,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 0,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 14.206
+  },
+  {
+    "event": "refinement_progress",
+    "raw_text": "我们需要300个产品。请在星期五发货。",
+    "clean_text": "我们需要300个产品。请在星期五发货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 0,
+    "numeric_rule_latency_ms": 0.953,
+    "refiner_executed": false,
+    "refiner_accepted": true,
+    "refiner_reject_reasons": [],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [],
+    "structured_patch_audits": [],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "regex",
+    "refinement_gate_config": {
+      "mode": "regex",
+      "input_kind": "translated_text",
+      "uses_asr_confidence": false,
+      "rules_version": "existing_cleanup_signals_v1",
+      "entity_hints_trigger_refinement": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "keep",
+        "state": "KEEP",
+        "reasons": [
+          "no_regex_signal"
+        ],
+        "visible_chars": 17,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": []
+      }
+    ],
+    "refinement_gate_skipped_segments": 1,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface",
+    "refinement_window_context": {
+      "left_context": "",
+      "right_context": ""
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 3,
+    "refinement_source_spans": [
+      {
+        "source_text": "我们需要300个产品。请在星期五发货。",
+        "clean_text": "我们需要300个产品。请在星期五发货。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": ""
+        }
+      }
+    ],
+    "refinement_batch_size": 3,
+    "refinement_state": "group_progress",
+    "display_revision": 1,
+    "committed_clean_text": "我们需要300个产品。请在星期五发货。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个产品。请在星期五发货。",
+    "pending_raw_text": "",
+    "display_text": "我们需要300个产品。请在星期五发货。",
+    "has_pending_refinement": false,
+    "revision": 1,
+    "refinement_revision": 1,
+    "source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "input_kind": "chinese_asr_snapshot",
+    "refinement_ms": 3.9262330101337284,
+    "server_time": 1792487198.8495185,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 18.254
+  },
+  {
+    "event": "refined",
+    "raw_text": "我们需要300个产品。请在星期五发货。",
+    "clean_text": "我们需要300个产品。请在星期五发货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 0,
+    "numeric_rule_latency_ms": 0.953,
+    "refiner_executed": false,
+    "refiner_accepted": true,
+    "refiner_reject_reasons": [],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [],
+    "structured_patch_audits": [],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "regex",
+    "refinement_gate_config": {
+      "mode": "regex",
+      "input_kind": "translated_text",
+      "uses_asr_confidence": false,
+      "rules_version": "existing_cleanup_signals_v1",
+      "entity_hints_trigger_refinement": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "keep",
+        "state": "KEEP",
+        "reasons": [
+          "no_regex_signal"
+        ],
+        "visible_chars": 17,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": []
+      }
+    ],
+    "refinement_gate_skipped_segments": 1,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface",
+    "refinement_window_context": {
+      "left_context": "",
+      "right_context": ""
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 2,
+    "pending_refinement_chunks": 0,
+    "refinement_batch_size": 3,
+    "refinement_state": "window_refined",
+    "refinement_source_spans": [
+      {
+        "source_text": "我们需要300个产品。请在星期五发货。",
+        "clean_text": "我们需要300个产品。请在星期五发货。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_cache_reused_group_count": 0,
+    "window_cache_reused_gate_skip_group_count": 0,
+    "window_cache_reprocessed_group_count": 1,
+    "window_cache_reprocess_reasons": {
+      "no_exact_source_group_match": 1
+    },
+    "display_revision": 1,
+    "committed_clean_text": "我们需要300个产品。请在星期五发货。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个产品。请在星期五发货。",
+    "pending_raw_text": "",
+    "display_text": "我们需要300个产品。请在星期五发货。",
+    "has_pending_refinement": false,
+    "translation_revision": 1,
+    "final": true,
+    "input_kind": "chinese_asr_snapshot",
+    "revision": 1,
+    "refinement_revision": 1,
+    "source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "refinement_ms": 5.110238998895511,
+    "server_time": 1792487198.8506985,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 19.426
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 1,
+    "translation_source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "translation": "N",
+    "preview_sequence": 1,
+    "provisional": true,
+    "server_time": 1792487198.86498,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 33.708
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 1,
+    "translation_source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "translation": "Necesitamos 300 productos. Por favor",
+    "preview_sequence": 2,
+    "provisional": true,
+    "server_time": 1792487198.948409,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 117.145
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 1,
+    "translation_source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "translation": "Necesitamos 300 productos. Por favor, envíenos los productos el viernes.",
+    "preview_sequence": 3,
+    "provisional": true,
+    "server_time": 1792487199.2221382,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 390.878
+  },
+  {
+    "event": "translation",
+    "revision": 1,
+    "translation_revision": 1,
+    "source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "translation_source_text": "我们需要300个产品。请在星期五发货。",
+    "translation": "Necesitamos 300 productos. Por favor, envíenos los productos el viernes.",
+    "translation_ms": 371.6127410007175,
+    "translation_stats": {
+      "model_calls": 2,
+      "preview_model_calls": 1,
+      "confirmation_model_calls": 1,
+      "source_characters": 38,
+      "cache_hits": 0,
+      "stable_windows": 1,
+      "protected_spellings": 0,
+      "windows": 1,
+      "strategy": "refined_context_windows_v1",
+      "total_model_calls": 2,
+      "total_preview_model_calls": 1,
+      "total_confirmation_model_calls": 1,
+      "total_source_characters": 38
+    },
+    "server_time": 1792487199.2231185,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 391.846
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 2,
+    "translation_source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "translation": "Necesitamos 300 productos. Por favor, envíenos los productos el viernes.",
+    "preview_sequence": 1,
+    "provisional": true,
+    "server_time": 1792487199.223561,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 392.289
+  },
+  {
+    "event": "final",
+    "raw_text": "我们需要300个产品。请在星期五发货。",
+    "clean_text": "我们需要300个产品。请在星期五发货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 0,
+    "numeric_rule_latency_ms": 0.953,
+    "refiner_executed": false,
+    "refiner_accepted": true,
+    "refiner_reject_reasons": [],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [],
+    "structured_patch_audits": [],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "regex",
+    "refinement_gate_config": {
+      "mode": "regex",
+      "input_kind": "translated_text",
+      "uses_asr_confidence": false,
+      "rules_version": "existing_cleanup_signals_v1",
+      "entity_hints_trigger_refinement": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "keep",
+        "state": "KEEP",
+        "reasons": [
+          "no_regex_signal"
+        ],
+        "visible_chars": 17,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": []
+      }
+    ],
+    "refinement_gate_skipped_segments": 1,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface",
+    "refinement_window_context": {
+      "left_context": "",
+      "right_context": ""
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 2,
+    "pending_refinement_chunks": 0,
+    "refinement_batch_size": 3,
+    "refinement_state": "window_refined",
+    "refinement_source_spans": [
+      {
+        "source_text": "我们需要300个产品。请在星期五发货。",
+        "clean_text": "我们需要300个产品。请在星期五发货。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_cache_reused_group_count": 0,
+    "window_cache_reused_gate_skip_group_count": 0,
+    "window_cache_reprocessed_group_count": 1,
+    "window_cache_reprocess_reasons": {
+      "no_exact_source_group_match": 1
+    },
+    "display_revision": 1,
+    "committed_clean_text": "我们需要300个产品。请在星期五发货。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个产品。请在星期五发货。",
+    "pending_raw_text": "",
+    "display_text": "我们需要300个产品。请在星期五发货。",
+    "has_pending_refinement": false,
+    "translation_revision": 2,
+    "final": true,
+    "input_kind": "chinese_asr_snapshot",
+    "revision": 1,
+    "refinement_revision": 1,
+    "source_text": "我们需要300个产品。请在星期五发货。",
+    "source_language": "zh",
+    "target_language": "es",
+    "refinement_ms": 5.110238998895511,
+    "translation_source_text": "我们需要300个产品。请在星期五发货。",
+    "translation": "Necesitamos 300 productos. Por favor, envíenos los productos el viernes.",
+    "translation_ms": 0.048919988330453634,
+    "translation_stats": {
+      "model_calls": 0,
+      "preview_model_calls": 0,
+      "confirmation_model_calls": 0,
+      "source_characters": 0,
+      "cache_hits": 1,
+      "stable_windows": 1,
+      "protected_spellings": 0,
+      "windows": 1,
+      "strategy": "refined_context_windows_v1",
+      "total_model_calls": 2,
+      "total_preview_model_calls": 1,
+      "total_confirmation_model_calls": 1,
+      "total_source_characters": 38
+    },
+    "pipeline_stats": {
+      "source_updates": 1,
+      "refinement_updates": 1,
+      "translation_updates": 2,
+      "discarded_translation_results": 0,
+      "discarded_refinement_results": 0,
+      "merged_source_snapshots": 0,
+      "merged_refinement_snapshots": 0,
+      "max_pending_per_stage": 1
+    },
+    "server_time": 1792487199.2237976,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 392.523
+  }
+]

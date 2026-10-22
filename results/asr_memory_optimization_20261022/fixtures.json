@@ -1,0 +1,30 @@
+{
+  "english": {
+    "duration_seconds": 5.97,
+    "pcm_sha256": "0411b66619f5a63120d9e630140b561876ebd63ea13444b22d65b84a4cef6551",
+    "path": "/home/aim0/桌面/tan/ASR/Translator/workbench/tests/fixtures/english_probe.wav",
+    "file_sha256": "9df14c475f689e686ba34eb0f0bd2c8ad1f4a499c57317cba0c17e01cc60575e"
+  },
+  "chinese_short": {
+    "duration_seconds": 12.0,
+    "pcm_sha256": "b4bf8b5d032aad91f812da7516daf52068fa13ea0fcb45a1cb8cbc3fcfdc9986",
+    "path": "/home/aim0/桌面/tan/ASR/Translator/results/chinese_first_pipeline_20261020/chinese_probe.wav",
+    "file_sha256": "97f7f98200775ab7fef8365fea55c20c88f8946c5533bb0b88de691c11928821"
+  },
+  "chinese_real": {
+    "duration_seconds": 40.848,
+    "pcm_sha256": "8167f5ccccdac019ad2104cc734d79697c27c597f76295f26c05245e1bcb12dc",
+    "path": "/home/aim0/桌面/tan/ASR/Codex-web/测试音频1.mp3",
+    "file_sha256": "2c0218d5322b46ba0765bed5ed48b059f9fb8354c469315fe1c46fb0b8969fa8"
+  },
+  "chinese_repeated_240s": {
+    "duration_seconds": 240.0,
+    "pcm_sha256": "f73df5b2afbbe3729b72f918c3d4cf43916b5f4ccdd6a4d89492832b7797b60e",
+    "description": "Real 40.848s Chinese recording repeated to 240s; not natural continuous speech"
+  },
+  "dense_speech_60s": {
+    "duration_seconds": 60.0,
+    "pcm_sha256": "2ba969b3b9062a639130e2e3dee8f777f24e3ec3709a56100c93e613d72eb014",
+    "description": "Artificial capacity stress: concatenate 20ms frames with RMS > 0.008 and repeat to 60s"
+  }
+}

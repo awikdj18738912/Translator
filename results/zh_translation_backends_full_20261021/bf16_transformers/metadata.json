@@ -1,0 +1,125 @@
+{
+  "status": "complete",
+  "model_key": "bf16_transformers",
+  "model_path": "/home/aim0/data/models/ASR/Index-Translate-2B",
+  "model_bytes": 4548216776,
+  "runtime": "Transformers",
+  "physical_gpu": 1,
+  "batch_size": 128,
+  "total_cases": 8096,
+  "sentences_per_language": 1012,
+  "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+  "decode": {
+    "do_sample": false,
+    "num_beams": 1,
+    "repetition_penalty": 1.0,
+    "max_tokens": 512,
+    "eos_token_ids": [
+      248044,
+      248046
+    ],
+    "enable_thinking": false
+  },
+  "started_utc": "2026-10-21T11:52:46.165847+00:00",
+  "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 18665 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 0 %",
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.14.1",
+    "compressed-tensors": "0.17.0"
+  },
+  "configured_batch_size": 128,
+  "actual_batch_size_max": 128,
+  "oom_retries": 0,
+  "load_seconds": 2.271239497989882,
+  "unused_vision_tower_resident_on_gpu": true,
+  "warmup_seconds": 2.9420693109859712,
+  "warmup_requests": 128,
+  "quantized_layers": [],
+  "execution_mode": "BF16 PyTorch",
+  "fast_linear_attention_available": false,
+  "rows_written": 8096,
+  "completed_utc": "2026-10-21T11:59:41.938705+00:00",
+  "wall_seconds": 410.1646314478421,
+  "sentences_per_second": 19.738415697672153,
+  "generated_tokens": 292765,
+  "generated_tokens_per_second": 713.7743665673157,
+  "language_results": {
+    "en": {
+      "count": 1012,
+      "wall_seconds": 42.652214972971706,
+      "sentences_per_second": 23.7267865371422,
+      "generated_tokens": 29465,
+      "generation_tokens_per_second": 690.8199262024654,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "fr": {
+      "count": 1012,
+      "wall_seconds": 54.748964802973205,
+      "sentences_per_second": 18.484367761873045,
+      "generated_tokens": 39924,
+      "generation_tokens_per_second": 729.2192673172129,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "de": {
+      "count": 1012,
+      "wall_seconds": 53.9425218939723,
+      "sentences_per_second": 18.760709816073394,
+      "generated_tokens": 37990,
+      "generation_tokens_per_second": 704.2681481350081,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "es": {
+      "count": 1012,
+      "wall_seconds": 51.84947685597581,
+      "sentences_per_second": 19.518036851385588,
+      "generated_tokens": 37051,
+      "generation_tokens_per_second": 714.5877306133275,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ru": {
+      "count": 1012,
+      "wall_seconds": 54.64092615098343,
+      "sentences_per_second": 18.52091593769199,
+      "generated_tokens": 39167,
+      "generation_tokens_per_second": 716.8070301695475,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ja": {
+      "count": 1012,
+      "wall_seconds": 48.63978101997054,
+      "sentences_per_second": 20.806014722485955,
+      "generated_tokens": 34652,
+      "generation_tokens_per_second": 712.4209705173748,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ko": {
+      "count": 1012,
+      "wall_seconds": 50.236639862996526,
+      "sentences_per_second": 20.14465941113674,
+      "generated_tokens": 35923,
+      "generation_tokens_per_second": 715.0756917255584,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    },
+    "ar": {
+      "count": 1012,
+      "wall_seconds": 53.454105887998594,
+      "sentences_per_second": 18.932128471485896,
+      "generated_tokens": 38593,
+      "generation_tokens_per_second": 721.9838281621098,
+      "empty_outputs": 0,
+      "truncated_outputs": 0
+    }
+  },
+  "peak_allocated_bytes": 9292541952,
+  "peak_reserved_bytes": 10970202112,
+  "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 18725 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 10801 MiB, 24576 MiB, 89 %",
+  "predictions_sha256": "c70d22c02b035d9719c73acdce5b6096619044ae5e8946856bd49162a1a69d32",
+  "final_adaptive_batch_size": 128
+}

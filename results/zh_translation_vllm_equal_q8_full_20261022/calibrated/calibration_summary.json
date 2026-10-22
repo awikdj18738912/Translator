@@ -1,0 +1,21 @@
+{
+  "status": "calibration_pass",
+  "q8_baseline": 6695,
+  "models": {
+    "bf16_vllm": {
+      "peak_gpu_memory_mib": 7165,
+      "telemetry_samples": 130,
+      "initial_util": 0.2724202473958333
+    },
+    "fp8_vllm": {
+      "peak_gpu_memory_mib": 6963,
+      "telemetry_samples": 97,
+      "initial_util": 0.2724202473958333
+    },
+    "nvfp4_vllm": {
+      "peak_gpu_memory_mib": 7021,
+      "telemetry_samples": 100,
+      "initial_util": 0.2724202473958333
+    }
+  }
+}

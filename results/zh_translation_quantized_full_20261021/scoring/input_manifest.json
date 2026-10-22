@@ -1,0 +1,47 @@
+{
+  "models": {
+    "q8_0": {
+      "metric_key": "index",
+      "model_name": "Index-Translate-2B GGUF Q8_0",
+      "rows": 8096,
+      "predictions_sha256": "d4e93fea42c5245cf312e435edd3fc1090271a5b2acfd8c5d5ef60b182f6ac3b"
+    },
+    "q6_k": {
+      "metric_key": "hy",
+      "model_name": "Index-Translate-2B GGUF Q6_K",
+      "rows": 8096,
+      "predictions_sha256": "12f388561775107c8d0fc240f076cad3fc705a6b59cdc3576d919555877aafe4"
+    },
+    "q4_k_m": {
+      "metric_key": "lmt",
+      "model_name": "Index-Translate-2B GGUF Q4_K_M",
+      "rows": 8096,
+      "predictions_sha256": "d9cc7d6af6c38a1ed1762bb54cd904750b36217ac195eb058b216ac729881708"
+    }
+  },
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "total_model_rows": 24288,
+  "bleu_13a_languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ar"
+  ],
+  "bleu_13a_rows_per_model": {
+    "q8_0": 6072,
+    "q6_k": 6072,
+    "q4_k_m": 6072
+  },
+  "source_reference_alignment_sha256": "909d3bdd97c3b556ee818fecbd1b7313a634c6ba505f8fc1524a6c99acf2d521"
+}

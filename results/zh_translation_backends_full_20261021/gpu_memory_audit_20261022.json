@@ -1,0 +1,35 @@
+{
+  "bf16_transformers": {
+    "whole_gpu_peak_mib": 10801.0,
+    "whole_gpu_peak_gib": 10.5478515625,
+    "whole_gpu_median_mib": 10467.0,
+    "samples": 354,
+    "actual_generation_batches": 56,
+    "pytorch_peak_allocated_gib": 8.654354095458984,
+    "pytorch_peak_reserved_gib": 10.216796875,
+    "scope": "generation request intervals; excludes load and warmup",
+    "exclusion": "All English batches excluded to avoid two brief concurrent diagnostic model loads"
+  },
+  "fp8_transformers": {
+    "whole_gpu_peak_mib": 12155.0,
+    "whole_gpu_peak_gib": 11.8701171875,
+    "whole_gpu_median_mib": 11169.0,
+    "samples": 1033,
+    "actual_generation_batches": 64,
+    "pytorch_peak_allocated_gib": 8.656872272491455,
+    "pytorch_peak_reserved_gib": 11.5390625,
+    "scope": "generation request intervals; excludes load and warmup",
+    "exclusion": null
+  },
+  "nvfp4_transformers": {
+    "whole_gpu_peak_mib": 17973.0,
+    "whole_gpu_peak_gib": 17.5517578125,
+    "whole_gpu_median_mib": 15373.0,
+    "samples": 875,
+    "actual_generation_batches": 64,
+    "pytorch_peak_allocated_gib": 8.784559726715088,
+    "pytorch_peak_reserved_gib": 17.220703125,
+    "scope": "generation request intervals; excludes load and warmup",
+    "exclusion": null
+  }
+}

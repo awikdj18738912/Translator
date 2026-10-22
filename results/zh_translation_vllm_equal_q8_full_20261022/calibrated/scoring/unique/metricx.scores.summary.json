@@ -1,0 +1,10 @@
+{
+  "metric": "metricx",
+  "examples": 18353,
+  "batch_size": 128,
+  "score_seconds": 316.5882992380066,
+  "items_per_second": 57.97118858837697,
+  "input": "/home/aim0/桌面/tan/ASR/Translator/results/zh_translation_vllm_equal_q8_full_20261022/calibrated/scoring/unique_inputs.jsonl",
+  "input_sha256": "3bc4903383391c0653f5e6ea699b6f630668e26c1a9d05a674d1d79987244a58",
+  "fresh_unique_inputs": true
+}

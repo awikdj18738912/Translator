@@ -1,0 +1,197 @@
+{
+  "created_utc": "2026-10-20T13:37:10.956243+00:00",
+  "input_dir": "/home/aim0/桌面/tan/ASR/Translator/results/zh_translation_benchmark_full_batch128_20261020",
+  "model_id": "Unbabel/wmt22-comet-da",
+  "comet_version": "2.2.7",
+  "checkpoint_path": "/home/aim0/.cache/huggingface/hub/models--Unbabel--wmt22-comet-da/blobs/e213091cde220f97b89f8bdfa750c458cfea741ad62affb455b59900210ff2af",
+  "checkpoint_size_bytes": 2323649073,
+  "checkpoint_sha256": "e213091cde220f97b89f8bdfa750c458cfea741ad62affb455b59900210ff2af",
+  "physical_gpu": 1,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "torch_version": "2.11.0+cu130",
+  "batch_size": 128,
+  "matmul_precision": "high",
+  "total_cases": 8096,
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "models": [
+    "index",
+    "hy",
+    "lmt"
+  ],
+  "bootstrap_samples": 10000,
+  "seed": 20261020,
+  "systems": {
+    "index": {
+      "macro_mean": 0.8686986954573527,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.8742124397057318,
+          "stddev": 0.04146041968974694
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8528100718033643,
+          "stddev": 0.05740256627359774
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.8509398702340635,
+          "stddev": 0.0549276755042539
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.8538239073788696,
+          "stddev": 0.05133920702370193
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8834391385316849,
+          "stddev": 0.0535494220463314
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.9075379760957989,
+          "stddev": 0.03865225034935697
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.881544846143176,
+          "stddev": 0.05170371873115943
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8452813137661327,
+          "stddev": 0.06199995958061722
+        }
+      }
+    },
+    "hy": {
+      "macro_mean": 0.8651424336906066,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.8698744356867825,
+          "stddev": 0.0406608029108156
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8439592773264105,
+          "stddev": 0.06274527900950053
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.8472072019171809,
+          "stddev": 0.05464969274547712
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.849705141965344,
+          "stddev": 0.05258343155181255
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8798435087142725,
+          "stddev": 0.05630781367426239
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.9055569060588543,
+          "stddev": 0.04038154055572933
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.883164668742847,
+          "stddev": 0.048117425647340485
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8418283291131612,
+          "stddev": 0.06111697516721941
+        }
+      }
+    },
+    "lmt": {
+      "macro_mean": 0.8585353171316679,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.8759831223681039,
+          "stddev": 0.04214589866625519
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8404651312488812,
+          "stddev": 0.06754597773785355
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.8396718038518438,
+          "stddev": 0.06209006710225027
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.8452465249439002,
+          "stddev": 0.056685599639165696
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8745185634482048,
+          "stddev": 0.0640881122172621
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.9036852074823832,
+          "stddev": 0.04707681310942313
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.8728086161813717,
+          "stddev": 0.06003169496480541
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.815903567528654,
+          "stddev": 0.08105329609532459
+        }
+      }
+    }
+  },
+  "runtime": {
+    "index": {
+      "batch_size_used": 128,
+      "scoring_seconds": 31.535006788006285,
+      "scores_sha256": "cc51628167b6c6cee34de74ab20c5be4e2be97b1561ac7416c6f485c366a7b01",
+      "gpu_peak_allocated_bytes": 5605788160,
+      "gpu_peak_reserved_bytes": 9894363136
+    },
+    "hy": {
+      "batch_size_used": 128,
+      "scoring_seconds": 31.9225011029921,
+      "scores_sha256": "a548ed228ecf902a2299ef67f83fe0061e223be50addd38a539c01eb317acd06",
+      "gpu_peak_allocated_bytes": 5605790208,
+      "gpu_peak_reserved_bytes": 9080668160
+    },
+    "lmt": {
+      "batch_size_used": 128,
+      "scoring_seconds": 38.73138868100068,
+      "scores_sha256": "a3b24f4744dcd24a017c1b256a0fa246e80f428c1e736c5bbf576d1769bac0f1",
+      "gpu_peak_allocated_bytes": 16246845952,
+      "gpu_peak_reserved_bytes": 22682796032
+    }
+  },
+  "limitations": [
+    "COMET score is a learned quality estimate, not a percentage-correct accuracy.",
+    "XLM-R covers the evaluated languages, while the metric training directions do not fully match Chinese-to-eight-language translation.",
+    "FLORES-101 devtest is public written text, not domain-specific speech-recognition output."
+  ]
+}

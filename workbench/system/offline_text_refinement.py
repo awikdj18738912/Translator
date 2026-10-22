@@ -1,7 +1,7 @@
 """Text snapshot replay using the same window callback as the Web pipeline.
 
 This adapter has no ASR client. Its input is an entire revisable Chinese text
-snapshot, such as an upstream machine translation hypothesis.
+snapshot, such as a Chinese ASR hypothesis or translated Chinese text.
 """
 from threading import Lock
 

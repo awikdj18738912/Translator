@@ -34,8 +34,9 @@ def context_windows(source, *, max_chars=700, group_sentences=3, min_chars=160):
 
 
 class AdaptiveTranslationSnapshots:
-    def __init__(self,translate,stream_translate=None):
+    def __init__(self,translate,stream_translate=None,*,preview_confirmed=False):
         self.translate=translate;self.stream_translate=stream_translate
+        self.preview_confirmed=preview_confirmed
         self.cache={};self.stable_translation='';self.active_translation=''
         self.last_translation=''
         self.last_stats={};self.totals={'model_calls':0,'preview_model_calls':0,'confirmation_model_calls':0,'source_characters':0}
@@ -87,6 +88,10 @@ class AdaptiveTranslationSnapshots:
             def publish(value):
                 emit(join_refined_segments([*output,value]))
             if value is None:
+                if confirmed and self.preview_confirmed and self.stream_translate and on_partial:
+                    # Chinese-first mode only supplies already refined input.
+                    # Show genuine tokens, then confirm this exact window once.
+                    decode(text.strip(),True,publish)
                 # Only unfinished context uses a provisional decode. Once it
                 # closes, quality-decode that same group once and retain it.
                 value=decode(text.strip(),not confirmed,publish)

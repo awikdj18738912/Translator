@@ -1,0 +1,2027 @@
+[
+  {
+    "model": "index",
+    "metadata": {
+      "fingerprint": "8656c0e59ccfd3e0de041c2a841017807beb39eaacaccadf909c5033e9313ee3",
+      "protocol": {
+        "protocol": "zh-translation-bf16-greedy-batched-v1",
+        "model": "index",
+        "path": "/home/aim0/data/models/ASR/Index-Translate-2B",
+        "script_sha256": "69bc4f35ed03fae941e94f3fe5daf94f91c4d0cc849c6a21d8e2fb626fd329ec",
+        "checkpoint_manifest_sha256": "84892893737ffa3439de73a3fd390b3e7fec471155ff39f05ef598f8204c3254",
+        "data_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+        "languages": [
+          "en"
+        ],
+        "case_ids": [
+          [
+            "en",
+            1003
+          ],
+          [
+            "en",
+            1012
+          ],
+          [
+            "en",
+            103
+          ],
+          [
+            "en",
+            116
+          ],
+          [
+            "en",
+            122
+          ],
+          [
+            "en",
+            13
+          ],
+          [
+            "en",
+            132
+          ],
+          [
+            "en",
+            133
+          ],
+          [
+            "en",
+            144
+          ],
+          [
+            "en",
+            146
+          ],
+          [
+            "en",
+            148
+          ],
+          [
+            "en",
+            162
+          ],
+          [
+            "en",
+            170
+          ],
+          [
+            "en",
+            172
+          ],
+          [
+            "en",
+            173
+          ],
+          [
+            "en",
+            175
+          ],
+          [
+            "en",
+            192
+          ],
+          [
+            "en",
+            206
+          ],
+          [
+            "en",
+            214
+          ],
+          [
+            "en",
+            220
+          ],
+          [
+            "en",
+            223
+          ],
+          [
+            "en",
+            229
+          ],
+          [
+            "en",
+            231
+          ],
+          [
+            "en",
+            233
+          ],
+          [
+            "en",
+            244
+          ],
+          [
+            "en",
+            246
+          ],
+          [
+            "en",
+            254
+          ],
+          [
+            "en",
+            263
+          ],
+          [
+            "en",
+            264
+          ],
+          [
+            "en",
+            269
+          ],
+          [
+            "en",
+            275
+          ],
+          [
+            "en",
+            276
+          ],
+          [
+            "en",
+            278
+          ],
+          [
+            "en",
+            280
+          ],
+          [
+            "en",
+            283
+          ],
+          [
+            "en",
+            284
+          ],
+          [
+            "en",
+            286
+          ],
+          [
+            "en",
+            287
+          ],
+          [
+            "en",
+            292
+          ],
+          [
+            "en",
+            307
+          ],
+          [
+            "en",
+            314
+          ],
+          [
+            "en",
+            335
+          ],
+          [
+            "en",
+            340
+          ],
+          [
+            "en",
+            347
+          ],
+          [
+            "en",
+            375
+          ],
+          [
+            "en",
+            377
+          ],
+          [
+            "en",
+            381
+          ],
+          [
+            "en",
+            383
+          ],
+          [
+            "en",
+            385
+          ],
+          [
+            "en",
+            407
+          ],
+          [
+            "en",
+            416
+          ],
+          [
+            "en",
+            425
+          ],
+          [
+            "en",
+            45
+          ],
+          [
+            "en",
+            453
+          ],
+          [
+            "en",
+            456
+          ],
+          [
+            "en",
+            458
+          ],
+          [
+            "en",
+            462
+          ],
+          [
+            "en",
+            476
+          ],
+          [
+            "en",
+            481
+          ],
+          [
+            "en",
+            498
+          ],
+          [
+            "en",
+            506
+          ],
+          [
+            "en",
+            509
+          ],
+          [
+            "en",
+            510
+          ],
+          [
+            "en",
+            516
+          ],
+          [
+            "en",
+            529
+          ],
+          [
+            "en",
+            530
+          ],
+          [
+            "en",
+            544
+          ],
+          [
+            "en",
+            552
+          ],
+          [
+            "en",
+            554
+          ],
+          [
+            "en",
+            556
+          ],
+          [
+            "en",
+            568
+          ],
+          [
+            "en",
+            574
+          ],
+          [
+            "en",
+            585
+          ],
+          [
+            "en",
+            591
+          ],
+          [
+            "en",
+            594
+          ],
+          [
+            "en",
+            596
+          ],
+          [
+            "en",
+            60
+          ],
+          [
+            "en",
+            611
+          ],
+          [
+            "en",
+            622
+          ],
+          [
+            "en",
+            625
+          ],
+          [
+            "en",
+            645
+          ],
+          [
+            "en",
+            653
+          ],
+          [
+            "en",
+            668
+          ],
+          [
+            "en",
+            674
+          ],
+          [
+            "en",
+            678
+          ],
+          [
+            "en",
+            688
+          ],
+          [
+            "en",
+            689
+          ],
+          [
+            "en",
+            705
+          ],
+          [
+            "en",
+            707
+          ],
+          [
+            "en",
+            712
+          ],
+          [
+            "en",
+            719
+          ],
+          [
+            "en",
+            72
+          ],
+          [
+            "en",
+            726
+          ],
+          [
+            "en",
+            746
+          ],
+          [
+            "en",
+            752
+          ],
+          [
+            "en",
+            754
+          ],
+          [
+            "en",
+            759
+          ],
+          [
+            "en",
+            772
+          ],
+          [
+            "en",
+            775
+          ],
+          [
+            "en",
+            779
+          ],
+          [
+            "en",
+            800
+          ],
+          [
+            "en",
+            803
+          ],
+          [
+            "en",
+            804
+          ],
+          [
+            "en",
+            806
+          ],
+          [
+            "en",
+            813
+          ],
+          [
+            "en",
+            819
+          ],
+          [
+            "en",
+            820
+          ],
+          [
+            "en",
+            822
+          ],
+          [
+            "en",
+            830
+          ],
+          [
+            "en",
+            841
+          ],
+          [
+            "en",
+            852
+          ],
+          [
+            "en",
+            88
+          ],
+          [
+            "en",
+            898
+          ],
+          [
+            "en",
+            913
+          ],
+          [
+            "en",
+            921
+          ],
+          [
+            "en",
+            926
+          ],
+          [
+            "en",
+            934
+          ],
+          [
+            "en",
+            945
+          ],
+          [
+            "en",
+            949
+          ],
+          [
+            "en",
+            956
+          ],
+          [
+            "en",
+            958
+          ],
+          [
+            "en",
+            960
+          ],
+          [
+            "en",
+            965
+          ],
+          [
+            "en",
+            967
+          ],
+          [
+            "en",
+            979
+          ],
+          [
+            "en",
+            99
+          ],
+          [
+            "en",
+            996
+          ],
+          [
+            "en",
+            998
+          ]
+        ],
+        "precision": "bfloat16",
+        "device": "cuda:1",
+        "batch_size": 128,
+        "max_new_tokens": 512,
+        "seed": 20261020,
+        "decode": "greedy: do_sample=False, num_beams=1, use_cache=True, repetition_penalty=1",
+        "attention": "sdpa",
+        "prompt_example": "请将以下文本翻译为英语，直接输出翻译结果，不要进行任何解释。\n\n最初，动物们都是通过游泳、飞行或者漂浮的方式到达了这些岛屿。",
+        "thinking": "disabled explicitly for Index; checkpoint default for HY/LMT",
+        "cpu_threads": 2,
+        "warmup_per_language": 1,
+        "torch": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "gpu": "NVIDIA GeForce RTX 3090"
+      },
+      "created_at": "2026-10-20T11:45:52.464703+00:00",
+      "session_id": "f85ffeeec0a9436aa077894decb25544",
+      "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 2 %",
+      "resume_previous_rows": 0,
+      "status": "complete",
+      "load_seconds": 1.1991258850030135,
+      "parameter_count": 2213241664,
+      "parameter_bytes": 4426483328,
+      "generation_config": {
+        "max_length": null,
+        "max_new_tokens": 512,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": false,
+        "num_beams": 1,
+        "use_mtp": null,
+        "use_cache": true,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 1.0,
+        "top_k": 50,
+        "top_p": 1.0,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.0,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 248044,
+        "bos_token_id": null,
+        "eos_token_id": [
+          248044,
+          248046
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      },
+      "index_fast_linear_attention_available": false,
+      "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 9513 MiB, 24576 MiB, 97 %",
+      "peak_allocated_bytes": 9265626624,
+      "peak_reserved_bytes": 9619636224
+    },
+    "summary": {
+      "sacrebleu": "2.5.1",
+      "predictions_sha256": "db0108e0866f1ae68e110751fadd8dd0e409938f91edc684bc973a139a764d04",
+      "languages": {
+        "en": {
+          "count": 128,
+          "spBLEU": 30.94295231147091,
+          "chrFpp": 55.22100498736946,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 1,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.070017423000536,
+            "p50": 6.070017423000536,
+            "p95": 6.070017423000536
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.04742201111719169,
+            "p50": 0.04742201111719169,
+            "p95": 0.04742201111719169
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.2422352080029668,
+            "p50": 1.2422352080029668,
+            "p95": 1.2422352080029668
+          },
+          "sentences_per_second": 21.087254134556822,
+          "output_characters_per_second": 2785.164987490763,
+          "generated_tokens_per_second_e2e": 590.2783715946648,
+          "decode_tokens_per_second": 719.4526888870686,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      },
+      "total_cases": 128,
+      "peak_allocated_bytes": 9265626624,
+      "peak_reserved_bytes": 9619636224,
+      "macro_chrFpp": 55.22100498736946,
+      "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+    }
+  },
+  {
+    "model": "hy",
+    "metadata": {
+      "fingerprint": "6a5cf056c7423de39445496278c446228476f2975d339665ea8e2f7f01c754b3",
+      "protocol": {
+        "protocol": "zh-translation-bf16-greedy-batched-v1",
+        "model": "hy",
+        "path": "/home/aim0/data/models/ASR/Hy-MT2-1.8B",
+        "script_sha256": "69bc4f35ed03fae941e94f3fe5daf94f91c4d0cc849c6a21d8e2fb626fd329ec",
+        "checkpoint_manifest_sha256": "70a19ab8ed510ea534ecc63ca158c8be489798cec93e9ae228cf0a92fab87826",
+        "data_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+        "languages": [
+          "en"
+        ],
+        "case_ids": [
+          [
+            "en",
+            1003
+          ],
+          [
+            "en",
+            1012
+          ],
+          [
+            "en",
+            103
+          ],
+          [
+            "en",
+            116
+          ],
+          [
+            "en",
+            122
+          ],
+          [
+            "en",
+            13
+          ],
+          [
+            "en",
+            132
+          ],
+          [
+            "en",
+            133
+          ],
+          [
+            "en",
+            144
+          ],
+          [
+            "en",
+            146
+          ],
+          [
+            "en",
+            148
+          ],
+          [
+            "en",
+            162
+          ],
+          [
+            "en",
+            170
+          ],
+          [
+            "en",
+            172
+          ],
+          [
+            "en",
+            173
+          ],
+          [
+            "en",
+            175
+          ],
+          [
+            "en",
+            192
+          ],
+          [
+            "en",
+            206
+          ],
+          [
+            "en",
+            214
+          ],
+          [
+            "en",
+            220
+          ],
+          [
+            "en",
+            223
+          ],
+          [
+            "en",
+            229
+          ],
+          [
+            "en",
+            231
+          ],
+          [
+            "en",
+            233
+          ],
+          [
+            "en",
+            244
+          ],
+          [
+            "en",
+            246
+          ],
+          [
+            "en",
+            254
+          ],
+          [
+            "en",
+            263
+          ],
+          [
+            "en",
+            264
+          ],
+          [
+            "en",
+            269
+          ],
+          [
+            "en",
+            275
+          ],
+          [
+            "en",
+            276
+          ],
+          [
+            "en",
+            278
+          ],
+          [
+            "en",
+            280
+          ],
+          [
+            "en",
+            283
+          ],
+          [
+            "en",
+            284
+          ],
+          [
+            "en",
+            286
+          ],
+          [
+            "en",
+            287
+          ],
+          [
+            "en",
+            292
+          ],
+          [
+            "en",
+            307
+          ],
+          [
+            "en",
+            314
+          ],
+          [
+            "en",
+            335
+          ],
+          [
+            "en",
+            340
+          ],
+          [
+            "en",
+            347
+          ],
+          [
+            "en",
+            375
+          ],
+          [
+            "en",
+            377
+          ],
+          [
+            "en",
+            381
+          ],
+          [
+            "en",
+            383
+          ],
+          [
+            "en",
+            385
+          ],
+          [
+            "en",
+            407
+          ],
+          [
+            "en",
+            416
+          ],
+          [
+            "en",
+            425
+          ],
+          [
+            "en",
+            45
+          ],
+          [
+            "en",
+            453
+          ],
+          [
+            "en",
+            456
+          ],
+          [
+            "en",
+            458
+          ],
+          [
+            "en",
+            462
+          ],
+          [
+            "en",
+            476
+          ],
+          [
+            "en",
+            481
+          ],
+          [
+            "en",
+            498
+          ],
+          [
+            "en",
+            506
+          ],
+          [
+            "en",
+            509
+          ],
+          [
+            "en",
+            510
+          ],
+          [
+            "en",
+            516
+          ],
+          [
+            "en",
+            529
+          ],
+          [
+            "en",
+            530
+          ],
+          [
+            "en",
+            544
+          ],
+          [
+            "en",
+            552
+          ],
+          [
+            "en",
+            554
+          ],
+          [
+            "en",
+            556
+          ],
+          [
+            "en",
+            568
+          ],
+          [
+            "en",
+            574
+          ],
+          [
+            "en",
+            585
+          ],
+          [
+            "en",
+            591
+          ],
+          [
+            "en",
+            594
+          ],
+          [
+            "en",
+            596
+          ],
+          [
+            "en",
+            60
+          ],
+          [
+            "en",
+            611
+          ],
+          [
+            "en",
+            622
+          ],
+          [
+            "en",
+            625
+          ],
+          [
+            "en",
+            645
+          ],
+          [
+            "en",
+            653
+          ],
+          [
+            "en",
+            668
+          ],
+          [
+            "en",
+            674
+          ],
+          [
+            "en",
+            678
+          ],
+          [
+            "en",
+            688
+          ],
+          [
+            "en",
+            689
+          ],
+          [
+            "en",
+            705
+          ],
+          [
+            "en",
+            707
+          ],
+          [
+            "en",
+            712
+          ],
+          [
+            "en",
+            719
+          ],
+          [
+            "en",
+            72
+          ],
+          [
+            "en",
+            726
+          ],
+          [
+            "en",
+            746
+          ],
+          [
+            "en",
+            752
+          ],
+          [
+            "en",
+            754
+          ],
+          [
+            "en",
+            759
+          ],
+          [
+            "en",
+            772
+          ],
+          [
+            "en",
+            775
+          ],
+          [
+            "en",
+            779
+          ],
+          [
+            "en",
+            800
+          ],
+          [
+            "en",
+            803
+          ],
+          [
+            "en",
+            804
+          ],
+          [
+            "en",
+            806
+          ],
+          [
+            "en",
+            813
+          ],
+          [
+            "en",
+            819
+          ],
+          [
+            "en",
+            820
+          ],
+          [
+            "en",
+            822
+          ],
+          [
+            "en",
+            830
+          ],
+          [
+            "en",
+            841
+          ],
+          [
+            "en",
+            852
+          ],
+          [
+            "en",
+            88
+          ],
+          [
+            "en",
+            898
+          ],
+          [
+            "en",
+            913
+          ],
+          [
+            "en",
+            921
+          ],
+          [
+            "en",
+            926
+          ],
+          [
+            "en",
+            934
+          ],
+          [
+            "en",
+            945
+          ],
+          [
+            "en",
+            949
+          ],
+          [
+            "en",
+            956
+          ],
+          [
+            "en",
+            958
+          ],
+          [
+            "en",
+            960
+          ],
+          [
+            "en",
+            965
+          ],
+          [
+            "en",
+            967
+          ],
+          [
+            "en",
+            979
+          ],
+          [
+            "en",
+            99
+          ],
+          [
+            "en",
+            996
+          ],
+          [
+            "en",
+            998
+          ]
+        ],
+        "precision": "bfloat16",
+        "device": "cuda:1",
+        "batch_size": 128,
+        "max_new_tokens": 512,
+        "seed": 20261020,
+        "decode": "greedy: do_sample=False, num_beams=1, use_cache=True, repetition_penalty=1",
+        "attention": "sdpa",
+        "prompt_example": "将以下文本翻译为英语，注意只需要输出翻译后的结果，不要额外解释：\n最初，动物们都是通过游泳、飞行或者漂浮的方式到达了这些岛屿。",
+        "thinking": "disabled explicitly for Index; checkpoint default for HY/LMT",
+        "cpu_threads": 2,
+        "warmup_per_language": 1,
+        "torch": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "gpu": "NVIDIA GeForce RTX 3090"
+      },
+      "created_at": "2026-10-20T11:46:08.901450+00:00",
+      "session_id": "3b3a30ddd3934860964c1a9c6f4c6ebc",
+      "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 0 %",
+      "resume_previous_rows": 0,
+      "status": "complete",
+      "load_seconds": 0.8754034169978695,
+      "parameter_count": 1791080448,
+      "parameter_bytes": 3582160896,
+      "generation_config": {
+        "max_length": null,
+        "max_new_tokens": 512,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": false,
+        "num_beams": 1,
+        "use_mtp": null,
+        "use_cache": true,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 1.0,
+        "top_k": 50,
+        "top_p": 1.0,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.0,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 120002,
+        "bos_token_id": 120000,
+        "eos_token_id": [
+          120020
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      },
+      "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 5819 MiB, 24576 MiB, 97 %",
+      "peak_allocated_bytes": 5299377152,
+      "peak_reserved_bytes": 5748293632
+    },
+    "summary": {
+      "sacrebleu": "2.5.1",
+      "predictions_sha256": "5e2c590e055ba639860923fc030f13ae9180657bdf1dd5d440516ea652e48816",
+      "languages": {
+        "en": {
+          "count": 128,
+          "spBLEU": 26.978058083925312,
+          "chrFpp": 53.17001530848766,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 1,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 4.137101653002901,
+            "p50": 4.137101653002901,
+            "p95": 4.137101653002901
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.032321106664085164,
+            "p50": 0.032321106664085164,
+            "p95": 0.032321106664085164
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.7681280219985638,
+            "p50": 0.7681280219985638,
+            "p95": 0.7681280219985638
+          },
+          "sentences_per_second": 30.93953466361931,
+          "output_characters_per_second": 4291.893574118941,
+          "generated_tokens_per_second_e2e": 899.9053715051148,
+          "decode_tokens_per_second": 1073.6459815625828,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      },
+      "total_cases": 128,
+      "peak_allocated_bytes": 5299377152,
+      "peak_reserved_bytes": 5748293632,
+      "macro_chrFpp": 53.17001530848766,
+      "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+    }
+  },
+  {
+    "model": "lmt",
+    "metadata": {
+      "fingerprint": "59b5569e9bed9e5cbbba47ff677540734b4152e76e49ccf7cd832de3f397569b",
+      "protocol": {
+        "protocol": "zh-translation-bf16-greedy-batched-v1",
+        "model": "lmt",
+        "path": "/home/aim0/data/models/ASR/LMT-60-1.7B",
+        "script_sha256": "69bc4f35ed03fae941e94f3fe5daf94f91c4d0cc849c6a21d8e2fb626fd329ec",
+        "checkpoint_manifest_sha256": "d265ac6810bd97307a9e9f58f8d0cb079ab6df2db7f102db747adf2ed3d92dbd",
+        "data_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+        "languages": [
+          "en"
+        ],
+        "case_ids": [
+          [
+            "en",
+            1003
+          ],
+          [
+            "en",
+            1012
+          ],
+          [
+            "en",
+            103
+          ],
+          [
+            "en",
+            116
+          ],
+          [
+            "en",
+            122
+          ],
+          [
+            "en",
+            13
+          ],
+          [
+            "en",
+            132
+          ],
+          [
+            "en",
+            133
+          ],
+          [
+            "en",
+            144
+          ],
+          [
+            "en",
+            146
+          ],
+          [
+            "en",
+            148
+          ],
+          [
+            "en",
+            162
+          ],
+          [
+            "en",
+            170
+          ],
+          [
+            "en",
+            172
+          ],
+          [
+            "en",
+            173
+          ],
+          [
+            "en",
+            175
+          ],
+          [
+            "en",
+            192
+          ],
+          [
+            "en",
+            206
+          ],
+          [
+            "en",
+            214
+          ],
+          [
+            "en",
+            220
+          ],
+          [
+            "en",
+            223
+          ],
+          [
+            "en",
+            229
+          ],
+          [
+            "en",
+            231
+          ],
+          [
+            "en",
+            233
+          ],
+          [
+            "en",
+            244
+          ],
+          [
+            "en",
+            246
+          ],
+          [
+            "en",
+            254
+          ],
+          [
+            "en",
+            263
+          ],
+          [
+            "en",
+            264
+          ],
+          [
+            "en",
+            269
+          ],
+          [
+            "en",
+            275
+          ],
+          [
+            "en",
+            276
+          ],
+          [
+            "en",
+            278
+          ],
+          [
+            "en",
+            280
+          ],
+          [
+            "en",
+            283
+          ],
+          [
+            "en",
+            284
+          ],
+          [
+            "en",
+            286
+          ],
+          [
+            "en",
+            287
+          ],
+          [
+            "en",
+            292
+          ],
+          [
+            "en",
+            307
+          ],
+          [
+            "en",
+            314
+          ],
+          [
+            "en",
+            335
+          ],
+          [
+            "en",
+            340
+          ],
+          [
+            "en",
+            347
+          ],
+          [
+            "en",
+            375
+          ],
+          [
+            "en",
+            377
+          ],
+          [
+            "en",
+            381
+          ],
+          [
+            "en",
+            383
+          ],
+          [
+            "en",
+            385
+          ],
+          [
+            "en",
+            407
+          ],
+          [
+            "en",
+            416
+          ],
+          [
+            "en",
+            425
+          ],
+          [
+            "en",
+            45
+          ],
+          [
+            "en",
+            453
+          ],
+          [
+            "en",
+            456
+          ],
+          [
+            "en",
+            458
+          ],
+          [
+            "en",
+            462
+          ],
+          [
+            "en",
+            476
+          ],
+          [
+            "en",
+            481
+          ],
+          [
+            "en",
+            498
+          ],
+          [
+            "en",
+            506
+          ],
+          [
+            "en",
+            509
+          ],
+          [
+            "en",
+            510
+          ],
+          [
+            "en",
+            516
+          ],
+          [
+            "en",
+            529
+          ],
+          [
+            "en",
+            530
+          ],
+          [
+            "en",
+            544
+          ],
+          [
+            "en",
+            552
+          ],
+          [
+            "en",
+            554
+          ],
+          [
+            "en",
+            556
+          ],
+          [
+            "en",
+            568
+          ],
+          [
+            "en",
+            574
+          ],
+          [
+            "en",
+            585
+          ],
+          [
+            "en",
+            591
+          ],
+          [
+            "en",
+            594
+          ],
+          [
+            "en",
+            596
+          ],
+          [
+            "en",
+            60
+          ],
+          [
+            "en",
+            611
+          ],
+          [
+            "en",
+            622
+          ],
+          [
+            "en",
+            625
+          ],
+          [
+            "en",
+            645
+          ],
+          [
+            "en",
+            653
+          ],
+          [
+            "en",
+            668
+          ],
+          [
+            "en",
+            674
+          ],
+          [
+            "en",
+            678
+          ],
+          [
+            "en",
+            688
+          ],
+          [
+            "en",
+            689
+          ],
+          [
+            "en",
+            705
+          ],
+          [
+            "en",
+            707
+          ],
+          [
+            "en",
+            712
+          ],
+          [
+            "en",
+            719
+          ],
+          [
+            "en",
+            72
+          ],
+          [
+            "en",
+            726
+          ],
+          [
+            "en",
+            746
+          ],
+          [
+            "en",
+            752
+          ],
+          [
+            "en",
+            754
+          ],
+          [
+            "en",
+            759
+          ],
+          [
+            "en",
+            772
+          ],
+          [
+            "en",
+            775
+          ],
+          [
+            "en",
+            779
+          ],
+          [
+            "en",
+            800
+          ],
+          [
+            "en",
+            803
+          ],
+          [
+            "en",
+            804
+          ],
+          [
+            "en",
+            806
+          ],
+          [
+            "en",
+            813
+          ],
+          [
+            "en",
+            819
+          ],
+          [
+            "en",
+            820
+          ],
+          [
+            "en",
+            822
+          ],
+          [
+            "en",
+            830
+          ],
+          [
+            "en",
+            841
+          ],
+          [
+            "en",
+            852
+          ],
+          [
+            "en",
+            88
+          ],
+          [
+            "en",
+            898
+          ],
+          [
+            "en",
+            913
+          ],
+          [
+            "en",
+            921
+          ],
+          [
+            "en",
+            926
+          ],
+          [
+            "en",
+            934
+          ],
+          [
+            "en",
+            945
+          ],
+          [
+            "en",
+            949
+          ],
+          [
+            "en",
+            956
+          ],
+          [
+            "en",
+            958
+          ],
+          [
+            "en",
+            960
+          ],
+          [
+            "en",
+            965
+          ],
+          [
+            "en",
+            967
+          ],
+          [
+            "en",
+            979
+          ],
+          [
+            "en",
+            99
+          ],
+          [
+            "en",
+            996
+          ],
+          [
+            "en",
+            998
+          ]
+        ],
+        "precision": "bfloat16",
+        "device": "cuda:1",
+        "batch_size": 128,
+        "max_new_tokens": 512,
+        "seed": 20261020,
+        "decode": "greedy: do_sample=False, num_beams=1, use_cache=True, repetition_penalty=1",
+        "attention": "sdpa",
+        "prompt_example": "Translate the following text from Chinese into English:\nChinese: 最初，动物们都是通过游泳、飞行或者漂浮的方式到达了这些岛屿。\nEnglish:",
+        "thinking": "disabled explicitly for Index; checkpoint default for HY/LMT",
+        "cpu_threads": 2,
+        "warmup_per_language": 1,
+        "torch": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "gpu": "NVIDIA GeForce RTX 3090"
+      },
+      "created_at": "2026-10-20T11:46:22.216112+00:00",
+      "session_id": "a873da1139904763a66897b8258e4833",
+      "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 0 %",
+      "resume_previous_rows": 0,
+      "status": "complete",
+      "load_seconds": 0.916922322998289,
+      "parameter_count": 1720574976,
+      "parameter_bytes": 3441149952,
+      "generation_config": {
+        "max_length": null,
+        "max_new_tokens": 512,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": false,
+        "num_beams": 1,
+        "use_mtp": null,
+        "use_cache": true,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 1.0,
+        "top_k": 50,
+        "top_p": 1.0,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.0,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 151643,
+        "bos_token_id": null,
+        "eos_token_id": [
+          151643,
+          151645
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      },
+      "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 7499 MiB, 24576 MiB, 97 %",
+      "peak_allocated_bytes": 6315078144,
+      "peak_reserved_bytes": 7509901312
+    },
+    "summary": {
+      "sacrebleu": "2.5.1",
+      "predictions_sha256": "69ae8c10151b9d0dfaffaf0100c9f766a6e15a4c144c3d97ea78deb9ef8c1c8b",
+      "languages": {
+        "en": {
+          "count": 128,
+          "spBLEU": 34.046164451419656,
+          "chrFpp": 56.32886054320597,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 1,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 3.7234841530007543,
+            "p50": 3.7234841530007543,
+            "p95": 3.7234841530007543
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.029089719945318393,
+            "p50": 0.029089719945318393,
+            "p95": 0.029089719945318393
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.7923452870018082,
+            "p50": 0.7923452870018082,
+            "p95": 0.7923452870018082
+          },
+          "sentences_per_second": 34.37640520017921,
+          "output_characters_per_second": 4322.832953922535,
+          "generated_tokens_per_second_e2e": 936.7570417048834,
+          "decode_tokens_per_second": 1152.0658185061195,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      },
+      "total_cases": 128,
+      "peak_allocated_bytes": 6315078144,
+      "peak_reserved_bytes": 7509901312,
+      "macro_chrFpp": 56.32886054320597,
+      "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+    }
+  }
+]

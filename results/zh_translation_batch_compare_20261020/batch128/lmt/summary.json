@@ -1,0 +1,42 @@
+{
+  "sacrebleu": "2.5.1",
+  "predictions_sha256": "69ae8c10151b9d0dfaffaf0100c9f766a6e15a4c144c3d97ea78deb9ef8c1c8b",
+  "languages": {
+    "en": {
+      "count": 128,
+      "spBLEU": 34.046164451419656,
+      "chrFpp": 56.32886054320597,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "batch_count": 1,
+      "max_batch_size": 128,
+      "batch_latency_seconds": {
+        "mean": 3.7234841530007543,
+        "p50": 3.7234841530007543,
+        "p95": 3.7234841530007543
+      },
+      "per_item_amortized_latency_seconds": {
+        "mean": 0.029089719945318393,
+        "p50": 0.029089719945318393,
+        "p95": 0.029089719945318393
+      },
+      "batch_ttft_seconds": {
+        "mean": 0.7923452870018082,
+        "p50": 0.7923452870018082,
+        "p95": 0.7923452870018082
+      },
+      "sentences_per_second": 34.37640520017921,
+      "output_characters_per_second": 4322.832953922535,
+      "generated_tokens_per_second_e2e": 936.7570417048834,
+      "decode_tokens_per_second": 1152.0658185061195,
+      "empty_outputs": 0,
+      "truncated_outputs": 0,
+      "session_count": 1
+    }
+  },
+  "total_cases": 128,
+  "peak_allocated_bytes": 6315078144,
+  "peak_reserved_bytes": 7509901312,
+  "macro_chrFpp": 56.32886054320597,
+  "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+}

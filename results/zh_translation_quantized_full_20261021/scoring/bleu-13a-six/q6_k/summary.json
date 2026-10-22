@@ -1,0 +1,173 @@
+{
+  "sacrebleu": "2.5.1",
+  "predictions_sha256": "fb017289ab5268c4e78cc2123d4930d03bd2b36e7696f434818176342a1942fc",
+  "languages": {
+    "en": {
+      "count": 1012,
+      "BLEU": 27.93390051178347,
+      "chrFpp": 56.054248022551434,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "batch_count": 1012,
+      "max_batch_size": 128,
+      "batch_latency_seconds": {
+        "mean": 5.353026410971572,
+        "p50": 5.070415086505818,
+        "p95": 8.815638617204963
+      },
+      "per_item_amortized_latency_seconds": {
+        "mean": 0.04182051883571541,
+        "p50": 0.039612617863326705,
+        "p95": 0.06887217669691377
+      },
+      "batch_ttft_seconds": null,
+      "sentences_per_second": 0.18681021224748642,
+      "output_characters_per_second": 25.684004448101305,
+      "generated_tokens_per_second_e2e": 5.423587792533003,
+      "decode_tokens_per_second": null,
+      "empty_outputs": 0,
+      "truncated_outputs": 0,
+      "session_count": 1
+    },
+    "fr": {
+      "count": 1012,
+      "BLEU": 26.119877154082648,
+      "chrFpp": 53.20205376827417,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "batch_count": 1012,
+      "max_batch_size": 128,
+      "batch_latency_seconds": {
+        "mean": 6.814685727675018,
+        "p50": 6.523132923495723,
+        "p95": 11.023169382200285
+      },
+      "per_item_amortized_latency_seconds": {
+        "mean": 0.05323973224746108,
+        "p50": 0.050961975964810335,
+        "p95": 0.08611851079843973
+      },
+      "batch_ttft_seconds": null,
+      "sentences_per_second": 0.14674191003980053,
+      "output_characters_per_second": 23.995057327367814,
+      "generated_tokens_per_second_e2e": 5.774410161576063,
+      "decode_tokens_per_second": null,
+      "empty_outputs": 0,
+      "truncated_outputs": 0,
+      "session_count": 1
+    },
+    "de": {
+      "count": 1012,
+      "BLEU": 19.293527844611447,
+      "chrFpp": 48.72339089138529,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "batch_count": 1012,
+      "max_batch_size": 128,
+      "batch_latency_seconds": {
+        "mean": 6.62335630661557,
+        "p50": 6.276258208992658,
+        "p95": 10.701104271151415
+      },
+      "per_item_amortized_latency_seconds": {
+        "mean": 0.05174497114543414,
+        "p50": 0.04903326725775514,
+        "p95": 0.08360237711837043
+      },
+      "batch_ttft_seconds": null,
+      "sentences_per_second": 0.15098085528045285,
+      "output_characters_per_second": 23.874071527074296,
+      "generated_tokens_per_second_e2e": 5.670882697692978,
+      "decode_tokens_per_second": null,
+      "empty_outputs": 0,
+      "truncated_outputs": 0,
+      "session_count": 1
+    },
+    "es": {
+      "count": 1012,
+      "BLEU": 19.459265632845366,
+      "chrFpp": 46.34027618429433,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "batch_count": 1012,
+      "max_batch_size": 128,
+      "batch_latency_seconds": {
+        "mean": 6.486533720467396,
+        "p50": 6.236568448483013,
+        "p95": 10.625637522991735
+      },
+      "per_item_amortized_latency_seconds": {
+        "mean": 0.05067604469115153,
+        "p50": 0.048723191003773536,
+        "p95": 0.08301279314837293
+      },
+      "batch_ttft_seconds": null,
+      "sentences_per_second": 0.15416554404776048,
+      "output_characters_per_second": 24.331801573063682,
+      "generated_tokens_per_second_e2e": 5.651264019308074,
+      "decode_tokens_per_second": null,
+      "empty_outputs": 0,
+      "truncated_outputs": 0,
+      "session_count": 1
+    },
+    "ru": {
+      "count": 1012,
+      "BLEU": 16.80999852362474,
+      "chrFpp": 44.241658733213846,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "batch_count": 1012,
+      "max_batch_size": 128,
+      "batch_latency_seconds": {
+        "mean": 6.87112485658133,
+        "p50": 6.394519983994542,
+        "p95": 11.559000877813379
+      },
+      "per_item_amortized_latency_seconds": {
+        "mean": 0.05368066294204164,
+        "p50": 0.04995718737495736,
+        "p95": 0.09030469435791702
+      },
+      "batch_ttft_seconds": null,
+      "sentences_per_second": 0.14553657819828084,
+      "output_characters_per_second": 21.369141529287496,
+      "generated_tokens_per_second_e2e": 5.6934714731916385,
+      "decode_tokens_per_second": null,
+      "empty_outputs": 0,
+      "truncated_outputs": 1,
+      "session_count": 1
+    },
+    "ar": {
+      "count": 1012,
+      "BLEU": 12.618437884521752,
+      "chrFpp": 42.20605656470424,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "batch_count": 1012,
+      "max_batch_size": 128,
+      "batch_latency_seconds": {
+        "mean": 6.366014923621464,
+        "p50": 6.033310549493763,
+        "p95": 10.637455477257024
+      },
+      "per_item_amortized_latency_seconds": {
+        "mean": 0.049734491590792684,
+        "p50": 0.04713523866792002,
+        "p95": 0.0831051209160705
+      },
+      "batch_ttft_seconds": null,
+      "sentences_per_second": 0.15708414321955838,
+      "output_characters_per_second": 19.24761941044314,
+      "generated_tokens_per_second_e2e": 5.980062946320856,
+      "decode_tokens_per_second": null,
+      "empty_outputs": 0,
+      "truncated_outputs": 0,
+      "session_count": 1
+    }
+  },
+  "total_cases": 6072,
+  "peak_allocated_bytes": null,
+  "peak_reserved_bytes": null,
+  "macro_chrFpp": 48.46128069407055,
+  "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+}

@@ -1,0 +1,9 @@
+{
+  "q8_observed_peak_mib": 6695,
+  "q8_observed_peak_gib": 6.5380859375,
+  "q8_median_mib": 6695,
+  "q8_telemetry_samples": 379,
+  "q8_sentences_per_second": 20.621364393105033,
+  "q8_generated_tokens_per_second": 744.57236422392,
+  "vllm_gpu_memory_utilization": 0.2724202473958333
+}

@@ -1,0 +1,146 @@
+{
+  "repository": "IndexTeam/Index-Translate-2B-FP4",
+  "revision": "bf49b475ce2b75307f4da835a9d2e06758a6f040",
+  "api_url": "https://huggingface.co/api/models/IndexTeam/Index-Translate-2B-FP4/tree/bf49b475ce2b75307f4da835a9d2e06758a6f040?recursive=true&blobs=true",
+  "anonymous": true,
+  "token_used": false,
+  "target": "/home/aim0/data/models/ASR/Index-Translate-2B-FP4",
+  "status": "complete",
+  "updated_utc": "2026-10-21T11:08:22.261212+00:00",
+  "files": {
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "size_bytes": 1570,
+      "api_oid": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 1570,
+      "actual_sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+      "actual_git_blob_oid": "52373fe24473b1aa44333d318f578ae6bf04b49b"
+    },
+    "README.md": {
+      "path": "README.md",
+      "size_bytes": 4375,
+      "api_oid": "3c150e07f97d16de437e60aa05087b6290e76e05",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 4375,
+      "actual_sha256": "649c8727308456650eef5d806dc439a5d85b9f7743a57104134750b8c57d0d88",
+      "actual_git_blob_oid": "3c150e07f97d16de437e60aa05087b6290e76e05"
+    },
+    "SHA256SUMS.txt": {
+      "path": "SHA256SUMS.txt",
+      "size_bytes": 925,
+      "api_oid": "1f3e3a403a8ce601d5a9d4169c0e924c15dc3f78",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 925,
+      "actual_sha256": "e74a140b0f80ebbc3dfcc788ababe66bf6d773d43756104d7922e4c6cdf20906",
+      "actual_git_blob_oid": "1f3e3a403a8ce601d5a9d4169c0e924c15dc3f78"
+    },
+    "chat_template.jinja": {
+      "path": "chat_template.jinja",
+      "size_bytes": 7755,
+      "api_oid": "0ef09f214eaa6d9bca297988afc1454b5827b2c7",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 7755,
+      "actual_sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "actual_git_blob_oid": "0ef09f214eaa6d9bca297988afc1454b5827b2c7"
+    },
+    "config.json": {
+      "path": "config.json",
+      "size_bytes": 13724,
+      "api_oid": "8df0b9c3862ad605a72bcd4a23efb43a1cae497d",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 13724,
+      "actual_sha256": "808ebf5bc3bc3203d0299f767ee88c4bcf054ee888b791a0677d3726d529d223",
+      "actual_git_blob_oid": "8df0b9c3862ad605a72bcd4a23efb43a1cae497d"
+    },
+    "generation_config.json": {
+      "path": "generation_config.json",
+      "size_bytes": 113,
+      "api_oid": "dbda49f51ba73ae994bb3b0b9806dfaa1305224e",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 113,
+      "actual_sha256": "f8f355e9f4f72a99190263e6c89d2c7de8c38b83b2aee36ae7f7a327dfe937a0",
+      "actual_git_blob_oid": "dbda49f51ba73ae994bb3b0b9806dfaa1305224e"
+    },
+    "model.safetensors": {
+      "path": "model.safetensors",
+      "size_bytes": 2997649248,
+      "api_oid": "d4bd2d94cbfaa660e6c43dbf8eb04cf13dfcfaa6",
+      "lfs_sha256": "c0c47a80c830cd52ad1651bfda0af0655408594184148fbea768c98726e1e11c",
+      "status": "verified",
+      "partial_size_bytes": 2994733056,
+      "actual_size_bytes": 2997649248,
+      "actual_sha256": "c0c47a80c830cd52ad1651bfda0af0655408594184148fbea768c98726e1e11c",
+      "actual_git_blob_oid": "4350eeed6468548d5d203ffa40b3a2d98e7d7a1f"
+    },
+    "model.safetensors.index.json": {
+      "path": "model.safetensors.index.json",
+      "size_bytes": 74102,
+      "api_oid": "076883410081df9c3b46a69a9717e2ee15611597",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 74102,
+      "actual_sha256": "055619f2e68668a61dda3b549d2d9c3737db8ff5682a0a574595f57071305ba9",
+      "actual_git_blob_oid": "076883410081df9c3b46a69a9717e2ee15611597"
+    },
+    "model_mtp.safetensors": {
+      "path": "model_mtp.safetensors",
+      "size_bytes": 121657904,
+      "api_oid": "1e6428fd9d643dac73876f256428b4199fa41ff4",
+      "lfs_sha256": "78354d27683c4c72d81b55f44ba16b10a0aa40828f2a1e057344a9cef7f2f209",
+      "status": "verified",
+      "partial_size_bytes": 25165824,
+      "actual_size_bytes": 121657904,
+      "actual_sha256": "78354d27683c4c72d81b55f44ba16b10a0aa40828f2a1e057344a9cef7f2f209",
+      "actual_git_blob_oid": "af9260ec2dabd6b6e8bb701f10565727205df2cf"
+    },
+    "recipe.yaml": {
+      "path": "recipe.yaml",
+      "size_bytes": 400,
+      "api_oid": "3c1955a15e3abeb988e6855f9424a1f9a44c17e9",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 400,
+      "actual_sha256": "c2837fc2807a2c02f5968fad587b03e5d9259e8c841fe82063c07c3b416e0b8e",
+      "actual_git_blob_oid": "3c1955a15e3abeb988e6855f9424a1f9a44c17e9"
+    },
+    "tokenizer.json": {
+      "path": "tokenizer.json",
+      "size_bytes": 19989325,
+      "api_oid": "5520bfd2dd834ce386c1312c410fa71af56db5ad",
+      "lfs_sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "status": "verified",
+      "actual_size_bytes": 19989325,
+      "actual_sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "actual_git_blob_oid": "d5967dbafffa6c5b250a02b35723f53e702d0d62"
+    },
+    "tokenizer_config.json": {
+      "path": "tokenizer_config.json",
+      "size_bytes": 1127,
+      "api_oid": "8a675cf6071546d7c13fea4c9d1acf1d1958569c",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 1127,
+      "actual_sha256": "171ecbe7ddae98d11840698f7df2b8d5b4722139db0f0620d3bbf429bd656250",
+      "actual_git_blob_oid": "8a675cf6071546d7c13fea4c9d1acf1d1958569c"
+    },
+    "validation.json": {
+      "path": "validation.json",
+      "size_bytes": 669,
+      "api_oid": "194c26299f270dd742dba4296ff766feca3f48d3",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 669,
+      "actual_sha256": "825c400b4ae79e384250ddb9e9e8d0ffdc95d659ed121725ca4b4bba7f80d8ce",
+      "actual_git_blob_oid": "194c26299f270dd742dba4296ff766feca3f48d3"
+    }
+  },
+  "file_count": 13,
+  "total_size_bytes": 3139401237
+}

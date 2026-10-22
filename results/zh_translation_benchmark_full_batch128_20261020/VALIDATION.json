@@ -1,0 +1,83 @@
+{
+  "purpose": "Completed full FLORES-101 devtest translation evaluation. Reference-similarity metrics, not percent correct.",
+  "script_sha256": "69bc4f35ed03fae941e94f3fe5daf94f91c4d0cc849c6a21d8e2fb626fd329ec",
+  "dataset": "FLORES-101 devtest zho_simpl to eight directions",
+  "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+  "directions": 8,
+  "sentences_per_direction": 1012,
+  "cases_per_model": 8096,
+  "model_translation_calls": 24288,
+  "batch_size": 128,
+  "precision": "BF16",
+  "gpu": "NVIDIA GeForce RTX 3090, index 1",
+  "model_sessions": 3,
+  "models": {
+    "index": {
+      "cases": 8096,
+      "directions": {
+        "en": 1012,
+        "fr": 1012,
+        "de": 1012,
+        "es": 1012,
+        "ru": 1012,
+        "ja": 1012,
+        "ko": 1012,
+        "ar": 1012
+      },
+      "macro_chrFpp": 43.302,
+      "macro_spBLEU": 25.904,
+      "aggregate_sentences_per_second": 19.885,
+      "truncated": 0,
+      "empty": 0,
+      "peak_allocated_gib": 8.654,
+      "peak_reserved_gib": 10.045
+    },
+    "hy": {
+      "cases": 8096,
+      "directions": {
+        "en": 1012,
+        "fr": 1012,
+        "de": 1012,
+        "es": 1012,
+        "ru": 1012,
+        "ja": 1012,
+        "ko": 1012,
+        "ar": 1012
+      },
+      "macro_chrFpp": 41.751,
+      "macro_spBLEU": 23.712,
+      "aggregate_sentences_per_second": 24.397,
+      "truncated": 0,
+      "empty": 0,
+      "peak_allocated_gib": 5.454,
+      "peak_reserved_gib": 6.002
+    },
+    "lmt": {
+      "cases": 8096,
+      "directions": {
+        "en": 1012,
+        "fr": 1012,
+        "de": 1012,
+        "es": 1012,
+        "ru": 1012,
+        "ja": 1012,
+        "ko": 1012,
+        "ar": 1012
+      },
+      "macro_chrFpp": 41.448,
+      "macro_spBLEU": 24.216,
+      "aggregate_sentences_per_second": 16.68,
+      "truncated": 8,
+      "empty": 0,
+      "peak_allocated_gib": 12.226,
+      "peak_reserved_gib": 23.176
+    }
+  },
+  "batch256_attempt": "LMT exceeded GPU memory during long-direction inference; all models were rerun with the same batch size 128.",
+  "notes": [
+    "Public benchmark data and NiuTrans exposure limitations are detailed in docs/ZH_TRANSLATION_BENCHMARK.md.",
+    "Index ran with PyTorch fallback for linear attention.",
+    "LMT outputs truncated at the shared 512-token limit remain included in scores."
+  ],
+  "comparison_markdown": "results/zh_translation_benchmark_full_batch128_20261020/comparison.md"
+}

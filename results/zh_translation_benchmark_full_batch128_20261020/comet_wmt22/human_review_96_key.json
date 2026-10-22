@@ -1,0 +1,966 @@
+{
+  "seed": 20261021,
+  "rows": 96,
+  "key": [
+    {
+      "review_id": "en-001",
+      "id": 377,
+      "language": "en",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "en-002",
+      "id": 439,
+      "language": "en",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "en-003",
+      "id": 442,
+      "language": "en",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "en-004",
+      "id": 460,
+      "language": "en",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "en-005",
+      "id": 591,
+      "language": "en",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "en-006",
+      "id": 622,
+      "language": "en",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "en-007",
+      "id": 676,
+      "language": "en",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "en-008",
+      "id": 873,
+      "language": "en",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "en-009",
+      "id": 977,
+      "language": "en",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "en-010",
+      "id": 983,
+      "language": "en",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "en-011",
+      "id": 991,
+      "language": "en",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "en-012",
+      "id": 1008,
+      "language": "en",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "fr-013",
+      "id": 101,
+      "language": "fr",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "fr-014",
+      "id": 133,
+      "language": "fr",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "fr-015",
+      "id": 193,
+      "language": "fr",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "fr-016",
+      "id": 244,
+      "language": "fr",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "fr-017",
+      "id": 320,
+      "language": "fr",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "fr-018",
+      "id": 417,
+      "language": "fr",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "fr-019",
+      "id": 739,
+      "language": "fr",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "fr-020",
+      "id": 752,
+      "language": "fr",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "fr-021",
+      "id": 765,
+      "language": "fr",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "fr-022",
+      "id": 775,
+      "language": "fr",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "fr-023",
+      "id": 883,
+      "language": "fr",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "fr-024",
+      "id": 924,
+      "language": "fr",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "de-025",
+      "id": 31,
+      "language": "de",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "de-026",
+      "id": 33,
+      "language": "de",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "de-027",
+      "id": 76,
+      "language": "de",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "de-028",
+      "id": 114,
+      "language": "de",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "de-029",
+      "id": 155,
+      "language": "de",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "de-030",
+      "id": 573,
+      "language": "de",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "de-031",
+      "id": 639,
+      "language": "de",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "de-032",
+      "id": 653,
+      "language": "de",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "de-033",
+      "id": 681,
+      "language": "de",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "de-034",
+      "id": 734,
+      "language": "de",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "de-035",
+      "id": 800,
+      "language": "de",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "de-036",
+      "id": 822,
+      "language": "de",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "es-037",
+      "id": 52,
+      "language": "es",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "es-038",
+      "id": 209,
+      "language": "es",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "es-039",
+      "id": 226,
+      "language": "es",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "es-040",
+      "id": 246,
+      "language": "es",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "es-041",
+      "id": 406,
+      "language": "es",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "es-042",
+      "id": 556,
+      "language": "es",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "es-043",
+      "id": 562,
+      "language": "es",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "es-044",
+      "id": 753,
+      "language": "es",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "es-045",
+      "id": 807,
+      "language": "es",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "es-046",
+      "id": 853,
+      "language": "es",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "es-047",
+      "id": 918,
+      "language": "es",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "es-048",
+      "id": 978,
+      "language": "es",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ru-049",
+      "id": 130,
+      "language": "ru",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ru-050",
+      "id": 283,
+      "language": "ru",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ru-051",
+      "id": 323,
+      "language": "ru",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ru-052",
+      "id": 389,
+      "language": "ru",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ru-053",
+      "id": 426,
+      "language": "ru",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ru-054",
+      "id": 565,
+      "language": "ru",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ru-055",
+      "id": 690,
+      "language": "ru",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ru-056",
+      "id": 706,
+      "language": "ru",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ru-057",
+      "id": 743,
+      "language": "ru",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ru-058",
+      "id": 818,
+      "language": "ru",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ru-059",
+      "id": 977,
+      "language": "ru",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ru-060",
+      "id": 1001,
+      "language": "ru",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-061",
+      "id": 123,
+      "language": "ja",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-062",
+      "id": 266,
+      "language": "ja",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ja-063",
+      "id": 323,
+      "language": "ja",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-064",
+      "id": 349,
+      "language": "ja",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-065",
+      "id": 435,
+      "language": "ja",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-066",
+      "id": 546,
+      "language": "ja",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-067",
+      "id": 597,
+      "language": "ja",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-068",
+      "id": 649,
+      "language": "ja",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ja-069",
+      "id": 751,
+      "language": "ja",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ja-070",
+      "id": 844,
+      "language": "ja",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ja-071",
+      "id": 924,
+      "language": "ja",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ja-072",
+      "id": 968,
+      "language": "ja",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ko-073",
+      "id": 61,
+      "language": "ko",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ko-074",
+      "id": 226,
+      "language": "ko",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ko-075",
+      "id": 291,
+      "language": "ko",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ko-076",
+      "id": 302,
+      "language": "ko",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ko-077",
+      "id": 485,
+      "language": "ko",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ko-078",
+      "id": 496,
+      "language": "ko",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ko-079",
+      "id": 508,
+      "language": "ko",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ko-080",
+      "id": 530,
+      "language": "ko",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ko-081",
+      "id": 662,
+      "language": "ko",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ko-082",
+      "id": 676,
+      "language": "ko",
+      "slots": {
+        "A": "index",
+        "B": "lmt",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ko-083",
+      "id": 782,
+      "language": "ko",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ko-084",
+      "id": 858,
+      "language": "ko",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ar-085",
+      "id": 35,
+      "language": "ar",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ar-086",
+      "id": 36,
+      "language": "ar",
+      "slots": {
+        "A": "hy",
+        "B": "lmt",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ar-087",
+      "id": 127,
+      "language": "ar",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ar-088",
+      "id": 197,
+      "language": "ar",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ar-089",
+      "id": 228,
+      "language": "ar",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ar-090",
+      "id": 330,
+      "language": "ar",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    },
+    {
+      "review_id": "ar-091",
+      "id": 445,
+      "language": "ar",
+      "slots": {
+        "A": "lmt",
+        "B": "index",
+        "C": "hy"
+      }
+    },
+    {
+      "review_id": "ar-092",
+      "id": 599,
+      "language": "ar",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ar-093",
+      "id": 604,
+      "language": "ar",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ar-094",
+      "id": 708,
+      "language": "ar",
+      "slots": {
+        "A": "index",
+        "B": "hy",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ar-095",
+      "id": 791,
+      "language": "ar",
+      "slots": {
+        "A": "hy",
+        "B": "index",
+        "C": "lmt"
+      }
+    },
+    {
+      "review_id": "ar-096",
+      "id": 847,
+      "language": "ar",
+      "slots": {
+        "A": "lmt",
+        "B": "hy",
+        "C": "index"
+      }
+    }
+  ]
+}

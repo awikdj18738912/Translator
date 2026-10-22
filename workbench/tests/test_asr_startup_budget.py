@@ -16,6 +16,11 @@ def test_explicit_cache_budget_is_forwarded(tmp_path):
     assert vllm_scheduling_options(args)=={'kv_cache_memory_bytes':1073741824}
 
 
+def test_eager_execution_is_explicit_and_forwarded(tmp_path):
+    args=parse_args(['--model',str(tmp_path),'--enforce-eager'])
+    assert vllm_scheduling_options(args)=={'enforce_eager':True}
+
+
 @pytest.mark.parametrize('value',['0','-1'])
 def test_invalid_cache_budget_rejected(tmp_path,value):
     with pytest.raises(SystemExit):

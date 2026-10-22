@@ -101,3 +101,18 @@
 ## 2026-10-20：工作台目录迁为正式模块名
 
 用户指出 `translation_web/` 像临时目录。项目根 `Translator/` 已有 `pyproject.toml`、`translator/`、`tests/`，因此把 GPU 工作台目录更名为 `workbench/`，根目录数字规则包保留为 `zh-itn/`。用 transient systemd drop-ins 更新服务工作目录和ExecStart；重建两个临时unit，`Restart=no`。网页PID 1062402 / ASR PID 1059628 均从 `workbench/` 启动，ASR在换目录时按授权手动重载一次。网页health确认BF16和v90规则包，translation health ready/audio_ready，当前目录中已无 `translation_web/` 文件夹。
+
+
+## 2026-10-20：Codex重启后页面离线修复
+
+根因：web/ASR通过`systemd-run --user`创建临时单元（FragmentPath在`/run/user/1000/systemd/transient/`，UnitFileState=transient）。它们不是磁盘上的持久服务定义，用户管理器清理时unit也会丢失。将等价unit写入`~/.config/systemd/user/`，模板归档到`workbench/deploy/systemd/user/`，启用default.target，两个服务仍Restart=no。当前Linger=no，完整注销后下次登录启动；Codex客户端重启不影响用户systemd管理器。按目录迁移要求手工停/启了一次ASR和网页，现web PID1095866 / ASR PID1094509，8083/8766健康，WorkingDirectory均workbench，规则包v90已加载。完整记录见results/codex_restart_persistence_20261020/REPORT.md。
+
+## 2026-10-20：切换为中文ASR → 中文精修 → 外语翻译
+
+按用户要求调整当前工作台全链路顺序。ASR固定Chinese，选择框改为八种目标外语；沿用原数字规则、中文精修、实体保护及正则门控。只有已精修前缀交给LMT，未精修尾部不提前翻译；每组精修完成即可交接。新增有界中文优先调度，独立维护ASR/翻译修订号，页面改为中文转录、中文精修、外语翻译三列并保留五项统计。LMT使用明确Chinese→目标语言模板，token预览后beam3确认。
+
+175项测试通过、1项因测试解释器缺少PyAV跳过；生产音频解码及真实GPU链路通过。浏览器完成八语种文本和12秒中文音频→英语共9次验证，含桌面/手机布局；异常恢复、取消时模型锁持有也已覆盖。只手动重载网页一次，现web PID1190470，ASR PID1094509保持；8083/8766就绪，两个服务Restart=no。
+
+实测发现翻译模型会把正确中文金额123万7851元错译成1230,007851 yuan；中文数字规则与精修保护正常，下游外语数字尚无校验。少量功能样例不构成质量或准确率评测，未宣称全面可靠。根README、workbench README及状态记录已更新，早期translator基础原型和通用旧方向接口保留兼容。完整报告与事件在项目根 `results/chinese_first_pipeline_20261020/REPORT.md`。
+
+2026-10-22：完成ASR GPU0显存优化四档实测，采用4096上下文/512MiB KV/1024 prefill，保留CUDA graph与BF16。15次最终文本与8192原配置逐字一致，进程采样峰值3818→3606MiB；240秒耗时中位数11.48→11.63秒。2048长提示超限；eager约3.69倍耗时。启动参数9项测试通过，临时实验覆盖清理，ASR与工作台健康。证据：../results/asr_memory_optimization_20261022/REPORT.md。

@@ -1,0 +1,13 @@
+{
+  "model": "google/metricx-24-hybrid-xl-v2p6-bfloat16",
+  "tokenizer": "google/mt5-xl",
+  "max_input_length": 1536,
+  "requested_batch_size": 128,
+  "examples": 24288,
+  "load_seconds": 1.9543353220069548,
+  "score_seconds": 389.739876363994,
+  "score_items_per_second": 62.318488491838195,
+  "device": "cuda",
+  "torch_peak_allocated_gib": 21.057898998260498,
+  "torch_peak_reserved_gib": 22.26171875
+}

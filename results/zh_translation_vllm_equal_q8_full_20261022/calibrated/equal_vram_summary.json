@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "target": "full-run Q8_0 measured whole-GPU peak",
+  "models": [
+    {
+      "model": "bf16_vllm",
+      "status": "complete",
+      "sentences_per_second": 53.19237536573837,
+      "generated_tokens_per_second": 1923.5259108140308,
+      "rows_written": 8096,
+      "truncated": 0,
+      "gpu_memory_utilization": 0.25455039166993776,
+      "peak_gpu_memory_mib": 6639,
+      "peak_gpu_memory_gib": 6.4833984375,
+      "p95_gpu_memory_mib": 6639,
+      "median_gpu_memory_mib": 6639,
+      "telemetry_samples": 147,
+      "exact_hypotheses_vs_high_vram_run": 7033,
+      "exact_hypothesis_fraction": 0.8687005928853755,
+      "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44"
+    },
+    {
+      "model": "fp8_vllm",
+      "status": "complete",
+      "sentences_per_second": 77.35046588817931,
+      "generated_tokens_per_second": 2797.5339940447147,
+      "rows_written": 8096,
+      "truncated": 0,
+      "gpu_memory_utilization": 0.26193502173130895,
+      "peak_gpu_memory_mib": 6711,
+      "peak_gpu_memory_gib": 6.5537109375,
+      "p95_gpu_memory_mib": 6711,
+      "median_gpu_memory_mib": 6711,
+      "telemetry_samples": 101,
+      "exact_hypotheses_vs_high_vram_run": 7039,
+      "exact_hypothesis_fraction": 0.869441699604743,
+      "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44"
+    },
+    {
+      "model": "nvfp4_vllm",
+      "status": "complete",
+      "sentences_per_second": 76.482058260024,
+      "generated_tokens_per_second": 2771.2465156346393,
+      "rows_written": 8096,
+      "truncated": 0,
+      "gpu_memory_utilization": 0.25977119446163,
+      "peak_gpu_memory_mib": 6721,
+      "peak_gpu_memory_gib": 6.5634765625,
+      "p95_gpu_memory_mib": 6721,
+      "median_gpu_memory_mib": 6721.0,
+      "telemetry_samples": 102,
+      "exact_hypotheses_vs_high_vram_run": 6947,
+      "exact_hypothesis_fraction": 0.8580780632411067,
+      "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44"
+    }
+  ],
+  "q8_baseline": {
+    "q8_observed_peak_mib": 6695,
+    "q8_observed_peak_gib": 6.5380859375,
+    "q8_median_mib": 6695,
+    "q8_telemetry_samples": 379,
+    "q8_sentences_per_second": 20.621364393105033,
+    "q8_generated_tokens_per_second": 744.57236422392,
+    "vllm_gpu_memory_utilization": 0.2724202473958333
+  }
+}

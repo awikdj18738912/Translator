@@ -1,0 +1,1259 @@
+[
+  {
+    "model": "index",
+    "metadata": {
+      "fingerprint": "781703cb50ed1c2613a216627ffb8908c7fccb1f0f7989f6383c7bdcef0076f2",
+      "protocol": {
+        "protocol": "zh-translation-bf16-greedy-batched-v1",
+        "model": "index",
+        "path": "/home/aim0/data/models/ASR/Index-Translate-2B",
+        "script_sha256": "69bc4f35ed03fae941e94f3fe5daf94f91c4d0cc849c6a21d8e2fb626fd329ec",
+        "checkpoint_manifest_sha256": "84892893737ffa3439de73a3fd390b3e7fec471155ff39f05ef598f8204c3254",
+        "data_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+        "languages": [
+          "en"
+        ],
+        "case_ids": [
+          [
+            "en",
+            116
+          ],
+          [
+            "en",
+            122
+          ],
+          [
+            "en",
+            132
+          ],
+          [
+            "en",
+            133
+          ],
+          [
+            "en",
+            144
+          ],
+          [
+            "en",
+            148
+          ],
+          [
+            "en",
+            162
+          ],
+          [
+            "en",
+            170
+          ],
+          [
+            "en",
+            173
+          ],
+          [
+            "en",
+            192
+          ],
+          [
+            "en",
+            223
+          ],
+          [
+            "en",
+            229
+          ],
+          [
+            "en",
+            233
+          ],
+          [
+            "en",
+            275
+          ],
+          [
+            "en",
+            276
+          ],
+          [
+            "en",
+            278
+          ],
+          [
+            "en",
+            283
+          ],
+          [
+            "en",
+            284
+          ],
+          [
+            "en",
+            286
+          ],
+          [
+            "en",
+            292
+          ],
+          [
+            "en",
+            314
+          ],
+          [
+            "en",
+            335
+          ],
+          [
+            "en",
+            340
+          ],
+          [
+            "en",
+            377
+          ],
+          [
+            "en",
+            381
+          ],
+          [
+            "en",
+            385
+          ],
+          [
+            "en",
+            462
+          ],
+          [
+            "en",
+            481
+          ],
+          [
+            "en",
+            498
+          ],
+          [
+            "en",
+            509
+          ],
+          [
+            "en",
+            510
+          ],
+          [
+            "en",
+            516
+          ],
+          [
+            "en",
+            530
+          ],
+          [
+            "en",
+            544
+          ],
+          [
+            "en",
+            554
+          ],
+          [
+            "en",
+            556
+          ],
+          [
+            "en",
+            574
+          ],
+          [
+            "en",
+            60
+          ],
+          [
+            "en",
+            622
+          ],
+          [
+            "en",
+            625
+          ],
+          [
+            "en",
+            668
+          ],
+          [
+            "en",
+            688
+          ],
+          [
+            "en",
+            689
+          ],
+          [
+            "en",
+            705
+          ],
+          [
+            "en",
+            72
+          ],
+          [
+            "en",
+            746
+          ],
+          [
+            "en",
+            759
+          ],
+          [
+            "en",
+            772
+          ],
+          [
+            "en",
+            775
+          ],
+          [
+            "en",
+            779
+          ],
+          [
+            "en",
+            800
+          ],
+          [
+            "en",
+            804
+          ],
+          [
+            "en",
+            806
+          ],
+          [
+            "en",
+            813
+          ],
+          [
+            "en",
+            819
+          ],
+          [
+            "en",
+            820
+          ],
+          [
+            "en",
+            822
+          ],
+          [
+            "en",
+            841
+          ],
+          [
+            "en",
+            88
+          ],
+          [
+            "en",
+            898
+          ],
+          [
+            "en",
+            934
+          ],
+          [
+            "en",
+            978
+          ],
+          [
+            "en",
+            98
+          ],
+          [
+            "en",
+            986
+          ]
+        ],
+        "precision": "bfloat16",
+        "device": "cuda:1",
+        "batch_size": 64,
+        "max_new_tokens": 512,
+        "seed": 20261020,
+        "decode": "greedy: do_sample=False, num_beams=1, use_cache=True, repetition_penalty=1",
+        "attention": "sdpa",
+        "prompt_example": "请将以下文本翻译为英语，直接输出翻译结果，不要进行任何解释。\n\n政府还承诺提供数百万剂脑炎疫苗，这将有助于医疗机构为明年做好准备。",
+        "thinking": "disabled explicitly for Index; checkpoint default for HY/LMT",
+        "cpu_threads": 2,
+        "warmup_per_language": 1,
+        "torch": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "gpu": "NVIDIA GeForce RTX 3090"
+      },
+      "created_at": "2026-10-20T11:44:07.062328+00:00",
+      "session_id": "559dd8f244b540f597f620e8e17fbfa1",
+      "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 0 %",
+      "resume_previous_rows": 0,
+      "status": "complete",
+      "load_seconds": 1.343808343008277,
+      "parameter_count": 2213241664,
+      "parameter_bytes": 4426483328,
+      "generation_config": {
+        "max_length": null,
+        "max_new_tokens": 512,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": false,
+        "num_beams": 1,
+        "use_mtp": null,
+        "use_cache": true,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 1.0,
+        "top_k": 50,
+        "top_p": 1.0,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.0,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 248044,
+        "bos_token_id": null,
+        "eos_token_id": [
+          248044,
+          248046
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      },
+      "index_fast_linear_attention_available": false,
+      "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 7033 MiB, 24576 MiB, 92 %",
+      "peak_allocated_bytes": 6855301632,
+      "peak_reserved_bytes": 7019167744
+    },
+    "summary": {
+      "sacrebleu": "2.5.1",
+      "predictions_sha256": "e535b5aefb8a3df8713bb2d631a6c2cd7f98558612f2be151679128fdf443ec4",
+      "languages": {
+        "en": {
+          "count": 64,
+          "spBLEU": 30.48434199401057,
+          "chrFpp": 55.20951859089075,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 1,
+          "max_batch_size": 64,
+          "batch_latency_seconds": {
+            "mean": 3.5111593199981144,
+            "p50": 3.5111593199981144,
+            "p95": 3.5111593199981144
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.05486186437497054,
+            "p50": 0.05486186437497054,
+            "p95": 0.05486186437497054
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.654207731000497,
+            "p50": 0.654207731000497,
+            "p95": 0.654207731000497
+          },
+          "sentences_per_second": 18.227597829435542,
+          "output_characters_per_second": 2531.6424547789456,
+          "generated_tokens_per_second_e2e": 544.5494851543868,
+          "decode_tokens_per_second": 649.9061771830625,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      },
+      "total_cases": 64,
+      "peak_allocated_bytes": 6855301632,
+      "peak_reserved_bytes": 7019167744,
+      "macro_chrFpp": 55.20951859089075,
+      "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+    }
+  },
+  {
+    "model": "hy",
+    "metadata": {
+      "fingerprint": "e3512254795a77068204e8fc03a9974ca96443b5a74e286b0bc982dc6b8b9d41",
+      "protocol": {
+        "protocol": "zh-translation-bf16-greedy-batched-v1",
+        "model": "hy",
+        "path": "/home/aim0/data/models/ASR/Hy-MT2-1.8B",
+        "script_sha256": "69bc4f35ed03fae941e94f3fe5daf94f91c4d0cc849c6a21d8e2fb626fd329ec",
+        "checkpoint_manifest_sha256": "70a19ab8ed510ea534ecc63ca158c8be489798cec93e9ae228cf0a92fab87826",
+        "data_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+        "languages": [
+          "en"
+        ],
+        "case_ids": [
+          [
+            "en",
+            116
+          ],
+          [
+            "en",
+            122
+          ],
+          [
+            "en",
+            132
+          ],
+          [
+            "en",
+            133
+          ],
+          [
+            "en",
+            144
+          ],
+          [
+            "en",
+            148
+          ],
+          [
+            "en",
+            162
+          ],
+          [
+            "en",
+            170
+          ],
+          [
+            "en",
+            173
+          ],
+          [
+            "en",
+            192
+          ],
+          [
+            "en",
+            223
+          ],
+          [
+            "en",
+            229
+          ],
+          [
+            "en",
+            233
+          ],
+          [
+            "en",
+            275
+          ],
+          [
+            "en",
+            276
+          ],
+          [
+            "en",
+            278
+          ],
+          [
+            "en",
+            283
+          ],
+          [
+            "en",
+            284
+          ],
+          [
+            "en",
+            286
+          ],
+          [
+            "en",
+            292
+          ],
+          [
+            "en",
+            314
+          ],
+          [
+            "en",
+            335
+          ],
+          [
+            "en",
+            340
+          ],
+          [
+            "en",
+            377
+          ],
+          [
+            "en",
+            381
+          ],
+          [
+            "en",
+            385
+          ],
+          [
+            "en",
+            462
+          ],
+          [
+            "en",
+            481
+          ],
+          [
+            "en",
+            498
+          ],
+          [
+            "en",
+            509
+          ],
+          [
+            "en",
+            510
+          ],
+          [
+            "en",
+            516
+          ],
+          [
+            "en",
+            530
+          ],
+          [
+            "en",
+            544
+          ],
+          [
+            "en",
+            554
+          ],
+          [
+            "en",
+            556
+          ],
+          [
+            "en",
+            574
+          ],
+          [
+            "en",
+            60
+          ],
+          [
+            "en",
+            622
+          ],
+          [
+            "en",
+            625
+          ],
+          [
+            "en",
+            668
+          ],
+          [
+            "en",
+            688
+          ],
+          [
+            "en",
+            689
+          ],
+          [
+            "en",
+            705
+          ],
+          [
+            "en",
+            72
+          ],
+          [
+            "en",
+            746
+          ],
+          [
+            "en",
+            759
+          ],
+          [
+            "en",
+            772
+          ],
+          [
+            "en",
+            775
+          ],
+          [
+            "en",
+            779
+          ],
+          [
+            "en",
+            800
+          ],
+          [
+            "en",
+            804
+          ],
+          [
+            "en",
+            806
+          ],
+          [
+            "en",
+            813
+          ],
+          [
+            "en",
+            819
+          ],
+          [
+            "en",
+            820
+          ],
+          [
+            "en",
+            822
+          ],
+          [
+            "en",
+            841
+          ],
+          [
+            "en",
+            88
+          ],
+          [
+            "en",
+            898
+          ],
+          [
+            "en",
+            934
+          ],
+          [
+            "en",
+            978
+          ],
+          [
+            "en",
+            98
+          ],
+          [
+            "en",
+            986
+          ]
+        ],
+        "precision": "bfloat16",
+        "device": "cuda:1",
+        "batch_size": 64,
+        "max_new_tokens": 512,
+        "seed": 20261020,
+        "decode": "greedy: do_sample=False, num_beams=1, use_cache=True, repetition_penalty=1",
+        "attention": "sdpa",
+        "prompt_example": "将以下文本翻译为英语，注意只需要输出翻译后的结果，不要额外解释：\n政府还承诺提供数百万剂脑炎疫苗，这将有助于医疗机构为明年做好准备。",
+        "thinking": "disabled explicitly for Index; checkpoint default for HY/LMT",
+        "cpu_threads": 2,
+        "warmup_per_language": 1,
+        "torch": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "gpu": "NVIDIA GeForce RTX 3090"
+      },
+      "created_at": "2026-10-20T11:44:20.521509+00:00",
+      "session_id": "c1e03248c4ac481385f12cdf2f23c047",
+      "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 0 %",
+      "resume_previous_rows": 0,
+      "status": "complete",
+      "load_seconds": 0.8967701350047719,
+      "parameter_count": 1791080448,
+      "parameter_bytes": 3582160896,
+      "generation_config": {
+        "max_length": null,
+        "max_new_tokens": 512,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": false,
+        "num_beams": 1,
+        "use_mtp": null,
+        "use_cache": true,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 1.0,
+        "top_k": 50,
+        "top_p": 1.0,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.0,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 120002,
+        "bos_token_id": 120000,
+        "eos_token_id": [
+          120020
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      },
+      "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 4787 MiB, 24576 MiB, 63 %",
+      "peak_allocated_bytes": 4444571648,
+      "peak_reserved_bytes": 4666163200
+    },
+    "summary": {
+      "sacrebleu": "2.5.1",
+      "predictions_sha256": "b391ddfb03c8bd5c4663cc23dd614a1589526e2b10cc73f5cda401ff089ebba1",
+      "languages": {
+        "en": {
+          "count": 64,
+          "spBLEU": 27.873856102440072,
+          "chrFpp": 53.682278403542405,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 1,
+          "max_batch_size": 64,
+          "batch_latency_seconds": {
+            "mean": 3.5071159939980134,
+            "p50": 3.5071159939980134,
+            "p95": 3.5071159939980134
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.05479868740621896,
+            "p50": 0.05479868740621896,
+            "p95": 0.05479868740621896
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.4088007710088277,
+            "p50": 0.4088007710088277,
+            "p95": 0.4088007710088277
+          },
+          "sentences_per_second": 18.248612281295493,
+          "output_characters_per_second": 2631.7920524430842,
+          "generated_tokens_per_second_e2e": 554.8718671781411,
+          "decode_tokens_per_second": 609.5733166142971,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      },
+      "total_cases": 64,
+      "peak_allocated_bytes": 4444571648,
+      "peak_reserved_bytes": 4666163200,
+      "macro_chrFpp": 53.682278403542405,
+      "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+    }
+  },
+  {
+    "model": "lmt",
+    "metadata": {
+      "fingerprint": "4a8a2255aaa5006c2c3f2c1e5eb693e30a46525643c03dd43f60c3cf3c967944",
+      "protocol": {
+        "protocol": "zh-translation-bf16-greedy-batched-v1",
+        "model": "lmt",
+        "path": "/home/aim0/data/models/ASR/LMT-60-1.7B",
+        "script_sha256": "69bc4f35ed03fae941e94f3fe5daf94f91c4d0cc849c6a21d8e2fb626fd329ec",
+        "checkpoint_manifest_sha256": "d265ac6810bd97307a9e9f58f8d0cb079ab6df2db7f102db747adf2ed3d92dbd",
+        "data_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+        "languages": [
+          "en"
+        ],
+        "case_ids": [
+          [
+            "en",
+            116
+          ],
+          [
+            "en",
+            122
+          ],
+          [
+            "en",
+            132
+          ],
+          [
+            "en",
+            133
+          ],
+          [
+            "en",
+            144
+          ],
+          [
+            "en",
+            148
+          ],
+          [
+            "en",
+            162
+          ],
+          [
+            "en",
+            170
+          ],
+          [
+            "en",
+            173
+          ],
+          [
+            "en",
+            192
+          ],
+          [
+            "en",
+            223
+          ],
+          [
+            "en",
+            229
+          ],
+          [
+            "en",
+            233
+          ],
+          [
+            "en",
+            275
+          ],
+          [
+            "en",
+            276
+          ],
+          [
+            "en",
+            278
+          ],
+          [
+            "en",
+            283
+          ],
+          [
+            "en",
+            284
+          ],
+          [
+            "en",
+            286
+          ],
+          [
+            "en",
+            292
+          ],
+          [
+            "en",
+            314
+          ],
+          [
+            "en",
+            335
+          ],
+          [
+            "en",
+            340
+          ],
+          [
+            "en",
+            377
+          ],
+          [
+            "en",
+            381
+          ],
+          [
+            "en",
+            385
+          ],
+          [
+            "en",
+            462
+          ],
+          [
+            "en",
+            481
+          ],
+          [
+            "en",
+            498
+          ],
+          [
+            "en",
+            509
+          ],
+          [
+            "en",
+            510
+          ],
+          [
+            "en",
+            516
+          ],
+          [
+            "en",
+            530
+          ],
+          [
+            "en",
+            544
+          ],
+          [
+            "en",
+            554
+          ],
+          [
+            "en",
+            556
+          ],
+          [
+            "en",
+            574
+          ],
+          [
+            "en",
+            60
+          ],
+          [
+            "en",
+            622
+          ],
+          [
+            "en",
+            625
+          ],
+          [
+            "en",
+            668
+          ],
+          [
+            "en",
+            688
+          ],
+          [
+            "en",
+            689
+          ],
+          [
+            "en",
+            705
+          ],
+          [
+            "en",
+            72
+          ],
+          [
+            "en",
+            746
+          ],
+          [
+            "en",
+            759
+          ],
+          [
+            "en",
+            772
+          ],
+          [
+            "en",
+            775
+          ],
+          [
+            "en",
+            779
+          ],
+          [
+            "en",
+            800
+          ],
+          [
+            "en",
+            804
+          ],
+          [
+            "en",
+            806
+          ],
+          [
+            "en",
+            813
+          ],
+          [
+            "en",
+            819
+          ],
+          [
+            "en",
+            820
+          ],
+          [
+            "en",
+            822
+          ],
+          [
+            "en",
+            841
+          ],
+          [
+            "en",
+            88
+          ],
+          [
+            "en",
+            898
+          ],
+          [
+            "en",
+            934
+          ],
+          [
+            "en",
+            978
+          ],
+          [
+            "en",
+            98
+          ],
+          [
+            "en",
+            986
+          ]
+        ],
+        "precision": "bfloat16",
+        "device": "cuda:1",
+        "batch_size": 64,
+        "max_new_tokens": 512,
+        "seed": 20261020,
+        "decode": "greedy: do_sample=False, num_beams=1, use_cache=True, repetition_penalty=1",
+        "attention": "sdpa",
+        "prompt_example": "Translate the following text from Chinese into English:\nChinese: 政府还承诺提供数百万剂脑炎疫苗，这将有助于医疗机构为明年做好准备。\nEnglish:",
+        "thinking": "disabled explicitly for Index; checkpoint default for HY/LMT",
+        "cpu_threads": 2,
+        "warmup_per_language": 1,
+        "torch": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "gpu": "NVIDIA GeForce RTX 3090"
+      },
+      "created_at": "2026-10-20T11:44:33.178321+00:00",
+      "session_id": "5c2d0a5aded44c6b82d69423242cc319",
+      "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 279 MiB, 24576 MiB, 0 %",
+      "resume_previous_rows": 0,
+      "status": "complete",
+      "load_seconds": 0.8695247809955617,
+      "parameter_count": 1720574976,
+      "parameter_bytes": 3441149952,
+      "generation_config": {
+        "max_length": null,
+        "max_new_tokens": 512,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": false,
+        "num_beams": 1,
+        "use_mtp": null,
+        "use_cache": true,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 1.0,
+        "top_k": 50,
+        "top_p": 1.0,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.0,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 151643,
+        "bos_token_id": null,
+        "eos_token_id": [
+          151643,
+          151645
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      },
+      "gpu_snapshot_end": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 22955 MiB, 24576 MiB, 100 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 5457 MiB, 24576 MiB, 69 %",
+      "peak_allocated_bytes": 4882382848,
+      "peak_reserved_bytes": 5368709120
+    },
+    "summary": {
+      "sacrebleu": "2.5.1",
+      "predictions_sha256": "ab6b974f5d13e6e59fca8aa07ae27810fb04111169c9dd26a2476cb5fc72ada6",
+      "languages": {
+        "en": {
+          "count": 64,
+          "spBLEU": 33.992189882176746,
+          "chrFpp": 55.864044753738874,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 1,
+          "max_batch_size": 64,
+          "batch_latency_seconds": {
+            "mean": 2.9438073889905354,
+            "p50": 2.9438073889905354,
+            "p95": 2.9438073889905354
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.045996990452977116,
+            "p50": 0.045996990452977116,
+            "p95": 0.045996990452977116
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.42074325699650217,
+            "p50": 0.42074325699650217,
+            "p95": 0.42074325699650217
+          },
+          "sentences_per_second": 21.740552809043095,
+          "output_characters_per_second": 2824.913080625037,
+          "generated_tokens_per_second_e2e": 620.6248434706521,
+          "decode_tokens_per_second": 700.9291927267285,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      },
+      "total_cases": 64,
+      "peak_allocated_bytes": 4882382848,
+      "peak_reserved_bytes": 5368709120,
+      "macro_chrFpp": 55.864044753738874,
+      "note": "Quality is reference similarity, not percent correct. Compare languages separately; tokenizers differ across models."
+    }
+  }
+]

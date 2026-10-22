@@ -1,4 +1,4 @@
-"""Independent multilingual transcription, translation and refinement workbench."""
+"""Chinese speech transcription, guarded refinement, then foreign translation."""
 from __future__ import annotations
 
 import argparse
@@ -7,14 +7,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 
 
-def create_workbench(*, translation_model: Path, refiner_model: Path,
+def create_workbench(*, translation_url: str, translation_name: str, refiner_model: Path,
                      gpu: int, asr_url: str, data_dir: Path, token_previews: bool = True,
                      refinement_gate: str = "regex", translation_strategy: str = "adaptive",
                      refiner_dtype: str = "bfloat16"):
     # Import our local snapshot, never add the Codex-web checkout to sys.path.
     import torch
     from fastapi.staticfiles import StaticFiles
-    from lmt_runtime import LmtRuntime
+    from vllm_runtime import IndexVllmRuntime
     from system.web_app import create_app
     from system.zh_itn_bridge import DEFAULT_LIBRARY as ZH_ITN_LIBRARY
     from system.translation_web import install_translation_routes
@@ -29,28 +29,33 @@ def create_workbench(*, translation_model: Path, refiner_model: Path,
         refiner_dtype=refiner_dtype,
         zh_itn_library=ZH_ITN_LIBRARY,
     )
-    print("Loading LMT translation model...", flush=True)
-    runtime = LmtRuntime(translation_model, gpu)
+    print(f"Connecting to {translation_name} at {translation_url}...", flush=True)
+    runtime = IndexVllmRuntime(translation_url, translation_name)
 
     def translate(source: str, language: str) -> str:
-        rows, _ = runtime.translate([source], language, beams=3, max_new_tokens=512)
+        rows, _ = runtime.translate([source], language, max_new_tokens=512,
+                                    source_language='zh',target_language=language)
         if not rows[0]["eos"]:
             raise RuntimeError("翻译超过生成上限，请缩短输入片段。")
         return rows[0]["hypothesis"]
 
     def stream_translate(source,language,on_text):
-        rows,_=runtime.translate_stream(source,language,on_text)
+        rows,_=runtime.translate_stream(source,language,on_text,
+                                        source_language='zh',target_language=language)
         if not rows[0]['eos']:
             raise RuntimeError('翻译超过生成上限，请缩短输入片段。')
         return rows[0]['hypothesis']
 
-    translate("Please confirm the delivery date.", "en")
+    translate("请确认交货日期。", "en")
     install_translation_routes(app, translate, asr_url=asr_url,
                                output_dir=data_dir / "sessions",
                                stream_translate=stream_translate if token_previews else None,
-                               translation_strategy=translation_strategy)
+                               translation_strategy=translation_strategy,
+                               pipeline_direction='zh_to_foreign')
     app.mount("/static", StaticFiles(directory=ROOT / "system" / "web"), name="static")
     app.state.translation_runtime = runtime
+    app.state.translation_model_name = translation_name
+    app.state.translation_backend = "vLLM FP8 (Marlin W8A16 on RTX 3090)"
     app.state.translation_gate_mode = refinement_gate
     return app
 
@@ -59,8 +64,8 @@ def main():
     import uvicorn
 
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--translation-model", type=Path,
-                        default=Path("/home/aim0/data/models/ASR/LMT-60-0.6B"))
+    parser.add_argument("--translation-url", default="http://127.0.0.1:8090/v1")
+    parser.add_argument("--translation-name", default="Index-Translate-2B")
     parser.add_argument("--refiner-model", type=Path,
                         default=Path("/home/aim0/data/models/ASR/AgenticASR-Refiner"))
     parser.add_argument("--gpu", type=int, default=1)
@@ -76,7 +81,8 @@ def main():
                         help="tokens: provisional prefixes and beam-3 confirmation per window; windows: original complete snapshots")
     parser.add_argument('--translation-strategy',choices=('adaptive','single'),default='adaptive')
     args = parser.parse_args()
-    app = create_workbench(translation_model=args.translation_model,
+    app = create_workbench(translation_url=args.translation_url,
+                           translation_name=args.translation_name,
                            refiner_model=args.refiner_model, gpu=args.gpu,
                            asr_url=args.asr_url, data_dir=args.data_dir,
                            token_previews=args.translation_output == "tokens",

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "service_started": false,
+  "inference_run": false,
+  "text_ws_payload": {
+    "event": "start",
+    "source_language": "zh",
+    "target_language": "de",
+    "domain": "trade",
+    "text": "请把订单在周五前发出，并确认运费。",
+    "chunk_chars": 40,
+    "interval_ms": 500
+  },
+  "pipeline_events": [
+    "ready",
+    "source",
+    "refinement_progress",
+    "refined",
+    "translation_preview",
+    "translation",
+    "final"
+  ],
+  "pending_refinement_stayed_chinese": true,
+  "stale_refinement_and_translation_rejected": true,
+  "five_metric_cards": 5,
+  "audio_form_target_language": "ar",
+  "arabic_direction": "auto",
+  "asr_total_ms_display": "1.6 s",
+  "browser_errors": []
+}

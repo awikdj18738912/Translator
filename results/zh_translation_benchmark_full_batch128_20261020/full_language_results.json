@@ -1,0 +1,1444 @@
+{
+  "dataset": {
+    "name": "FLORES-101 devtest",
+    "source_language": "zh",
+    "languages": [
+      "en",
+      "fr",
+      "de",
+      "es",
+      "ru",
+      "ja",
+      "ko",
+      "ar"
+    ],
+    "sentences_per_language": 1012,
+    "full_rows_per_model": 8096,
+    "models": {
+      "index": "Index-Translate-2B",
+      "hy": "Hy-MT2-1.8B",
+      "lmt": "NiuTrans LMT-60-1.7B"
+    }
+  },
+  "metricx24": {
+    "model": "google/metricx-24-hybrid-xl-v2p6-bfloat16",
+    "tokenizer": "google/mt5-xl",
+    "direction": "lower is better; score clipped to [0,25]",
+    "batch_size_requested": 128,
+    "rows_scored": 24288,
+    "scores": {
+      "index": {
+        "name": "Index-Translate-2B",
+        "languages": {
+          "en": {
+            "count": 1012,
+            "mean": 1.3112399135182498
+          },
+          "fr": {
+            "count": 1012,
+            "mean": 1.7660254829014714
+          },
+          "de": {
+            "count": 1012,
+            "mean": 0.9905054597515363
+          },
+          "es": {
+            "count": 1012,
+            "mean": 1.5273413375432312
+          },
+          "ru": {
+            "count": 1012,
+            "mean": 1.718256132404795
+          },
+          "ja": {
+            "count": 1012,
+            "mean": 3.125401432806324
+          },
+          "ko": {
+            "count": 1012,
+            "mean": 2.8798982522233203
+          },
+          "ar": {
+            "count": 1012,
+            "mean": 2.1954701540498394
+          }
+        },
+        "macro_mean": 1.939267270649846
+      },
+      "hy": {
+        "name": "Hy-MT2-1.8B",
+        "languages": {
+          "en": {
+            "count": 1012,
+            "mean": 1.2449892066684165
+          },
+          "fr": {
+            "count": 1012,
+            "mean": 1.9159088134765625
+          },
+          "de": {
+            "count": 1012,
+            "mean": 1.0182363977545335
+          },
+          "es": {
+            "count": 1012,
+            "mean": 1.6098109309381177
+          },
+          "ru": {
+            "count": 1012,
+            "mean": 1.7505219048662148
+          },
+          "ja": {
+            "count": 1012,
+            "mean": 3.1962659029150196
+          },
+          "ko": {
+            "count": 1012,
+            "mean": 2.8638139204545454
+          },
+          "ar": {
+            "count": 1012,
+            "mean": 2.284827673388093
+          }
+        },
+        "macro_mean": 1.9855468438076878
+      },
+      "lmt": {
+        "name": "NiuTrans LMT-60-1.7B",
+        "languages": {
+          "en": {
+            "count": 1012,
+            "mean": 1.3961842050665452
+          },
+          "fr": {
+            "count": 1012,
+            "mean": 2.204473563333745
+          },
+          "de": {
+            "count": 1012,
+            "mean": 1.3306511551023943
+          },
+          "es": {
+            "count": 1012,
+            "mean": 1.894401309047292
+          },
+          "ru": {
+            "count": 1012,
+            "mean": 2.210187218405984
+          },
+          "ja": {
+            "count": 1012,
+            "mean": 3.4540552433300395
+          },
+          "ko": {
+            "count": 1012,
+            "mean": 3.4038529829545454
+          },
+          "ar": {
+            "count": 1012,
+            "mean": 3.5589398772349
+          }
+        },
+        "macro_mean": 2.4315931943094307
+      }
+    },
+    "run_summary": {
+      "model": "google/metricx-24-hybrid-xl-v2p6-bfloat16",
+      "tokenizer": "google/mt5-xl",
+      "max_input_length": 1536,
+      "requested_batch_size": 128,
+      "examples": 24288,
+      "load_seconds": 1.9543353220069548,
+      "score_seconds": 389.739876363994,
+      "score_items_per_second": 62.318488491838195,
+      "device": "cuda",
+      "torch_peak_allocated_gib": 21.057898998260498,
+      "torch_peak_reserved_gib": 22.26171875
+    }
+  },
+  "sacrebleu_13a": {
+    "metric": "SacreBLEU BLEU",
+    "tokenizer": "13a",
+    "included_languages": [
+      "en",
+      "fr",
+      "de",
+      "es",
+      "ru",
+      "ar"
+    ],
+    "excluded_languages": {
+      "ja": "MeCab tokenizer dependency unavailable",
+      "ko": "MeCab-ko tokenizer dependency unavailable"
+    },
+    "scores": {
+      "index": {
+        "name": "Index-Translate-2B",
+        "en": {
+          "bleu": 27.824269931656406,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "fr": {
+          "bleu": 26.035313590906433,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "de": {
+          "bleu": 19.131207191752146,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "es": {
+          "bleu": 19.57010644682523,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "ru": {
+          "bleu": 16.98237297236043,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "ar": {
+          "bleu": 12.649460451903062,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "macro_6_language": 20.365455097567285
+      },
+      "hy": {
+        "name": "Hy-MT2-1.8B",
+        "en": {
+          "bleu": 23.405053048622218,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "fr": {
+          "bleu": 23.424205672439268,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "de": {
+          "bleu": 16.564003280268906,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "es": {
+          "bleu": 17.514329976561555,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "ru": {
+          "bleu": 14.633246393630985,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "ar": {
+          "bleu": 9.84211858710411,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "macro_6_language": 17.563826159771175
+      },
+      "lmt": {
+        "name": "NiuTrans LMT-60-1.7B",
+        "en": {
+          "bleu": 30.34197534120692,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "fr": {
+          "bleu": 24.135198390119708,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "de": {
+          "bleu": 17.816191676920052,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "es": {
+          "bleu": 18.250310908899653,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "ru": {
+          "bleu": 16.057316841683612,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "ar": {
+          "bleu": 9.63692459222845,
+          "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+        },
+        "macro_6_language": 19.372986291843066
+      }
+    }
+  },
+  "spBLEU_chrFpp": {
+    "index": {
+      "name": "Index-Translate-2B",
+      "languages": {
+        "en": {
+          "count": 1012,
+          "spBLEU": 32.06128585273261,
+          "chrF++": 56.06912250055506
+        },
+        "fr": {
+          "count": 1012,
+          "spBLEU": 32.14144135121217,
+          "chrF++": 53.15049054572584
+        },
+        "de": {
+          "count": 1012,
+          "spBLEU": 26.54679871950222,
+          "chrF++": 48.675644983672825
+        },
+        "es": {
+          "count": 1012,
+          "spBLEU": 23.393608384547317,
+          "chrF++": 46.35419812481226
+        },
+        "ru": {
+          "count": 1012,
+          "spBLEU": 24.81013296691207,
+          "chrF++": 44.466052873667
+        },
+        "ja": {
+          "count": 1012,
+          "spBLEU": 22.84264693281888,
+          "chrF++": 26.699432866715554
+        },
+        "ko": {
+          "count": 1012,
+          "spBLEU": 20.48762538500586,
+          "chrF++": 28.856857277355207
+        },
+        "ar": {
+          "count": 1012,
+          "spBLEU": 24.95238696021982,
+          "chrF++": 42.14534337785946
+        }
+      },
+      "spBLEU_macro": 25.90449081911887,
+      "chrF++_macro": 43.3021428187954
+    },
+    "hy": {
+      "name": "Hy-MT2-1.8B",
+      "languages": {
+        "en": {
+          "count": 1012,
+          "spBLEU": 27.671635968784706,
+          "chrF++": 53.819807728330495
+        },
+        "fr": {
+          "count": 1012,
+          "spBLEU": 29.23494228842415,
+          "chrF++": 51.00650465390243
+        },
+        "de": {
+          "count": 1012,
+          "spBLEU": 23.58516948530253,
+          "chrF++": 46.60099410028806
+        },
+        "es": {
+          "count": 1012,
+          "spBLEU": 21.591351680638258,
+          "chrF++": 45.12603336470949
+        },
+        "ru": {
+          "count": 1012,
+          "spBLEU": 22.741535668861946,
+          "chrF++": 42.71272222355709
+        },
+        "ja": {
+          "count": 1012,
+          "spBLEU": 22.635695866135563,
+          "chrF++": 26.857089487741742
+        },
+        "ko": {
+          "count": 1012,
+          "spBLEU": 20.049311111510818,
+          "chrF++": 28.691590473960193
+        },
+        "ar": {
+          "count": 1012,
+          "spBLEU": 22.182975441439996,
+          "chrF++": 39.19277915405664
+        }
+      },
+      "spBLEU_macro": 23.711577188887247,
+      "chrF++_macro": 41.750940148318264
+    },
+    "lmt": {
+      "name": "NiuTrans LMT-60-1.7B",
+      "languages": {
+        "en": {
+          "count": 1012,
+          "spBLEU": 34.67430319672428,
+          "chrF++": 56.938917965173644
+        },
+        "fr": {
+          "count": 1012,
+          "spBLEU": 29.593376082074762,
+          "chrF++": 50.57349374669832
+        },
+        "de": {
+          "count": 1012,
+          "spBLEU": 24.195933957370592,
+          "chrF++": 46.39351810668667
+        },
+        "es": {
+          "count": 1012,
+          "spBLEU": 21.66426866433679,
+          "chrF++": 44.77203027852452
+        },
+        "ru": {
+          "count": 1012,
+          "spBLEU": 23.55408015827159,
+          "chrF++": 42.93418788189577
+        },
+        "ja": {
+          "count": 1012,
+          "spBLEU": 21.96035609350322,
+          "chrF++": 25.368886156122528
+        },
+        "ko": {
+          "count": 1012,
+          "spBLEU": 18.542138940466643,
+          "chrF++": 27.243341692201962
+        },
+        "ar": {
+          "count": 1012,
+          "spBLEU": 19.547451154033926,
+          "chrF++": 37.35989949032662
+        }
+      },
+      "spBLEU_macro": 24.216488530847727,
+      "chrF++_macro": 41.448034414703756
+    }
+  },
+  "comet_wmt22_da": {
+    "index": {
+      "name": "Index-Translate-2B",
+      "macro_mean": 0.8686986954573527,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.8742124397057318
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8528100718033643
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.8509398702340635
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.8538239073788696
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8834391385316849
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.9075379760957989
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.881544846143176
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8452813137661327
+        }
+      }
+    },
+    "hy": {
+      "name": "Hy-MT2-1.8B",
+      "macro_mean": 0.8651424336906066,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.8698744356867825
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8439592773264105
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.8472072019171809
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.849705141965344
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8798435087142725
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.9055569060588543
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.883164668742847
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8418283291131612
+        }
+      }
+    },
+    "lmt": {
+      "name": "NiuTrans LMT-60-1.7B",
+      "macro_mean": 0.8585353171316679,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.8759831223681039
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8404651312488812
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.8396718038518438
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.8452465249439002
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8745185634482048
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.9036852074823832
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.8728086161813717
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.815903567528654
+        }
+      }
+    }
+  },
+  "speed_full_inference": {
+    "index": {
+      "name": "Index-Translate-2B",
+      "peak_allocated_gib": 8.65395975112915,
+      "peak_reserved_gib": 10.044921875,
+      "total_cases": 8096,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "spBLEU": 32.06128585273261,
+          "chrFpp": 56.06912250055506,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 5.371607420624059,
+            "p50": 5.60364010399644,
+            "p95": 6.134736199698091
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.04239804831343547,
+            "p50": 0.04377843831247219,
+            "p95": 0.04792762656014134
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.1469167663726694,
+            "p50": 1.151388517995656,
+            "p95": 1.2558045475037942
+          },
+          "sentences_per_second": 23.549747793241295,
+          "output_characters_per_second": 3243.186561458741,
+          "generated_tokens_per_second_e2e": 685.618793707775,
+          "decode_tokens_per_second": 847.2348163322688,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "fr": {
+          "count": 1012,
+          "spBLEU": 32.14144135121217,
+          "chrFpp": 53.15049054572584,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.861291918879942,
+            "p50": 6.828303444504854,
+            "p95": 8.318334922708162
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.05418397376670886,
+            "p50": 0.053346120660194174,
+            "p95": 0.06498699158365752
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.1496003625034064,
+            "p50": 1.1560595220071264,
+            "p95": 1.261106411698711
+          },
+          "sentences_per_second": 18.436761107906662,
+          "output_characters_per_second": 3013.1533892490183,
+          "generated_tokens_per_second_e2e": 726.8310485781069,
+          "decode_tokens_per_second": 856.3677460375857,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "de": {
+          "count": 1012,
+          "spBLEU": 26.54679871950222,
+          "chrFpp": 48.675644983672825,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.758219801247833,
+            "p50": 6.910315414999786,
+            "p95": 7.7814072553934235
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.05336696991269879,
+            "p50": 0.05398683917968583,
+            "p95": 0.06079224418276112
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.150093083995671,
+            "p50": 1.1551244544971269,
+            "p95": 1.2606590854440582
+          },
+          "sentences_per_second": 18.717946991993827,
+          "output_characters_per_second": 2960.0250640422178,
+          "generated_tokens_per_second_e2e": 703.3102118286218,
+          "decode_tokens_per_second": 830.0711533264877,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "es": {
+          "count": 1012,
+          "spBLEU": 23.393608384547317,
+          "chrFpp": 46.35419812481226,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.3935820594997494,
+            "p50": 6.392867614500574,
+            "p95": 7.404200747948925
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.0504502152463617,
+            "p50": 0.04994427823828573,
+            "p95": 0.05784531834335098
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.1502135494993126,
+            "p50": 1.1552752029965632,
+            "p95": 1.264181616345013
+          },
+          "sentences_per_second": 19.785465928609305,
+          "output_characters_per_second": 3113.9625353549873,
+          "generated_tokens_per_second_e2e": 724.3005496612539,
+          "decode_tokens_per_second": 864.3377791746096,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ru": {
+          "count": 1012,
+          "spBLEU": 24.81013296691207,
+          "chrFpp": 44.466052873667,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.740443354872696,
+            "p50": 6.779265260498505,
+            "p95": 8.256001170650414
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.05323271362972891,
+            "p50": 0.05296300984764457,
+            "p95": 0.06450000914570636
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.149626817621538,
+            "p50": 1.153528783499496,
+            "p95": 1.2615064779492968
+          },
+          "sentences_per_second": 18.767311486795982,
+          "output_characters_per_second": 2727.5097544896175,
+          "generated_tokens_per_second_e2e": 726.1391784357545,
+          "decode_tokens_per_second": 858.0588868912803,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ja": {
+          "count": 1012,
+          "spBLEU": 22.84264693281888,
+          "chrFpp": 26.699432866715554,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 5.973422482627939,
+            "p50": 6.185788775001129,
+            "p95": 6.7566632475034565
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.0471674425037619,
+            "p50": 0.04832647480469632,
+            "p95": 0.052786431621120754
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.1484080402497057,
+            "p50": 1.1530898500059266,
+            "p95": 1.2604853809454653
+          },
+          "sentences_per_second": 21.177139297930218,
+          "output_characters_per_second": 1254.9129116181593,
+          "generated_tokens_per_second_e2e": 725.2123908192387,
+          "decode_tokens_per_second": 877.1406264306934,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ko": {
+          "count": 1012,
+          "spBLEU": 20.48762538500586,
+          "chrFpp": 28.856857277355207,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.225864304371498,
+            "p50": 6.38070072249684,
+            "p95": 7.074207324289454
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.04917554756583895,
+            "p50": 0.049849224394506564,
+            "p95": 0.05526724472101136
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.1479877631209092,
+            "p50": 1.1527400029954151,
+            "p95": 1.259310370089952
+          },
+          "sentences_per_second": 20.3184640422018,
+          "output_characters_per_second": 1379.2663283667362,
+          "generated_tokens_per_second_e2e": 721.345628565441,
+          "decode_tokens_per_second": 864.8263010551534,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ar": {
+          "count": 1012,
+          "spBLEU": 24.95238696021982,
+          "chrFpp": 42.14534337785946,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.568179398749635,
+            "p50": 6.6695905739979935,
+            "p95": 7.388210398301453
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.051847747344588656,
+            "p50": 0.052106176359359324,
+            "p95": 0.0577203937367301
+          },
+          "batch_ttft_seconds": {
+            "mean": 1.1663849796241266,
+            "p50": 1.1692830640022294,
+            "p95": 1.27616806944352
+          },
+          "sentences_per_second": 19.259522665303788,
+          "output_characters_per_second": 2358.016439524837,
+          "generated_tokens_per_second_e2e": 734.2597860402675,
+          "decode_tokens_per_second": 874.8094466348367,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      }
+    },
+    "hy": {
+      "name": "Hy-MT2-1.8B",
+      "peak_allocated_gib": 5.453774929046631,
+      "peak_reserved_gib": 6.001953125,
+      "total_cases": 8096,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "spBLEU": 27.671635968784706,
+          "chrFpp": 53.819807728330495,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 3.489580006124015,
+            "p50": 3.4820622754996293,
+            "p95": 4.153194714753044
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.0275749323967127,
+            "p50": 0.027203611527340854,
+            "p95": 0.03244683370900816
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6464773497500573,
+            "p50": 0.6493629164979211,
+            "p95": 0.7571194160962478
+          },
+          "sentences_per_second": 36.25078083265025,
+          "output_characters_per_second": 5255.969190507844,
+          "generated_tokens_per_second_e2e": 1095.6547760160804,
+          "decode_tokens_per_second": 1310.35559210206,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "fr": {
+          "count": 1012,
+          "spBLEU": 29.23494228842415,
+          "chrFpp": 51.00650465390243,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 5.113575932749882,
+            "p50": 4.750517854496138,
+            "p95": 6.184260901447851
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.04042454068992248,
+            "p50": 0.0390123355995072,
+            "p95": 0.04831453829256133
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6462270942502073,
+            "p50": 0.6455538700029138,
+            "p95": 0.7600230705502327
+          },
+          "sentences_per_second": 24.73807012228588,
+          "output_characters_per_second": 3999.402818880625,
+          "generated_tokens_per_second_e2e": 1163.8626429469123,
+          "decode_tokens_per_second": 1312.7060583640014,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "de": {
+          "count": 1012,
+          "spBLEU": 23.58516948530253,
+          "chrFpp": 46.60099410028806,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 5.10133491824854,
+            "p50": 5.279289819998667,
+            "p95": 5.631402376748156
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.04027952440246746,
+            "p50": 0.04124445171873958,
+            "p95": 0.04399533106834497
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6462968015002843,
+            "p50": 0.6439099369963515,
+            "p95": 0.76174199560337
+          },
+          "sentences_per_second": 24.79743087392343,
+          "output_characters_per_second": 3954.3081023438885,
+          "generated_tokens_per_second_e2e": 1195.6184210100987,
+          "decode_tokens_per_second": 1349.9871936503284,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "es": {
+          "count": 1012,
+          "spBLEU": 21.591351680638258,
+          "chrFpp": 45.12603336470949,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 5.113626662749084,
+            "p50": 4.908713095501298,
+            "p95": 6.168338783642684
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.040399200430724036,
+            "p50": 0.03873143541823044,
+            "p95": 0.04819014674720847
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6469691231231991,
+            "p50": 0.64509147300123,
+            "p95": 0.7616728203422098
+          },
+          "sentences_per_second": 24.73782470697492,
+          "output_characters_per_second": 3936.2230228162553,
+          "generated_tokens_per_second_e2e": 1158.1066414450106,
+          "decode_tokens_per_second": 1306.386947397047,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ru": {
+          "count": 1012,
+          "spBLEU": 22.741535668861946,
+          "chrFpp": 42.71272222355709,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.332844701872091,
+            "p50": 6.519382170998142,
+            "p95": 7.534705841596588
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.04997015789659592,
+            "p50": 0.050932673210922985,
+            "p95": 0.05886488938747334
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6475169541226933,
+            "p50": 0.6467266585023026,
+            "p95": 0.7613226478431898
+          },
+          "sentences_per_second": 19.975225345823585,
+          "output_characters_per_second": 2928.324611294812,
+          "generated_tokens_per_second_e2e": 1175.0643431695353,
+          "decode_tokens_per_second": 1294.9400116570444,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ja": {
+          "count": 1012,
+          "spBLEU": 22.635695866135563,
+          "chrFpp": 26.857089487741742,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 4.931537702626883,
+            "p50": 4.959536748501705,
+            "p95": 5.606298668000091
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.03894335727500073,
+            "p50": 0.03874638084766957,
+            "p95": 0.04379920834375071
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6467955376265309,
+            "p50": 0.6459488220061758,
+            "p95": 0.7610355681477813
+          },
+          "sentences_per_second": 25.65122840541546,
+          "output_characters_per_second": 1502.1683796625905,
+          "generated_tokens_per_second_e2e": 1185.7356371594221,
+          "decode_tokens_per_second": 1344.4849159254684,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ko": {
+          "count": 1012,
+          "spBLEU": 20.049311111510818,
+          "chrFpp": 28.691590473960193,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 5.181010768372289,
+            "p50": 5.135044484995888,
+            "p95": 6.479725930150016
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.040942277289109236,
+            "p50": 0.04027554047685898,
+            "p95": 0.050622858829297
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6483423645004223,
+            "p50": 0.6482936214961228,
+            "p95": 0.762169041501329
+          },
+          "sentences_per_second": 24.416085133855518,
+          "output_characters_per_second": 1678.099195059473,
+          "generated_tokens_per_second_e2e": 1176.0012230034777,
+          "decode_tokens_per_second": 1325.129109386227,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ar": {
+          "count": 1012,
+          "spBLEU": 22.182975441439996,
+          "chrFpp": 39.19277915405664,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 6.216823354252483,
+            "p50": 6.485759543000313,
+            "p95": 6.935830528302176
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.049111902884044704,
+            "p50": 0.050669996429689945,
+            "p95": 0.05418617600236075
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6531513787522272,
+            "p50": 0.6498049170040758,
+            "p95": 0.7727217047482554
+          },
+          "sentences_per_second": 20.34801260895895,
+          "output_characters_per_second": 2447.1702239365463,
+          "generated_tokens_per_second_e2e": 1143.0677043669134,
+          "decode_tokens_per_second": 1262.2555862123208,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        }
+      }
+    },
+    "lmt": {
+      "name": "NiuTrans LMT-60-1.7B",
+      "peak_allocated_gib": 12.226498126983643,
+      "peak_reserved_gib": 23.17578125,
+      "total_cases": 8096,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "spBLEU": 34.67430319672428,
+          "chrFpp": 56.938917965173644,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 3.2668846067463164,
+            "p50": 3.3754755059999297,
+            "p95": 3.9450807473971508
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.025768599654233233,
+            "p50": 0.02637090239062445,
+            "p95": 0.03082094333904024
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6733166042431549,
+            "p50": 0.683791890493012,
+            "p95": 0.7846925931953592
+          },
+          "sentences_per_second": 38.72190641162218,
+          "output_characters_per_second": 5113.778725303254,
+          "generated_tokens_per_second_e2e": 1098.0644962457839,
+          "decode_tokens_per_second": 1342.6887274030285,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "fr": {
+          "count": 1012,
+          "spBLEU": 29.593376082074762,
+          "chrFpp": 50.57349374669832,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 4.679445731248052,
+            "p50": 4.709819159492326,
+            "p95": 5.605790688101842
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.03696859676587884,
+            "p50": 0.0367954621835338,
+            "p95": 0.04379523975079564
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6730966739996802,
+            "p50": 0.6849609300043085,
+            "p95": 0.7897154501944896
+          },
+          "sentences_per_second": 27.033116156314794,
+          "output_characters_per_second": 4277.963919171444,
+          "generated_tokens_per_second_e2e": 1175.9405527996935,
+          "decode_tokens_per_second": 1348.5865267738175,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "de": {
+          "count": 1012,
+          "spBLEU": 24.195933957370592,
+          "chrFpp": 46.39351810668667,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 4.880632391499603,
+            "p50": 4.879063764004968,
+            "p95": 5.601699092494528
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.03855217199891962,
+            "p50": 0.03811768565628881,
+            "p95": 0.0437632741601135
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6734890370007633,
+            "p50": 0.6837826480041258,
+            "p95": 0.7923126272013178
+          },
+          "sentences_per_second": 25.918772374727475,
+          "output_characters_per_second": 4023.6845196952177,
+          "generated_tokens_per_second_e2e": 1132.8962225530584,
+          "decode_tokens_per_second": 1290.2192497495428,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "es": {
+          "count": 1012,
+          "spBLEU": 21.66426866433679,
+          "chrFpp": 44.77203027852452,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 4.53378077862908,
+            "p50": 4.455046923008922,
+            "p95": 5.442050629003643
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.03582001021470709,
+            "p50": 0.03518039888217768,
+            "p95": 0.04251602053909096
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6736239425044914,
+            "p50": 0.6847368295057095,
+            "p95": 0.7905340413053636
+          },
+          "sentences_per_second": 27.901657838483086,
+          "output_characters_per_second": 4305.098978760492,
+          "generated_tokens_per_second_e2e": 1152.9560548317052,
+          "decode_tokens_per_second": 1328.0021978740247,
+          "empty_outputs": 0,
+          "truncated_outputs": 0,
+          "session_count": 1
+        },
+        "ru": {
+          "count": 1012,
+          "spBLEU": 23.55408015827159,
+          "chrFpp": 42.93418788189577,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 9.341108891125259,
+            "p50": 5.373893347001285,
+            "p95": 26.954412854847742
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.07343895945231892,
+            "p50": 0.04198354177344754,
+            "p95": 0.210581350428498
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6727508522526477,
+            "p50": 0.6841205840028124,
+            "p95": 0.7887445088497771
+          },
+          "sentences_per_second": 13.542289408507411,
+          "output_characters_per_second": 1964.3545765142655,
+          "generated_tokens_per_second_e2e": 665.3787117185909,
+          "decode_tokens_per_second": 704.1962527963567,
+          "empty_outputs": 0,
+          "truncated_outputs": 1,
+          "session_count": 1
+        },
+        "ja": {
+          "count": 1012,
+          "spBLEU": 21.96035609350322,
+          "chrFpp": 25.368886156122528,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 8.36002208950049,
+            "p50": 4.43968856450374,
+            "p95": 26.25634159845211
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.06568671393915401,
+            "p50": 0.03468506691018547,
+            "p95": 0.2051276687379071
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6726027337517735,
+            "p50": 0.6841520040034084,
+            "p95": 0.789053176251764
+          },
+          "sentences_per_second": 15.131538965533805,
+          "output_characters_per_second": 880.8589165390589,
+          "generated_tokens_per_second_e2e": 611.646111129537,
+          "decode_tokens_per_second": 650.2774526534253,
+          "empty_outputs": 0,
+          "truncated_outputs": 1,
+          "session_count": 1
+        },
+        "ko": {
+          "count": 1012,
+          "spBLEU": 18.542138940466643,
+          "chrFpp": 27.243341692201962,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 8.956552175375691,
+            "p50": 5.429481738508912,
+            "p95": 25.457810993296864
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.07036652896296304,
+            "p50": 0.04241782608210087,
+            "p95": 0.19888914838513175
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6818231211236707,
+            "p50": 0.6901683410033002,
+            "p95": 0.7981955636445491
+          },
+          "sentences_per_second": 14.123738412174642,
+          "output_characters_per_second": 960.1629992893191,
+          "generated_tokens_per_second_e2e": 665.4067193830658,
+          "decode_tokens_per_second": 706.7666914029493,
+          "empty_outputs": 0,
+          "truncated_outputs": 1,
+          "session_count": 1
+        },
+        "ar": {
+          "count": 1012,
+          "spBLEU": 19.547451154033926,
+          "chrFpp": 37.35989949032662,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:flores200|smooth:exp|version:2.5.1",
+          "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "batch_count": 8,
+          "max_batch_size": 128,
+          "batch_latency_seconds": {
+            "mean": 16.654001860872086,
+            "p50": 5.8772869979948155,
+            "p95": 36.594081739895046
+          },
+          "per_item_amortized_latency_seconds": {
+            "mean": 0.13349411131688893,
+            "p50": 0.045916304671834496,
+            "p95": 0.2882515702479501
+          },
+          "batch_ttft_seconds": {
+            "mean": 0.6813741971236595,
+            "p50": 0.6891412659970229,
+            "p95": 0.7988245244006975
+          },
+          "sentences_per_second": 7.5957719385877285,
+          "output_characters_per_second": 963.0943441698462,
+          "generated_tokens_per_second_e2e": 368.0346652536667,
+          "decode_tokens_per_second": 376.36170926228635,
+          "empty_outputs": 0,
+          "truncated_outputs": 5,
+          "session_count": 1
+        }
+      }
+    }
+  },
+  "xcomet": {
+    "model": "Unbabel/XCOMET-XL",
+    "score_direction": "higher is better",
+    "batch_size": 16,
+    "rows_scored": 24288,
+    "model_load_seconds": 155.90053443898796,
+    "total_score_seconds": 2683.080893826991,
+    "overall_score_items_per_second": 9.052280181294499,
+    "overall_peak_allocated_gib": 19.07420587539673,
+    "overall_peak_reserved_gib": 23.216796875,
+    "scores": {
+      "index": {
+        "name": "Index-Translate-2B",
+        "macro_mean_8_languages": 0.8974140895541625,
+        "score_seconds": 882.4524654700072,
+        "items_per_second": 9.174431843972414,
+        "count_per_language": 1012,
+        "languages": {
+          "en": {
+            "count": 1012,
+            "mean": 0.9499399141360648
+          },
+          "fr": {
+            "count": 1012,
+            "mean": 0.87561239007669
+          },
+          "de": {
+            "count": 1012,
+            "mean": 0.9408289211187438
+          },
+          "es": {
+            "count": 1012,
+            "mean": 0.9120430927797268
+          },
+          "ru": {
+            "count": 1012,
+            "mean": 0.8969620156429502
+          },
+          "ja": {
+            "count": 1012,
+            "mean": 0.8863990514174752
+          },
+          "ko": {
+            "count": 1012,
+            "mean": 0.8694682846456884
+          },
+          "ar": {
+            "count": 1012,
+            "mean": 0.8480590466159605
+          }
+        },
+        "error_spans_by_severity": {
+          "minor": 7358,
+          "major": 5570,
+          "critical": 71
+        },
+        "scores_file": "xcomet/index.scores.jsonl"
+      },
+      "hy": {
+        "name": "Hy-MT2-1.8B",
+        "macro_mean_8_languages": 0.8958072675274236,
+        "score_seconds": 882.2193146219943,
+        "items_per_second": 9.176856441268127,
+        "count_per_language": 1012,
+        "languages": {
+          "en": {
+            "count": 1012,
+            "mean": 0.9517438017685894
+          },
+          "fr": {
+            "count": 1012,
+            "mean": 0.8668893916687004
+          },
+          "de": {
+            "count": 1012,
+            "mean": 0.940132576368543
+          },
+          "es": {
+            "count": 1012,
+            "mean": 0.9089193811912546
+          },
+          "ru": {
+            "count": 1012,
+            "mean": 0.8920193375511603
+          },
+          "ja": {
+            "count": 1012,
+            "mean": 0.8860268278025356
+          },
+          "ko": {
+            "count": 1012,
+            "mean": 0.8789324096363523
+          },
+          "ar": {
+            "count": 1012,
+            "mean": 0.8417944142322531
+          }
+        },
+        "error_spans_by_severity": {
+          "minor": 7182,
+          "major": 5593,
+          "critical": 50
+        },
+        "scores_file": "xcomet/hy.scores.jsonl"
+      },
+      "lmt": {
+        "name": "NiuTrans LMT-60-1.7B",
+        "macro_mean_8_languages": 0.8653015416684255,
+        "score_seconds": 918.4091137349897,
+        "items_per_second": 8.815243532454895,
+        "count_per_language": 1012,
+        "languages": {
+          "en": {
+            "count": 1012,
+            "mean": 0.9508347151425516
+          },
+          "fr": {
+            "count": 1012,
+            "mean": 0.8474419380100112
+          },
+          "de": {
+            "count": 1012,
+            "mean": 0.923651852773819
+          },
+          "es": {
+            "count": 1012,
+            "mean": 0.8942145390119477
+          },
+          "ru": {
+            "count": 1012,
+            "mean": 0.867400415830697
+          },
+          "ja": {
+            "count": 1012,
+            "mean": 0.856074189406492
+          },
+          "ko": {
+            "count": 1012,
+            "mean": 0.8296861470393513
+          },
+          "ar": {
+            "count": 1012,
+            "mean": 0.753108536132534
+          }
+        },
+        "error_spans_by_severity": {
+          "minor": 7328,
+          "major": 7600,
+          "critical": 235
+        },
+        "scores_file": "xcomet/lmt.scores.jsonl"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "repository": "IndexTeam/Index-Translate-2B-GGUF",
+  "revision": "3a0eca6ce931d88d00614d427ab3ed8ff0743902",
+  "filename": "Index-Translate-2B.f16.gguf",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-2B-GGUF/resolve/3a0eca6ce931d88d00614d427ab3ed8ff0743902/Index-Translate-2B.f16.gguf",
+  "anonymous": true,
+  "token_used": false,
+  "expected_size_bytes": 3897387520,
+  "expected_sha256": "f9ab1279d1169ad18655a7b8085a9111bef12a0e2eb733aaa2234186241e5ad7",
+  "target": "/home/aim0/data/models/ASR/Index-Translate-2B-GGUF/Index-Translate-2B.f16.gguf",
+  "partial": "/home/aim0/data/models/ASR/Index-Translate-2B-GGUF/Index-Translate-2B.f16.gguf.partial",
+  "status": "verified",
+  "updated_utc": "2026-10-21T09:02:33.710169+00:00",
+  "actual_size_bytes": 3897387520,
+  "actual_sha256": "f9ab1279d1169ad18655a7b8085a9111bef12a0e2eb733aaa2234186241e5ad7",
+  "final_path": "/home/aim0/data/models/ASR/Index-Translate-2B-GGUF/Index-Translate-2B.f16.gguf"
+}

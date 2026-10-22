@@ -1,0 +1,17 @@
+{
+  "model_metadata_differences": [
+    "tokenizer.ggml.normalizer.nfc"
+  ],
+  "tensor_shape_differences": {},
+  "bf16_tensor_types": {
+    "BF16": 195,
+    "F32": 140
+  },
+  "q8_tensor_types": {
+    "F32": 140,
+    "Q8_0": 195
+  },
+  "bf16_tensor_count": 335,
+  "q8_tensor_count": 335,
+  "bf16_sha256": "d64ca5c57f98d676a250f3dd58aa2f6a3138bd40776e0f76ebf1c0511ecb358c"
+}

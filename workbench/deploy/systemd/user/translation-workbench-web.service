@@ -1,0 +1,16 @@
+[Unit]
+Description=Trade Translator web workbench
+After=default.target translation-workbench-asr.service translation-workbench-vllm.service
+Requires=translation-workbench-vllm.service
+
+[Service]
+Type=exec
+WorkingDirectory=/home/aim0/桌面/tan/ASR/Translator/workbench
+ExecStart=/bin/bash /home/aim0/桌面/tan/ASR/Translator/workbench/start.sh --port 8083
+Restart=no
+TimeoutStopSec=45
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

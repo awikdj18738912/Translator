@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "trade-translator"
 version = "0.1.0"
-description = "Local multilingual speech to Chinese with guarded refinement and domain terminology"
+description = "Local Chinese speech transcription, guarded refinement and multilingual translation"
 requires-python = ">=3.10"
 dependencies = [
   "fastapi>=0.115,<1", "uvicorn>=0.30,<1", "httpx>=0.27,<1",

@@ -1,0 +1,93 @@
+{
+  "source_manifest": {
+    "repo_id": "IndexTeam/Index-Translate-2B",
+    "revision": "9bc08445315723eb9b77d1b93505915eb03c3f01",
+    "precision": "BF16",
+    "weights": "model.safetensors",
+    "files": [
+      {
+        "file": "README.md",
+        "bytes": 24454,
+        "sha256": "26ae36182a7ed07b2f29838c51f6e3db0f2a25078200e3c712ca3ae5f9770052",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      },
+      {
+        "file": "config.json",
+        "bytes": 2908,
+        "sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      },
+      {
+        "file": "generation_config.json",
+        "bytes": 100,
+        "sha256": "5b2e05bd687ce6eb52f8beff6d9dc98a0fb1e02ce8898062869218d17264220f",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      },
+      {
+        "file": "merges.txt",
+        "bytes": 3353259,
+        "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      },
+      {
+        "file": "model.safetensors",
+        "bytes": 4548216776,
+        "sha256": "2f499211fe352913464be69365e2e5724f913051efb3ae2b6fd0fa617a4c0b60",
+        "hub_lfs_sha256": "2f499211fe352913464be69365e2e5724f913051efb3ae2b6fd0fa617a4c0b60",
+        "hub_lfs_verified": true
+      },
+      {
+        "file": "preprocessor_config.json",
+        "bytes": 390,
+        "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 12807196,
+        "sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927",
+        "hub_lfs_sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927",
+        "hub_lfs_verified": true
+      },
+      {
+        "file": "tokenizer_config.json",
+        "bytes": 16712,
+        "sha256": "e611fbccc7c29ef3b1cafb1cb7ea548d189968632901d678fd62be68c47885de",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      },
+      {
+        "file": "video_preprocessor_config.json",
+        "bytes": 386,
+        "sha256": "d039cd7d88b3502a99edd455496b75b44ecf7dd3b3669748bafac37e6cecc085",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      },
+      {
+        "file": "vocab.json",
+        "bytes": 6722759,
+        "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+        "hub_lfs_sha256": null,
+        "hub_lfs_verified": false
+      }
+    ]
+  },
+  "command": [
+    "/home/aim0/data/venvs/translation-bench/bin/python",
+    "/home/aim0/data/tools/llama.cpp/convert_hf_to_gguf.py",
+    "/home/aim0/data/models/ASR/Index-Translate-2B",
+    "--outfile",
+    "/home/aim0/data/models/ASR/Index-Translate-2B-GGUF/Index-Translate-2B.bf16.gguf",
+    "--outtype",
+    "bf16"
+  ],
+  "started_utc": "2026-10-21T08:43:53.284077+00:00",
+  "llama_cpp_commit": "493253fe5a5af7e800b3c92a2452b5684a99e961",
+  "completed_utc": "2026-10-21T08:44:43.056723+00:00",
+  "output_bytes": 3897387680
+}

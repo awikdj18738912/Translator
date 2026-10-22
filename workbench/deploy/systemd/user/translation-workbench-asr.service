@@ -1,0 +1,15 @@
+[Unit]
+Description=Trade Translator ASR streaming service
+After=default.target
+
+[Service]
+Type=exec
+WorkingDirectory=/home/aim0/桌面/tan/ASR/Translator/workbench
+ExecStart=/bin/bash /home/aim0/桌面/tan/ASR/Translator/workbench/start_asr.sh
+Restart=no
+TimeoutStopSec=300
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

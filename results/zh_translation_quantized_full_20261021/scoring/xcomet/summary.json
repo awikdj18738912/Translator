@@ -1,0 +1,154 @@
+{
+  "model": "/home/aim0/data/hf-cache/hub/models--Unbabel--XCOMET-XL/snapshots/6a123c5e8e6dccab25e5fcffa3c8b417abadb462/checkpoints/model.ckpt",
+  "tokenizer": "model-defined COMET tokenizer",
+  "total_rows": 24288,
+  "model_load_seconds": 219.27786472102161,
+  "models": {
+    "index": {
+      "model_key": "index",
+      "model": "Unbabel/XCOMET-XL",
+      "count": 8096,
+      "batch_size_used": 16,
+      "score_direction": "higher is better",
+      "macro_mean_8_languages": 0.8974964069901954,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.9501173718880288
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8750466656366827
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.9406302892290085
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.9120334897175608
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8978531570891618
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.8872516299248213
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.8688924988002881
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8481461536360116
+        }
+      },
+      "scores_file": "index.scores.jsonl",
+      "score_seconds": 886.036001747998,
+      "score_items_per_second": 9.137326230568478,
+      "torch_peak_allocated_gib_after_model": 16.59216022491455,
+      "torch_peak_reserved_gib_after_model": 19.73046875
+    },
+    "hy": {
+      "model_key": "hy",
+      "model": "Unbabel/XCOMET-XL",
+      "count": 8096,
+      "batch_size_used": 16,
+      "score_direction": "higher is better",
+      "macro_mean_8_languages": 0.897036542959526,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.9498305335464213
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8753667963528822
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.9401544071292217
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.9124608011879468
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8932989266932952
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.8875200040785691
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.8696559549349806
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8480049197528909
+        }
+      },
+      "scores_file": "hy.scores.jsonl",
+      "score_seconds": 891.6680245989992,
+      "score_items_per_second": 9.0796123407486,
+      "torch_peak_allocated_gib_after_model": 19.07420587539673,
+      "torch_peak_reserved_gib_after_model": 22.55078125
+    },
+    "lmt": {
+      "model_key": "lmt",
+      "model": "Unbabel/XCOMET-XL",
+      "count": 8096,
+      "batch_size_used": 16,
+      "score_direction": "higher is better",
+      "macro_mean_8_languages": 0.8947443301594363,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.9494061670873476
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8721625588745939
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.9381261859604493
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.9108982132858203
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8893730278189474
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.8840328067423326
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.868655059501352
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8453006220046475
+        }
+      },
+      "scores_file": "lmt.scores.jsonl",
+      "score_seconds": 884.5561835260014,
+      "score_items_per_second": 9.152612520018655,
+      "torch_peak_allocated_gib_after_model": 19.07420587539673,
+      "torch_peak_reserved_gib_after_model": 22.55078125
+    }
+  },
+  "macro_mean_8_languages": {
+    "index": 0.8974964069901954,
+    "hy": 0.897036542959526,
+    "lmt": 0.8947443301594363
+  }
+}

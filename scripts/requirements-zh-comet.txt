@@ -1,0 +1,3 @@
+# COMET pins Transformers below 5. Keep it in a separate venv from the
+# Chinese translation benchmark, whose Transformers requirement is 5.x.
+unbabel-comet==2.2.7

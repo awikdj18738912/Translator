@@ -1,0 +1,1033 @@
+[
+  {
+    "event": "ready",
+    "run_id": "71e5097b346f4a458cf2bb98bdd8d0ae",
+    "language": "en",
+    "source_language": "zh",
+    "target_language": "en",
+    "pipeline_direction": "zh_to_foreign",
+    "server_time": 1792487193.7068677,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 0,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 56.632
+  },
+  {
+    "event": "source",
+    "revision": 1,
+    "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "server_time": 1792487193.7241173,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 0,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 73.872
+  },
+  {
+    "event": "refining",
+    "revision": 1,
+    "refinement_revision": 1,
+    "server_time": 1792487193.7243502,
+    "session_metrics": {
+      "refiner_model_calls": 0,
+      "gate_skipped_groups": 0,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 74.103
+  },
+  {
+    "event": "refinement_progress",
+    "raw_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 3042,
+    "numeric_rule_latency_ms": 3.337,
+    "refiner_executed": true,
+    "refiner_accepted": false,
+    "refiner_reject_reasons": [
+      "segment_1:numeric_value_mismatch",
+      "segment_1:numeric_rule_surface_mismatch"
+    ],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [
+      "我们需要300个__ENTITY_000__ENTITY_001__。单价是12.5美元。<KEY>[ENTITY_000、ENTITY_001]"
+    ],
+    "structured_patch_audits": [
+      {
+        "format": "legacy_text",
+        "accepted": true,
+        "issue": null,
+        "window_edit_policy": "compat"
+      }
+    ],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "regex",
+    "refinement_gate_config": {
+      "mode": "regex",
+      "input_kind": "translated_text",
+      "uses_asr_confidence": false,
+      "rules_version": "existing_cleanup_signals_v1",
+      "entity_hints_trigger_refinement": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "refine",
+        "state": "REFINE",
+        "reasons": [
+          "cleanup_signal_present"
+        ],
+        "visible_chars": 22,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": [
+          "disfluency",
+          "embedded_disfluency",
+          "numeric_normalization",
+          "isolated_single_character_clause"
+        ]
+      }
+    ],
+    "refinement_gate_skipped_segments": 0,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [
+      {
+        "original": "三百个",
+        "replacement": "300个",
+        "kind": "zh.quantity.structural_count_or_approximation",
+        "start": 6,
+        "end": 9,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      },
+      {
+        "original": "十二点五美元",
+        "replacement": "12.5美元",
+        "kind": "zh.money.explicit_decimal",
+        "start": 18,
+        "end": 24,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      }
+    ],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [
+      {
+        "index": 0,
+        "start": 0,
+        "end": 2,
+        "source": "嗯，",
+        "target": "",
+        "kind": "model_proposed_deletion",
+        "context": "嗯，我们需要300个不锈钢阀门。单价是12.5美元。",
+        "segment_index": 1,
+        "decision": "remove",
+        "reason": "model_candidate_decision",
+        "applied": true,
+        "model_response": "REMOVE",
+        "model_completed": true,
+        "candidate_score_margin": 2.5466
+      }
+    ],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [
+      {
+        "placeholder": "__ENTITY_000__",
+        "original": "不锈钢",
+        "replacement": "不锈钢",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 5,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      },
+      {
+        "placeholder": "__ENTITY_001__",
+        "original": "阀门",
+        "replacement": "阀门",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 4,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      }
+    ],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface",
+    "refinement_window_context": {
+      "left_context": "",
+      "right_context": "请在星期五之前发货。"
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 3,
+    "refinement_source_spans": [
+      {
+        "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。",
+        "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": "请在星期五之前发货。"
+        }
+      },
+      {
+        "source_text": "请在星期五之前发货。",
+        "clean_text": "请在星期五之前发货。",
+        "state": "active"
+      }
+    ],
+    "refinement_batch_size": 3,
+    "refinement_state": "group_progress",
+    "display_revision": 1,
+    "committed_clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+    "pending_raw_text": "请在星期五之前发货。",
+    "display_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "has_pending_refinement": true,
+    "revision": 1,
+    "refinement_revision": 1,
+    "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "target_language": "en",
+    "input_kind": "chinese_asr_snapshot",
+    "refinement_ms": 3105.85337599332,
+    "server_time": 1792487196.8303604,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 0,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3180.142
+  },
+  {
+    "event": "refinement_progress",
+    "raw_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 3042,
+    "numeric_rule_latency_ms": 4.5,
+    "refiner_executed": true,
+    "refiner_accepted": false,
+    "refiner_reject_reasons": [
+      "segment_1:numeric_value_mismatch",
+      "segment_1:numeric_rule_surface_mismatch"
+    ],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [
+      "我们需要300个__ENTITY_000__ENTITY_001__。单价是12.5美元。<KEY>[ENTITY_000、ENTITY_001]"
+    ],
+    "structured_patch_audits": [
+      {
+        "format": "legacy_text",
+        "accepted": true,
+        "issue": null,
+        "window_edit_policy": "compat"
+      }
+    ],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "regex",
+    "refinement_gate_config": {
+      "mode": "regex",
+      "input_kind": "translated_text",
+      "uses_asr_confidence": false,
+      "rules_version": "existing_cleanup_signals_v1",
+      "entity_hints_trigger_refinement": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "refine",
+        "state": "REFINE",
+        "reasons": [
+          "cleanup_signal_present"
+        ],
+        "visible_chars": 22,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": [
+          "disfluency",
+          "embedded_disfluency",
+          "numeric_normalization",
+          "isolated_single_character_clause"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "keep",
+        "state": "KEEP",
+        "reasons": [
+          "no_regex_signal"
+        ],
+        "visible_chars": 9,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": []
+      }
+    ],
+    "refinement_gate_skipped_segments": 1,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [
+      {
+        "original": "三百个",
+        "replacement": "300个",
+        "kind": "zh.quantity.structural_count_or_approximation",
+        "start": 6,
+        "end": 9,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      },
+      {
+        "original": "十二点五美元",
+        "replacement": "12.5美元",
+        "kind": "zh.money.explicit_decimal",
+        "start": 18,
+        "end": 24,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      }
+    ],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [
+      {
+        "index": 0,
+        "start": 0,
+        "end": 2,
+        "source": "嗯，",
+        "target": "",
+        "kind": "model_proposed_deletion",
+        "context": "嗯，我们需要300个不锈钢阀门。单价是12.5美元。",
+        "segment_index": 1,
+        "decision": "remove",
+        "reason": "model_candidate_decision",
+        "applied": true,
+        "model_response": "REMOVE",
+        "model_completed": true,
+        "candidate_score_margin": 2.5466
+      }
+    ],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [
+      {
+        "placeholder": "__ENTITY_000__",
+        "original": "不锈钢",
+        "replacement": "不锈钢",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 5,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      },
+      {
+        "placeholder": "__ENTITY_001__",
+        "original": "阀门",
+        "replacement": "阀门",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 4,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      }
+    ],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface",
+    "refinement_window_context": {
+      "left_context": "单价是十二点五美元。",
+      "right_context": ""
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 6,
+    "refinement_source_spans": [
+      {
+        "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。",
+        "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": "请在星期五之前发货。"
+        }
+      },
+      {
+        "source_text": "请在星期五之前发货。",
+        "clean_text": "请在星期五之前发货。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "单价是十二点五美元。",
+          "right_context": ""
+        }
+      }
+    ],
+    "refinement_batch_size": 3,
+    "refinement_state": "group_progress",
+    "display_revision": 1,
+    "committed_clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "pending_raw_text": "",
+    "display_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "has_pending_refinement": false,
+    "revision": 1,
+    "refinement_revision": 1,
+    "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "target_language": "en",
+    "input_kind": "chinese_asr_snapshot",
+    "refinement_ms": 3108.3102900011,
+    "server_time": 1792487196.8327992,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3182.554
+  },
+  {
+    "event": "refined",
+    "raw_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 3042,
+    "numeric_rule_latency_ms": 4.5,
+    "refiner_executed": true,
+    "refiner_accepted": false,
+    "refiner_reject_reasons": [
+      "segment_1:numeric_value_mismatch",
+      "segment_1:numeric_rule_surface_mismatch"
+    ],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [
+      "我们需要300个__ENTITY_000__ENTITY_001__。单价是12.5美元。<KEY>[ENTITY_000、ENTITY_001]"
+    ],
+    "structured_patch_audits": [
+      {
+        "format": "legacy_text",
+        "accepted": true,
+        "issue": null,
+        "window_edit_policy": "compat"
+      }
+    ],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "regex",
+    "refinement_gate_config": {
+      "mode": "regex",
+      "input_kind": "translated_text",
+      "uses_asr_confidence": false,
+      "rules_version": "existing_cleanup_signals_v1",
+      "entity_hints_trigger_refinement": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "refine",
+        "state": "REFINE",
+        "reasons": [
+          "cleanup_signal_present"
+        ],
+        "visible_chars": 22,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": [
+          "disfluency",
+          "embedded_disfluency",
+          "numeric_normalization",
+          "isolated_single_character_clause"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "keep",
+        "state": "KEEP",
+        "reasons": [
+          "no_regex_signal"
+        ],
+        "visible_chars": 9,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": []
+      }
+    ],
+    "refinement_gate_skipped_segments": 1,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [
+      {
+        "original": "三百个",
+        "replacement": "300个",
+        "kind": "zh.quantity.structural_count_or_approximation",
+        "start": 6,
+        "end": 9,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      },
+      {
+        "original": "十二点五美元",
+        "replacement": "12.5美元",
+        "kind": "zh.money.explicit_decimal",
+        "start": 18,
+        "end": 24,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      }
+    ],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [
+      {
+        "index": 0,
+        "start": 0,
+        "end": 2,
+        "source": "嗯，",
+        "target": "",
+        "kind": "model_proposed_deletion",
+        "context": "嗯，我们需要300个不锈钢阀门。单价是12.5美元。",
+        "segment_index": 1,
+        "decision": "remove",
+        "reason": "model_candidate_decision",
+        "applied": true,
+        "model_response": "REMOVE",
+        "model_completed": true,
+        "candidate_score_margin": 2.5466
+      }
+    ],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [
+      {
+        "placeholder": "__ENTITY_000__",
+        "original": "不锈钢",
+        "replacement": "不锈钢",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 5,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      },
+      {
+        "placeholder": "__ENTITY_001__",
+        "original": "阀门",
+        "replacement": "阀门",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 4,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      }
+    ],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface",
+    "refinement_window_context": {
+      "left_context": "单价是十二点五美元。",
+      "right_context": ""
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 4,
+    "pending_refinement_chunks": 0,
+    "refinement_batch_size": 3,
+    "refinement_state": "window_refined",
+    "refinement_source_spans": [
+      {
+        "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。",
+        "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": "请在星期五之前发货。"
+        }
+      },
+      {
+        "source_text": "请在星期五之前发货。",
+        "clean_text": "请在星期五之前发货。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "单价是十二点五美元。",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_cache_reused_group_count": 0,
+    "window_cache_reused_gate_skip_group_count": 0,
+    "window_cache_reprocessed_group_count": 2,
+    "window_cache_reprocess_reasons": {
+      "no_exact_source_group_match": 2
+    },
+    "display_revision": 1,
+    "committed_clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "pending_raw_text": "",
+    "display_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "has_pending_refinement": false,
+    "translation_revision": 1,
+    "final": true,
+    "input_kind": "chinese_asr_snapshot",
+    "revision": 1,
+    "refinement_revision": 1,
+    "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "target_language": "en",
+    "refinement_ms": 3108.9124879945302,
+    "server_time": 1792487196.8334022,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3183.154
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 1,
+    "translation_source_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+    "source_language": "zh",
+    "target_language": "en",
+    "translation": "We",
+    "preview_sequence": 1,
+    "provisional": true,
+    "server_time": 1792487196.8493035,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3199.06
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 1,
+    "translation_source_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+    "source_language": "zh",
+    "target_language": "en",
+    "translation": "We need 300 stainless steel valves. The unit price",
+    "preview_sequence": 2,
+    "provisional": true,
+    "server_time": 1792487196.933645,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3283.4
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 1,
+    "translation_source_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+    "source_language": "zh",
+    "target_language": "en",
+    "translation": "We need 300 stainless steel valves. The unit price is $12.5.",
+    "preview_sequence": 3,
+    "provisional": true,
+    "server_time": 1792487197.160407,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3510.188
+  },
+  {
+    "event": "translation",
+    "revision": 1,
+    "translation_revision": 1,
+    "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "target_language": "en",
+    "translation_source_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+    "translation": "We need 300 stainless steel valves. The unit price is $12.5.",
+    "translation_ms": 326.6547089879168,
+    "translation_stats": {
+      "model_calls": 2,
+      "preview_model_calls": 1,
+      "confirmation_model_calls": 1,
+      "source_characters": 48,
+      "cache_hits": 0,
+      "stable_windows": 1,
+      "protected_spellings": 0,
+      "windows": 1,
+      "strategy": "refined_context_windows_v1",
+      "total_model_calls": 2,
+      "total_preview_model_calls": 1,
+      "total_confirmation_model_calls": 1,
+      "total_source_characters": 48
+    },
+    "server_time": 1792487197.1615446,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3511.297
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 3,
+    "translation_source_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "target_language": "en",
+    "translation": "We need 300 stainless steel valves. The unit price is $12.5. Please ship before Friday.",
+    "preview_sequence": 1,
+    "provisional": true,
+    "server_time": 1792487197.3446932,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3694.461
+  },
+  {
+    "event": "translation_preview",
+    "revision": 1,
+    "translation_revision": 3,
+    "translation_source_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "target_language": "en",
+    "translation": "We need 300 stainless steel valves. The unit price is $12.5. Please ship before Friday.",
+    "preview_sequence": 2,
+    "provisional": true,
+    "server_time": 1792487197.560444,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3910.204
+  },
+  {
+    "event": "final",
+    "raw_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "asr_language": "Chinese",
+    "asr_confidence": null,
+    "asr_confidence_metadata": {},
+    "refiner_latency_ms": 3042,
+    "numeric_rule_latency_ms": 4.5,
+    "refiner_executed": true,
+    "refiner_accepted": false,
+    "refiner_reject_reasons": [
+      "segment_1:numeric_value_mismatch",
+      "segment_1:numeric_rule_surface_mismatch"
+    ],
+    "placeholder_retry_count": 0,
+    "refiner_retry_count": 0,
+    "refiner_retry_reasons": [],
+    "refiner_masked_outputs": [
+      "我们需要300个__ENTITY_000__ENTITY_001__。单价是12.5美元。<KEY>[ENTITY_000、ENTITY_001]"
+    ],
+    "structured_patch_audits": [
+      {
+        "format": "legacy_text",
+        "accepted": true,
+        "issue": null,
+        "window_edit_policy": "compat"
+      }
+    ],
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "boundary_anomalies": [],
+    "boundary_reviews": [],
+    "refinement_gate_mode": "regex",
+    "refinement_gate_config": {
+      "mode": "regex",
+      "input_kind": "translated_text",
+      "uses_asr_confidence": false,
+      "rules_version": "existing_cleanup_signals_v1",
+      "entity_hints_trigger_refinement": true
+    },
+    "refinement_gate_decisions": [
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "refine",
+        "state": "REFINE",
+        "reasons": [
+          "cleanup_signal_present"
+        ],
+        "visible_chars": 22,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": [
+          "disfluency",
+          "embedded_disfluency",
+          "numeric_normalization",
+          "isolated_single_character_clause"
+        ]
+      },
+      {
+        "segment_index": 1,
+        "mode": "regex",
+        "action": "keep",
+        "state": "KEEP",
+        "reasons": [
+          "no_regex_signal"
+        ],
+        "visible_chars": 9,
+        "asr_confidence": null,
+        "calibrated": false,
+        "covers_segment": false,
+        "cleanup_signals": []
+      }
+    ],
+    "refinement_gate_skipped_segments": 1,
+    "entity_audit_issues": [],
+    "entity_refinement_hints": [],
+    "entity_normalizations": [],
+    "numeric_normalizations": [
+      {
+        "original": "三百个",
+        "replacement": "300个",
+        "kind": "zh.quantity.structural_count_or_approximation",
+        "start": 6,
+        "end": 9,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      },
+      {
+        "original": "十二点五美元",
+        "replacement": "12.5美元",
+        "kind": "zh.money.explicit_decimal",
+        "start": 18,
+        "end": 24,
+        "segment_index": 1,
+        "engine": "zh-itn",
+        "rule_pack": "zh-itn-strict-conservative-v90"
+      }
+    ],
+    "numeric_rule_repairs": [],
+    "numeric_fallbacks": [],
+    "safe_numeric_repairs": [],
+    "safe_repetition_repairs": [],
+    "local_deletion_reviews": [
+      {
+        "index": 0,
+        "start": 0,
+        "end": 2,
+        "source": "嗯，",
+        "target": "",
+        "kind": "model_proposed_deletion",
+        "context": "嗯，我们需要300个不锈钢阀门。单价是12.5美元。",
+        "segment_index": 1,
+        "decision": "remove",
+        "reason": "model_candidate_decision",
+        "applied": true,
+        "model_response": "REMOVE",
+        "model_completed": true,
+        "candidate_score_margin": 2.5466
+      }
+    ],
+    "repetition_reviews": [],
+    "boundary_echo_repairs": [],
+    "protected_entities": [
+      {
+        "placeholder": "__ENTITY_000__",
+        "original": "不锈钢",
+        "replacement": "不锈钢",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 5,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      },
+      {
+        "placeholder": "__ENTITY_001__",
+        "original": "阀门",
+        "replacement": "阀门",
+        "entity_type": "TERM",
+        "source": "database:trade",
+        "entity_id": 4,
+        "match_type": "EXACT_CANONICAL",
+        "match_score": 1,
+        "decision": "EXACT"
+      }
+    ],
+    "entity_candidates": [],
+    "entity_matcher_latency_ms": 0,
+    "entity_fuzzy_mode": "off",
+    "entity_matching_config_version": null,
+    "rule_protection_enabled": true,
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface",
+    "refinement_window_context": {
+      "left_context": "单价是十二点五美元。",
+      "right_context": ""
+    },
+    "window_size": 3,
+    "window_max_chars": 80,
+    "committed_chunks": 4,
+    "pending_refinement_chunks": 0,
+    "refinement_batch_size": 3,
+    "refinement_state": "window_refined",
+    "refinement_source_spans": [
+      {
+        "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。",
+        "clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "",
+          "right_context": "请在星期五之前发货。"
+        }
+      },
+      {
+        "source_text": "请在星期五之前发货。",
+        "clean_text": "请在星期五之前发货。",
+        "state": "committed",
+        "window_context": {
+          "left_context": "单价是十二点五美元。",
+          "right_context": ""
+        }
+      }
+    ],
+    "window_cache_reused_group_count": 0,
+    "window_cache_reused_gate_skip_group_count": 0,
+    "window_cache_reprocessed_group_count": 2,
+    "window_cache_reprocess_reasons": {
+      "no_exact_source_group_match": 2
+    },
+    "display_revision": 1,
+    "committed_clean_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "active_clean_text": "",
+    "display_refined_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "pending_raw_text": "",
+    "display_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "has_pending_refinement": false,
+    "translation_revision": 3,
+    "final": true,
+    "input_kind": "chinese_asr_snapshot",
+    "revision": 1,
+    "refinement_revision": 1,
+    "source_text": "嗯，我们需要三百个不锈钢阀门。单价是十二点五美元。请在星期五之前发货。",
+    "source_language": "zh",
+    "target_language": "en",
+    "refinement_ms": 3108.9124879945302,
+    "translation_source_text": "我们需要300个不锈钢阀门。单价是12.5美元。请在星期五之前发货。",
+    "translation": "We need 300 stainless steel valves. The unit price is $12.5. Please ship before Friday.",
+    "translation_ms": 398.36519499658607,
+    "translation_stats": {
+      "model_calls": 2,
+      "preview_model_calls": 1,
+      "confirmation_model_calls": 1,
+      "source_characters": 68,
+      "cache_hits": 0,
+      "stable_windows": 1,
+      "protected_spellings": 0,
+      "windows": 1,
+      "strategy": "refined_context_windows_v1",
+      "total_model_calls": 4,
+      "total_preview_model_calls": 2,
+      "total_confirmation_model_calls": 2,
+      "total_source_characters": 116
+    },
+    "pipeline_stats": {
+      "source_updates": 1,
+      "refinement_updates": 1,
+      "translation_updates": 2,
+      "discarded_translation_results": 0,
+      "discarded_refinement_results": 0,
+      "merged_source_snapshots": 0,
+      "merged_refinement_snapshots": 1,
+      "max_pending_per_stage": 1
+    },
+    "server_time": 1792487197.5612373,
+    "session_metrics": {
+      "refiner_model_calls": 2,
+      "gate_skipped_groups": 1,
+      "refiner_retry_calls": 0
+    },
+    "elapsed_processing_ms": 3910.989
+  }
+]

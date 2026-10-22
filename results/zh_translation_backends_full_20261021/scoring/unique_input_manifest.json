@@ -1,0 +1,20 @@
+{
+  "systems": [
+    "bf16_vllm",
+    "fp8_vllm",
+    "nvfp4_vllm",
+    "bf16_transformers",
+    "fp8_transformers",
+    "nvfp4_transformers"
+  ],
+  "rows_per_system": 8096,
+  "mapped_rows": 48576,
+  "unique_exact_inputs": 25896,
+  "dedup_key": [
+    "source",
+    "hypothesis",
+    "reference",
+    "language"
+  ],
+  "fresh_scores": true
+}

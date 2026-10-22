@@ -1,0 +1,10 @@
+{
+  "metric": "xcomet",
+  "examples": 25896,
+  "batch_size": 16,
+  "score_seconds": 2934.8226303660194,
+  "items_per_second": 8.823701893279443,
+  "input": "/home/aim0/桌面/tan/ASR/Translator/results/zh_translation_backends_full_20261021/scoring/unique_inputs.jsonl",
+  "input_sha256": "126ab6a78f0c02588d41f1f00cdc5938c82336b47708d847c4f47dd9b65f9f91",
+  "fresh_unique_inputs": true
+}

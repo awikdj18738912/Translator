@@ -1,0 +1,24 @@
+[Unit]
+Description=Trade Translator Index-Translate FP8 vLLM server on GPU 1
+After=default.target
+
+[Service]
+Type=exec
+WorkingDirectory=/home/aim0/桌面/tan/ASR/Translator/workbench
+Environment=CUDA_VISIBLE_DEVICES=1
+Environment=HF_HOME=/home/aim0/data/hf-cache
+Environment=HF_HUB_CACHE=/home/aim0/data/hf-cache/hub
+Environment=HF_HUB_OFFLINE=1
+Environment=TRANSFORMERS_OFFLINE=1
+Environment=VLLM_USE_FLASHINFER_SAMPLER=0
+ExecStart=/home/aim0/data/conda/envs/agentic-asr/bin/python -m vllm.entrypoints.openai.api_server --model /home/aim0/data/models/ASR/Index-Translate-2B-FP8 --served-model-name Index-Translate-2B --host 127.0.0.1 --port 8090 --dtype bfloat16 --quantization compressed-tensors --linear-backend marlin --language-model-only --generation-config vllm --max-model-len 2048 --max-num-seqs 8 --max-num-batched-tokens 2048 --gpu-memory-utilization 0.17 --no-enable-prefix-caching
+ExecStartPost=/bin/bash /home/aim0/桌面/tan/ASR/Translator/workbench/wait_translation_vllm.sh
+Restart=no
+TimeoutStartSec=360
+TimeoutStopSec=90
+KillMode=control-group
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

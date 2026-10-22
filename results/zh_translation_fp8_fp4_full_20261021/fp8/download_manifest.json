@@ -1,0 +1,156 @@
+{
+  "repository": "IndexTeam/Index-Translate-2B-FP8",
+  "revision": "e5f35a7f2d58ff91ef395128bebe3efcd01e4f62",
+  "api_url": "https://huggingface.co/api/models/IndexTeam/Index-Translate-2B-FP8/tree/e5f35a7f2d58ff91ef395128bebe3efcd01e4f62?recursive=true&blobs=true",
+  "anonymous": true,
+  "token_used": false,
+  "target": "/home/aim0/data/models/ASR/Index-Translate-2B-FP8",
+  "status": "complete",
+  "updated_utc": "2026-10-21T10:48:38.815333+00:00",
+  "files": {
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "size_bytes": 1570,
+      "api_oid": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 1570,
+      "actual_sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+      "actual_git_blob_oid": "52373fe24473b1aa44333d318f578ae6bf04b49b"
+    },
+    "README.md": {
+      "path": "README.md",
+      "size_bytes": 3616,
+      "api_oid": "bb9e501dcf5120d7086ebbd03468388a51fd90ab",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 3616,
+      "actual_sha256": "d893dd2eeaa7968072848dad9afe246e27fc2ba31cbda3df2427b5125658455a",
+      "actual_git_blob_oid": "bb9e501dcf5120d7086ebbd03468388a51fd90ab"
+    },
+    "SHA256SUMS.txt": {
+      "path": "SHA256SUMS.txt",
+      "size_bytes": 420,
+      "api_oid": "e34a9543639bcd8a20577d8f59ca9ab540475ac8",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 420,
+      "actual_sha256": "2e90b0c2ff6e0ea5d31156b381c6fdb939d79f0ee08b84b654e9c1d89bf6a3b1",
+      "actual_git_blob_oid": "e34a9543639bcd8a20577d8f59ca9ab540475ac8"
+    },
+    "chat_template.jinja": {
+      "path": "chat_template.jinja",
+      "size_bytes": 7755,
+      "api_oid": "0ef09f214eaa6d9bca297988afc1454b5827b2c7",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 7755,
+      "actual_sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "actual_git_blob_oid": "0ef09f214eaa6d9bca297988afc1454b5827b2c7"
+    },
+    "config.json": {
+      "path": "config.json",
+      "size_bytes": 8100,
+      "api_oid": "f9f3c37d0341baa60a2e8a98bda884c3ce8045bc",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 8100,
+      "actual_sha256": "171bf9745621f8f6e77b6658f07f27a34fa973ff941b99c4260dfed274ad5f40",
+      "actual_git_blob_oid": "f9f3c37d0341baa60a2e8a98bda884c3ce8045bc"
+    },
+    "generation_config.json": {
+      "path": "generation_config.json",
+      "size_bytes": 113,
+      "api_oid": "dbda49f51ba73ae994bb3b0b9806dfaa1305224e",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 113,
+      "actual_sha256": "f8f355e9f4f72a99190263e6c89d2c7de8c38b83b2aee36ae7f7a327dfe937a0",
+      "actual_git_blob_oid": "dbda49f51ba73ae994bb3b0b9806dfaa1305224e"
+    },
+    "model.safetensors": {
+      "path": "model.safetensors",
+      "size_bytes": 3055011640,
+      "api_oid": "13cd4169a051a6dece2a0b46adec608b4232723c",
+      "lfs_sha256": "6d7900f01ccd7315fa3ba5b478eb61140e2aa7e69161bad52696196d60391e98",
+      "status": "verified",
+      "partial_size_bytes": 2994733056,
+      "actual_size_bytes": 3055011640,
+      "actual_sha256": "6d7900f01ccd7315fa3ba5b478eb61140e2aa7e69161bad52696196d60391e98",
+      "actual_git_blob_oid": "700a6ec98ebacd635bdad386121e4cb2bbda4ab8"
+    },
+    "model.safetensors.index.json": {
+      "path": "model.safetensors.index.json",
+      "size_bytes": 64136,
+      "api_oid": "b959f4b401c5b412e525c37904da46adf1f08bc4",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 64136,
+      "actual_sha256": "32a79a46c49cf7d40a96491c72629c2689e1eca71e5fe148b864af8bc2045b93",
+      "actual_git_blob_oid": "b959f4b401c5b412e525c37904da46adf1f08bc4"
+    },
+    "model_mtp.safetensors": {
+      "path": "model_mtp.safetensors",
+      "size_bytes": 121657904,
+      "api_oid": "1e6428fd9d643dac73876f256428b4199fa41ff4",
+      "lfs_sha256": "78354d27683c4c72d81b55f44ba16b10a0aa40828f2a1e057344a9cef7f2f209",
+      "status": "verified",
+      "partial_size_bytes": 109051904,
+      "actual_size_bytes": 121657904,
+      "actual_sha256": "78354d27683c4c72d81b55f44ba16b10a0aa40828f2a1e057344a9cef7f2f209",
+      "actual_git_blob_oid": "af9260ec2dabd6b6e8bb701f10565727205df2cf"
+    },
+    "processor_config.json": {
+      "path": "processor_config.json",
+      "size_bytes": 1221,
+      "api_oid": "8438fb895445fc0863e7585e5168d5a8983e34b7",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 1221,
+      "actual_sha256": "9ad79dcc3fc51f5eaa519b43adcb3ff5b748a5a0af959237ad7b68b710b9e041",
+      "actual_git_blob_oid": "8438fb895445fc0863e7585e5168d5a8983e34b7"
+    },
+    "recipe.yaml": {
+      "path": "recipe.yaml",
+      "size_bytes": 281,
+      "api_oid": "56b89354d8e18349061376d06adf3799683baa86",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 281,
+      "actual_sha256": "bfda4470887a9d1903d1b70d57b9c605a51d4125eeb5124fc3ea1a0cc7bf3d6d",
+      "actual_git_blob_oid": "56b89354d8e18349061376d06adf3799683baa86"
+    },
+    "tokenizer.json": {
+      "path": "tokenizer.json",
+      "size_bytes": 19989325,
+      "api_oid": "5520bfd2dd834ce386c1312c410fa71af56db5ad",
+      "lfs_sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "status": "verified",
+      "actual_size_bytes": 19989325,
+      "actual_sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "actual_git_blob_oid": "d5967dbafffa6c5b250a02b35723f53e702d0d62"
+    },
+    "tokenizer_config.json": {
+      "path": "tokenizer_config.json",
+      "size_bytes": 1127,
+      "api_oid": "8a675cf6071546d7c13fea4c9d1acf1d1958569c",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 1127,
+      "actual_sha256": "171ecbe7ddae98d11840698f7df2b8d5b4722139db0f0620d3bbf429bd656250",
+      "actual_git_blob_oid": "8a675cf6071546d7c13fea4c9d1acf1d1958569c"
+    },
+    "validation.json": {
+      "path": "validation.json",
+      "size_bytes": 680,
+      "api_oid": "a38bf5a965c749c4e42916139f423ce1705f4967",
+      "lfs_sha256": null,
+      "status": "verified",
+      "actual_size_bytes": 680,
+      "actual_sha256": "2f0968d0d26cde98a127e2da410be47dbb308e9d3f4ec3a2b1e042780c746d24",
+      "actual_git_blob_oid": "a38bf5a965c749c4e42916139f423ce1705f4967"
+    }
+  },
+  "file_count": 14,
+  "total_size_bytes": 3196747888
+}

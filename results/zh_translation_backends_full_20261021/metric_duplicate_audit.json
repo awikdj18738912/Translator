@@ -1,0 +1,496 @@
+{
+  "scope": "Previous five completed model runs only; no new inference or scoring was performed.",
+  "input_key_fields": [
+    "source",
+    "hypothesis",
+    "reference",
+    "language"
+  ],
+  "id_lang_join": "COMET/XCOMET joined by (id, language) to each matching prediction file. MetricX filtered by model_key, then joined by (id, language); source, hypothesis, and reference were checked for exact match.",
+  "dedup_rule": "Cross-version duplicates require exact equality of source, hypothesis, reference, and target language. Same id/language with a different hypothesis is not grouped.",
+  "versions": {
+    "bf16_transformers": {
+      "prediction_file": "results/zh_translation_benchmark_full_batch128_20261020/index/predictions.jsonl",
+      "comet_scores": "results/zh_translation_benchmark_full_batch128_20261020/comet_wmt22/index.scores.jsonl",
+      "xcomet_scores": "results/zh_translation_benchmark_full_batch128_20261020/xcomet/index.scores.jsonl",
+      "metricx_file": "results/zh_translation_benchmark_full_batch128_20261020/metricx/metricx24_xl_batch128.jsonl",
+      "metricx_model_key": "index"
+    },
+    "f16_gguf": {
+      "prediction_file": "results/zh_translation_quantized_full_20261021/f16_gguf/predictions.jsonl",
+      "comet_scores": "results/zh_translation_quantized_full_20261021/f16_gguf/scoring/comet/index.scores.jsonl",
+      "xcomet_scores": "results/zh_translation_quantized_full_20261021/f16_gguf/scoring/xcomet/index.scores.jsonl",
+      "metricx_file": "results/zh_translation_quantized_full_20261021/f16_gguf/scoring/metricx/output_all.jsonl",
+      "metricx_model_key": "f16_gguf"
+    },
+    "q8_0": {
+      "prediction_file": "results/zh_translation_quantized_full_20261021/q8_0/predictions.jsonl",
+      "comet_scores": "results/zh_translation_quantized_full_20261021/scoring/comet/index.scores.jsonl",
+      "xcomet_scores": "results/zh_translation_quantized_full_20261021/scoring/xcomet/index.scores.jsonl",
+      "metricx_file": "results/zh_translation_quantized_full_20261021/scoring/metricx/output_all.jsonl",
+      "metricx_model_key": "q8_0"
+    },
+    "q6_k": {
+      "prediction_file": "results/zh_translation_quantized_full_20261021/q6_k/predictions.jsonl",
+      "comet_scores": "results/zh_translation_quantized_full_20261021/scoring/comet/hy.scores.jsonl",
+      "xcomet_scores": "results/zh_translation_quantized_full_20261021/scoring/xcomet/hy.scores.jsonl",
+      "metricx_file": "results/zh_translation_quantized_full_20261021/scoring/metricx/output_all.jsonl",
+      "metricx_model_key": "q6_k"
+    },
+    "q4_k_m": {
+      "prediction_file": "results/zh_translation_quantized_full_20261021/q4_k_m/predictions.jsonl",
+      "comet_scores": "results/zh_translation_quantized_full_20261021/scoring/comet/lmt.scores.jsonl",
+      "xcomet_scores": "results/zh_translation_quantized_full_20261021/scoring/xcomet/lmt.scores.jsonl",
+      "metricx_file": "results/zh_translation_quantized_full_20261021/scoring/metricx/output_all.jsonl",
+      "metricx_model_key": "q4_k_m"
+    }
+  },
+  "join_checks": {
+    "bf16_transformers": {
+      "prediction_rows": 8096,
+      "unique_id_language": 8096,
+      "comet_rows": 8096,
+      "xcomet_rows": 8096,
+      "metricx_rows_for_model_key": 8096,
+      "metricx_source_hypothesis_reference_verified": true
+    },
+    "f16_gguf": {
+      "prediction_rows": 8096,
+      "unique_id_language": 8096,
+      "comet_rows": 8096,
+      "xcomet_rows": 8096,
+      "metricx_rows_for_model_key": 8096,
+      "metricx_source_hypothesis_reference_verified": true
+    },
+    "q8_0": {
+      "prediction_rows": 8096,
+      "unique_id_language": 8096,
+      "comet_rows": 8096,
+      "xcomet_rows": 8096,
+      "metricx_rows_for_model_key": 8096,
+      "metricx_source_hypothesis_reference_verified": true
+    },
+    "q6_k": {
+      "prediction_rows": 8096,
+      "unique_id_language": 8096,
+      "comet_rows": 8096,
+      "xcomet_rows": 8096,
+      "metricx_rows_for_model_key": 8096,
+      "metricx_source_hypothesis_reference_verified": true
+    },
+    "q4_k_m": {
+      "prediction_rows": 8096,
+      "unique_id_language": 8096,
+      "comet_rows": 8096,
+      "xcomet_rows": 8096,
+      "metricx_rows_for_model_key": 8096,
+      "metricx_source_hypothesis_reference_verified": true
+    }
+  },
+  "exact_input_overlap": {
+    "distinct_exact_input_keys": 18528,
+    "keys_present_in_at_least_two_versions": 8864,
+    "keys_by_number_of_versions": {
+      "1": 9664,
+      "2": 2153,
+      "3": 2089,
+      "4": 2867,
+      "5": 1755
+    },
+    "shared_exact_input_keys_by_version_pair": {
+      "bf16_transformers__f16_gguf": 6505,
+      "bf16_transformers__q8_0": 6154,
+      "bf16_transformers__q6_k": 5056,
+      "bf16_transformers__q4_k_m": 2237,
+      "f16_gguf__q8_0": 6347,
+      "f16_gguf__q6_k": 5118,
+      "f16_gguf__q4_k_m": 2280,
+      "q8_0__q6_k": 5012,
+      "q8_0__q4_k_m": 2250,
+      "q6_k__q4_k_m": 2213
+    },
+    "same_id_language_pairs_with_different_exact_input_not_grouped": {
+      "bf16_transformers__f16_gguf": 1591,
+      "bf16_transformers__q8_0": 1942,
+      "bf16_transformers__q6_k": 3040,
+      "bf16_transformers__q4_k_m": 5859,
+      "f16_gguf__q8_0": 1749,
+      "f16_gguf__q6_k": 2978,
+      "f16_gguf__q4_k_m": 5816,
+      "q8_0__q6_k": 3084,
+      "q8_0__q4_k_m": 5846,
+      "q6_k__q4_k_m": 5883
+    }
+  },
+  "score_consistency": {
+    "comet": {
+      "score_field": "comet",
+      "unique_exact_input_keys": 18528,
+      "repeated_exact_input_keys_across_two_or_more_versions": 8864,
+      "exact_input_key_coverage_by_version_count": {
+        "1": 9664,
+        "2": 2153,
+        "3": 2089,
+        "4": 2867,
+        "5": 1755
+      },
+      "compared_repeated_input_keys": 8864,
+      "max_cross_version_abs_score_delta": 0.0027521252632141113,
+      "repeated_input_keys_with_max_cross_version_abs_delta_gt_threshold": {
+        "1e-06": 7322,
+        "0.0001": 422,
+        "0.001": 5,
+        "0.01": 0
+      }
+    },
+    "metricx": {
+      "score_field": "prediction",
+      "unique_exact_input_keys": 18528,
+      "repeated_exact_input_keys_across_two_or_more_versions": 8864,
+      "exact_input_key_coverage_by_version_count": {
+        "1": 9664,
+        "2": 2153,
+        "3": 2089,
+        "4": 2867,
+        "5": 1755
+      },
+      "compared_repeated_input_keys": 8864,
+      "max_cross_version_abs_score_delta": 0.328125,
+      "repeated_input_keys_with_max_cross_version_abs_delta_gt_threshold": {
+        "1e-06": 6181,
+        "0.0001": 6181,
+        "0.001": 6145,
+        "0.01": 3788
+      }
+    },
+    "xcomet": {
+      "score_field": "xcomet_score",
+      "unique_exact_input_keys": 18528,
+      "repeated_exact_input_keys_across_two_or_more_versions": 8864,
+      "exact_input_key_coverage_by_version_count": {
+        "1": 9664,
+        "2": 2153,
+        "3": 2089,
+        "4": 2867,
+        "5": 1755
+      },
+      "compared_repeated_input_keys": 8864,
+      "max_cross_version_abs_score_delta": 8.940696716308594e-07,
+      "repeated_input_keys_with_max_cross_version_abs_delta_gt_threshold": {
+        "1e-06": 0,
+        "0.0001": 0,
+        "0.001": 0,
+        "0.01": 0
+      }
+    }
+  },
+  "interpretation": "Reuse/de-duplicate only for exact source+hypothesis+reference+target-language matches. Cross-run score agreement quantifies observed reproducibility for those exact inputs.",
+  "pairwise_score_consistency": {
+    "comet": {
+      "bf16_transformers__f16_gguf": {
+        "shared_exact_input_keys": 6505,
+        "max_abs_score_delta": 0.002752065658569336,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 5779,
+          "0.0001": 335,
+          "0.001": 5,
+          "0.01": 0
+        }
+      },
+      "bf16_transformers__q8_0": {
+        "shared_exact_input_keys": 6154,
+        "max_abs_score_delta": 0.002752065658569336,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 5477,
+          "0.0001": 301,
+          "0.001": 5,
+          "0.01": 0
+        }
+      },
+      "bf16_transformers__q6_k": {
+        "shared_exact_input_keys": 5056,
+        "max_abs_score_delta": 0.00011658668518066406,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 118,
+          "0.0001": 2,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "bf16_transformers__q4_k_m": {
+        "shared_exact_input_keys": 2237,
+        "max_abs_score_delta": 0.0027521252632141113,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 1806,
+          "0.0001": 90,
+          "0.001": 1,
+          "0.01": 0
+        }
+      },
+      "f16_gguf__q8_0": {
+        "shared_exact_input_keys": 6347,
+        "max_abs_score_delta": 0.0,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "f16_gguf__q6_k": {
+        "shared_exact_input_keys": 5118,
+        "max_abs_score_delta": 0.002752065658569336,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 4562,
+          "0.0001": 259,
+          "0.001": 4,
+          "0.01": 0
+        }
+      },
+      "f16_gguf__q4_k_m": {
+        "shared_exact_input_keys": 2280,
+        "max_abs_score_delta": 0.00047594308853149414,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 432,
+          "0.0001": 13,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "q8_0__q6_k": {
+        "shared_exact_input_keys": 5012,
+        "max_abs_score_delta": 0.002752065658569336,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 4456,
+          "0.0001": 247,
+          "0.001": 4,
+          "0.01": 0
+        }
+      },
+      "q8_0__q4_k_m": {
+        "shared_exact_input_keys": 2250,
+        "max_abs_score_delta": 0.0009271502494812012,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 437,
+          "0.0001": 15,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "q6_k__q4_k_m": {
+        "shared_exact_input_keys": 2213,
+        "max_abs_score_delta": 0.0027521252632141113,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 1801,
+          "0.0001": 80,
+          "0.001": 1,
+          "0.01": 0
+        }
+      }
+    },
+    "metricx": {
+      "bf16_transformers__f16_gguf": {
+        "shared_exact_input_keys": 6505,
+        "max_abs_score_delta": 0.328125,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 3344,
+          "0.0001": 3344,
+          "0.001": 3304,
+          "0.01": 1772
+        }
+      },
+      "bf16_transformers__q8_0": {
+        "shared_exact_input_keys": 6154,
+        "max_abs_score_delta": 0.234375,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 3291,
+          "0.0001": 3291,
+          "0.001": 3252,
+          "0.01": 1672
+        }
+      },
+      "bf16_transformers__q6_k": {
+        "shared_exact_input_keys": 5056,
+        "max_abs_score_delta": 0.328125,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 3001,
+          "0.0001": 3001,
+          "0.001": 2960,
+          "0.01": 1478
+        }
+      },
+      "bf16_transformers__q4_k_m": {
+        "shared_exact_input_keys": 2237,
+        "max_abs_score_delta": 0.125,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 1514,
+          "0.0001": 1514,
+          "0.001": 1493,
+          "0.01": 644
+        }
+      },
+      "f16_gguf__q8_0": {
+        "shared_exact_input_keys": 6347,
+        "max_abs_score_delta": 0.125,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 1465,
+          "0.0001": 1465,
+          "0.001": 1450,
+          "0.01": 835
+        }
+      },
+      "f16_gguf__q6_k": {
+        "shared_exact_input_keys": 5118,
+        "max_abs_score_delta": 0.25,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 2722,
+          "0.0001": 2722,
+          "0.001": 2685,
+          "0.01": 1338
+        }
+      },
+      "f16_gguf__q4_k_m": {
+        "shared_exact_input_keys": 2280,
+        "max_abs_score_delta": 0.2265625,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 1546,
+          "0.0001": 1546,
+          "0.001": 1510,
+          "0.01": 681
+        }
+      },
+      "q8_0__q6_k": {
+        "shared_exact_input_keys": 5012,
+        "max_abs_score_delta": 0.25,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 2771,
+          "0.0001": 2771,
+          "0.001": 2732,
+          "0.01": 1376
+        }
+      },
+      "q8_0__q4_k_m": {
+        "shared_exact_input_keys": 2250,
+        "max_abs_score_delta": 0.125,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 1551,
+          "0.0001": 1551,
+          "0.001": 1514,
+          "0.01": 672
+        }
+      },
+      "q6_k__q4_k_m": {
+        "shared_exact_input_keys": 2213,
+        "max_abs_score_delta": 0.2265625,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 1454,
+          "0.0001": 1454,
+          "0.001": 1427,
+          "0.01": 613
+        }
+      }
+    },
+    "xcomet": {
+      "bf16_transformers__f16_gguf": {
+        "shared_exact_input_keys": 6505,
+        "max_abs_score_delta": 8.940696716308594e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "bf16_transformers__q8_0": {
+        "shared_exact_input_keys": 6154,
+        "max_abs_score_delta": 8.940696716308594e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "bf16_transformers__q6_k": {
+        "shared_exact_input_keys": 5056,
+        "max_abs_score_delta": 8.940696716308594e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "bf16_transformers__q4_k_m": {
+        "shared_exact_input_keys": 2237,
+        "max_abs_score_delta": 8.344650268554688e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "f16_gguf__q8_0": {
+        "shared_exact_input_keys": 6347,
+        "max_abs_score_delta": 7.152557373046875e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "f16_gguf__q6_k": {
+        "shared_exact_input_keys": 5118,
+        "max_abs_score_delta": 7.152557373046875e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "f16_gguf__q4_k_m": {
+        "shared_exact_input_keys": 2280,
+        "max_abs_score_delta": 7.748603820800781e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "q8_0__q6_k": {
+        "shared_exact_input_keys": 5012,
+        "max_abs_score_delta": 6.556510925292969e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "q8_0__q4_k_m": {
+        "shared_exact_input_keys": 2250,
+        "max_abs_score_delta": 7.748603820800781e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      },
+      "q6_k__q4_k_m": {
+        "shared_exact_input_keys": 2213,
+        "max_abs_score_delta": 7.748603820800781e-07,
+        "shared_keys_with_abs_delta_gt_threshold": {
+          "1e-06": 0,
+          "0.0001": 0,
+          "0.001": 0,
+          "0.01": 0
+        }
+      }
+    }
+  }
+}

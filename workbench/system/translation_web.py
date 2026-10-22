@@ -62,7 +62,10 @@ def decode_audio(path):
 
 
 def install_translation_routes(app, translate, *, asr_url, output_dir,stream_translate=None,
-                               translation_strategy='single'):
+                               translation_strategy='single',pipeline_direction='foreign_to_zh'):
+    if pipeline_direction not in {'foreign_to_zh','zh_to_foreign'}:
+        raise ValueError('Unsupported translation pipeline direction')
+    chinese_first=pipeline_direction=='zh_to_foreign'
     from .web_app import _stream_request
     import urllib.request
     directory=Path(output_dir);directory.mkdir(parents=True,exist_ok=True)
@@ -85,19 +88,27 @@ def install_translation_routes(app, translate, *, asr_url, output_dir,stream_tra
 
     @app.get('/api/translation/health')
     async def translation_health():
-        return {'ready':True,'model':'LMT-60-0.6B','target_language':'zh',
+        model_name=getattr(app.state,'translation_model_name','translation model')
+        backend=getattr(app.state,'translation_backend','unknown')
+        return {'ready':True,'model':model_name,'backend':backend,
+            'source_language':'zh' if chinese_first else 'selected',
+            'target_language':'selected' if chinese_first else 'zh',
+            'pipeline_direction':pipeline_direction,
             'languages':[{'code':code,'name':value[1]} for code,value in LANGUAGES.items()],
             'audio_ready':await asyncio.to_thread(asr_ready),'busy':busy.locked(),
-            'pipeline':'ASR → LMT → Codex-web fixed_k3_context_v2 Refiner',
-            'scheduling':'progressive_snapshots_v3','pending_per_stage':1,
-            'translation_output':'token_preview_window_confirm_v2' if stream_translate else 'complete_windows',
+            'pipeline':(f'Chinese ASR → Chinese Refiner → {model_name} ({backend})'
+                        if chinese_first else f'ASR → {model_name} ({backend}) → Codex-web fixed_k3_context_v2 Refiner'),
+            'scheduling':'chinese_first_snapshots_v1' if chinese_first else 'progressive_snapshots_v3',
+            'pending_per_stage':1,
+            'translation_output':('refined_token_preview_confirm_v1' if chinese_first
+                                  else 'token_preview_window_confirm_v2') if stream_translate else 'complete_windows',
             'refinement_gate_mode':getattr(app.state,'translation_gate_mode','off'),
             'translation_strategy':translation_strategy,
             'max_audio_seconds':None,'max_file_bytes':50*1024*1024}
 
     def validate(language,domain,interval):
         if language not in LANGUAGES:
-            raise ValueError('请选择支持的源语言。')
+            raise ValueError('请选择支持的目标语言。' if chinese_first else '请选择支持的源语言。')
         if not isinstance(domain,str) or not domain.strip() or len(domain)>64:
             raise ValueError('术语领域无效。')
         interval=float(interval)
@@ -112,9 +123,12 @@ def install_translation_routes(app, translate, *, asr_url, output_dir,stream_tra
 
     @app.post('/api/translation/audio')
     async def upload_audio(file: UploadFile=File(...),language: str=Form('en'),
-        domain: str=Form('trade'),chunk_seconds: float=Form(2),interval_ms: float=Form(0)):
+        domain: str=Form('trade'),chunk_seconds: float=Form(2),interval_ms: float=Form(0),
+        target_language: str | None=Form(None)):
         path=None
         try:
+            if chinese_first and target_language is not None:
+                language=target_language
             interval=validate(language,domain,interval_ms)
             if not math.isfinite(chunk_seconds) or not .5<=chunk_seconds<=5:
                 raise ValueError('音频分块需在0.5到5秒之间。')
@@ -162,7 +176,8 @@ def install_translation_routes(app, translate, *, asr_url, output_dir,stream_tra
             display=TranslationStreamDisplay()
             async def send(payload):
                 async with send_lock:
-                    payload=display.project(payload)
+                    if not chinese_first:
+                        payload=display.project(payload)
                     payload={**payload,'server_time':time.time()}
                     metrics=getattr(session,'metrics_snapshot',None)
                     if callable(metrics):
@@ -180,6 +195,10 @@ def install_translation_routes(app, translate, *, asr_url, output_dir,stream_tra
                     config=await asyncio.wait_for(ws.receive_json(),timeout=15)
                     if not isinstance(config,dict) or config.get('event')!='start':
                         raise ValueError('需要start消息。')
+                if chinese_first:
+                    if config.get('source_language','zh')!='zh':
+                        raise ValueError('当前输入语言固定为中文。')
+                    config={**config,'language':config.get('target_language',config.get('language','en'))}
                 interval=validate(config.get('language'),config.get('domain','trade'),config.get('interval_ms',500))
                 language=config['language'];domain=config.get('domain','trade')
                 session=app.state.new_text_refinement_session(domain)
@@ -188,11 +207,14 @@ def install_translation_routes(app, translate, *, asr_url, output_dir,stream_tra
                     stream_translate=stream_translate) if stream_translate else translator)
                 if translation_strategy=='adaptive':
                     preview_translator=AdaptiveTranslationSnapshots(translate,stream_translate)
-                await send({'event':'ready','run_id':ident,'language':language,'target_language':'zh'})
+                await send({'event':'ready','run_id':ident,'language':language,
+                    'source_language':'zh' if chinese_first else language,
+                    'target_language':language if chinese_first else 'zh',
+                    'pipeline_direction':pipeline_direction})
                 if snapshots is None:
                     text=config.get('text','')
                     if not isinstance(text,str) or not text.strip() or len(text)>12000:
-                        raise ValueError('请输入1到12000字符的外语原文。')
+                        raise ValueError('请输入1到12000字符的中文原文。' if chinese_first else '请输入1到12000字符的外语原文。')
                     chunk_chars=config.get('chunk_chars',40)
                     if isinstance(chunk_chars,bool) or not isinstance(chunk_chars,int) or not 4<=chunk_chars<=500:
                         raise ValueError('文本分块长度需在4到500之间。')
@@ -284,8 +306,14 @@ def install_translation_routes(app, translate, *, asr_url, output_dir,stream_tra
                         if message['type']=='websocket.disconnect':
                             return
 
-                pipeline=asyncio.create_task(run_snapshot_pipeline(
-                    stream,translate_snapshot,refine_snapshot,send))
+                if chinese_first:
+                    from .chinese_translation_pipeline import run_chinese_translation_pipeline
+                    pipeline=asyncio.create_task(run_chinese_translation_pipeline(
+                        stream,session,translate,send,target_language=language,
+                        stream_translate=stream_translate,strategy=translation_strategy))
+                else:
+                    pipeline=asyncio.create_task(run_snapshot_pipeline(
+                        stream,translate_snapshot,refine_snapshot,send))
                 disconnect=asyncio.create_task(watch_disconnect())
                 try:
                     done,_=await asyncio.wait((pipeline,disconnect),return_when=asyncio.FIRST_COMPLETED)
@@ -334,7 +362,8 @@ def install_translation_routes(app, translate, *, asr_url, output_dir,stream_tra
             try:
                 samples=await thread_call(decode_audio,job['path'])
                 initial=await timed_asr_request('/stream/start',
-                    params={'language':LANGUAGES[config['language']][0],'chunk_seconds':str(job['chunk_seconds'])})
+                    params={'language':'Chinese' if chinese_first else LANGUAGES[config['language']][0],
+                            'chunk_seconds':str(job['chunk_seconds'])})
                 session_id=initial['session_id']
                 width=round(job['chunk_seconds']*16000)
                 tick=time.monotonic()

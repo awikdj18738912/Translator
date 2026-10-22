@@ -15,6 +15,7 @@
   let activeRun = null;
   let audioReady = false;
   let serviceReady = false;
+  let pipelineReady = false;
   let isAudioTab = true;
   let events = [];
   let serializedEvents = [];
@@ -25,8 +26,7 @@
   let queuedTranslationRender = null;
   let translationRenderFrame = null;
   let translationRenderUsesAnimationFrame = false;
-  let lastDisplayRevision = 0;
-  let lastRefinedTranslationRevision = 0;
+  let lastRefinementRevision = 0;
   let logRenderScheduled = false;
   let initialHealthComplete = false;
   let elapsedStartedAt = null;
@@ -79,9 +79,14 @@
     status.classList.toggle('error', isError);
   }
   function syncSourceLanguage() {
+    $('source-language-label').textContent = '中文';
+    syncTargetLanguage();
+  }
+  function syncTargetLanguage(code) {
     const language = $(isAudioTab ? 'translation-audio-language' : 'translation-language');
-    const label = $('source-language-label');
-    label.textContent = language?.selectedOptions?.[0]?.textContent || '源语言';
+    if (code && language && [...language.options].some(option => option.value === code)) language.value = code;
+    const label = $('target-language-label');
+    if (label) label.textContent = language?.selectedOptions?.[0]?.textContent || '英语';
   }
   function setTab(audio) {
     if (activeRun) return;
@@ -94,8 +99,8 @@
     audioTab.setAttribute('aria-selected', String(audio));
     textView.hidden = audio;
     audioView.hidden = !audio;
-    startButton.disabled = !serviceReady || (audio && !audioReady);
-    startButton.textContent = audio ? '开始音频翻译' : '开始翻译';
+    startButton.disabled = !serviceReady || !pipelineReady || (audio && !audioReady);
+    startButton.textContent = audio ? '开始音频处理' : '开始精修并翻译';
     syncSourceLanguage();
   }
   textTab.addEventListener('click', () => setTab(false));
@@ -112,21 +117,8 @@
   });
 
   function populateLanguages(languages) {
-    if (!Array.isArray(languages) || !languages.length) return;
-    for (const id of ['translation-language', 'translation-audio-language']) {
-      const select = $(id);
-      const previous = select.value;
-      select.replaceChildren();
-      for (const item of languages) {
-        if (!item || !item.code || !item.name) continue;
-        const option = document.createElement('option');
-        option.value = String(item.code);
-        option.textContent = String(item.name);
-        select.append(option);
-      }
-      if ([...select.options].some(option => option.value === previous)) select.value = previous;
-      else if ([...select.options].some(option => option.value === 'en')) select.value = 'en';
-    }
+    // Target languages are intentionally fixed by the UI contract.
+    void languages;
   }
   async function refreshHealth() {
     try {
@@ -134,6 +126,7 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       populateLanguages(data.languages);
+      pipelineReady = data.pipeline_direction === 'zh_to_foreign';
       const gateInfo = $('translation-gate-info');
       if (gateInfo && !activeRun) gateInfo.textContent = data.refinement_gate_mode === 'regex'
         ? '正则门控 · 不使用置信度' : '门控关闭';
@@ -145,22 +138,25 @@
         ? '选择一个音频文件，服务会自动分块回放并推送翻译结果。'
         : '语音转录服务正在准备，可先使用文本回放。';
       if (!activeRun) {
-        if (!events.length || !serviceReady) {
+        if (!pipelineReady) {
+          setStatus('正在切换中文精修翻译流程，请稍后再试。');
+        } else if (!events.length || !serviceReady) {
           setStatus(serviceReady
             ? (audioReady ? '翻译与音频服务已就绪。' : '翻译服务已就绪；音频翻译暂不可用。')
             : '翻译服务尚未就绪。', !serviceReady);
         }
-        startButton.disabled = !serviceReady || (isAudioTab && !audioReady);
+        startButton.disabled = !serviceReady || !pipelineReady || (isAudioTab && !audioReady);
       }
     } catch (error) {
       if (!initialHealthComplete) {
         serviceReady = false;
         audioReady = false;
+        pipelineReady = false;
         audioTab.disabled = true;
         $('translation-audio-help').textContent = '暂时无法连接翻译服务，请稍后重试。';
       }
       if (!activeRun) {
-        startButton.disabled = !serviceReady || (isAudioTab && !audioReady);
+        startButton.disabled = !serviceReady || !pipelineReady || (isAudioTab && !audioReady);
         setStatus(`无法检查翻译服务：${error.message}`, true);
       }
     } finally {
@@ -202,7 +198,7 @@
       : window.setTimeout(render, 16);
   }
   function acceptTranslation(event, phase) {
-    const revision = Number(phase === 'preview' ? event.revision : (event.translation_revision ?? event.revision));
+    const revision = Number(event.translation_revision ?? event.revision);
     if (!Number.isFinite(revision) || typeof event.translation !== 'string') return false;
     const sequence = phase === 'preview' ? Number(event.preview_sequence) : -1;
     if (phase === 'preview' && !Number.isFinite(sequence)) return false;
@@ -253,8 +249,7 @@
       else window.clearTimeout(translationRenderFrame);
       translationRenderFrame = null;
     }
-    lastDisplayRevision = 0;
-    lastRefinedTranslationRevision = 0;
+    lastRefinementRevision = 0;
     log.textContent = '仅展示最近60条，下载包含全部\n等待服务端事件…';
     $('translation-source').textContent = '';
     $('translation-original').textContent = '';
@@ -283,7 +278,7 @@
       if (isAudioTab && !audioDurationReceived) clearAudioDuration();
       activeRun = null;
       stopButton.disabled = true;
-      startButton.disabled = !serviceReady || (isAudioTab && !audioReady);
+      startButton.disabled = !serviceReady || !pipelineReady || (isAudioTab && !audioReady);
     }
   }
   function renderRefinedText(event) {
@@ -304,6 +299,9 @@
     if (typeof event.clean_text === 'string') clean.textContent = event.clean_text;
   }
   function updateFromEvent(event) {
+    if (event.event === 'ready' && typeof event.target_language === 'string') {
+      syncTargetLanguage(event.target_language);
+    }
     if (isAudioTab && Number.isFinite(event.asr_total_ms) && event.asr_total_ms >= 0) {
       asrTotalMsMaximum = Math.max(asrTotalMsMaximum ?? 0, event.asr_total_ms);
       renderAsrTime();
@@ -343,12 +341,12 @@
       $('translation-phase-label').textContent = '最终翻译中';
       return true;
     }
-    if (event.event === 'source') {
-      const revision = eventRevision ?? lastSourceRevision + 1;
+    if (typeof event.source_text === 'string') {
+      const revision = Number(event.source_revision ?? eventRevision ?? lastSourceRevision + 1);
       if (revision >= lastSourceRevision) {
         lastSourceRevision = revision;
-        if (typeof event.source_text === 'string') $('translation-source').textContent = event.source_text;
-        $('translation-guard').textContent = '等待更新';
+        $('translation-source').textContent = event.source_text;
+        if (event.event === 'source') $('translation-guard').textContent = '等待更新';
       }
     }
     if (isAudioTab && Number.isFinite(event.audio_total_seconds) && event.audio_total_seconds >= 0) {
@@ -367,19 +365,16 @@
         $('translation-phase-label').textContent = '待确认译文';
       }
     }
-    const displayRevision = Number(event.display_revision ?? event.refinement_revision ?? event.revision ?? event.translation_revision);
-    const displayTranslationRevision = Number(event.translation_revision ?? event.revision ?? displayRevision);
+    const refinementRevision = Number(event.refinement_revision ?? event.revision);
     const hasRefinedDisplay = (typeof event.display_refined_text === 'string' && typeof event.pending_raw_text === 'string')
       || typeof event.clean_text === 'string';
     let displayAccepted = false;
-    if (hasRefinedDisplay && Number.isFinite(displayRevision) && Number.isFinite(displayTranslationRevision)) {
-      const displayIsCurrent = displayRevision >= lastDisplayRevision
-        && displayTranslationRevision >= lastRefinedTranslationRevision;
+    if (hasRefinedDisplay && Number.isFinite(refinementRevision)) {
+      const displayIsCurrent = refinementRevision >= lastRefinementRevision;
       if (displayIsCurrent) {
         displayAccepted = true;
         renderRefinedText(event);
-        lastDisplayRevision = Math.max(lastDisplayRevision, displayRevision);
-        lastRefinedTranslationRevision = Math.max(lastRefinedTranslationRevision, displayTranslationRevision);
+        lastRefinementRevision = Math.max(lastRefinementRevision, refinementRevision);
         if (event.has_pending_refinement === true || event.pending_raw_text) {
           $('quality-tag').textContent = event.display_refined_text ? '部分待精修' : '待精修';
         } else if (event.refiner_executed === true) {
@@ -463,7 +458,7 @@
         run.terminal = true;
       } else if (event.event === 'final') {
         freezeElapsed();
-        setStatus('翻译与中文精修完成。');
+        setStatus('中文精修与外语翻译完成。');
         run.terminal = true;
       } else if (event.event === 'refinement_progress') setStatus('已完成一组精修，正在处理后续内容…');
       else if (event.event === 'update') setStatus('收到新的翻译与精修结果…');
@@ -484,10 +479,10 @@
   }
   async function startText(run) {
     const text = $('translation-input').value.trim();
-    if (!text) throw new Error('请先输入待翻译文本。');
-    const language = $('translation-language').value;
+    if (!text) throw new Error('请先输入待精修的中文文本。');
+    const targetLanguage = $('translation-language').value;
     const domain = $('translation-domain').value;
-    connect('/ws/translation', { event: 'start', language, domain, text, chunk_chars: 40, interval_ms: 500 }, run);
+    connect('/ws/translation', { event: 'start', source_language: 'zh', target_language: targetLanguage, domain, text, chunk_chars: 40, interval_ms: 500 }, run);
   }
   async function startAudio(run) {
     const file = audioFile.files && audioFile.files[0];
@@ -495,7 +490,7 @@
     if (!audioReady) throw new Error('音频翻译服务未就绪。');
     const form = new FormData();
     form.append('file', file);
-    form.append('language', $('translation-audio-language').value);
+    form.append('target_language', $('translation-audio-language').value);
     form.append('domain', $('translation-audio-domain').value);
     form.append('chunk_seconds', '2');
     form.append('interval_ms', '0');
@@ -526,7 +521,7 @@
     resetRun();
     beginElapsed();
     setRunning(true, run);
-    setStatus(isAudioTab ? '正在上传音频…' : '正在连接翻译服务…');
+    setStatus(isAudioTab ? '正在上传音频…' : '正在连接中文精修与翻译服务…');
     try {
       if (isAudioTab) await startAudio(run);
       else await startText(run);
@@ -541,8 +536,8 @@
       if (run.uploadController) run.uploadController.abort();
     }
   });
-  $('translation-audio-language').addEventListener('change', () => { if (isAudioTab && !activeRun) syncSourceLanguage(); });
-  $('translation-language').addEventListener('change', () => { if (!isAudioTab && !activeRun) syncSourceLanguage(); });
+  $('translation-audio-language').addEventListener('change', () => { if (isAudioTab && !activeRun) syncTargetLanguage(); });
+  $('translation-language').addEventListener('change', () => { if (!isAudioTab && !activeRun) syncTargetLanguage(); });
   syncSourceLanguage();
   stopButton.addEventListener('click', () => {
     const run = activeRun;

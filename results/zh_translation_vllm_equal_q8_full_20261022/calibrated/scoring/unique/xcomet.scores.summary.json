@@ -1,0 +1,11 @@
+{
+  "metric": "xcomet",
+  "examples": 18353,
+  "fresh_unique_inputs": 2583,
+  "reused_identical_inputs": 15770,
+  "input_sha256": "3bc4903383391c0653f5e6ea699b6f630668e26c1a9d05a674d1d79987244a58",
+  "cache_source": "same XCOMET-XL checkpoint; exact source, hypothesis, reference, language key",
+  "score_seconds": 333.33012258898816,
+  "batch_size": 16,
+  "error_spans_saved_for_changed_inputs": false
+}

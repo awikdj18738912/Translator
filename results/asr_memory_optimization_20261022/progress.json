@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "selected": "compact_4096",
+  "completed": [
+    "baseline_8192",
+    "compact_4096",
+    "compact_2048",
+    "eager_4096"
+  ]
+}

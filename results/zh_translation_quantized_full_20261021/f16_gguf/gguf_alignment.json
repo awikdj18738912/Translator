@@ -1,0 +1,14 @@
+{
+  "model_metadata_differences": [],
+  "tensor_shape_differences": {},
+  "f16_tensor_types": {
+    "F16": 195,
+    "F32": 140
+  },
+  "q8_tensor_types": {
+    "F32": 140,
+    "Q8_0": 195
+  },
+  "f16_tensor_count": 335,
+  "q8_tensor_count": 335
+}

@@ -1,0 +1,11 @@
+{
+  "metric": "xcomet",
+  "examples": 2583,
+  "batch_size": 16,
+  "score_seconds": 333.33012258898816,
+  "items_per_second": 7.749074640892751,
+  "input": "results/zh_translation_vllm_equal_q8_full_20261022/calibrated/scoring/xcomet_changed_inputs.jsonl",
+  "input_sha256": "36367c8e301bfd0c86b3ebcaadb1bae9d3e1a23ddb11d581cc9e6f798476d51a",
+  "fresh_unique_inputs": true,
+  "error_spans_saved": false
+}

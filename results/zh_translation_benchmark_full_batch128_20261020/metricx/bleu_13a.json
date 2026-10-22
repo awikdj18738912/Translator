@@ -1,0 +1,102 @@
+{
+  "metric": "SacreBLEU BLEU",
+  "tokenizer": "13a",
+  "included_languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ar"
+  ],
+  "excluded_languages": {
+    "ja": "MeCab tokenizer dependency unavailable",
+    "ko": "MeCab-ko tokenizer dependency unavailable"
+  },
+  "scores": {
+    "index": {
+      "name": "Index-Translate-2B",
+      "en": {
+        "bleu": 27.824269931656406,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "fr": {
+        "bleu": 26.035313590906433,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "de": {
+        "bleu": 19.131207191752146,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "es": {
+        "bleu": 19.57010644682523,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "ru": {
+        "bleu": 16.98237297236043,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "ar": {
+        "bleu": 12.649460451903062,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "macro_6_language": 20.365455097567285
+    },
+    "hy": {
+      "name": "Hy-MT2-1.8B",
+      "en": {
+        "bleu": 23.405053048622218,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "fr": {
+        "bleu": 23.424205672439268,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "de": {
+        "bleu": 16.564003280268906,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "es": {
+        "bleu": 17.514329976561555,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "ru": {
+        "bleu": 14.633246393630985,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "ar": {
+        "bleu": 9.84211858710411,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "macro_6_language": 17.563826159771175
+    },
+    "lmt": {
+      "name": "NiuTrans LMT-60-1.7B",
+      "en": {
+        "bleu": 30.34197534120692,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "fr": {
+        "bleu": 24.135198390119708,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "de": {
+        "bleu": 17.816191676920052,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "es": {
+        "bleu": 18.250310908899653,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "ru": {
+        "bleu": 16.057316841683612,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "ar": {
+        "bleu": 9.63692459222845,
+        "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+      },
+      "macro_6_language": 19.372986291843066
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "captured_at": "2026-10-20T17:11:43.359818+08:00",
+  "service_status": "running",
+  "url": "http://127.0.0.1:8083/",
+  "health": {
+    "ready": true,
+    "model": "LMT-60-0.6B",
+    "source_language": "zh",
+    "target_language": "selected",
+    "pipeline_direction": "zh_to_foreign",
+    "languages": [
+      {
+        "code": "en",
+        "name": "英语"
+      },
+      {
+        "code": "fr",
+        "name": "法语"
+      },
+      {
+        "code": "de",
+        "name": "德语"
+      },
+      {
+        "code": "es",
+        "name": "西班牙语"
+      },
+      {
+        "code": "ru",
+        "name": "俄语"
+      },
+      {
+        "code": "ja",
+        "name": "日语"
+      },
+      {
+        "code": "ko",
+        "name": "韩语"
+      },
+      {
+        "code": "ar",
+        "name": "阿拉伯语"
+      }
+    ],
+    "audio_ready": true,
+    "busy": false,
+    "pipeline": "Chinese ASR → Chinese Refiner → LMT",
+    "scheduling": "chinese_first_snapshots_v1",
+    "pending_per_stage": 1,
+    "translation_output": "refined_token_preview_confirm_v1",
+    "refinement_gate_mode": "regex",
+    "translation_strategy": "adaptive",
+    "max_audio_seconds": null,
+    "max_file_bytes": 52428800
+  },
+  "web_pid": 1190470,
+  "asr_pid": 1094509,
+  "service_manager": "systemd --user persistent services",
+  "units": {
+    "translation-workbench-web.service": {
+      "Restart": "no",
+      "MainPID": "1190470",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "Transient": "no"
+    },
+    "translation-workbench-asr.service": {
+      "Restart": "no",
+      "MainPID": "1094509",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "Transient": "no"
+    }
+  },
+  "automatic_restart": false,
+  "source_changes_pending_reload": false,
+  "configuration": {
+    "pipeline_direction": "zh_to_foreign",
+    "source_language": "zh",
+    "target_languages": [
+      "en",
+      "fr",
+      "de",
+      "es",
+      "ru",
+      "ja",
+      "ko",
+      "ar"
+    ],
+    "asr_model": "Qwen3-ASR-0.6B",
+    "translation_model": "LMT-60-0.6B CT2 int8_float16",
+    "refiner_model": "AgenticASR-Refiner",
+    "refiner_dtype": "bfloat16",
+    "refiner_parameter_bytes": 2161265664,
+    "refinement_gate": "regex",
+    "gate_uses_asr_confidence": false,
+    "zh_itn_enabled": true,
+    "zh_itn_rule_pack": "zh-itn-strict-conservative-v90",
+    "numeric_fallback": "disabled while zh-itn active",
+    "refiner_numeric_policy": "zh-itn-surface-locked",
+    "translation_numeric_guard": false,
+    "max_audio_seconds": null,
+    "max_file_bytes": 52428800,
+    "pending_per_stage": 1,
+    "asr_kv_cache_memory_bytes": 1073741824,
+    "asr_max_model_len": 8192
+  },
+  "tests": {
+    "backend_passed": 175,
+    "backend_skipped": 1,
+    "skip_reason": "test interpreter lacks PyAV; production audio decode tested separately",
+    "frontend_offline": "passed",
+    "browser_live_runs": 9,
+    "browser_live_passed": true,
+    "browser_errors": [],
+    "browser_coverage": "8 target languages text + 12s Chinese audio to English; desktop/mobile; MT receives previously refined prefixes",
+    "error_and_cancellation": "translation failure recovery; model ownership retained until blocking refinement/translation thread exits"
+  },
+  "limitations": [
+    "Small functional smoke samples do not measure translation accuracy.",
+    "Chinese amount 123万7851元 was incorrectly translated to 1230,007851 yuan. Chinese ITN/refinement output was correct; downstream translation numbers are not yet guarded.",
+    "Legacy translator/ prototype and generic foreign_to_zh route compatibility remain; production workbench uses zh_to_foreign."
+  ],
+  "artifacts": {
+    "report": "results/chinese_first_pipeline_20261020/REPORT.md",
+    "browser": "results/chinese_first_pipeline_20261020/browser_live.json",
+    "tests": "results/chinese_first_pipeline_20261020/tests.log"
+  },
+  "refiner_health": {
+    "ok": true,
+    "refiner_dtype": "bfloat16",
+    "refiner_parameter_bytes": 2161265664,
+    "window_edit_policy": "compat",
+    "strict_local_protocol_version": null,
+    "entity_db": true,
+    "entity_asr_context_enabled": false,
+    "entity_audio_repair_enabled": false,
+    "entity_ctc_mode": "off",
+    "entity_ctc_model_dir": null,
+    "refinement_gate_mode": "regex",
+    "asr_api_style": "current",
+    "window_pipeline": {
+      "version": "fixed_k3_context_v2",
+      "window_size": 3,
+      "one_punctuation_window": true,
+      "fixed_groups": true,
+      "stream_reprocess_rejected": false,
+      "final_reprocess_rejected": false,
+      "group_numeric_self_corrections": true,
+      "adjacent_context": true,
+      "context_lookahead_chunks": 1,
+      "context_protocol": "v1-read-only-adjacent-context"
+    },
+    "final_refinement_mode": "off",
+    "learned_window_gate": {
+      "mode": "off",
+      "ready": false,
+      "model_dir": "/home/aim0/桌面/tan/ASR/Translator/workbench/results/gate_terminal_gain_round4_20261012/linear_training",
+      "model_sha256": null,
+      "threshold": null,
+      "load_error": null,
+      "scored_windows": 0,
+      "would_skip_windows": 0,
+      "vetoed_windows": 0,
+      "scoring_errors": 0,
+      "scope": "window_refine_only",
+      "calibrated": false
+    },
+    "confidence_supplement": {
+      "mode": "off",
+      "low_fragment_threshold": 0.8,
+      "missing_evidence": "review",
+      "high_score_veto": false,
+      "calibrated": false,
+      "purpose": "supplement_native_review_not_certify_cleanup_need"
+    },
+    "numeric_normalization_enabled": true,
+    "numeric_backend": "zh-itn",
+    "zh_itn_enabled": true,
+    "zh_itn_rule_pack": "zh-itn-strict-conservative-v90",
+    "numeric_rule_protocol_version": "v1-rule-owned-number-surface"
+  },
+  "asr_health": {
+    "api_styles": [
+      "current",
+      "legacy_v1"
+    ],
+    "asr_send_chunk_seconds": 0.5,
+    "confidence_calibrated": false,
+    "confidence_logprobs": 0,
+    "confidence_window_scores": false,
+    "context_supported": true,
+    "kv_cache_memory_bytes": 1073741824,
+    "max_context_chars": 2048,
+    "max_model_len": 8192,
+    "max_num_seqs": 1,
+    "mode": "streaming",
+    "ok": true,
+    "segmentation_mode": "vad_finalize",
+    "silence_rms_threshold": 0.002,
+    "vad": "silero",
+    "vad_min_silence": 0.7,
+    "vad_min_speech": 0.25,
+    "vad_model": "/home/aim0/data/models/ASR/silero_vad.onnx",
+    "vad_preroll": 0.7,
+    "vad_tail_pad": 1.0,
+    "vad_threshold": 0.5
+  }
+}

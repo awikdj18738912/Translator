@@ -1,0 +1,15 @@
+{
+  "config": {
+    "label": "compact_4096",
+    "context": 4096,
+    "kv_mib": 512,
+    "prefill": 1024,
+    "eager": false
+  },
+  "started_at": "2026-10-22T03:11:05.184689+00:00",
+  "runs": [],
+  "warmups": [],
+  "capacity": [],
+  "failure": "TimeoutExpired(['systemctl', '--user', 'restart', 'translation-workbench-asr.service'], 120)",
+  "journal": "127.0.0.1 - - [22/Oct/2026 11:11:05] \"POST /stream/chunk?session_id=3b262f8ebbd44923932f660a0a50dbd0 HTTP/1.1\" 200 -\n127.0.0.1 - - [22/Oct/2026 11:11:05] \"POST /stream/finish?session_id=3b262f8ebbd44923932f660a0a50dbd0 HTTP/1.1\" 200 -\nStopping translation-workbench-asr.service - Trade Translator ASR streaming service..."
+}

@@ -5,6 +5,8 @@ from time import perf_counter
 
 LANGUAGES = {'en':'English','fr':'French','de':'German','es':'Spanish',
              'ru':'Russian','ja':'Japanese','ko':'Korean','ar':'Arabic'}
+CHINESE_LANGUAGE = 'Chinese'
+SOURCE_LANGUAGES = {**LANGUAGES, 'zh': CHINESE_LANGUAGE}
 
 
 class LmtRuntime:
@@ -33,13 +35,35 @@ class LmtRuntime:
                 dtype=torch.float16,attn_implementation='sdpa',low_cpu_mem_usage=True).eval().to(f'cuda:{gpu}')
             self.parameter_count = sum(p.numel() for p in self.model.parameters())
 
-    def prompt_ids(self, source, language):
-        name = LANGUAGES[language]
-        prompt = f'Translate the following text from {name} into Chinese:\n{name}: {source}\nChinese:'
+    def _language_names(self, language, source_language=None, target_language=None):
+        # Keep the historical API: ``language`` names the source and the
+        # destination is Chinese. Explicit directions enable Chinese -> X.
+        if source_language is None and target_language is None:
+            source_language, target_language = language, 'zh'
+        else:
+            source_language = source_language or 'zh'
+            target_language = target_language or language
+        try:
+            source_name = SOURCE_LANGUAGES[source_language]
+        except (KeyError, TypeError):
+            raise ValueError(f'Unsupported source language: {source_language!r}') from None
+        try:
+            target_name = SOURCE_LANGUAGES[target_language]
+        except (KeyError, TypeError):
+            raise ValueError(f'Unsupported target language: {target_language!r}') from None
+        if source_language == target_language:
+            raise ValueError('Source and target languages must differ')
+        return source_name, target_name
+
+    def prompt_ids(self, source, language, *, source_language=None, target_language=None):
+        source_name, target_name = self._language_names(language, source_language, target_language)
+        prompt = (f'Translate the following text from {source_name} into {target_name}:\n'
+                  f'{source_name}: {source}\n{target_name}:')
         return self.tokenizer.apply_chat_template([{'role':'user','content':prompt}],
             tokenize=True,add_generation_prompt=True,return_dict=False)
 
-    def translate_stream(self, source, language, on_text, *, max_new_tokens=512):
+    def translate_stream(self, source, language, on_text, *, max_new_tokens=512,
+                         source_language=None, target_language=None):
         """Publish real decoded prefixes; a returned row still owns completion."""
         if self.backend != 'ctranslate2':
             raise ValueError('Token previews require the CTranslate2 backend')
@@ -48,12 +72,15 @@ class LmtRuntime:
             emitter.append(step.token_id)
             return False
         return self.translate([source],language,beams=1,
-            max_new_tokens=max_new_tokens,callback=callback)
+            max_new_tokens=max_new_tokens,callback=callback,
+            source_language=source_language,target_language=target_language)
 
-    def translate(self, texts, language, committed=None, beams=3, max_new_tokens=256, callback=None, streamer=None):
+    def translate(self, texts, language, committed=None, beams=3, max_new_tokens=256,
+                  callback=None, streamer=None, source_language=None, target_language=None):
         t0 = perf_counter()
         committed = list(committed or [])
-        prompt_ids = [self.prompt_ids(text,language) for text in texts]
+        prompt_ids = [self.prompt_ids(text,language,source_language=source_language,
+                                      target_language=target_language) for text in texts]
         if any(len(ids)+len(committed)+max_new_tokens>32768 for ids in prompt_ids):
             raise ValueError('LMT context exceeded; no silent source truncation')
         starts = [ids+committed for ids in prompt_ids]

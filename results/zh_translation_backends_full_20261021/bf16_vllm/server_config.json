@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/home/aim0/data/conda/envs/agentic-asr/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/home/aim0/data/models/ASR/Index-Translate-2B",
+    "--served-model-name",
+    "Index-Translate-2B",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8090",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "1024",
+    "--max-num-seqs",
+    "128",
+    "--max-num-batched-tokens",
+    "8192",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--language-model-only",
+    "--no-enable-prefix-caching",
+    "--generation-config",
+    "vllm"
+  ],
+  "pid": 2594684,
+  "physical_gpu": 1,
+  "VLLM_USE_FLASHINFER_SAMPLER": "0",
+  "startup_note": "Disabled optional FlashInfer sampler after its JIT could not find nvcc; experiment uses greedy argmax."
+}

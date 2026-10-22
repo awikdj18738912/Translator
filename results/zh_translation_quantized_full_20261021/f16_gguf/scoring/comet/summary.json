@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-10-21T09:14:25.978705+00:00",
+  "input_dir": "/home/aim0/桌面/tan/ASR/Translator/results/zh_translation_quantized_full_20261021/f16_gguf/scoring/neural-input",
+  "model_id": "Unbabel/wmt22-comet-da",
+  "comet_version": "2.2.7",
+  "checkpoint_path": "/home/aim0/data/hf-cache/hub/models--Unbabel--wmt22-comet-da/blobs/e213091cde220f97b89f8bdfa750c458cfea741ad62affb455b59900210ff2af",
+  "checkpoint_size_bytes": 2323649073,
+  "checkpoint_sha256": "e213091cde220f97b89f8bdfa750c458cfea741ad62affb455b59900210ff2af",
+  "physical_gpu": 1,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "torch_version": "2.11.0+cu130",
+  "batch_size": 256,
+  "matmul_precision": "high",
+  "total_cases": 8096,
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "models": [
+    "index"
+  ],
+  "bootstrap_samples": 10000,
+  "seed": 20261020,
+  "systems": {
+    "index": {
+      "macro_mean": 0.8688444702337559,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.8744231654485695,
+          "stddev": 0.041102630817712794
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8532849603255276,
+          "stddev": 0.05704683709619618
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.8509566105990541,
+          "stddev": 0.05529423491105667
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.8539168743100091,
+          "stddev": 0.05159893101102132
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8835574431499473,
+          "stddev": 0.0532085812156587
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.9077147307838846,
+          "stddev": 0.0382420771565473
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.881225625457971,
+          "stddev": 0.05190142714790341
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8456763517950835,
+          "stddev": 0.061924358421936485
+        }
+      }
+    }
+  },
+  "runtime": {
+    "index": {
+      "batch_size_used": 256,
+      "scoring_seconds": 32.41197485598968,
+      "scores_sha256": "01449bc061b6e757dfa8b5f52163dc8c7b174068b99d2ea5401039420bc66a01",
+      "gpu_peak_allocated_bytes": 8334184960,
+      "gpu_peak_reserved_bytes": 16997416960
+    }
+  },
+  "limitations": [
+    "COMET score is a learned quality estimate, not a percentage-correct accuracy.",
+    "XLM-R covers the evaluated languages, while the metric training directions do not fully match Chinese-to-eight-language translation.",
+    "FLORES-101 devtest is public written text, not domain-specific speech-recognition output."
+  ]
+}

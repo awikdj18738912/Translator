@@ -1,0 +1,40 @@
+{
+  "status": "running",
+  "model_key": "q8_0",
+  "model_file": "Index-Translate-2B.Q8_0.gguf",
+  "model_path": "/home/aim0/data/models/ASR/Index-Translate-2B-GGUF/Index-Translate-2B.Q8_0.gguf",
+  "model_bytes": 2076674560,
+  "model_sha256": "a09d287f41d297206947a2e51acc29dd03c8b22356111fdb1e289c0c97c173f3",
+  "dataset": "FLORES-101 devtest",
+  "dataset_path": "/home/aim0/桌面/tan/ASR/Translator/data/eval/zh_translation/flores101_devtest.jsonl",
+  "dataset_sha256": "76b0c7f1278a70ddc2672ba606e967ba84ac71a857b4f8bc77e6f26af074fc44",
+  "source_language": "zh",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "sentences_per_language": 1012,
+  "total_cases": 8096,
+  "prompt_protocol": "scripts/benchmark_zh_translation.py prompt_for('index', ...)",
+  "decode": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 512,
+    "reasoning": "off"
+  },
+  "runtime": "llama.cpp CUDA llama-server / OpenAI chat completions",
+  "physical_gpu": 1,
+  "server_url": "http://127.0.0.1:8088",
+  "client_concurrency": 64,
+  "retry_count": 4,
+  "run_id": "16795a93476147c0a2f9e66342b02f57",
+  "started_utc": "2026-10-21T06:08:37.708601+00:00",
+  "gpu_snapshot_start": "0, GPU-c3da2483-42aa-6594-0038-5deef8baef11, NVIDIA GeForce RTX 3090, 20167 MiB, 24576 MiB, 82 %\n1, GPU-6c9f2cf2-b481-2423-f455-f8cb830de2c6, NVIDIA GeForce RTX 3090, 9984 MiB, 24576 MiB, 0 %",
+  "resumed_rows": 3999
+}

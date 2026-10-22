@@ -1,0 +1,47 @@
+{
+  "model_key": "lmt",
+  "model": "Unbabel/XCOMET-XL",
+  "count": 8096,
+  "batch_size_used": 16,
+  "score_direction": "higher is better",
+  "macro_mean_8_languages": 0.8653015416684255,
+  "languages": {
+    "en": {
+      "count": 1012,
+      "mean": 0.9508347151425516
+    },
+    "fr": {
+      "count": 1012,
+      "mean": 0.8474419380100112
+    },
+    "de": {
+      "count": 1012,
+      "mean": 0.923651852773819
+    },
+    "es": {
+      "count": 1012,
+      "mean": 0.8942145390119477
+    },
+    "ru": {
+      "count": 1012,
+      "mean": 0.867400415830697
+    },
+    "ja": {
+      "count": 1012,
+      "mean": 0.856074189406492
+    },
+    "ko": {
+      "count": 1012,
+      "mean": 0.8296861470393513
+    },
+    "ar": {
+      "count": 1012,
+      "mean": 0.753108536132534
+    }
+  },
+  "scores_file": "lmt.scores.jsonl",
+  "score_seconds": 918.4091137349897,
+  "score_items_per_second": 8.815243532454895,
+  "torch_peak_allocated_gib_after_model": 19.07420587539673,
+  "torch_peak_reserved_gib_after_model": 23.216796875
+}

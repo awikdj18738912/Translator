@@ -137,6 +137,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--gpu-memory-utilization", type=float, default=0.75)
     parser.add_argument("--kv-cache-memory-bytes", type=int, default=None,
                         help="Explicit vLLM KV cache bytes per GPU; overrides automatic cache sizing")
+    parser.add_argument("--enforce-eager", action="store_true",
+                        help="Disable vLLM compilation and CUDA graphs to reduce memory")
     parser.add_argument(
         "--max-model-len",
         type=int,
@@ -310,8 +312,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 
 def vllm_scheduling_options(args):
-    return {name:value for name in ('max_num_seqs','max_num_batched_tokens','kv_cache_memory_bytes')
-            if (value:=getattr(args,name,None)) is not None}
+    options = {name:value for name in ('max_num_seqs','max_num_batched_tokens','kv_cache_memory_bytes')
+               if (value:=getattr(args,name,None)) is not None}
+    if getattr(args, 'enforce_eager', False):
+        options['enforce_eager'] = True
+    return options
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -637,6 +642,8 @@ def main(argv: list[str] | None = None) -> int:
             "max_model_len": args.max_model_len,
             "kv_cache_memory_bytes": args.kv_cache_memory_bytes,
             "max_num_seqs": args.max_num_seqs,
+            "max_num_batched_tokens": args.max_num_batched_tokens,
+            "enforce_eager": args.enforce_eager,
             "api_styles": ["current", "legacy_v1"],
             "confidence_logprobs": args.confidence_logprobs,
             "confidence_calibrated": args.confidence_calibrated,

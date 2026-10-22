@@ -1,0 +1,154 @@
+{
+  "model": "Unbabel/XCOMET-XL",
+  "tokenizer": "model-defined COMET tokenizer",
+  "total_rows": 24288,
+  "model_load_seconds": 155.90053443898796,
+  "models": {
+    "index": {
+      "model_key": "index",
+      "model": "Unbabel/XCOMET-XL",
+      "count": 8096,
+      "batch_size_used": 16,
+      "score_direction": "higher is better",
+      "macro_mean_8_languages": 0.8974140895541625,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.9499399141360648
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.87561239007669
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.9408289211187438
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.9120430927797268
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8969620156429502
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.8863990514174752
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.8694682846456884
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8480590466159605
+        }
+      },
+      "scores_file": "index.scores.jsonl",
+      "score_seconds": 882.4524654700072,
+      "score_items_per_second": 9.174431843972414,
+      "torch_peak_allocated_gib_after_model": 16.72059202194214,
+      "torch_peak_reserved_gib_after_model": 19.546875
+    },
+    "hy": {
+      "model_key": "hy",
+      "model": "Unbabel/XCOMET-XL",
+      "count": 8096,
+      "batch_size_used": 16,
+      "score_direction": "higher is better",
+      "macro_mean_8_languages": 0.8958072675274236,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.9517438017685894
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8668893916687004
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.940132576368543
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.9089193811912546
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.8920193375511603
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.8860268278025356
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.8789324096363523
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.8417944142322531
+        }
+      },
+      "scores_file": "hy.scores.jsonl",
+      "score_seconds": 882.2193146219943,
+      "score_items_per_second": 9.176856441268127,
+      "torch_peak_allocated_gib_after_model": 16.731822967529297,
+      "torch_peak_reserved_gib_after_model": 19.92578125
+    },
+    "lmt": {
+      "model_key": "lmt",
+      "model": "Unbabel/XCOMET-XL",
+      "count": 8096,
+      "batch_size_used": 16,
+      "score_direction": "higher is better",
+      "macro_mean_8_languages": 0.8653015416684255,
+      "languages": {
+        "en": {
+          "count": 1012,
+          "mean": 0.9508347151425516
+        },
+        "fr": {
+          "count": 1012,
+          "mean": 0.8474419380100112
+        },
+        "de": {
+          "count": 1012,
+          "mean": 0.923651852773819
+        },
+        "es": {
+          "count": 1012,
+          "mean": 0.8942145390119477
+        },
+        "ru": {
+          "count": 1012,
+          "mean": 0.867400415830697
+        },
+        "ja": {
+          "count": 1012,
+          "mean": 0.856074189406492
+        },
+        "ko": {
+          "count": 1012,
+          "mean": 0.8296861470393513
+        },
+        "ar": {
+          "count": 1012,
+          "mean": 0.753108536132534
+        }
+      },
+      "scores_file": "lmt.scores.jsonl",
+      "score_seconds": 918.4091137349897,
+      "score_items_per_second": 8.815243532454895,
+      "torch_peak_allocated_gib_after_model": 19.07420587539673,
+      "torch_peak_reserved_gib_after_model": 23.216796875
+    }
+  },
+  "macro_mean_8_languages": {
+    "index": 0.8974140895541625,
+    "hy": 0.8958072675274236,
+    "lmt": 0.8653015416684255
+  }
+}

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: trade-translator
+Version: 0.1.0
+Summary: Local multilingual speech to Chinese with guarded refinement and domain terminology
+Requires-Python: >=3.10
+Requires-Dist: fastapi<1,>=0.115
+Requires-Dist: uvicorn<1,>=0.30
+Requires-Dist: httpx<1,>=0.27
+Requires-Dist: python-multipart<1,>=0.0.18
+Requires-Dist: python-dotenv<2,>=1
+Provides-Extra: asr
+Requires-Dist: faster-whisper<2,>=1.1; extra == "asr"
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8; extra == "dev"

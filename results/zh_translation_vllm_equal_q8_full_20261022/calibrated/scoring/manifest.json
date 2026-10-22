@@ -1,0 +1,18 @@
+{
+  "systems": [
+    "q8_0",
+    "bf16_vllm",
+    "fp8_vllm",
+    "nvfp4_vllm"
+  ],
+  "rows_per_system": 8096,
+  "mapped_rows": 32384,
+  "unique_exact_inputs": 18353,
+  "dedup_key": [
+    "source",
+    "hypothesis",
+    "reference",
+    "language"
+  ],
+  "fresh_scores": true
+}
